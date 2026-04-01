@@ -5,11 +5,22 @@ Thumbs.db
 # Python
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+
+# Entornos virtuales
+venv/
+.venv/
+.env/
+ml_pytorch/
+
+# Jupyter
+.ipynb_checkpoints/
 
 # VS Code
 .vscode/
 
+# Proyecto ingeniería del dato
 ing_dato/src/**/archive/
 ing_dato/src/**/__pycache__/
 ing_dato/.vscode/
-.vscode/
