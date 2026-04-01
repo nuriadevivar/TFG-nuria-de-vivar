@@ -1,0 +1,11 @@
+dataset,fuente,frecuencia,periodo_inicio,periodo_fin,granularidad,rol_capa2
+processed/capa2/googletrends/trends_moda_total_clean.csv,Google Trends,mensual,2014-12,2025-12,España - término/mes,base agregada de tendencias
+processed/capa2/googletrends/trends_marcas_clean.csv,Google Trends,mensual,2014-12,2025-12,España - marca/mes,interés digital por marcas
+processed/capa2/googletrends/trends_sofisticado_clean.csv,Google Trends,mensual,2014-12,2025-12,España - estética/mes,estéticas sofisticadas
+processed/capa2/googletrends/trends_urbano_clean.csv,Google Trends,mensual,2014-12,2025-12,España - estética/mes,estéticas urbanas
+processed/capa2/googletrends/trends_consciente_compra_clean.csv,Google Trends,mensual,2014-12,2025-12,España - término/mes,consumo y sostenibilidad
+processed/capa2/googletrends/trends_productos_clean.csv,Google Trends,mensual,2015-01,2025-12,España - producto/mes,interés por productos
+processed/capa2/googletrends/trends_grupos_unificados_clean.csv,Google Trends,mensual,2014-12,2025-12,España - término/grupo/mes,base unificada de términos
+processed/capa2/eventos/eventos_moda_clean.csv,Curación manual a partir de fuentes públicas,puntual agregada a mes,2015-10,2025-01,evento,contextualización de tendencias
+processed/capa2/apify/instagram_posts_clean.csv,Apify - Instagram Scraper,post,2025-01,2026-03,post,actividad social por post
+processed/capa2/apify/instagram_brand_monthly.csv,Apify - Instagram Scraper,mensual,2025-01,2026-03,marca-mes,actividad social agregada por marca

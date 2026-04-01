@@ -1,0 +1,6 @@
+dataset,fuente,frecuencia,periodo_inicio,periodo_fin,granularidad,rol_capa1
+processed/capa1/contexto_digitalizacion/contexto_digitalizacion_clean.csv,DataReportal + Eurostat,anual,2020,2025,España,contexto digital
+processed/capa1/eurostat/eurostat_moda_mensual_clean.csv,Eurostat,mensual,2010-01,2023-12,España,contexto sectorial moda
+processed/capa1/eurostat/eurostat_retail_total_mensual_clean.csv,Eurostat,mensual,2010-01,2025-09,España,contexto retail general
+processed/capa1/eurostat/eurostat_online_empresas_clean.csv,Eurostat,anual,2015,2023,España,adopcion online empresarial
+processed/capa1/comercio_electronico/comercio_electronico_core_std.csv,INE / Encuesta TIC y Comercio Electrónico,anual,2015,2023,España por tamaño de empresa,contexto ecommerce empresarial

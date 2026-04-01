@@ -1,0 +1,23 @@
+dataset,variable,descripcion,tipo_variable,rol_analitico,nivel_nulos,redundancia,decision,justificacion
+capa2_master_terminos_mensual,fecha,Mes normalizado de observación,nucleo,analisis_principal,bajo,ninguna,mantener,Variable temporal principal para el análisis de tendencias mensuales
+capa2_master_terminos_mensual,anio,Año derivado de fecha,tecnica,join_temporal,bajo,media,mantener,Facilita agregaciones anuales y visualizaciones sin recalcular
+capa2_master_terminos_mensual,mes_num,Número de mes derivado de fecha,tecnica,join_temporal,bajo,media,mantener,Facilita análisis de estacionalidad y pivotes mensuales
+capa2_master_terminos_mensual,termino,Término consultado en Google Trends,nucleo,analisis_principal,bajo,ninguna,mantener,Unidad semántica central del análisis digital
+capa2_master_terminos_mensual,grupo,Grupo temático del término,nucleo,segmentacion,bajo,baja,mantener,"Permite separar marcas, estéticas y comportamientos de consumo"
+capa2_master_terminos_mensual,subgrupo,Subclasificación analítica del término,auxiliar,segmentacion,bajo,baja,mantener,Aporta segmentación semántica más rica que el grupo original
+capa2_master_terminos_mensual,tipo_termino,"Naturaleza del término: marca, estética o comportamiento",auxiliar,segmentacion,bajo,baja,mantener,Facilita comparaciones entre tipos de interés digital
+capa2_master_terminos_mensual,familia_analitica,Agrupación analítica simplificada del término,auxiliar,segmentacion,bajo,baja,mantener,Simplifica el EDA y la interpretación comparativa entre familias
+capa2_master_terminos_mensual,valor_trends,Intensidad mensual de búsqueda,nucleo,analisis_principal,medio,ninguna,mantener,Variable principal de intensidad de búsqueda en la capa 2
+capa2_term_coverage,grupo / termino / n_obs / n_non_null / avg_trends / pct_non_null / quality_flag,Bloque de control de calidad y cobertura temporal por término,tecnica,control_calidad,bajo,baja,mantener,Permite evaluar qué términos tienen calidad suficiente para análisis principal
+capa2_master_productos_mensual,fecha,Mes de observación,nucleo,analisis_principal,bajo,ninguna,mantener,Variable temporal principal para el bloque de productos
+capa2_master_productos_mensual,anio,Año derivado,tecnica,join_temporal,bajo,media,mantener,Útil para resúmenes anuales
+capa2_master_productos_mensual,mes_num,Mes derivado,tecnica,join_temporal,bajo,media,mantener,Útil para análisis estacional
+capa2_master_productos_mensual,marca,Marca del producto,nucleo,segmentacion,bajo,baja,mantener,Permite comparar productos entre marcas
+capa2_master_productos_mensual,categoria_producto,Categoría del producto,nucleo,segmentacion,bajo,baja,mantener,Permite comparar tipos de producto
+capa2_master_productos_mensual,valor_trends,Intensidad de interés del producto,nucleo,analisis_principal,bajo,ninguna,mantener,Variable principal del análisis de productos
+capa2_master_productos_mensual,termino_busqueda,Texto completo de búsqueda original,tecnica,trazabilidad,bajo,alta,mantener_solo_trazabilidad,"Se conserva en el transformado por auditoría, pero no en el master analítico por redundancia"
+capa2_master_eventos,fecha_aprox / fecha / anio / mes_num / marca_o_tendencia / plataforma / plataforma_std / tipo_evento / categoria_evento / descripcion_evento / fuente,Bloque contextual de hitos y eventos de moda,contextual,contexto,bajo,media,mantener_contexto,"Sirve como soporte interpretativo y de trazabilidad, no como núcleo cuantitativo principal"
+capa2_master_eventos_mensual,fecha / anio / mes_num / n_eventos_total / n_plataformas / n_tipos_evento,Resumen mensual agregado de hitos,contextual,contexto,bajo,baja,mantener_contexto,"Aporta una señal contextual general del mes, sin pretensión de análisis causal fuerte"
+capa2_master_integrated,bloque_base_terminos + bloque_contextual_eventos_mensuales,Dataset enriquecido con contexto mensual general,mixta,analisis_principal + contexto,bajo,media,revisar_tras_eda,Debe mantenerse solo si las variables contextuales de eventos aportan valor interpretativo real
+capa2_master_social,fecha / anio / mes_num / marca / plataforma / n_posts / likes_totales / comentarios_totales / engagement_total / likes_medios_post / comentarios_medios_post / engagement_medio_post,Resumen mensual de actividad y engagement en Instagram por marca,nucleo,analisis_principal,bajo,baja,mantener,Aporta la señal social agregada de marca necesaria para integrar Apify en la capa 2
+capa2_master_brand_digital,bloque_trends_marcas + bloque_social + bloque_contextual_eventos,"Tabla final integrada marca-mes con Google Trends, Instagram y contexto mensual",mixta,analisis_principal,bajo,media,mantener,Es la tabla final más útil para analizar conjuntamente interés digital y actividad social de marca

@@ -1,0 +1,4 @@
+dataset,rows,cols,complete_cases,pct_complete_cases,total_nulls,avg_nulls_per_row
+capa3_master_encuesta,318,45,177,55.66,141,0.4434
+capa3_clustering_ready,318,17,318,100.0,0,0.0
+capa3_supervised_ready,318,18,318,100.0,0,0.0

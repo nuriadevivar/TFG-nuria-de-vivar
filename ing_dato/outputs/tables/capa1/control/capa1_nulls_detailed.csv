@@ -1,0 +1,10 @@
+dataset,variable,n_nulls,pct_nulls
+capa1_master_anual_analysis,pct_empresas_venden_web_apps,1,25.0
+comercio_electronico_core_std,valor,30,1.26
+contexto_digitalizacion_clean,pct_personas_compra_online,1,16.67
+contexto_digitalizacion_documentado,pct_personas_compra_ropa_online,5,83.33
+contexto_digitalizacion_documentado,fuente_compra_ropa_online,5,83.33
+contexto_digitalizacion_documentado,pct_personas_compra_online,1,16.67
+contexto_digitalizacion_extended,pct_personas_compra_ropa_online,5,83.33
+contexto_digitalizacion_extended,fuente_compra_ropa_online,5,83.33
+contexto_digitalizacion_extended,pct_personas_compra_online,1,16.67

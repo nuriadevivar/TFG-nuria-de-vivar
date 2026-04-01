@@ -1,0 +1,16 @@
+id_respuesta,grupo_edad,sexo,freq_compra_anual,canal_compra_moda,gasto_mensual_moda,tiempo_rrss_dia,freq_contenido_moda_rrss,sigue_influencers_moda,indice_influencia_rrss,indice_impulso_tendencia,indice_confianza_influencers,indice_escepticismo_influencers,indice_difusion_fastfashion,indice_postcompra,indice_riesgo_arrepentimiento,compra_ult_6m_por_rrss_bin
+1,18 - 28 años,Mujer,4,5,Menos de 30€,3,3,1,4.0,2.2,3.0,4.0,4.5,4.0,1.0,0
+2,18 - 28 años,Mujer,3,2,Menos de 30€,3,2,4,4.2,3.6,4.0,4.0,3.5,4.333333333333333,4.5,1
+3,18 - 28 años,Mujer,1,4,Menos de 30€,5,1,1,1.8,1.6,2.0,2.0,3.0,2.333333333333333,3.0,0
+4,18 - 28 años,Hombre,1,5,30 - 60€,2,1,1,2.4,1.0,3.0,5.0,5.0,1.6666666666666667,3.0,0
+5,18 - 28 años,Mujer,2,5,Menos de 30€,1,1,1,1.4,1.4,1.5,5.0,5.0,1.6666666666666667,1.0,0
+6,18 - 28 años,Mujer,2,4,Menos de 30€,4,3,1,4.2,2.0,3.5,4.0,4.5,4.0,2.5,0
+7,18 - 28 años,Hombre,2,4,30 - 60€,3,2,2,1.2,1.2,1.5,2.0,5.0,2.333333333333333,1.5,0
+8,18 - 28 años,Mujer,3,5,30 - 60€,5,4,3,2.4,3.0,3.5,5.0,4.0,2.6666666666666665,3.5,1
+9,18 - 28 años,Mujer,2,5,Menos de 30€,1,2,1,2.4,2.4,2.5,5.0,5.0,2.0,2.5,0
+10,18 - 28 años,Hombre,3,2,30 - 60€,3,2,2,3.2,2.2,1.5,5.0,3.0,3.0,3.5,0
+11,18 - 28 años,Mujer,4,2,Menos de 30€,4,4,5,4.0,3.4,3.5,4.0,5.0,4.0,3.0,0
+12,18 - 28 años,Mujer,4,2,30 - 60€,2,4,4,2.8,2.8,4.0,3.0,4.0,4.0,2.5,1
+13,18 - 28 años,Mujer,4,1,30 - 60€,3,3,3,4.2,4.0,3.0,5.0,5.0,4.666666666666667,5.0,1
+14,18 - 28 años,Mujer,4,3,61 - 100€,2,5,4,5.0,4.0,4.5,4.0,5.0,5.0,3.0,1
+15,18 - 28 años,Mujer,5,5,Menos de 30€,2,2,1,3.6,3.2,4.0,5.0,5.0,4.0,1.0,1

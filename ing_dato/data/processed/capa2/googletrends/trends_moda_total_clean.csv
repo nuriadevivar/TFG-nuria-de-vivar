@@ -1,0 +1,1996 @@
+fecha,termino,valor_trends,grupo,anio,mes_num
+2014-12-01,comprar ropa online,97.0,consciente_compra,2014,12
+2014-12-01,moda sostenible,0.0,consciente_compra,2014,12
+2014-12-01,ropa vintage,48.0,consciente_compra,2014,12
+2014-12-01,slow fashion,,consciente_compra,2014,12
+2014-12-01,zara online,39.0,consciente_compra,2014,12
+2014-12-01,cayetana,,sofisticado,2014,12
+2014-12-01,minimalista elegante,,sofisticado,2014,12
+2014-12-01,moda preppy,,sofisticado,2014,12
+2014-12-01,old money,0.0,sofisticado,2014,12
+2014-12-01,pija,,sofisticado,2014,12
+2014-12-01,choni,29.0,urbano,2014,12
+2014-12-01,shein,0.0,urbano,2014,12
+2014-12-01,streetwear,0.0,urbano,2014,12
+2014-12-01,trap style,,urbano,2014,12
+2014-12-01,y2k outfit,,urbano,2014,12
+2015-01-01,comprar ropa online,91.25,consciente_compra,2015,1
+2015-01-01,moda sostenible,0.0,consciente_compra,2015,1
+2015-01-01,ropa vintage,76.5,consciente_compra,2015,1
+2015-01-01,slow fashion,,consciente_compra,2015,1
+2015-01-01,zara online,46.75,consciente_compra,2015,1
+2015-01-01,cayetana,,sofisticado,2015,1
+2015-01-01,minimalista elegante,,sofisticado,2015,1
+2015-01-01,moda preppy,,sofisticado,2015,1
+2015-01-01,old money,0.0,sofisticado,2015,1
+2015-01-01,pija,,sofisticado,2015,1
+2015-01-01,choni,32.25,urbano,2015,1
+2015-01-01,shein,2.0,urbano,2015,1
+2015-01-01,streetwear,17.0,urbano,2015,1
+2015-01-01,trap style,,urbano,2015,1
+2015-01-01,y2k outfit,,urbano,2015,1
+2015-02-01,comprar ropa online,79.75,consciente_compra,2015,2
+2015-02-01,moda sostenible,0.0,consciente_compra,2015,2
+2015-02-01,ropa vintage,59.5,consciente_compra,2015,2
+2015-02-01,slow fashion,,consciente_compra,2015,2
+2015-02-01,zara online,28.0,consciente_compra,2015,2
+2015-02-01,cayetana,,sofisticado,2015,2
+2015-02-01,minimalista elegante,,sofisticado,2015,2
+2015-02-01,moda preppy,,sofisticado,2015,2
+2015-02-01,old money,0.0,sofisticado,2015,2
+2015-02-01,pija,,sofisticado,2015,2
+2015-02-01,choni,42.5,urbano,2015,2
+2015-02-01,shein,0.0,urbano,2015,2
+2015-02-01,streetwear,19.25,urbano,2015,2
+2015-02-01,trap style,,urbano,2015,2
+2015-02-01,y2k outfit,,urbano,2015,2
+2015-03-01,comprar ropa online,77.4,consciente_compra,2015,3
+2015-03-01,moda sostenible,19.0,consciente_compra,2015,3
+2015-03-01,ropa vintage,65.8,consciente_compra,2015,3
+2015-03-01,slow fashion,,consciente_compra,2015,3
+2015-03-01,zara online,28.6,consciente_compra,2015,3
+2015-03-01,cayetana,,sofisticado,2015,3
+2015-03-01,minimalista elegante,,sofisticado,2015,3
+2015-03-01,moda preppy,,sofisticado,2015,3
+2015-03-01,old money,0.0,sofisticado,2015,3
+2015-03-01,pija,,sofisticado,2015,3
+2015-03-01,choni,52.2,urbano,2015,3
+2015-03-01,shein,0.0,urbano,2015,3
+2015-03-01,streetwear,0.0,urbano,2015,3
+2015-03-01,trap style,,urbano,2015,3
+2015-03-01,y2k outfit,,urbano,2015,3
+2015-04-01,comprar ropa online,74.25,consciente_compra,2015,4
+2015-04-01,moda sostenible,0.0,consciente_compra,2015,4
+2015-04-01,ropa vintage,62.5,consciente_compra,2015,4
+2015-04-01,slow fashion,,consciente_compra,2015,4
+2015-04-01,zara online,26.75,consciente_compra,2015,4
+2015-04-01,cayetana,,sofisticado,2015,4
+2015-04-01,minimalista elegante,,sofisticado,2015,4
+2015-04-01,moda preppy,,sofisticado,2015,4
+2015-04-01,old money,0.0,sofisticado,2015,4
+2015-04-01,pija,,sofisticado,2015,4
+2015-04-01,choni,35.0,urbano,2015,4
+2015-04-01,shein,0.0,urbano,2015,4
+2015-04-01,streetwear,74.25,urbano,2015,4
+2015-04-01,trap style,,urbano,2015,4
+2015-04-01,y2k outfit,,urbano,2015,4
+2015-05-01,comprar ropa online,64.4,consciente_compra,2015,5
+2015-05-01,moda sostenible,20.0,consciente_compra,2015,5
+2015-05-01,ropa vintage,61.6,consciente_compra,2015,5
+2015-05-01,slow fashion,,consciente_compra,2015,5
+2015-05-01,zara online,29.2,consciente_compra,2015,5
+2015-05-01,cayetana,,sofisticado,2015,5
+2015-05-01,minimalista elegante,,sofisticado,2015,5
+2015-05-01,moda preppy,,sofisticado,2015,5
+2015-05-01,old money,14.2,sofisticado,2015,5
+2015-05-01,pija,,sofisticado,2015,5
+2015-05-01,choni,33.4,urbano,2015,5
+2015-05-01,shein,1.8,urbano,2015,5
+2015-05-01,streetwear,15.2,urbano,2015,5
+2015-05-01,trap style,,urbano,2015,5
+2015-05-01,y2k outfit,,urbano,2015,5
+2015-06-01,comprar ropa online,54.75,consciente_compra,2015,6
+2015-06-01,moda sostenible,0.0,consciente_compra,2015,6
+2015-06-01,ropa vintage,48.25,consciente_compra,2015,6
+2015-06-01,slow fashion,,consciente_compra,2015,6
+2015-06-01,zara online,37.0,consciente_compra,2015,6
+2015-06-01,cayetana,,sofisticado,2015,6
+2015-06-01,minimalista elegante,,sofisticado,2015,6
+2015-06-01,moda preppy,,sofisticado,2015,6
+2015-06-01,old money,0.0,sofisticado,2015,6
+2015-06-01,pija,,sofisticado,2015,6
+2015-06-01,choni,32.5,urbano,2015,6
+2015-06-01,shein,15.0,urbano,2015,6
+2015-06-01,streetwear,0.0,urbano,2015,6
+2015-06-01,trap style,,urbano,2015,6
+2015-06-01,y2k outfit,,urbano,2015,6
+2015-07-01,comprar ropa online,55.0,consciente_compra,2015,7
+2015-07-01,moda sostenible,0.0,consciente_compra,2015,7
+2015-07-01,ropa vintage,66.0,consciente_compra,2015,7
+2015-07-01,slow fashion,,consciente_compra,2015,7
+2015-07-01,zara online,34.0,consciente_compra,2015,7
+2015-07-01,cayetana,,sofisticado,2015,7
+2015-07-01,minimalista elegante,,sofisticado,2015,7
+2015-07-01,moda preppy,,sofisticado,2015,7
+2015-07-01,old money,0.0,sofisticado,2015,7
+2015-07-01,pija,,sofisticado,2015,7
+2015-07-01,choni,35.0,urbano,2015,7
+2015-07-01,shein,17.75,urbano,2015,7
+2015-07-01,streetwear,20.5,urbano,2015,7
+2015-07-01,trap style,,urbano,2015,7
+2015-07-01,y2k outfit,,urbano,2015,7
+2015-08-01,comprar ropa online,60.4,consciente_compra,2015,8
+2015-08-01,moda sostenible,0.0,consciente_compra,2015,8
+2015-08-01,ropa vintage,74.2,consciente_compra,2015,8
+2015-08-01,slow fashion,,consciente_compra,2015,8
+2015-08-01,zara online,26.0,consciente_compra,2015,8
+2015-08-01,cayetana,,sofisticado,2015,8
+2015-08-01,minimalista elegante,,sofisticado,2015,8
+2015-08-01,moda preppy,,sofisticado,2015,8
+2015-08-01,old money,20.0,sofisticado,2015,8
+2015-08-01,pija,,sofisticado,2015,8
+2015-08-01,choni,38.8,urbano,2015,8
+2015-08-01,shein,21.8,urbano,2015,8
+2015-08-01,streetwear,14.6,urbano,2015,8
+2015-08-01,trap style,,urbano,2015,8
+2015-08-01,y2k outfit,,urbano,2015,8
+2015-09-01,comprar ropa online,74.0,consciente_compra,2015,9
+2015-09-01,moda sostenible,0.0,consciente_compra,2015,9
+2015-09-01,ropa vintage,76.25,consciente_compra,2015,9
+2015-09-01,slow fashion,,consciente_compra,2015,9
+2015-09-01,zara online,32.5,consciente_compra,2015,9
+2015-09-01,cayetana,,sofisticado,2015,9
+2015-09-01,minimalista elegante,,sofisticado,2015,9
+2015-09-01,moda preppy,,sofisticado,2015,9
+2015-09-01,old money,0.0,sofisticado,2015,9
+2015-09-01,pija,,sofisticado,2015,9
+2015-09-01,choni,37.75,urbano,2015,9
+2015-09-01,shein,27.0,urbano,2015,9
+2015-09-01,streetwear,60.5,urbano,2015,9
+2015-09-01,trap style,,urbano,2015,9
+2015-09-01,y2k outfit,,urbano,2015,9
+2015-10-01,comprar ropa online,80.5,consciente_compra,2015,10
+2015-10-01,moda sostenible,43.25,consciente_compra,2015,10
+2015-10-01,ropa vintage,78.5,consciente_compra,2015,10
+2015-10-01,slow fashion,,consciente_compra,2015,10
+2015-10-01,zara online,32.25,consciente_compra,2015,10
+2015-10-01,cayetana,,sofisticado,2015,10
+2015-10-01,minimalista elegante,,sofisticado,2015,10
+2015-10-01,moda preppy,,sofisticado,2015,10
+2015-10-01,old money,0.0,sofisticado,2015,10
+2015-10-01,pija,,sofisticado,2015,10
+2015-10-01,choni,34.25,urbano,2015,10
+2015-10-01,shein,38.25,urbano,2015,10
+2015-10-01,streetwear,21.0,urbano,2015,10
+2015-10-01,trap style,,urbano,2015,10
+2015-10-01,y2k outfit,,urbano,2015,10
+2015-11-01,comprar ropa online,74.6,consciente_compra,2015,11
+2015-11-01,moda sostenible,17.0,consciente_compra,2015,11
+2015-11-01,ropa vintage,64.6,consciente_compra,2015,11
+2015-11-01,slow fashion,,consciente_compra,2015,11
+2015-11-01,zara online,58.6,consciente_compra,2015,11
+2015-11-01,cayetana,,sofisticado,2015,11
+2015-11-01,minimalista elegante,,sofisticado,2015,11
+2015-11-01,moda preppy,,sofisticado,2015,11
+2015-11-01,old money,0.0,sofisticado,2015,11
+2015-11-01,pija,,sofisticado,2015,11
+2015-11-01,choni,35.0,urbano,2015,11
+2015-11-01,shein,82.6,urbano,2015,11
+2015-11-01,streetwear,43.0,urbano,2015,11
+2015-11-01,trap style,,urbano,2015,11
+2015-11-01,y2k outfit,,urbano,2015,11
+2015-12-01,comprar ropa online,70.0,consciente_compra,2015,12
+2015-12-01,moda sostenible,0.0,consciente_compra,2015,12
+2015-12-01,ropa vintage,67.0,consciente_compra,2015,12
+2015-12-01,slow fashion,0.0,consciente_compra,2015,12
+2015-12-01,zara online,77.0,consciente_compra,2015,12
+2015-12-01,cayetana,,sofisticado,2015,12
+2015-12-01,minimalista elegante,,sofisticado,2015,12
+2015-12-01,moda preppy,,sofisticado,2015,12
+2015-12-01,old money,0.0,sofisticado,2015,12
+2015-12-01,pija,,sofisticado,2015,12
+2015-12-01,choni,49.25,urbano,2015,12
+2015-12-01,shein,75.25,urbano,2015,12
+2015-12-01,streetwear,52.5,urbano,2015,12
+2015-12-01,trap style,,urbano,2015,12
+2015-12-01,y2k outfit,,urbano,2015,12
+2016-01-01,comprar ropa online,85.2,consciente_compra,2016,1
+2016-01-01,moda sostenible,6.2,consciente_compra,2016,1
+2016-01-01,ropa vintage,66.8,consciente_compra,2016,1
+2016-01-01,slow fashion,0.0,consciente_compra,2016,1
+2016-01-01,zara online,39.4,consciente_compra,2016,1
+2016-01-01,cayetana,,sofisticado,2016,1
+2016-01-01,minimalista elegante,,sofisticado,2016,1
+2016-01-01,moda preppy,,sofisticado,2016,1
+2016-01-01,old money,0.0,sofisticado,2016,1
+2016-01-01,pija,,sofisticado,2016,1
+2016-01-01,choni,79.8,urbano,2016,1
+2016-01-01,shein,23.6,urbano,2016,1
+2016-01-01,streetwear,12.6,urbano,2016,1
+2016-01-01,trap style,,urbano,2016,1
+2016-01-01,y2k outfit,,urbano,2016,1
+2016-02-01,comprar ropa online,77.25,consciente_compra,2016,2
+2016-02-01,moda sostenible,25.0,consciente_compra,2016,2
+2016-02-01,ropa vintage,84.5,consciente_compra,2016,2
+2016-02-01,slow fashion,25.0,consciente_compra,2016,2
+2016-02-01,zara online,14.0,consciente_compra,2016,2
+2016-02-01,cayetana,,sofisticado,2016,2
+2016-02-01,minimalista elegante,,sofisticado,2016,2
+2016-02-01,moda preppy,,sofisticado,2016,2
+2016-02-01,old money,0.0,sofisticado,2016,2
+2016-02-01,pija,,sofisticado,2016,2
+2016-02-01,choni,72.0,urbano,2016,2
+2016-02-01,shein,23.0,urbano,2016,2
+2016-02-01,streetwear,25.0,urbano,2016,2
+2016-02-01,trap style,,urbano,2016,2
+2016-02-01,y2k outfit,,urbano,2016,2
+2016-03-01,comprar ropa online,70.5,consciente_compra,2016,3
+2016-03-01,moda sostenible,8.5,consciente_compra,2016,3
+2016-03-01,ropa vintage,73.0,consciente_compra,2016,3
+2016-03-01,slow fashion,0.0,consciente_compra,2016,3
+2016-03-01,zara online,13.25,consciente_compra,2016,3
+2016-03-01,cayetana,,sofisticado,2016,3
+2016-03-01,minimalista elegante,,sofisticado,2016,3
+2016-03-01,moda preppy,,sofisticado,2016,3
+2016-03-01,old money,0.0,sofisticado,2016,3
+2016-03-01,pija,,sofisticado,2016,3
+2016-03-01,choni,63.0,urbano,2016,3
+2016-03-01,shein,33.75,urbano,2016,3
+2016-03-01,streetwear,0.0,urbano,2016,3
+2016-03-01,trap style,,urbano,2016,3
+2016-03-01,y2k outfit,,urbano,2016,3
+2016-04-01,comprar ropa online,73.0,consciente_compra,2016,4
+2016-04-01,moda sostenible,26.25,consciente_compra,2016,4
+2016-04-01,ropa vintage,59.75,consciente_compra,2016,4
+2016-04-01,slow fashion,0.0,consciente_compra,2016,4
+2016-04-01,zara online,14.0,consciente_compra,2016,4
+2016-04-01,cayetana,,sofisticado,2016,4
+2016-04-01,minimalista elegante,,sofisticado,2016,4
+2016-04-01,moda preppy,,sofisticado,2016,4
+2016-04-01,old money,0.0,sofisticado,2016,4
+2016-04-01,pija,,sofisticado,2016,4
+2016-04-01,choni,61.5,urbano,2016,4
+2016-04-01,shein,36.25,urbano,2016,4
+2016-04-01,streetwear,14.0,urbano,2016,4
+2016-04-01,trap style,,urbano,2016,4
+2016-04-01,y2k outfit,,urbano,2016,4
+2016-05-01,comprar ropa online,69.4,consciente_compra,2016,5
+2016-05-01,moda sostenible,8.0,consciente_compra,2016,5
+2016-05-01,ropa vintage,60.4,consciente_compra,2016,5
+2016-05-01,slow fashion,0.0,consciente_compra,2016,5
+2016-05-01,zara online,25.2,consciente_compra,2016,5
+2016-05-01,cayetana,,sofisticado,2016,5
+2016-05-01,minimalista elegante,,sofisticado,2016,5
+2016-05-01,moda preppy,,sofisticado,2016,5
+2016-05-01,old money,0.0,sofisticado,2016,5
+2016-05-01,pija,,sofisticado,2016,5
+2016-05-01,choni,68.6,urbano,2016,5
+2016-05-01,shein,28.6,urbano,2016,5
+2016-05-01,streetwear,34.6,urbano,2016,5
+2016-05-01,trap style,,urbano,2016,5
+2016-05-01,y2k outfit,,urbano,2016,5
+2016-06-01,comprar ropa online,60.25,consciente_compra,2016,6
+2016-06-01,moda sostenible,16.5,consciente_compra,2016,6
+2016-06-01,ropa vintage,65.5,consciente_compra,2016,6
+2016-06-01,slow fashion,0.0,consciente_compra,2016,6
+2016-06-01,zara online,25.5,consciente_compra,2016,6
+2016-06-01,cayetana,,sofisticado,2016,6
+2016-06-01,minimalista elegante,,sofisticado,2016,6
+2016-06-01,moda preppy,,sofisticado,2016,6
+2016-06-01,old money,0.0,sofisticado,2016,6
+2016-06-01,pija,,sofisticado,2016,6
+2016-06-01,choni,59.5,urbano,2016,6
+2016-06-01,shein,31.25,urbano,2016,6
+2016-06-01,streetwear,27.25,urbano,2016,6
+2016-06-01,trap style,,urbano,2016,6
+2016-06-01,y2k outfit,,urbano,2016,6
+2016-07-01,comprar ropa online,53.8,consciente_compra,2016,7
+2016-07-01,moda sostenible,0.0,consciente_compra,2016,7
+2016-07-01,ropa vintage,55.6,consciente_compra,2016,7
+2016-07-01,slow fashion,0.0,consciente_compra,2016,7
+2016-07-01,zara online,16.6,consciente_compra,2016,7
+2016-07-01,cayetana,,sofisticado,2016,7
+2016-07-01,minimalista elegante,,sofisticado,2016,7
+2016-07-01,moda preppy,,sofisticado,2016,7
+2016-07-01,old money,0.0,sofisticado,2016,7
+2016-07-01,pija,,sofisticado,2016,7
+2016-07-01,choni,62.8,urbano,2016,7
+2016-07-01,shein,39.4,urbano,2016,7
+2016-07-01,streetwear,0.0,urbano,2016,7
+2016-07-01,trap style,,urbano,2016,7
+2016-07-01,y2k outfit,,urbano,2016,7
+2016-08-01,comprar ropa online,56.25,consciente_compra,2016,8
+2016-08-01,moda sostenible,0.0,consciente_compra,2016,8
+2016-08-01,ropa vintage,60.5,consciente_compra,2016,8
+2016-08-01,slow fashion,0.0,consciente_compra,2016,8
+2016-08-01,zara online,11.25,consciente_compra,2016,8
+2016-08-01,cayetana,,sofisticado,2016,8
+2016-08-01,minimalista elegante,,sofisticado,2016,8
+2016-08-01,moda preppy,,sofisticado,2016,8
+2016-08-01,old money,0.0,sofisticado,2016,8
+2016-08-01,pija,,sofisticado,2016,8
+2016-08-01,choni,65.0,urbano,2016,8
+2016-08-01,shein,46.75,urbano,2016,8
+2016-08-01,streetwear,0.0,urbano,2016,8
+2016-08-01,trap style,,urbano,2016,8
+2016-08-01,y2k outfit,,urbano,2016,8
+2016-09-01,comprar ropa online,62.25,consciente_compra,2016,9
+2016-09-01,moda sostenible,8.25,consciente_compra,2016,9
+2016-09-01,ropa vintage,61.0,consciente_compra,2016,9
+2016-09-01,slow fashion,0.0,consciente_compra,2016,9
+2016-09-01,zara online,13.25,consciente_compra,2016,9
+2016-09-01,cayetana,,sofisticado,2016,9
+2016-09-01,minimalista elegante,,sofisticado,2016,9
+2016-09-01,moda preppy,,sofisticado,2016,9
+2016-09-01,old money,25.0,sofisticado,2016,9
+2016-09-01,pija,,sofisticado,2016,9
+2016-09-01,choni,70.75,urbano,2016,9
+2016-09-01,shein,50.5,urbano,2016,9
+2016-09-01,streetwear,13.0,urbano,2016,9
+2016-09-01,trap style,,urbano,2016,9
+2016-09-01,y2k outfit,,urbano,2016,9
+2016-10-01,comprar ropa online,71.2,consciente_compra,2016,10
+2016-10-01,moda sostenible,7.0,consciente_compra,2016,10
+2016-10-01,ropa vintage,62.6,consciente_compra,2016,10
+2016-10-01,slow fashion,0.0,consciente_compra,2016,10
+2016-10-01,zara online,15.0,consciente_compra,2016,10
+2016-10-01,cayetana,,sofisticado,2016,10
+2016-10-01,minimalista elegante,,sofisticado,2016,10
+2016-10-01,moda preppy,,sofisticado,2016,10
+2016-10-01,old money,0.0,sofisticado,2016,10
+2016-10-01,pija,,sofisticado,2016,10
+2016-10-01,choni,63.2,urbano,2016,10
+2016-10-01,shein,69.4,urbano,2016,10
+2016-10-01,streetwear,22.8,urbano,2016,10
+2016-10-01,trap style,,urbano,2016,10
+2016-10-01,y2k outfit,,urbano,2016,10
+2016-11-01,comprar ropa online,78.5,consciente_compra,2016,11
+2016-11-01,moda sostenible,7.75,consciente_compra,2016,11
+2016-11-01,ropa vintage,62.5,consciente_compra,2016,11
+2016-11-01,slow fashion,0.0,consciente_compra,2016,11
+2016-11-01,zara online,24.0,consciente_compra,2016,11
+2016-11-01,cayetana,,sofisticado,2016,11
+2016-11-01,minimalista elegante,,sofisticado,2016,11
+2016-11-01,moda preppy,,sofisticado,2016,11
+2016-11-01,old money,0.0,sofisticado,2016,11
+2016-11-01,pija,,sofisticado,2016,11
+2016-11-01,choni,53.75,urbano,2016,11
+2016-11-01,shein,87.0,urbano,2016,11
+2016-11-01,streetwear,50.25,urbano,2016,11
+2016-11-01,trap style,,urbano,2016,11
+2016-11-01,y2k outfit,,urbano,2016,11
+2016-12-01,comprar ropa online,65.5,consciente_compra,2016,12
+2016-12-01,moda sostenible,0.0,consciente_compra,2016,12
+2016-12-01,ropa vintage,68.25,consciente_compra,2016,12
+2016-12-01,slow fashion,0.0,consciente_compra,2016,12
+2016-12-01,zara online,19.25,consciente_compra,2016,12
+2016-12-01,cayetana,,sofisticado,2016,12
+2016-12-01,minimalista elegante,,sofisticado,2016,12
+2016-12-01,moda preppy,,sofisticado,2016,12
+2016-12-01,old money,0.0,sofisticado,2016,12
+2016-12-01,pija,,sofisticado,2016,12
+2016-12-01,choni,62.25,urbano,2016,12
+2016-12-01,shein,72.75,urbano,2016,12
+2016-12-01,streetwear,29.25,urbano,2016,12
+2016-12-01,trap style,,urbano,2016,12
+2016-12-01,y2k outfit,,urbano,2016,12
+2017-01-01,comprar ropa online,80.6,consciente_compra,2017,1
+2017-01-01,moda sostenible,0.0,consciente_compra,2017,1
+2017-01-01,ropa vintage,58.4,consciente_compra,2017,1
+2017-01-01,slow fashion,20.0,consciente_compra,2017,1
+2017-01-01,zara online,60.8,consciente_compra,2017,1
+2017-01-01,cayetana,,sofisticado,2017,1
+2017-01-01,minimalista elegante,0.0,sofisticado,2017,1
+2017-01-01,moda preppy,,sofisticado,2017,1
+2017-01-01,old money,0.0,sofisticado,2017,1
+2017-01-01,pija,,sofisticado,2017,1
+2017-01-01,choni,70.8,urbano,2017,1
+2017-01-01,shein,30.8,urbano,2017,1
+2017-01-01,streetwear,10.4,urbano,2017,1
+2017-01-01,trap style,,urbano,2017,1
+2017-01-01,y2k outfit,,urbano,2017,1
+2017-02-01,comprar ropa online,77.5,consciente_compra,2017,2
+2017-02-01,moda sostenible,27.0,consciente_compra,2017,2
+2017-02-01,ropa vintage,74.5,consciente_compra,2017,2
+2017-02-01,slow fashion,21.25,consciente_compra,2017,2
+2017-02-01,zara online,35.0,consciente_compra,2017,2
+2017-02-01,cayetana,,sofisticado,2017,2
+2017-02-01,minimalista elegante,0.0,sofisticado,2017,2
+2017-02-01,moda preppy,,sofisticado,2017,2
+2017-02-01,old money,0.0,sofisticado,2017,2
+2017-02-01,pija,,sofisticado,2017,2
+2017-02-01,choni,71.0,urbano,2017,2
+2017-02-01,shein,35.25,urbano,2017,2
+2017-02-01,streetwear,28.75,urbano,2017,2
+2017-02-01,trap style,,urbano,2017,2
+2017-02-01,y2k outfit,,urbano,2017,2
+2017-03-01,comprar ropa online,82.0,consciente_compra,2017,3
+2017-03-01,moda sostenible,27.75,consciente_compra,2017,3
+2017-03-01,ropa vintage,59.75,consciente_compra,2017,3
+2017-03-01,slow fashion,0.0,consciente_compra,2017,3
+2017-03-01,zara online,38.75,consciente_compra,2017,3
+2017-03-01,cayetana,,sofisticado,2017,3
+2017-03-01,minimalista elegante,0.0,sofisticado,2017,3
+2017-03-01,moda preppy,,sofisticado,2017,3
+2017-03-01,old money,0.0,sofisticado,2017,3
+2017-03-01,pija,,sofisticado,2017,3
+2017-03-01,choni,69.25,urbano,2017,3
+2017-03-01,shein,48.25,urbano,2017,3
+2017-03-01,streetwear,19.0,urbano,2017,3
+2017-03-01,trap style,,urbano,2017,3
+2017-03-01,y2k outfit,,urbano,2017,3
+2017-04-01,comprar ropa online,79.6,consciente_compra,2017,4
+2017-04-01,moda sostenible,32.4,consciente_compra,2017,4
+2017-04-01,ropa vintage,65.8,consciente_compra,2017,4
+2017-04-01,slow fashion,0.0,consciente_compra,2017,4
+2017-04-01,zara online,44.4,consciente_compra,2017,4
+2017-04-01,cayetana,,sofisticado,2017,4
+2017-04-01,minimalista elegante,0.0,sofisticado,2017,4
+2017-04-01,moda preppy,,sofisticado,2017,4
+2017-04-01,old money,0.0,sofisticado,2017,4
+2017-04-01,pija,,sofisticado,2017,4
+2017-04-01,choni,57.6,urbano,2017,4
+2017-04-01,shein,42.2,urbano,2017,4
+2017-04-01,streetwear,9.0,urbano,2017,4
+2017-04-01,trap style,,urbano,2017,4
+2017-04-01,y2k outfit,,urbano,2017,4
+2017-05-01,comprar ropa online,75.75,consciente_compra,2017,5
+2017-05-01,moda sostenible,0.0,consciente_compra,2017,5
+2017-05-01,ropa vintage,56.75,consciente_compra,2017,5
+2017-05-01,slow fashion,20.75,consciente_compra,2017,5
+2017-05-01,zara online,39.75,consciente_compra,2017,5
+2017-05-01,cayetana,,sofisticado,2017,5
+2017-05-01,minimalista elegante,25.0,sofisticado,2017,5
+2017-05-01,moda preppy,,sofisticado,2017,5
+2017-05-01,old money,0.0,sofisticado,2017,5
+2017-05-01,pija,,sofisticado,2017,5
+2017-05-01,choni,59.0,urbano,2017,5
+2017-05-01,shein,43.5,urbano,2017,5
+2017-05-01,streetwear,32.75,urbano,2017,5
+2017-05-01,trap style,,urbano,2017,5
+2017-05-01,y2k outfit,,urbano,2017,5
+2017-06-01,comprar ropa online,64.5,consciente_compra,2017,6
+2017-06-01,moda sostenible,0.0,consciente_compra,2017,6
+2017-06-01,ropa vintage,48.75,consciente_compra,2017,6
+2017-06-01,slow fashion,0.0,consciente_compra,2017,6
+2017-06-01,zara online,42.25,consciente_compra,2017,6
+2017-06-01,cayetana,,sofisticado,2017,6
+2017-06-01,minimalista elegante,0.0,sofisticado,2017,6
+2017-06-01,moda preppy,,sofisticado,2017,6
+2017-06-01,old money,0.0,sofisticado,2017,6
+2017-06-01,pija,,sofisticado,2017,6
+2017-06-01,choni,52.75,urbano,2017,6
+2017-06-01,shein,52.75,urbano,2017,6
+2017-06-01,streetwear,23.25,urbano,2017,6
+2017-06-01,trap style,,urbano,2017,6
+2017-06-01,y2k outfit,,urbano,2017,6
+2017-07-01,comprar ropa online,55.6,consciente_compra,2017,7
+2017-07-01,moda sostenible,0.0,consciente_compra,2017,7
+2017-07-01,ropa vintage,60.4,consciente_compra,2017,7
+2017-07-01,slow fashion,0.0,consciente_compra,2017,7
+2017-07-01,zara online,40.0,consciente_compra,2017,7
+2017-07-01,cayetana,,sofisticado,2017,7
+2017-07-01,minimalista elegante,0.0,sofisticado,2017,7
+2017-07-01,moda preppy,,sofisticado,2017,7
+2017-07-01,old money,18.0,sofisticado,2017,7
+2017-07-01,pija,,sofisticado,2017,7
+2017-07-01,choni,59.0,urbano,2017,7
+2017-07-01,shein,54.6,urbano,2017,7
+2017-07-01,streetwear,46.6,urbano,2017,7
+2017-07-01,trap style,,urbano,2017,7
+2017-07-01,y2k outfit,,urbano,2017,7
+2017-08-01,comprar ropa online,65.75,consciente_compra,2017,8
+2017-08-01,moda sostenible,0.0,consciente_compra,2017,8
+2017-08-01,ropa vintage,61.75,consciente_compra,2017,8
+2017-08-01,slow fashion,0.0,consciente_compra,2017,8
+2017-08-01,zara online,35.5,consciente_compra,2017,8
+2017-08-01,cayetana,,sofisticado,2017,8
+2017-08-01,minimalista elegante,0.0,sofisticado,2017,8
+2017-08-01,moda preppy,,sofisticado,2017,8
+2017-08-01,old money,0.0,sofisticado,2017,8
+2017-08-01,pija,,sofisticado,2017,8
+2017-08-01,choni,59.5,urbano,2017,8
+2017-08-01,shein,56.5,urbano,2017,8
+2017-08-01,streetwear,36.75,urbano,2017,8
+2017-08-01,trap style,,urbano,2017,8
+2017-08-01,y2k outfit,,urbano,2017,8
+2017-09-01,comprar ropa online,81.75,consciente_compra,2017,9
+2017-09-01,moda sostenible,32.0,consciente_compra,2017,9
+2017-09-01,ropa vintage,64.0,consciente_compra,2017,9
+2017-09-01,slow fashion,0.0,consciente_compra,2017,9
+2017-09-01,zara online,41.0,consciente_compra,2017,9
+2017-09-01,cayetana,,sofisticado,2017,9
+2017-09-01,minimalista elegante,0.0,sofisticado,2017,9
+2017-09-01,moda preppy,,sofisticado,2017,9
+2017-09-01,old money,0.0,sofisticado,2017,9
+2017-09-01,pija,,sofisticado,2017,9
+2017-09-01,choni,56.75,urbano,2017,9
+2017-09-01,shein,55.0,urbano,2017,9
+2017-09-01,streetwear,26.75,urbano,2017,9
+2017-09-01,trap style,,urbano,2017,9
+2017-09-01,y2k outfit,,urbano,2017,9
+2017-10-01,comprar ropa online,78.6,consciente_compra,2017,10
+2017-10-01,moda sostenible,0.0,consciente_compra,2017,10
+2017-10-01,ropa vintage,68.2,consciente_compra,2017,10
+2017-10-01,slow fashion,0.0,consciente_compra,2017,10
+2017-10-01,zara online,41.2,consciente_compra,2017,10
+2017-10-01,cayetana,,sofisticado,2017,10
+2017-10-01,minimalista elegante,0.0,sofisticado,2017,10
+2017-10-01,moda preppy,,sofisticado,2017,10
+2017-10-01,old money,0.0,sofisticado,2017,10
+2017-10-01,pija,,sofisticado,2017,10
+2017-10-01,choni,49.0,urbano,2017,10
+2017-10-01,shein,62.6,urbano,2017,10
+2017-10-01,streetwear,50.4,urbano,2017,10
+2017-10-01,trap style,,urbano,2017,10
+2017-10-01,y2k outfit,,urbano,2017,10
+2017-11-01,comprar ropa online,92.0,consciente_compra,2017,11
+2017-11-01,moda sostenible,53.5,consciente_compra,2017,11
+2017-11-01,ropa vintage,82.0,consciente_compra,2017,11
+2017-11-01,slow fashion,0.0,consciente_compra,2017,11
+2017-11-01,zara online,65.5,consciente_compra,2017,11
+2017-11-01,cayetana,,sofisticado,2017,11
+2017-11-01,minimalista elegante,0.0,sofisticado,2017,11
+2017-11-01,moda preppy,,sofisticado,2017,11
+2017-11-01,old money,0.0,sofisticado,2017,11
+2017-11-01,pija,,sofisticado,2017,11
+2017-11-01,choni,50.0,urbano,2017,11
+2017-11-01,shein,84.25,urbano,2017,11
+2017-11-01,streetwear,59.25,urbano,2017,11
+2017-11-01,trap style,,urbano,2017,11
+2017-11-01,y2k outfit,,urbano,2017,11
+2017-12-01,comprar ropa online,70.2,consciente_compra,2017,12
+2017-12-01,moda sostenible,10.4,consciente_compra,2017,12
+2017-12-01,ropa vintage,88.0,consciente_compra,2017,12
+2017-12-01,slow fashion,0.0,consciente_compra,2017,12
+2017-12-01,zara online,55.8,consciente_compra,2017,12
+2017-12-01,cayetana,,sofisticado,2017,12
+2017-12-01,minimalista elegante,0.0,sofisticado,2017,12
+2017-12-01,moda preppy,0.0,sofisticado,2017,12
+2017-12-01,old money,20.0,sofisticado,2017,12
+2017-12-01,pija,,sofisticado,2017,12
+2017-12-01,choni,60.0,urbano,2017,12
+2017-12-01,shein,64.4,urbano,2017,12
+2017-12-01,streetwear,60.2,urbano,2017,12
+2017-12-01,trap style,,urbano,2017,12
+2017-12-01,y2k outfit,,urbano,2017,12
+2018-01-01,comprar ropa online,78.75,consciente_compra,2018,1
+2018-01-01,moda sostenible,25.0,consciente_compra,2018,1
+2018-01-01,ropa vintage,78.75,consciente_compra,2018,1
+2018-01-01,slow fashion,0.0,consciente_compra,2018,1
+2018-01-01,zara online,67.75,consciente_compra,2018,1
+2018-01-01,cayetana,,sofisticado,2018,1
+2018-01-01,minimalista elegante,0.0,sofisticado,2018,1
+2018-01-01,moda preppy,16.5,sofisticado,2018,1
+2018-01-01,old money,0.0,sofisticado,2018,1
+2018-01-01,pija,,sofisticado,2018,1
+2018-01-01,choni,78.0,urbano,2018,1
+2018-01-01,shein,,urbano,2018,1
+2018-01-01,streetwear,41.0,urbano,2018,1
+2018-01-01,trap style,,urbano,2018,1
+2018-01-01,y2k outfit,,urbano,2018,1
+2018-02-01,comprar ropa online,69.25,consciente_compra,2018,2
+2018-02-01,moda sostenible,13.75,consciente_compra,2018,2
+2018-02-01,ropa vintage,69.25,consciente_compra,2018,2
+2018-02-01,slow fashion,0.0,consciente_compra,2018,2
+2018-02-01,zara online,38.75,consciente_compra,2018,2
+2018-02-01,cayetana,,sofisticado,2018,2
+2018-02-01,minimalista elegante,0.0,sofisticado,2018,2
+2018-02-01,moda preppy,0.0,sofisticado,2018,2
+2018-02-01,old money,0.0,sofisticado,2018,2
+2018-02-01,pija,,sofisticado,2018,2
+2018-02-01,choni,81.0,urbano,2018,2
+2018-02-01,shein,,urbano,2018,2
+2018-02-01,streetwear,48.25,urbano,2018,2
+2018-02-01,trap style,,urbano,2018,2
+2018-02-01,y2k outfit,,urbano,2018,2
+2018-03-01,comprar ropa online,69.0,consciente_compra,2018,3
+2018-03-01,moda sostenible,36.75,consciente_compra,2018,3
+2018-03-01,ropa vintage,80.0,consciente_compra,2018,3
+2018-03-01,slow fashion,0.0,consciente_compra,2018,3
+2018-03-01,zara online,37.0,consciente_compra,2018,3
+2018-03-01,cayetana,,sofisticado,2018,3
+2018-03-01,minimalista elegante,0.0,sofisticado,2018,3
+2018-03-01,moda preppy,0.0,sofisticado,2018,3
+2018-03-01,old money,24.0,sofisticado,2018,3
+2018-03-01,pija,,sofisticado,2018,3
+2018-03-01,choni,72.5,urbano,2018,3
+2018-03-01,shein,,urbano,2018,3
+2018-03-01,streetwear,48.0,urbano,2018,3
+2018-03-01,trap style,,urbano,2018,3
+2018-03-01,y2k outfit,,urbano,2018,3
+2018-04-01,comprar ropa online,70.8,consciente_compra,2018,4
+2018-04-01,moda sostenible,24.6,consciente_compra,2018,4
+2018-04-01,ropa vintage,72.8,consciente_compra,2018,4
+2018-04-01,slow fashion,20.0,consciente_compra,2018,4
+2018-04-01,zara online,41.0,consciente_compra,2018,4
+2018-04-01,cayetana,,sofisticado,2018,4
+2018-04-01,minimalista elegante,0.0,sofisticado,2018,4
+2018-04-01,moda preppy,0.0,sofisticado,2018,4
+2018-04-01,old money,0.0,sofisticado,2018,4
+2018-04-01,pija,,sofisticado,2018,4
+2018-04-01,choni,78.6,urbano,2018,4
+2018-04-01,shein,,urbano,2018,4
+2018-04-01,streetwear,43.4,urbano,2018,4
+2018-04-01,trap style,,urbano,2018,4
+2018-04-01,y2k outfit,,urbano,2018,4
+2018-05-01,comprar ropa online,65.0,consciente_compra,2018,5
+2018-05-01,moda sostenible,38.5,consciente_compra,2018,5
+2018-05-01,ropa vintage,54.75,consciente_compra,2018,5
+2018-05-01,slow fashion,0.0,consciente_compra,2018,5
+2018-05-01,zara online,37.25,consciente_compra,2018,5
+2018-05-01,cayetana,,sofisticado,2018,5
+2018-05-01,minimalista elegante,0.0,sofisticado,2018,5
+2018-05-01,moda preppy,0.0,sofisticado,2018,5
+2018-05-01,old money,0.0,sofisticado,2018,5
+2018-05-01,pija,,sofisticado,2018,5
+2018-05-01,choni,66.0,urbano,2018,5
+2018-05-01,shein,,urbano,2018,5
+2018-05-01,streetwear,46.75,urbano,2018,5
+2018-05-01,trap style,,urbano,2018,5
+2018-05-01,y2k outfit,,urbano,2018,5
+2018-06-01,comprar ropa online,58.25,consciente_compra,2018,6
+2018-06-01,moda sostenible,23.25,consciente_compra,2018,6
+2018-06-01,ropa vintage,48.5,consciente_compra,2018,6
+2018-06-01,slow fashion,0.0,consciente_compra,2018,6
+2018-06-01,zara online,41.75,consciente_compra,2018,6
+2018-06-01,cayetana,,sofisticado,2018,6
+2018-06-01,minimalista elegante,0.0,sofisticado,2018,6
+2018-06-01,moda preppy,0.0,sofisticado,2018,6
+2018-06-01,old money,42.0,sofisticado,2018,6
+2018-06-01,pija,,sofisticado,2018,6
+2018-06-01,choni,65.5,urbano,2018,6
+2018-06-01,shein,,urbano,2018,6
+2018-06-01,streetwear,38.25,urbano,2018,6
+2018-06-01,trap style,,urbano,2018,6
+2018-06-01,y2k outfit,,urbano,2018,6
+2018-07-01,comprar ropa online,51.0,consciente_compra,2018,7
+2018-07-01,moda sostenible,19.6,consciente_compra,2018,7
+2018-07-01,ropa vintage,48.8,consciente_compra,2018,7
+2018-07-01,slow fashion,0.0,consciente_compra,2018,7
+2018-07-01,zara online,42.6,consciente_compra,2018,7
+2018-07-01,cayetana,,sofisticado,2018,7
+2018-07-01,minimalista elegante,0.0,sofisticado,2018,7
+2018-07-01,moda preppy,0.0,sofisticado,2018,7
+2018-07-01,old money,0.0,sofisticado,2018,7
+2018-07-01,pija,,sofisticado,2018,7
+2018-07-01,choni,72.2,urbano,2018,7
+2018-07-01,shein,,urbano,2018,7
+2018-07-01,streetwear,69.8,urbano,2018,7
+2018-07-01,trap style,,urbano,2018,7
+2018-07-01,y2k outfit,,urbano,2018,7
+2018-08-01,comprar ropa online,54.5,consciente_compra,2018,8
+2018-08-01,moda sostenible,0.0,consciente_compra,2018,8
+2018-08-01,ropa vintage,72.0,consciente_compra,2018,8
+2018-08-01,slow fashion,0.0,consciente_compra,2018,8
+2018-08-01,zara online,31.25,consciente_compra,2018,8
+2018-08-01,cayetana,,sofisticado,2018,8
+2018-08-01,minimalista elegante,0.0,sofisticado,2018,8
+2018-08-01,moda preppy,0.0,sofisticado,2018,8
+2018-08-01,old money,0.0,sofisticado,2018,8
+2018-08-01,pija,,sofisticado,2018,8
+2018-08-01,choni,82.75,urbano,2018,8
+2018-08-01,shein,,urbano,2018,8
+2018-08-01,streetwear,57.25,urbano,2018,8
+2018-08-01,trap style,,urbano,2018,8
+2018-08-01,y2k outfit,,urbano,2018,8
+2018-09-01,comprar ropa online,63.4,consciente_compra,2018,9
+2018-09-01,moda sostenible,10.2,consciente_compra,2018,9
+2018-09-01,ropa vintage,68.6,consciente_compra,2018,9
+2018-09-01,slow fashion,0.0,consciente_compra,2018,9
+2018-09-01,zara online,37.4,consciente_compra,2018,9
+2018-09-01,cayetana,,sofisticado,2018,9
+2018-09-01,minimalista elegante,0.0,sofisticado,2018,9
+2018-09-01,moda preppy,0.0,sofisticado,2018,9
+2018-09-01,old money,0.0,sofisticado,2018,9
+2018-09-01,pija,,sofisticado,2018,9
+2018-09-01,choni,67.0,urbano,2018,9
+2018-09-01,shein,,urbano,2018,9
+2018-09-01,streetwear,64.6,urbano,2018,9
+2018-09-01,trap style,,urbano,2018,9
+2018-09-01,y2k outfit,,urbano,2018,9
+2018-10-01,comprar ropa online,73.75,consciente_compra,2018,10
+2018-10-01,moda sostenible,26.0,consciente_compra,2018,10
+2018-10-01,ropa vintage,71.5,consciente_compra,2018,10
+2018-10-01,slow fashion,0.0,consciente_compra,2018,10
+2018-10-01,zara online,43.75,consciente_compra,2018,10
+2018-10-01,cayetana,,sofisticado,2018,10
+2018-10-01,minimalista elegante,0.0,sofisticado,2018,10
+2018-10-01,moda preppy,0.0,sofisticado,2018,10
+2018-10-01,old money,0.0,sofisticado,2018,10
+2018-10-01,pija,,sofisticado,2018,10
+2018-10-01,choni,72.0,urbano,2018,10
+2018-10-01,shein,,urbano,2018,10
+2018-10-01,streetwear,71.25,urbano,2018,10
+2018-10-01,trap style,,urbano,2018,10
+2018-10-01,y2k outfit,,urbano,2018,10
+2018-11-01,comprar ropa online,72.5,consciente_compra,2018,11
+2018-11-01,moda sostenible,14.25,consciente_compra,2018,11
+2018-11-01,ropa vintage,62.5,consciente_compra,2018,11
+2018-11-01,slow fashion,0.0,consciente_compra,2018,11
+2018-11-01,zara online,60.25,consciente_compra,2018,11
+2018-11-01,cayetana,,sofisticado,2018,11
+2018-11-01,minimalista elegante,25.0,sofisticado,2018,11
+2018-11-01,moda preppy,25.0,sofisticado,2018,11
+2018-11-01,old money,0.0,sofisticado,2018,11
+2018-11-01,pija,,sofisticado,2018,11
+2018-11-01,choni,75.0,urbano,2018,11
+2018-11-01,shein,,urbano,2018,11
+2018-11-01,streetwear,80.0,urbano,2018,11
+2018-11-01,trap style,,urbano,2018,11
+2018-11-01,y2k outfit,,urbano,2018,11
+2018-12-01,comprar ropa online,60.6,consciente_compra,2018,12
+2018-12-01,moda sostenible,10.4,consciente_compra,2018,12
+2018-12-01,ropa vintage,64.0,consciente_compra,2018,12
+2018-12-01,slow fashion,14.8,consciente_compra,2018,12
+2018-12-01,zara online,45.0,consciente_compra,2018,12
+2018-12-01,cayetana,,sofisticado,2018,12
+2018-12-01,minimalista elegante,0.0,sofisticado,2018,12
+2018-12-01,moda preppy,0.0,sofisticado,2018,12
+2018-12-01,old money,0.0,sofisticado,2018,12
+2018-12-01,pija,,sofisticado,2018,12
+2018-12-01,choni,66.2,urbano,2018,12
+2018-12-01,shein,31.0,urbano,2018,12
+2018-12-01,streetwear,78.2,urbano,2018,12
+2018-12-01,trap style,,urbano,2018,12
+2018-12-01,y2k outfit,,urbano,2018,12
+2019-01-01,comprar ropa online,82.0,consciente_compra,2019,1
+2019-01-01,moda sostenible,33.25,consciente_compra,2019,1
+2019-01-01,ropa vintage,75.5,consciente_compra,2019,1
+2019-01-01,slow fashion,0.0,consciente_compra,2019,1
+2019-01-01,zara online,58.0,consciente_compra,2019,1
+2019-01-01,cayetana,3.75,sofisticado,2019,1
+2019-01-01,minimalista elegante,,sofisticado,2019,1
+2019-01-01,moda preppy,,sofisticado,2019,1
+2019-01-01,old money,23.0,sofisticado,2019,1
+2019-01-01,pija,,sofisticado,2019,1
+2019-01-01,choni,65.5,urbano,2019,1
+2019-01-01,shein,38.75,urbano,2019,1
+2019-01-01,streetwear,69.5,urbano,2019,1
+2019-01-01,trap style,,urbano,2019,1
+2019-01-01,y2k outfit,,urbano,2019,1
+2019-02-01,comprar ropa online,72.25,consciente_compra,2019,2
+2019-02-01,moda sostenible,39.0,consciente_compra,2019,2
+2019-02-01,ropa vintage,71.75,consciente_compra,2019,2
+2019-02-01,slow fashion,0.0,consciente_compra,2019,2
+2019-02-01,zara online,36.0,consciente_compra,2019,2
+2019-02-01,cayetana,3.5,sofisticado,2019,2
+2019-02-01,minimalista elegante,,sofisticado,2019,2
+2019-02-01,moda preppy,,sofisticado,2019,2
+2019-02-01,old money,0.0,sofisticado,2019,2
+2019-02-01,pija,,sofisticado,2019,2
+2019-02-01,choni,78.75,urbano,2019,2
+2019-02-01,shein,39.5,urbano,2019,2
+2019-02-01,streetwear,56.25,urbano,2019,2
+2019-02-01,trap style,,urbano,2019,2
+2019-02-01,y2k outfit,,urbano,2019,2
+2019-03-01,comprar ropa online,87.8,consciente_compra,2019,3
+2019-03-01,moda sostenible,44.2,consciente_compra,2019,3
+2019-03-01,ropa vintage,71.0,consciente_compra,2019,3
+2019-03-01,slow fashion,50.8,consciente_compra,2019,3
+2019-03-01,zara online,34.6,consciente_compra,2019,3
+2019-03-01,cayetana,25.4,sofisticado,2019,3
+2019-03-01,minimalista elegante,,sofisticado,2019,3
+2019-03-01,moda preppy,,sofisticado,2019,3
+2019-03-01,old money,0.0,sofisticado,2019,3
+2019-03-01,pija,,sofisticado,2019,3
+2019-03-01,choni,60.6,urbano,2019,3
+2019-03-01,shein,44.4,urbano,2019,3
+2019-03-01,streetwear,66.6,urbano,2019,3
+2019-03-01,trap style,,urbano,2019,3
+2019-03-01,y2k outfit,,urbano,2019,3
+2019-04-01,comprar ropa online,77.25,consciente_compra,2019,4
+2019-04-01,moda sostenible,53.75,consciente_compra,2019,4
+2019-04-01,ropa vintage,64.25,consciente_compra,2019,4
+2019-04-01,slow fashion,17.75,consciente_compra,2019,4
+2019-04-01,zara online,35.0,consciente_compra,2019,4
+2019-04-01,cayetana,57.5,sofisticado,2019,4
+2019-04-01,minimalista elegante,,sofisticado,2019,4
+2019-04-01,moda preppy,,sofisticado,2019,4
+2019-04-01,old money,0.0,sofisticado,2019,4
+2019-04-01,pija,,sofisticado,2019,4
+2019-04-01,choni,69.25,urbano,2019,4
+2019-04-01,shein,46.5,urbano,2019,4
+2019-04-01,streetwear,63.0,urbano,2019,4
+2019-04-01,trap style,,urbano,2019,4
+2019-04-01,y2k outfit,,urbano,2019,4
+2019-05-01,comprar ropa online,82.25,consciente_compra,2019,5
+2019-05-01,moda sostenible,30.25,consciente_compra,2019,5
+2019-05-01,ropa vintage,57.0,consciente_compra,2019,5
+2019-05-01,slow fashion,0.0,consciente_compra,2019,5
+2019-05-01,zara online,37.5,consciente_compra,2019,5
+2019-05-01,cayetana,12.75,sofisticado,2019,5
+2019-05-01,minimalista elegante,,sofisticado,2019,5
+2019-05-01,moda preppy,,sofisticado,2019,5
+2019-05-01,old money,19.5,sofisticado,2019,5
+2019-05-01,pija,,sofisticado,2019,5
+2019-05-01,choni,65.75,urbano,2019,5
+2019-05-01,shein,57.75,urbano,2019,5
+2019-05-01,streetwear,65.5,urbano,2019,5
+2019-05-01,trap style,,urbano,2019,5
+2019-05-01,y2k outfit,,urbano,2019,5
+2019-06-01,comprar ropa online,72.2,consciente_compra,2019,6
+2019-06-01,moda sostenible,27.6,consciente_compra,2019,6
+2019-06-01,ropa vintage,50.8,consciente_compra,2019,6
+2019-06-01,slow fashion,0.0,consciente_compra,2019,6
+2019-06-01,zara online,45.8,consciente_compra,2019,6
+2019-06-01,cayetana,6.2,sofisticado,2019,6
+2019-06-01,minimalista elegante,,sofisticado,2019,6
+2019-06-01,moda preppy,,sofisticado,2019,6
+2019-06-01,old money,0.0,sofisticado,2019,6
+2019-06-01,pija,,sofisticado,2019,6
+2019-06-01,choni,62.8,urbano,2019,6
+2019-06-01,shein,69.8,urbano,2019,6
+2019-06-01,streetwear,55.4,urbano,2019,6
+2019-06-01,trap style,,urbano,2019,6
+2019-06-01,y2k outfit,,urbano,2019,6
+2019-07-01,comprar ropa online,62.75,consciente_compra,2019,7
+2019-07-01,moda sostenible,35.75,consciente_compra,2019,7
+2019-07-01,ropa vintage,60.0,consciente_compra,2019,7
+2019-07-01,slow fashion,0.0,consciente_compra,2019,7
+2019-07-01,zara online,39.25,consciente_compra,2019,7
+2019-07-01,cayetana,10.5,sofisticado,2019,7
+2019-07-01,minimalista elegante,,sofisticado,2019,7
+2019-07-01,moda preppy,,sofisticado,2019,7
+2019-07-01,old money,0.0,sofisticado,2019,7
+2019-07-01,pija,,sofisticado,2019,7
+2019-07-01,choni,67.5,urbano,2019,7
+2019-07-01,shein,58.0,urbano,2019,7
+2019-07-01,streetwear,80.0,urbano,2019,7
+2019-07-01,trap style,,urbano,2019,7
+2019-07-01,y2k outfit,,urbano,2019,7
+2019-08-01,comprar ropa online,61.75,consciente_compra,2019,8
+2019-08-01,moda sostenible,50.75,consciente_compra,2019,8
+2019-08-01,ropa vintage,75.25,consciente_compra,2019,8
+2019-08-01,slow fashion,23.25,consciente_compra,2019,8
+2019-08-01,zara online,32.75,consciente_compra,2019,8
+2019-08-01,cayetana,8.25,sofisticado,2019,8
+2019-08-01,minimalista elegante,,sofisticado,2019,8
+2019-08-01,moda preppy,,sofisticado,2019,8
+2019-08-01,old money,41.75,sofisticado,2019,8
+2019-08-01,pija,,sofisticado,2019,8
+2019-08-01,choni,62.0,urbano,2019,8
+2019-08-01,shein,47.75,urbano,2019,8
+2019-08-01,streetwear,81.75,urbano,2019,8
+2019-08-01,trap style,,urbano,2019,8
+2019-08-01,y2k outfit,,urbano,2019,8
+2019-09-01,comprar ropa online,73.6,consciente_compra,2019,9
+2019-09-01,moda sostenible,41.8,consciente_compra,2019,9
+2019-09-01,ropa vintage,88.8,consciente_compra,2019,9
+2019-09-01,slow fashion,0.0,consciente_compra,2019,9
+2019-09-01,zara online,35.4,consciente_compra,2019,9
+2019-09-01,cayetana,15.2,sofisticado,2019,9
+2019-09-01,minimalista elegante,,sofisticado,2019,9
+2019-09-01,moda preppy,,sofisticado,2019,9
+2019-09-01,old money,15.0,sofisticado,2019,9
+2019-09-01,pija,,sofisticado,2019,9
+2019-09-01,choni,65.4,urbano,2019,9
+2019-09-01,shein,47.6,urbano,2019,9
+2019-09-01,streetwear,69.4,urbano,2019,9
+2019-09-01,trap style,,urbano,2019,9
+2019-09-01,y2k outfit,,urbano,2019,9
+2019-10-01,comprar ropa online,80.5,consciente_compra,2019,10
+2019-10-01,moda sostenible,53.75,consciente_compra,2019,10
+2019-10-01,ropa vintage,87.5,consciente_compra,2019,10
+2019-10-01,slow fashion,18.25,consciente_compra,2019,10
+2019-10-01,zara online,42.0,consciente_compra,2019,10
+2019-10-01,cayetana,17.75,sofisticado,2019,10
+2019-10-01,minimalista elegante,,sofisticado,2019,10
+2019-10-01,moda preppy,,sofisticado,2019,10
+2019-10-01,old money,0.0,sofisticado,2019,10
+2019-10-01,pija,,sofisticado,2019,10
+2019-10-01,choni,57.0,urbano,2019,10
+2019-10-01,shein,59.0,urbano,2019,10
+2019-10-01,streetwear,81.5,urbano,2019,10
+2019-10-01,trap style,,urbano,2019,10
+2019-10-01,y2k outfit,,urbano,2019,10
+2019-11-01,comprar ropa online,80.75,consciente_compra,2019,11
+2019-11-01,moda sostenible,80.0,consciente_compra,2019,11
+2019-11-01,ropa vintage,78.75,consciente_compra,2019,11
+2019-11-01,slow fashion,0.0,consciente_compra,2019,11
+2019-11-01,zara online,61.0,consciente_compra,2019,11
+2019-11-01,cayetana,12.0,sofisticado,2019,11
+2019-11-01,minimalista elegante,,sofisticado,2019,11
+2019-11-01,moda preppy,,sofisticado,2019,11
+2019-11-01,old money,0.0,sofisticado,2019,11
+2019-11-01,pija,,sofisticado,2019,11
+2019-11-01,choni,51.25,urbano,2019,11
+2019-11-01,shein,87.0,urbano,2019,11
+2019-11-01,streetwear,83.25,urbano,2019,11
+2019-11-01,trap style,,urbano,2019,11
+2019-11-01,y2k outfit,,urbano,2019,11
+2019-12-01,comprar ropa online,56.0,consciente_compra,2019,12
+2019-12-01,moda sostenible,59.6,consciente_compra,2019,12
+2019-12-01,ropa vintage,79.2,consciente_compra,2019,12
+2019-12-01,slow fashion,0.0,consciente_compra,2019,12
+2019-12-01,zara online,52.0,consciente_compra,2019,12
+2019-12-01,cayetana,9.0,sofisticado,2019,12
+2019-12-01,minimalista elegante,0.0,sofisticado,2019,12
+2019-12-01,moda preppy,,sofisticado,2019,12
+2019-12-01,old money,20.0,sofisticado,2019,12
+2019-12-01,pija,,sofisticado,2019,12
+2019-12-01,choni,55.6,urbano,2019,12
+2019-12-01,shein,64.2,urbano,2019,12
+2019-12-01,streetwear,78.0,urbano,2019,12
+2019-12-01,trap style,,urbano,2019,12
+2019-12-01,y2k outfit,,urbano,2019,12
+2020-01-01,comprar ropa online,19.25,consciente_compra,2020,1
+2020-01-01,moda sostenible,58.5,consciente_compra,2020,1
+2020-01-01,ropa vintage,67.0,consciente_compra,2020,1
+2020-01-01,slow fashion,18.75,consciente_compra,2020,1
+2020-01-01,zara online,68.5,consciente_compra,2020,1
+2020-01-01,cayetana,7.75,sofisticado,2020,1
+2020-01-01,minimalista elegante,25.0,sofisticado,2020,1
+2020-01-01,moda preppy,,sofisticado,2020,1
+2020-01-01,old money,0.0,sofisticado,2020,1
+2020-01-01,pija,,sofisticado,2020,1
+2020-01-01,choni,58.25,urbano,2020,1
+2020-01-01,shein,29.75,urbano,2020,1
+2020-01-01,streetwear,68.75,urbano,2020,1
+2020-01-01,trap style,,urbano,2020,1
+2020-01-01,y2k outfit,,urbano,2020,1
+2020-02-01,comprar ropa online,19.0,consciente_compra,2020,2
+2020-02-01,moda sostenible,72.0,consciente_compra,2020,2
+2020-02-01,ropa vintage,58.25,consciente_compra,2020,2
+2020-02-01,slow fashion,22.0,consciente_compra,2020,2
+2020-02-01,zara online,39.25,consciente_compra,2020,2
+2020-02-01,cayetana,8.75,sofisticado,2020,2
+2020-02-01,minimalista elegante,0.0,sofisticado,2020,2
+2020-02-01,moda preppy,,sofisticado,2020,2
+2020-02-01,old money,16.5,sofisticado,2020,2
+2020-02-01,pija,,sofisticado,2020,2
+2020-02-01,choni,79.0,urbano,2020,2
+2020-02-01,shein,31.25,urbano,2020,2
+2020-02-01,streetwear,64.0,urbano,2020,2
+2020-02-01,trap style,,urbano,2020,2
+2020-02-01,y2k outfit,,urbano,2020,2
+2020-03-01,comprar ropa online,19.8,consciente_compra,2020,3
+2020-03-01,moda sostenible,46.4,consciente_compra,2020,3
+2020-03-01,ropa vintage,50.0,consciente_compra,2020,3
+2020-03-01,slow fashion,29.0,consciente_compra,2020,3
+2020-03-01,zara online,27.6,consciente_compra,2020,3
+2020-03-01,cayetana,12.4,sofisticado,2020,3
+2020-03-01,minimalista elegante,0.0,sofisticado,2020,3
+2020-03-01,moda preppy,,sofisticado,2020,3
+2020-03-01,old money,0.0,sofisticado,2020,3
+2020-03-01,pija,,sofisticado,2020,3
+2020-03-01,choni,55.4,urbano,2020,3
+2020-03-01,shein,30.0,urbano,2020,3
+2020-03-01,streetwear,49.6,urbano,2020,3
+2020-03-01,trap style,,urbano,2020,3
+2020-03-01,y2k outfit,,urbano,2020,3
+2020-04-01,comprar ropa online,56.0,consciente_compra,2020,4
+2020-04-01,moda sostenible,62.75,consciente_compra,2020,4
+2020-04-01,ropa vintage,65.5,consciente_compra,2020,4
+2020-04-01,slow fashion,16.0,consciente_compra,2020,4
+2020-04-01,zara online,60.5,consciente_compra,2020,4
+2020-04-01,cayetana,10.75,sofisticado,2020,4
+2020-04-01,minimalista elegante,0.0,sofisticado,2020,4
+2020-04-01,moda preppy,,sofisticado,2020,4
+2020-04-01,old money,52.75,sofisticado,2020,4
+2020-04-01,pija,,sofisticado,2020,4
+2020-04-01,choni,71.0,urbano,2020,4
+2020-04-01,shein,52.0,urbano,2020,4
+2020-04-01,streetwear,66.75,urbano,2020,4
+2020-04-01,trap style,,urbano,2020,4
+2020-04-01,y2k outfit,,urbano,2020,4
+2020-05-01,comprar ropa online,66.0,consciente_compra,2020,5
+2020-05-01,moda sostenible,62.2,consciente_compra,2020,5
+2020-05-01,ropa vintage,66.6,consciente_compra,2020,5
+2020-05-01,slow fashion,46.4,consciente_compra,2020,5
+2020-05-01,zara online,82.8,consciente_compra,2020,5
+2020-05-01,cayetana,21.4,sofisticado,2020,5
+2020-05-01,minimalista elegante,0.0,sofisticado,2020,5
+2020-05-01,moda preppy,,sofisticado,2020,5
+2020-05-01,old money,12.4,sofisticado,2020,5
+2020-05-01,pija,,sofisticado,2020,5
+2020-05-01,choni,58.2,urbano,2020,5
+2020-05-01,shein,83.2,urbano,2020,5
+2020-05-01,streetwear,59.8,urbano,2020,5
+2020-05-01,trap style,,urbano,2020,5
+2020-05-01,y2k outfit,,urbano,2020,5
+2020-06-01,comprar ropa online,30.0,consciente_compra,2020,6
+2020-06-01,moda sostenible,70.0,consciente_compra,2020,6
+2020-06-01,ropa vintage,65.0,consciente_compra,2020,6
+2020-06-01,slow fashion,46.0,consciente_compra,2020,6
+2020-06-01,zara online,65.0,consciente_compra,2020,6
+2020-06-01,cayetana,13.75,sofisticado,2020,6
+2020-06-01,minimalista elegante,0.0,sofisticado,2020,6
+2020-06-01,moda preppy,,sofisticado,2020,6
+2020-06-01,old money,15.5,sofisticado,2020,6
+2020-06-01,pija,,sofisticado,2020,6
+2020-06-01,choni,66.25,urbano,2020,6
+2020-06-01,shein,95.25,urbano,2020,6
+2020-06-01,streetwear,73.5,urbano,2020,6
+2020-06-01,trap style,,urbano,2020,6
+2020-06-01,y2k outfit,,urbano,2020,6
+2020-07-01,comprar ropa online,23.75,consciente_compra,2020,7
+2020-07-01,moda sostenible,25.5,consciente_compra,2020,7
+2020-07-01,ropa vintage,59.0,consciente_compra,2020,7
+2020-07-01,slow fashion,21.5,consciente_compra,2020,7
+2020-07-01,zara online,47.75,consciente_compra,2020,7
+2020-07-01,cayetana,6.0,sofisticado,2020,7
+2020-07-01,minimalista elegante,0.0,sofisticado,2020,7
+2020-07-01,moda preppy,,sofisticado,2020,7
+2020-07-01,old money,25.0,sofisticado,2020,7
+2020-07-01,pija,,sofisticado,2020,7
+2020-07-01,choni,64.0,urbano,2020,7
+2020-07-01,shein,79.25,urbano,2020,7
+2020-07-01,streetwear,70.25,urbano,2020,7
+2020-07-01,trap style,,urbano,2020,7
+2020-07-01,y2k outfit,,urbano,2020,7
+2020-08-01,comprar ropa online,22.0,consciente_compra,2020,8
+2020-08-01,moda sostenible,46.0,consciente_compra,2020,8
+2020-08-01,ropa vintage,81.2,consciente_compra,2020,8
+2020-08-01,slow fashion,0.0,consciente_compra,2020,8
+2020-08-01,zara online,39.2,consciente_compra,2020,8
+2020-08-01,cayetana,29.6,sofisticado,2020,8
+2020-08-01,minimalista elegante,0.0,sofisticado,2020,8
+2020-08-01,moda preppy,,sofisticado,2020,8
+2020-08-01,old money,0.0,sofisticado,2020,8
+2020-08-01,pija,,sofisticado,2020,8
+2020-08-01,choni,73.4,urbano,2020,8
+2020-08-01,shein,63.6,urbano,2020,8
+2020-08-01,streetwear,84.8,urbano,2020,8
+2020-08-01,trap style,,urbano,2020,8
+2020-08-01,y2k outfit,,urbano,2020,8
+2020-09-01,comprar ropa online,24.75,consciente_compra,2020,9
+2020-09-01,moda sostenible,50.75,consciente_compra,2020,9
+2020-09-01,ropa vintage,94.25,consciente_compra,2020,9
+2020-09-01,slow fashion,0.0,consciente_compra,2020,9
+2020-09-01,zara online,45.0,consciente_compra,2020,9
+2020-09-01,cayetana,8.5,sofisticado,2020,9
+2020-09-01,minimalista elegante,0.0,sofisticado,2020,9
+2020-09-01,moda preppy,,sofisticado,2020,9
+2020-09-01,old money,0.0,sofisticado,2020,9
+2020-09-01,pija,,sofisticado,2020,9
+2020-09-01,choni,57.0,urbano,2020,9
+2020-09-01,shein,52.5,urbano,2020,9
+2020-09-01,streetwear,82.25,urbano,2020,9
+2020-09-01,trap style,,urbano,2020,9
+2020-09-01,y2k outfit,,urbano,2020,9
+2020-10-01,comprar ropa online,24.5,consciente_compra,2020,10
+2020-10-01,moda sostenible,66.0,consciente_compra,2020,10
+2020-10-01,ropa vintage,84.5,consciente_compra,2020,10
+2020-10-01,slow fashion,0.0,consciente_compra,2020,10
+2020-10-01,zara online,47.5,consciente_compra,2020,10
+2020-10-01,cayetana,8.0,sofisticado,2020,10
+2020-10-01,minimalista elegante,0.0,sofisticado,2020,10
+2020-10-01,moda preppy,,sofisticado,2020,10
+2020-10-01,old money,0.0,sofisticado,2020,10
+2020-10-01,pija,,sofisticado,2020,10
+2020-10-01,choni,54.25,urbano,2020,10
+2020-10-01,shein,53.0,urbano,2020,10
+2020-10-01,streetwear,77.5,urbano,2020,10
+2020-10-01,trap style,,urbano,2020,10
+2020-10-01,y2k outfit,,urbano,2020,10
+2020-11-01,comprar ropa online,24.6,consciente_compra,2020,11
+2020-11-01,moda sostenible,62.2,consciente_compra,2020,11
+2020-11-01,ropa vintage,73.8,consciente_compra,2020,11
+2020-11-01,slow fashion,0.0,consciente_compra,2020,11
+2020-11-01,zara online,58.0,consciente_compra,2020,11
+2020-11-01,cayetana,5.8,sofisticado,2020,11
+2020-11-01,minimalista elegante,0.0,sofisticado,2020,11
+2020-11-01,moda preppy,,sofisticado,2020,11
+2020-11-01,old money,0.0,sofisticado,2020,11
+2020-11-01,pija,,sofisticado,2020,11
+2020-11-01,choni,53.6,urbano,2020,11
+2020-11-01,shein,62.6,urbano,2020,11
+2020-11-01,streetwear,68.0,urbano,2020,11
+2020-11-01,trap style,,urbano,2020,11
+2020-11-01,y2k outfit,,urbano,2020,11
+2020-12-01,comprar ropa online,38.5,consciente_compra,2020,12
+2020-12-01,moda sostenible,64.5,consciente_compra,2020,12
+2020-12-01,ropa vintage,72.75,consciente_compra,2020,12
+2020-12-01,slow fashion,0.0,consciente_compra,2020,12
+2020-12-01,zara online,53.75,consciente_compra,2020,12
+2020-12-01,cayetana,5.0,sofisticado,2020,12
+2020-12-01,minimalista elegante,0.0,sofisticado,2020,12
+2020-12-01,moda preppy,0.0,sofisticado,2020,12
+2020-12-01,old money,36.0,sofisticado,2020,12
+2020-12-01,pija,95.0,sofisticado,2020,12
+2020-12-01,choni,58.75,urbano,2020,12
+2020-12-01,shein,48.0,urbano,2020,12
+2020-12-01,streetwear,75.5,urbano,2020,12
+2020-12-01,trap style,,urbano,2020,12
+2020-12-01,y2k outfit,0.0,urbano,2020,12
+2021-01-01,comprar ropa online,91.2,consciente_compra,2021,1
+2021-01-01,moda sostenible,53.4,consciente_compra,2021,1
+2021-01-01,ropa vintage,80.4,consciente_compra,2021,1
+2021-01-01,slow fashion,0.0,consciente_compra,2021,1
+2021-01-01,zara online,69.2,consciente_compra,2021,1
+2021-01-01,cayetana,12.4,sofisticado,2021,1
+2021-01-01,minimalista elegante,0.0,sofisticado,2021,1
+2021-01-01,moda preppy,0.0,sofisticado,2021,1
+2021-01-01,old money,10.4,sofisticado,2021,1
+2021-01-01,pija,74.2,sofisticado,2021,1
+2021-01-01,choni,59.2,urbano,2021,1
+2021-01-01,shein,51.4,urbano,2021,1
+2021-01-01,streetwear,85.4,urbano,2021,1
+2021-01-01,trap style,,urbano,2021,1
+2021-01-01,y2k outfit,0.0,urbano,2021,1
+2021-02-01,comprar ropa online,71.0,consciente_compra,2021,2
+2021-02-01,moda sostenible,66.25,consciente_compra,2021,2
+2021-02-01,ropa vintage,76.25,consciente_compra,2021,2
+2021-02-01,slow fashion,18.0,consciente_compra,2021,2
+2021-02-01,zara online,44.25,consciente_compra,2021,2
+2021-02-01,cayetana,12.75,sofisticado,2021,2
+2021-02-01,minimalista elegante,0.0,sofisticado,2021,2
+2021-02-01,moda preppy,0.0,sofisticado,2021,2
+2021-02-01,old money,0.0,sofisticado,2021,2
+2021-02-01,pija,83.5,sofisticado,2021,2
+2021-02-01,choni,63.5,urbano,2021,2
+2021-02-01,shein,59.0,urbano,2021,2
+2021-02-01,streetwear,64.0,urbano,2021,2
+2021-02-01,trap style,,urbano,2021,2
+2021-02-01,y2k outfit,0.0,urbano,2021,2
+2021-03-01,comprar ropa online,68.75,consciente_compra,2021,3
+2021-03-01,moda sostenible,39.25,consciente_compra,2021,3
+2021-03-01,ropa vintage,78.25,consciente_compra,2021,3
+2021-03-01,slow fashion,0.0,consciente_compra,2021,3
+2021-03-01,zara online,37.25,consciente_compra,2021,3
+2021-03-01,cayetana,34.75,sofisticado,2021,3
+2021-03-01,minimalista elegante,0.0,sofisticado,2021,3
+2021-03-01,moda preppy,0.0,sofisticado,2021,3
+2021-03-01,old money,25.0,sofisticado,2021,3
+2021-03-01,pija,71.75,sofisticado,2021,3
+2021-03-01,choni,51.0,urbano,2021,3
+2021-03-01,shein,67.25,urbano,2021,3
+2021-03-01,streetwear,60.0,urbano,2021,3
+2021-03-01,trap style,,urbano,2021,3
+2021-03-01,y2k outfit,0.0,urbano,2021,3
+2021-04-01,comprar ropa online,62.75,consciente_compra,2021,4
+2021-04-01,moda sostenible,56.75,consciente_compra,2021,4
+2021-04-01,ropa vintage,74.75,consciente_compra,2021,4
+2021-04-01,slow fashion,0.0,consciente_compra,2021,4
+2021-04-01,zara online,35.0,consciente_compra,2021,4
+2021-04-01,cayetana,14.5,sofisticado,2021,4
+2021-04-01,minimalista elegante,0.0,sofisticado,2021,4
+2021-04-01,moda preppy,0.0,sofisticado,2021,4
+2021-04-01,old money,13.0,sofisticado,2021,4
+2021-04-01,pija,77.75,sofisticado,2021,4
+2021-04-01,choni,50.25,urbano,2021,4
+2021-04-01,shein,76.25,urbano,2021,4
+2021-04-01,streetwear,59.0,urbano,2021,4
+2021-04-01,trap style,,urbano,2021,4
+2021-04-01,y2k outfit,0.0,urbano,2021,4
+2021-05-01,comprar ropa online,59.2,consciente_compra,2021,5
+2021-05-01,moda sostenible,51.0,consciente_compra,2021,5
+2021-05-01,ropa vintage,60.2,consciente_compra,2021,5
+2021-05-01,slow fashion,15.0,consciente_compra,2021,5
+2021-05-01,zara online,36.2,consciente_compra,2021,5
+2021-05-01,cayetana,14.2,sofisticado,2021,5
+2021-05-01,minimalista elegante,0.0,sofisticado,2021,5
+2021-05-01,moda preppy,0.0,sofisticado,2021,5
+2021-05-01,old money,10.4,sofisticado,2021,5
+2021-05-01,pija,72.8,sofisticado,2021,5
+2021-05-01,choni,54.6,urbano,2021,5
+2021-05-01,shein,90.2,urbano,2021,5
+2021-05-01,streetwear,55.4,urbano,2021,5
+2021-05-01,trap style,,urbano,2021,5
+2021-05-01,y2k outfit,0.0,urbano,2021,5
+2021-06-01,comprar ropa online,62.0,consciente_compra,2021,6
+2021-06-01,moda sostenible,35.5,consciente_compra,2021,6
+2021-06-01,ropa vintage,55.75,consciente_compra,2021,6
+2021-06-01,slow fashion,18.0,consciente_compra,2021,6
+2021-06-01,zara online,43.0,consciente_compra,2021,6
+2021-06-01,cayetana,14.5,sofisticado,2021,6
+2021-06-01,minimalista elegante,0.0,sofisticado,2021,6
+2021-06-01,moda preppy,25.0,sofisticado,2021,6
+2021-06-01,old money,0.0,sofisticado,2021,6
+2021-06-01,pija,74.5,sofisticado,2021,6
+2021-06-01,choni,54.0,urbano,2021,6
+2021-06-01,shein,95.75,urbano,2021,6
+2021-06-01,streetwear,51.0,urbano,2021,6
+2021-06-01,trap style,,urbano,2021,6
+2021-06-01,y2k outfit,0.0,urbano,2021,6
+2021-07-01,comprar ropa online,52.25,consciente_compra,2021,7
+2021-07-01,moda sostenible,13.0,consciente_compra,2021,7
+2021-07-01,ropa vintage,68.75,consciente_compra,2021,7
+2021-07-01,slow fashion,0.0,consciente_compra,2021,7
+2021-07-01,zara online,33.5,consciente_compra,2021,7
+2021-07-01,cayetana,11.5,sofisticado,2021,7
+2021-07-01,minimalista elegante,16.25,sofisticado,2021,7
+2021-07-01,moda preppy,0.0,sofisticado,2021,7
+2021-07-01,old money,0.0,sofisticado,2021,7
+2021-07-01,pija,81.5,sofisticado,2021,7
+2021-07-01,choni,59.25,urbano,2021,7
+2021-07-01,shein,80.25,urbano,2021,7
+2021-07-01,streetwear,59.25,urbano,2021,7
+2021-07-01,trap style,,urbano,2021,7
+2021-07-01,y2k outfit,25.0,urbano,2021,7
+2021-08-01,comprar ropa online,45.0,consciente_compra,2021,8
+2021-08-01,moda sostenible,9.0,consciente_compra,2021,8
+2021-08-01,ropa vintage,80.8,consciente_compra,2021,8
+2021-08-01,slow fashion,0.0,consciente_compra,2021,8
+2021-08-01,zara online,28.2,consciente_compra,2021,8
+2021-08-01,cayetana,11.0,sofisticado,2021,8
+2021-08-01,minimalista elegante,0.0,sofisticado,2021,8
+2021-08-01,moda preppy,0.0,sofisticado,2021,8
+2021-08-01,old money,0.0,sofisticado,2021,8
+2021-08-01,pija,79.6,sofisticado,2021,8
+2021-08-01,choni,64.8,urbano,2021,8
+2021-08-01,shein,67.0,urbano,2021,8
+2021-08-01,streetwear,76.8,urbano,2021,8
+2021-08-01,trap style,,urbano,2021,8
+2021-08-01,y2k outfit,0.0,urbano,2021,8
+2021-09-01,comprar ropa online,65.25,consciente_compra,2021,9
+2021-09-01,moda sostenible,45.25,consciente_compra,2021,9
+2021-09-01,ropa vintage,91.0,consciente_compra,2021,9
+2021-09-01,slow fashion,0.0,consciente_compra,2021,9
+2021-09-01,zara online,32.25,consciente_compra,2021,9
+2021-09-01,cayetana,14.5,sofisticado,2021,9
+2021-09-01,minimalista elegante,25.0,sofisticado,2021,9
+2021-09-01,moda preppy,0.0,sofisticado,2021,9
+2021-09-01,old money,40.5,sofisticado,2021,9
+2021-09-01,pija,82.5,sofisticado,2021,9
+2021-09-01,choni,51.5,urbano,2021,9
+2021-09-01,shein,67.75,urbano,2021,9
+2021-09-01,streetwear,66.5,urbano,2021,9
+2021-09-01,trap style,,urbano,2021,9
+2021-09-01,y2k outfit,0.0,urbano,2021,9
+2021-10-01,comprar ropa online,57.6,consciente_compra,2021,10
+2021-10-01,moda sostenible,44.4,consciente_compra,2021,10
+2021-10-01,ropa vintage,92.0,consciente_compra,2021,10
+2021-10-01,slow fashion,20.0,consciente_compra,2021,10
+2021-10-01,zara online,40.6,consciente_compra,2021,10
+2021-10-01,cayetana,13.6,sofisticado,2021,10
+2021-10-01,minimalista elegante,0.0,sofisticado,2021,10
+2021-10-01,moda preppy,0.0,sofisticado,2021,10
+2021-10-01,old money,15.2,sofisticado,2021,10
+2021-10-01,pija,83.8,sofisticado,2021,10
+2021-10-01,choni,55.4,urbano,2021,10
+2021-10-01,shein,73.4,urbano,2021,10
+2021-10-01,streetwear,69.8,urbano,2021,10
+2021-10-01,trap style,,urbano,2021,10
+2021-10-01,y2k outfit,0.0,urbano,2021,10
+2021-11-01,comprar ropa online,71.75,consciente_compra,2021,11
+2021-11-01,moda sostenible,64.75,consciente_compra,2021,11
+2021-11-01,ropa vintage,79.5,consciente_compra,2021,11
+2021-11-01,slow fashion,0.0,consciente_compra,2021,11
+2021-11-01,zara online,53.75,consciente_compra,2021,11
+2021-11-01,cayetana,30.75,sofisticado,2021,11
+2021-11-01,minimalista elegante,0.0,sofisticado,2021,11
+2021-11-01,moda preppy,0.0,sofisticado,2021,11
+2021-11-01,old money,59.75,sofisticado,2021,11
+2021-11-01,pija,77.75,sofisticado,2021,11
+2021-11-01,choni,56.25,urbano,2021,11
+2021-11-01,shein,82.0,urbano,2021,11
+2021-11-01,streetwear,65.75,urbano,2021,11
+2021-11-01,trap style,,urbano,2021,11
+2021-11-01,y2k outfit,0.0,urbano,2021,11
+2021-12-01,comprar ropa online,71.5,consciente_compra,2021,12
+2021-12-01,moda sostenible,34.25,consciente_compra,2021,12
+2021-12-01,ropa vintage,74.25,consciente_compra,2021,12
+2021-12-01,slow fashion,0.0,consciente_compra,2021,12
+2021-12-01,zara online,42.75,consciente_compra,2021,12
+2021-12-01,cayetana,21.75,sofisticado,2021,12
+2021-12-01,minimalista elegante,0.0,sofisticado,2021,12
+2021-12-01,moda preppy,0.0,sofisticado,2021,12
+2021-12-01,old money,0.0,sofisticado,2021,12
+2021-12-01,pija,86.5,sofisticado,2021,12
+2021-12-01,choni,62.0,urbano,2021,12
+2021-12-01,shein,62.5,urbano,2021,12
+2021-12-01,streetwear,66.75,urbano,2021,12
+2021-12-01,trap style,0.0,urbano,2021,12
+2021-12-01,y2k outfit,0.0,urbano,2021,12
+2022-01-01,comprar ropa online,62.6,consciente_compra,2022,1
+2022-01-01,moda sostenible,54.4,consciente_compra,2022,1
+2022-01-01,ropa vintage,69.8,consciente_compra,2022,1
+2022-01-01,slow fashion,0.0,consciente_compra,2022,1
+2022-01-01,zara online,67.0,consciente_compra,2022,1
+2022-01-01,cayetana,38.6,sofisticado,2022,1
+2022-01-01,minimalista elegante,0.0,sofisticado,2022,1
+2022-01-01,moda preppy,,sofisticado,2022,1
+2022-01-01,old money,29.4,sofisticado,2022,1
+2022-01-01,pija,67.2,sofisticado,2022,1
+2022-01-01,choni,69.2,urbano,2022,1
+2022-01-01,shein,38.0,urbano,2022,1
+2022-01-01,streetwear,72.8,urbano,2022,1
+2022-01-01,trap style,20.0,urbano,2022,1
+2022-01-01,y2k outfit,,urbano,2022,1
+2022-02-01,comprar ropa online,63.25,consciente_compra,2022,2
+2022-02-01,moda sostenible,58.0,consciente_compra,2022,2
+2022-02-01,ropa vintage,76.0,consciente_compra,2022,2
+2022-02-01,slow fashion,37.25,consciente_compra,2022,2
+2022-02-01,zara online,42.0,consciente_compra,2022,2
+2022-02-01,cayetana,64.0,sofisticado,2022,2
+2022-02-01,minimalista elegante,0.0,sofisticado,2022,2
+2022-02-01,moda preppy,,sofisticado,2022,2
+2022-02-01,old money,13.5,sofisticado,2022,2
+2022-02-01,pija,66.0,sofisticado,2022,2
+2022-02-01,choni,80.75,urbano,2022,2
+2022-02-01,shein,44.25,urbano,2022,2
+2022-02-01,streetwear,53.5,urbano,2022,2
+2022-02-01,trap style,0.0,urbano,2022,2
+2022-02-01,y2k outfit,,urbano,2022,2
+2022-03-01,comprar ropa online,73.5,consciente_compra,2022,3
+2022-03-01,moda sostenible,53.75,consciente_compra,2022,3
+2022-03-01,ropa vintage,69.0,consciente_compra,2022,3
+2022-03-01,slow fashion,41.25,consciente_compra,2022,3
+2022-03-01,zara online,40.5,consciente_compra,2022,3
+2022-03-01,cayetana,28.25,sofisticado,2022,3
+2022-03-01,minimalista elegante,25.0,sofisticado,2022,3
+2022-03-01,moda preppy,,sofisticado,2022,3
+2022-03-01,old money,29.75,sofisticado,2022,3
+2022-03-01,pija,56.75,sofisticado,2022,3
+2022-03-01,choni,56.5,urbano,2022,3
+2022-03-01,shein,44.5,urbano,2022,3
+2022-03-01,streetwear,71.25,urbano,2022,3
+2022-03-01,trap style,0.0,urbano,2022,3
+2022-03-01,y2k outfit,,urbano,2022,3
+2022-04-01,comprar ropa online,81.0,consciente_compra,2022,4
+2022-04-01,moda sostenible,61.75,consciente_compra,2022,4
+2022-04-01,ropa vintage,64.5,consciente_compra,2022,4
+2022-04-01,slow fashion,18.75,consciente_compra,2022,4
+2022-04-01,zara online,43.0,consciente_compra,2022,4
+2022-04-01,cayetana,37.75,sofisticado,2022,4
+2022-04-01,minimalista elegante,0.0,sofisticado,2022,4
+2022-04-01,moda preppy,,sofisticado,2022,4
+2022-04-01,old money,41.25,sofisticado,2022,4
+2022-04-01,pija,63.5,sofisticado,2022,4
+2022-04-01,choni,65.25,urbano,2022,4
+2022-04-01,shein,52.75,urbano,2022,4
+2022-04-01,streetwear,77.0,urbano,2022,4
+2022-04-01,trap style,0.0,urbano,2022,4
+2022-04-01,y2k outfit,,urbano,2022,4
+2022-05-01,comprar ropa online,71.6,consciente_compra,2022,5
+2022-05-01,moda sostenible,67.2,consciente_compra,2022,5
+2022-05-01,ropa vintage,64.2,consciente_compra,2022,5
+2022-05-01,slow fashion,20.0,consciente_compra,2022,5
+2022-05-01,zara online,43.6,consciente_compra,2022,5
+2022-05-01,cayetana,31.0,sofisticado,2022,5
+2022-05-01,minimalista elegante,0.0,sofisticado,2022,5
+2022-05-01,moda preppy,,sofisticado,2022,5
+2022-05-01,old money,35.4,sofisticado,2022,5
+2022-05-01,pija,59.4,sofisticado,2022,5
+2022-05-01,choni,64.8,urbano,2022,5
+2022-05-01,shein,82.4,urbano,2022,5
+2022-05-01,streetwear,59.2,urbano,2022,5
+2022-05-01,trap style,0.0,urbano,2022,5
+2022-05-01,y2k outfit,,urbano,2022,5
+2022-06-01,comprar ropa online,71.75,consciente_compra,2022,6
+2022-06-01,moda sostenible,35.0,consciente_compra,2022,6
+2022-06-01,ropa vintage,59.5,consciente_compra,2022,6
+2022-06-01,slow fashion,18.75,consciente_compra,2022,6
+2022-06-01,zara online,48.75,consciente_compra,2022,6
+2022-06-01,cayetana,27.25,sofisticado,2022,6
+2022-06-01,minimalista elegante,0.0,sofisticado,2022,6
+2022-06-01,moda preppy,,sofisticado,2022,6
+2022-06-01,old money,59.75,sofisticado,2022,6
+2022-06-01,pija,58.0,sofisticado,2022,6
+2022-06-01,choni,67.25,urbano,2022,6
+2022-06-01,shein,79.25,urbano,2022,6
+2022-06-01,streetwear,56.0,urbano,2022,6
+2022-06-01,trap style,0.0,urbano,2022,6
+2022-06-01,y2k outfit,,urbano,2022,6
+2022-07-01,comprar ropa online,60.0,consciente_compra,2022,7
+2022-07-01,moda sostenible,0.0,consciente_compra,2022,7
+2022-07-01,ropa vintage,61.2,consciente_compra,2022,7
+2022-07-01,slow fashion,0.0,consciente_compra,2022,7
+2022-07-01,zara online,45.8,consciente_compra,2022,7
+2022-07-01,cayetana,25.0,sofisticado,2022,7
+2022-07-01,minimalista elegante,0.0,sofisticado,2022,7
+2022-07-01,moda preppy,,sofisticado,2022,7
+2022-07-01,old money,61.8,sofisticado,2022,7
+2022-07-01,pija,70.0,sofisticado,2022,7
+2022-07-01,choni,69.8,urbano,2022,7
+2022-07-01,shein,63.0,urbano,2022,7
+2022-07-01,streetwear,59.4,urbano,2022,7
+2022-07-01,trap style,0.0,urbano,2022,7
+2022-07-01,y2k outfit,,urbano,2022,7
+2022-08-01,comprar ropa online,56.75,consciente_compra,2022,8
+2022-08-01,moda sostenible,11.75,consciente_compra,2022,8
+2022-08-01,ropa vintage,73.5,consciente_compra,2022,8
+2022-08-01,slow fashion,0.0,consciente_compra,2022,8
+2022-08-01,zara online,35.5,consciente_compra,2022,8
+2022-08-01,cayetana,24.5,sofisticado,2022,8
+2022-08-01,minimalista elegante,0.0,sofisticado,2022,8
+2022-08-01,moda preppy,,sofisticado,2022,8
+2022-08-01,old money,87.25,sofisticado,2022,8
+2022-08-01,pija,70.5,sofisticado,2022,8
+2022-08-01,choni,75.0,urbano,2022,8
+2022-08-01,shein,55.0,urbano,2022,8
+2022-08-01,streetwear,70.75,urbano,2022,8
+2022-08-01,trap style,0.0,urbano,2022,8
+2022-08-01,y2k outfit,,urbano,2022,8
+2022-09-01,comprar ropa online,68.75,consciente_compra,2022,9
+2022-09-01,moda sostenible,43.75,consciente_compra,2022,9
+2022-09-01,ropa vintage,81.75,consciente_compra,2022,9
+2022-09-01,slow fashion,24.75,consciente_compra,2022,9
+2022-09-01,zara online,38.5,consciente_compra,2022,9
+2022-09-01,cayetana,30.25,sofisticado,2022,9
+2022-09-01,minimalista elegante,0.0,sofisticado,2022,9
+2022-09-01,moda preppy,,sofisticado,2022,9
+2022-09-01,old money,64.5,sofisticado,2022,9
+2022-09-01,pija,65.5,sofisticado,2022,9
+2022-09-01,choni,58.5,urbano,2022,9
+2022-09-01,shein,55.0,urbano,2022,9
+2022-09-01,streetwear,68.75,urbano,2022,9
+2022-09-01,trap style,0.0,urbano,2022,9
+2022-09-01,y2k outfit,,urbano,2022,9
+2022-10-01,comprar ropa online,69.4,consciente_compra,2022,10
+2022-10-01,moda sostenible,47.2,consciente_compra,2022,10
+2022-10-01,ropa vintage,76.6,consciente_compra,2022,10
+2022-10-01,slow fashion,30.4,consciente_compra,2022,10
+2022-10-01,zara online,40.8,consciente_compra,2022,10
+2022-10-01,cayetana,29.0,sofisticado,2022,10
+2022-10-01,minimalista elegante,0.0,sofisticado,2022,10
+2022-10-01,moda preppy,,sofisticado,2022,10
+2022-10-01,old money,65.2,sofisticado,2022,10
+2022-10-01,pija,72.8,sofisticado,2022,10
+2022-10-01,choni,59.6,urbano,2022,10
+2022-10-01,shein,54.8,urbano,2022,10
+2022-10-01,streetwear,64.2,urbano,2022,10
+2022-10-01,trap style,0.0,urbano,2022,10
+2022-10-01,y2k outfit,,urbano,2022,10
+2022-11-01,comprar ropa online,66.0,consciente_compra,2022,11
+2022-11-01,moda sostenible,60.0,consciente_compra,2022,11
+2022-11-01,ropa vintage,80.0,consciente_compra,2022,11
+2022-11-01,slow fashion,0.0,consciente_compra,2022,11
+2022-11-01,zara online,59.0,consciente_compra,2022,11
+2022-11-01,cayetana,28.5,sofisticado,2022,11
+2022-11-01,minimalista elegante,0.0,sofisticado,2022,11
+2022-11-01,moda preppy,,sofisticado,2022,11
+2022-11-01,old money,59.75,sofisticado,2022,11
+2022-11-01,pija,68.75,sofisticado,2022,11
+2022-11-01,choni,59.75,urbano,2022,11
+2022-11-01,shein,64.0,urbano,2022,11
+2022-11-01,streetwear,64.0,urbano,2022,11
+2022-11-01,trap style,0.0,urbano,2022,11
+2022-11-01,y2k outfit,,urbano,2022,11
+2022-12-01,comprar ropa online,66.0,consciente_compra,2022,12
+2022-12-01,moda sostenible,55.5,consciente_compra,2022,12
+2022-12-01,ropa vintage,68.25,consciente_compra,2022,12
+2022-12-01,slow fashion,34.5,consciente_compra,2022,12
+2022-12-01,zara online,52.0,consciente_compra,2022,12
+2022-12-01,cayetana,33.0,sofisticado,2022,12
+2022-12-01,minimalista elegante,0.0,sofisticado,2022,12
+2022-12-01,moda preppy,,sofisticado,2022,12
+2022-12-01,old money,63.0,sofisticado,2022,12
+2022-12-01,pija,79.5,sofisticado,2022,12
+2022-12-01,choni,58.25,urbano,2022,12
+2022-12-01,shein,50.0,urbano,2022,12
+2022-12-01,streetwear,66.25,urbano,2022,12
+2022-12-01,trap style,0.0,urbano,2022,12
+2022-12-01,y2k outfit,,urbano,2022,12
+2023-01-01,comprar ropa online,73.8,consciente_compra,2023,1
+2023-01-01,moda sostenible,56.0,consciente_compra,2023,1
+2023-01-01,ropa vintage,57.2,consciente_compra,2023,1
+2023-01-01,slow fashion,32.4,consciente_compra,2023,1
+2023-01-01,zara online,73.8,consciente_compra,2023,1
+2023-01-01,cayetana,,sofisticado,2023,1
+2023-01-01,minimalista elegante,,sofisticado,2023,1
+2023-01-01,moda preppy,,sofisticado,2023,1
+2023-01-01,old money,30.8,sofisticado,2023,1
+2023-01-01,pija,11.6,sofisticado,2023,1
+2023-01-01,choni,58.6,urbano,2023,1
+2023-01-01,shein,59.2,urbano,2023,1
+2023-01-01,streetwear,73.8,urbano,2023,1
+2023-01-01,trap style,0.0,urbano,2023,1
+2023-01-01,y2k outfit,,urbano,2023,1
+2023-02-01,comprar ropa online,68.0,consciente_compra,2023,2
+2023-02-01,moda sostenible,44.0,consciente_compra,2023,2
+2023-02-01,ropa vintage,58.5,consciente_compra,2023,2
+2023-02-01,slow fashion,0.0,consciente_compra,2023,2
+2023-02-01,zara online,43.0,consciente_compra,2023,2
+2023-02-01,cayetana,,sofisticado,2023,2
+2023-02-01,minimalista elegante,,sofisticado,2023,2
+2023-02-01,moda preppy,,sofisticado,2023,2
+2023-02-01,old money,34.0,sofisticado,2023,2
+2023-02-01,pija,10.75,sofisticado,2023,2
+2023-02-01,choni,72.75,urbano,2023,2
+2023-02-01,shein,57.75,urbano,2023,2
+2023-02-01,streetwear,71.75,urbano,2023,2
+2023-02-01,trap style,0.0,urbano,2023,2
+2023-02-01,y2k outfit,,urbano,2023,2
+2023-03-01,comprar ropa online,73.75,consciente_compra,2023,3
+2023-03-01,moda sostenible,58.75,consciente_compra,2023,3
+2023-03-01,ropa vintage,67.25,consciente_compra,2023,3
+2023-03-01,slow fashion,15.25,consciente_compra,2023,3
+2023-03-01,zara online,47.25,consciente_compra,2023,3
+2023-03-01,cayetana,,sofisticado,2023,3
+2023-03-01,minimalista elegante,,sofisticado,2023,3
+2023-03-01,moda preppy,,sofisticado,2023,3
+2023-03-01,old money,34.25,sofisticado,2023,3
+2023-03-01,pija,13.0,sofisticado,2023,3
+2023-03-01,choni,59.0,urbano,2023,3
+2023-03-01,shein,75.25,urbano,2023,3
+2023-03-01,streetwear,68.5,urbano,2023,3
+2023-03-01,trap style,0.0,urbano,2023,3
+2023-03-01,y2k outfit,,urbano,2023,3
+2023-04-01,comprar ropa online,74.6,consciente_compra,2023,4
+2023-04-01,moda sostenible,46.8,consciente_compra,2023,4
+2023-04-01,ropa vintage,72.0,consciente_compra,2023,4
+2023-04-01,slow fashion,0.0,consciente_compra,2023,4
+2023-04-01,zara online,49.8,consciente_compra,2023,4
+2023-04-01,cayetana,,sofisticado,2023,4
+2023-04-01,minimalista elegante,,sofisticado,2023,4
+2023-04-01,moda preppy,,sofisticado,2023,4
+2023-04-01,old money,53.6,sofisticado,2023,4
+2023-04-01,pija,12.0,sofisticado,2023,4
+2023-04-01,choni,54.0,urbano,2023,4
+2023-04-01,shein,86.6,urbano,2023,4
+2023-04-01,streetwear,75.0,urbano,2023,4
+2023-04-01,trap style,0.0,urbano,2023,4
+2023-04-01,y2k outfit,,urbano,2023,4
+2023-05-01,comprar ropa online,68.75,consciente_compra,2023,5
+2023-05-01,moda sostenible,52.0,consciente_compra,2023,5
+2023-05-01,ropa vintage,47.0,consciente_compra,2023,5
+2023-05-01,slow fashion,32.25,consciente_compra,2023,5
+2023-05-01,zara online,47.5,consciente_compra,2023,5
+2023-05-01,cayetana,,sofisticado,2023,5
+2023-05-01,minimalista elegante,,sofisticado,2023,5
+2023-05-01,moda preppy,,sofisticado,2023,5
+2023-05-01,old money,59.5,sofisticado,2023,5
+2023-05-01,pija,9.75,sofisticado,2023,5
+2023-05-01,choni,53.5,urbano,2023,5
+2023-05-01,shein,91.25,urbano,2023,5
+2023-05-01,streetwear,59.0,urbano,2023,5
+2023-05-01,trap style,0.0,urbano,2023,5
+2023-05-01,y2k outfit,,urbano,2023,5
+2023-06-01,comprar ropa online,51.25,consciente_compra,2023,6
+2023-06-01,moda sostenible,38.25,consciente_compra,2023,6
+2023-06-01,ropa vintage,41.5,consciente_compra,2023,6
+2023-06-01,slow fashion,0.0,consciente_compra,2023,6
+2023-06-01,zara online,58.75,consciente_compra,2023,6
+2023-06-01,cayetana,,sofisticado,2023,6
+2023-06-01,minimalista elegante,,sofisticado,2023,6
+2023-06-01,moda preppy,,sofisticado,2023,6
+2023-06-01,old money,75.75,sofisticado,2023,6
+2023-06-01,pija,14.75,sofisticado,2023,6
+2023-06-01,choni,56.75,urbano,2023,6
+2023-06-01,shein,96.25,urbano,2023,6
+2023-06-01,streetwear,62.5,urbano,2023,6
+2023-06-01,trap style,0.0,urbano,2023,6
+2023-06-01,y2k outfit,,urbano,2023,6
+2023-07-01,comprar ropa online,56.0,consciente_compra,2023,7
+2023-07-01,moda sostenible,22.4,consciente_compra,2023,7
+2023-07-01,ropa vintage,39.6,consciente_compra,2023,7
+2023-07-01,slow fashion,0.0,consciente_compra,2023,7
+2023-07-01,zara online,51.0,consciente_compra,2023,7
+2023-07-01,cayetana,,sofisticado,2023,7
+2023-07-01,minimalista elegante,,sofisticado,2023,7
+2023-07-01,moda preppy,,sofisticado,2023,7
+2023-07-01,old money,69.8,sofisticado,2023,7
+2023-07-01,pija,37.0,sofisticado,2023,7
+2023-07-01,choni,53.8,urbano,2023,7
+2023-07-01,shein,86.4,urbano,2023,7
+2023-07-01,streetwear,68.2,urbano,2023,7
+2023-07-01,trap style,0.0,urbano,2023,7
+2023-07-01,y2k outfit,,urbano,2023,7
+2023-08-01,comprar ropa online,54.75,consciente_compra,2023,8
+2023-08-01,moda sostenible,27.25,consciente_compra,2023,8
+2023-08-01,ropa vintage,41.25,consciente_compra,2023,8
+2023-08-01,slow fashion,0.0,consciente_compra,2023,8
+2023-08-01,zara online,37.5,consciente_compra,2023,8
+2023-08-01,cayetana,,sofisticado,2023,8
+2023-08-01,minimalista elegante,,sofisticado,2023,8
+2023-08-01,moda preppy,,sofisticado,2023,8
+2023-08-01,old money,88.0,sofisticado,2023,8
+2023-08-01,pija,11.5,sofisticado,2023,8
+2023-08-01,choni,63.75,urbano,2023,8
+2023-08-01,shein,74.5,urbano,2023,8
+2023-08-01,streetwear,78.25,urbano,2023,8
+2023-08-01,trap style,0.0,urbano,2023,8
+2023-08-01,y2k outfit,,urbano,2023,8
+2023-09-01,comprar ropa online,59.5,consciente_compra,2023,9
+2023-09-01,moda sostenible,21.5,consciente_compra,2023,9
+2023-09-01,ropa vintage,53.75,consciente_compra,2023,9
+2023-09-01,slow fashion,0.0,consciente_compra,2023,9
+2023-09-01,zara online,36.75,consciente_compra,2023,9
+2023-09-01,cayetana,,sofisticado,2023,9
+2023-09-01,minimalista elegante,,sofisticado,2023,9
+2023-09-01,moda preppy,,sofisticado,2023,9
+2023-09-01,old money,72.5,sofisticado,2023,9
+2023-09-01,pija,12.5,sofisticado,2023,9
+2023-09-01,choni,58.75,urbano,2023,9
+2023-09-01,shein,73.0,urbano,2023,9
+2023-09-01,streetwear,61.75,urbano,2023,9
+2023-09-01,trap style,0.0,urbano,2023,9
+2023-09-01,y2k outfit,,urbano,2023,9
+2023-10-01,comprar ropa online,57.4,consciente_compra,2023,10
+2023-10-01,moda sostenible,45.0,consciente_compra,2023,10
+2023-10-01,ropa vintage,50.6,consciente_compra,2023,10
+2023-10-01,slow fashion,12.8,consciente_compra,2023,10
+2023-10-01,zara online,42.8,consciente_compra,2023,10
+2023-10-01,cayetana,,sofisticado,2023,10
+2023-10-01,minimalista elegante,,sofisticado,2023,10
+2023-10-01,moda preppy,,sofisticado,2023,10
+2023-10-01,old money,69.8,sofisticado,2023,10
+2023-10-01,pija,15.2,sofisticado,2023,10
+2023-10-01,choni,52.8,urbano,2023,10
+2023-10-01,shein,76.8,urbano,2023,10
+2023-10-01,streetwear,71.6,urbano,2023,10
+2023-10-01,trap style,0.0,urbano,2023,10
+2023-10-01,y2k outfit,,urbano,2023,10
+2023-11-01,comprar ropa online,63.5,consciente_compra,2023,11
+2023-11-01,moda sostenible,44.25,consciente_compra,2023,11
+2023-11-01,ropa vintage,50.75,consciente_compra,2023,11
+2023-11-01,slow fashion,0.0,consciente_compra,2023,11
+2023-11-01,zara online,64.25,consciente_compra,2023,11
+2023-11-01,cayetana,,sofisticado,2023,11
+2023-11-01,minimalista elegante,,sofisticado,2023,11
+2023-11-01,moda preppy,,sofisticado,2023,11
+2023-11-01,old money,68.75,sofisticado,2023,11
+2023-11-01,pija,15.5,sofisticado,2023,11
+2023-11-01,choni,54.25,urbano,2023,11
+2023-11-01,shein,87.25,urbano,2023,11
+2023-11-01,streetwear,81.25,urbano,2023,11
+2023-11-01,trap style,25.0,urbano,2023,11
+2023-11-01,y2k outfit,,urbano,2023,11
+2023-12-01,comprar ropa online,65.6,consciente_compra,2023,12
+2023-12-01,moda sostenible,39.8,consciente_compra,2023,12
+2023-12-01,ropa vintage,50.0,consciente_compra,2023,12
+2023-12-01,slow fashion,0.0,consciente_compra,2023,12
+2023-12-01,zara online,63.8,consciente_compra,2023,12
+2023-12-01,cayetana,,sofisticado,2023,12
+2023-12-01,minimalista elegante,,sofisticado,2023,12
+2023-12-01,moda preppy,,sofisticado,2023,12
+2023-12-01,old money,67.8,sofisticado,2023,12
+2023-12-01,pija,22.6,sofisticado,2023,12
+2023-12-01,choni,58.8,urbano,2023,12
+2023-12-01,shein,64.0,urbano,2023,12
+2023-12-01,streetwear,81.2,urbano,2023,12
+2023-12-01,trap style,0.0,urbano,2023,12
+2023-12-01,y2k outfit,,urbano,2023,12
+2024-01-01,comprar ropa online,58.75,consciente_compra,2024,1
+2024-01-01,moda sostenible,34.75,consciente_compra,2024,1
+2024-01-01,ropa vintage,78.75,consciente_compra,2024,1
+2024-01-01,slow fashion,0.0,consciente_compra,2024,1
+2024-01-01,zara online,63.5,consciente_compra,2024,1
+2024-01-01,cayetana,,sofisticado,2024,1
+2024-01-01,minimalista elegante,,sofisticado,2024,1
+2024-01-01,moda preppy,,sofisticado,2024,1
+2024-01-01,old money,43.25,sofisticado,2024,1
+2024-01-01,pija,49.25,sofisticado,2024,1
+2024-01-01,choni,55.5,urbano,2024,1
+2024-01-01,shein,80.5,urbano,2024,1
+2024-01-01,streetwear,52.0,urbano,2024,1
+2024-01-01,trap style,,urbano,2024,1
+2024-01-01,y2k outfit,,urbano,2024,1
+2024-02-01,comprar ropa online,61.75,consciente_compra,2024,2
+2024-02-01,moda sostenible,58.25,consciente_compra,2024,2
+2024-02-01,ropa vintage,66.0,consciente_compra,2024,2
+2024-02-01,slow fashion,0.0,consciente_compra,2024,2
+2024-02-01,zara online,30.75,consciente_compra,2024,2
+2024-02-01,cayetana,,sofisticado,2024,2
+2024-02-01,minimalista elegante,,sofisticado,2024,2
+2024-02-01,moda preppy,,sofisticado,2024,2
+2024-02-01,old money,43.25,sofisticado,2024,2
+2024-02-01,pija,67.75,sofisticado,2024,2
+2024-02-01,choni,65.75,urbano,2024,2
+2024-02-01,shein,69.25,urbano,2024,2
+2024-02-01,streetwear,47.5,urbano,2024,2
+2024-02-01,trap style,,urbano,2024,2
+2024-02-01,y2k outfit,,urbano,2024,2
+2024-03-01,comprar ropa online,65.4,consciente_compra,2024,3
+2024-03-01,moda sostenible,45.0,consciente_compra,2024,3
+2024-03-01,ropa vintage,67.4,consciente_compra,2024,3
+2024-03-01,slow fashion,0.0,consciente_compra,2024,3
+2024-03-01,zara online,32.4,consciente_compra,2024,3
+2024-03-01,cayetana,,sofisticado,2024,3
+2024-03-01,minimalista elegante,,sofisticado,2024,3
+2024-03-01,moda preppy,,sofisticado,2024,3
+2024-03-01,old money,47.4,sofisticado,2024,3
+2024-03-01,pija,68.8,sofisticado,2024,3
+2024-03-01,choni,49.0,urbano,2024,3
+2024-03-01,shein,79.6,urbano,2024,3
+2024-03-01,streetwear,50.6,urbano,2024,3
+2024-03-01,trap style,,urbano,2024,3
+2024-03-01,y2k outfit,,urbano,2024,3
+2024-04-01,comprar ropa online,63.25,consciente_compra,2024,4
+2024-04-01,moda sostenible,76.0,consciente_compra,2024,4
+2024-04-01,ropa vintage,71.5,consciente_compra,2024,4
+2024-04-01,slow fashion,0.0,consciente_compra,2024,4
+2024-04-01,zara online,35.75,consciente_compra,2024,4
+2024-04-01,cayetana,,sofisticado,2024,4
+2024-04-01,minimalista elegante,,sofisticado,2024,4
+2024-04-01,moda preppy,,sofisticado,2024,4
+2024-04-01,old money,47.25,sofisticado,2024,4
+2024-04-01,pija,61.25,sofisticado,2024,4
+2024-04-01,choni,47.75,urbano,2024,4
+2024-04-01,shein,86.75,urbano,2024,4
+2024-04-01,streetwear,50.75,urbano,2024,4
+2024-04-01,trap style,,urbano,2024,4
+2024-04-01,y2k outfit,,urbano,2024,4
+2024-05-01,comprar ropa online,55.0,consciente_compra,2024,5
+2024-05-01,moda sostenible,71.0,consciente_compra,2024,5
+2024-05-01,ropa vintage,68.0,consciente_compra,2024,5
+2024-05-01,slow fashion,0.0,consciente_compra,2024,5
+2024-05-01,zara online,36.75,consciente_compra,2024,5
+2024-05-01,cayetana,,sofisticado,2024,5
+2024-05-01,minimalista elegante,,sofisticado,2024,5
+2024-05-01,moda preppy,,sofisticado,2024,5
+2024-05-01,old money,51.0,sofisticado,2024,5
+2024-05-01,pija,58.0,sofisticado,2024,5
+2024-05-01,choni,48.5,urbano,2024,5
+2024-05-01,shein,92.25,urbano,2024,5
+2024-05-01,streetwear,44.25,urbano,2024,5
+2024-05-01,trap style,,urbano,2024,5
+2024-05-01,y2k outfit,,urbano,2024,5
+2024-06-01,comprar ropa online,43.6,consciente_compra,2024,6
+2024-06-01,moda sostenible,50.8,consciente_compra,2024,6
+2024-06-01,ropa vintage,54.4,consciente_compra,2024,6
+2024-06-01,slow fashion,18.0,consciente_compra,2024,6
+2024-06-01,zara online,45.6,consciente_compra,2024,6
+2024-06-01,cayetana,,sofisticado,2024,6
+2024-06-01,minimalista elegante,,sofisticado,2024,6
+2024-06-01,moda preppy,,sofisticado,2024,6
+2024-06-01,old money,52.6,sofisticado,2024,6
+2024-06-01,pija,60.0,sofisticado,2024,6
+2024-06-01,choni,46.2,urbano,2024,6
+2024-06-01,shein,89.2,urbano,2024,6
+2024-06-01,streetwear,42.8,urbano,2024,6
+2024-06-01,trap style,,urbano,2024,6
+2024-06-01,y2k outfit,,urbano,2024,6
+2024-07-01,comprar ropa online,20.5,consciente_compra,2024,7
+2024-07-01,moda sostenible,0.0,consciente_compra,2024,7
+2024-07-01,ropa vintage,54.75,consciente_compra,2024,7
+2024-07-01,slow fashion,19.75,consciente_compra,2024,7
+2024-07-01,zara online,38.0,consciente_compra,2024,7
+2024-07-01,cayetana,,sofisticado,2024,7
+2024-07-01,minimalista elegante,,sofisticado,2024,7
+2024-07-01,moda preppy,,sofisticado,2024,7
+2024-07-01,old money,56.0,sofisticado,2024,7
+2024-07-01,pija,57.5,sofisticado,2024,7
+2024-07-01,choni,46.75,urbano,2024,7
+2024-07-01,shein,80.25,urbano,2024,7
+2024-07-01,streetwear,44.25,urbano,2024,7
+2024-07-01,trap style,,urbano,2024,7
+2024-07-01,y2k outfit,,urbano,2024,7
+2024-08-01,comprar ropa online,43.0,consciente_compra,2024,8
+2024-08-01,moda sostenible,0.0,consciente_compra,2024,8
+2024-08-01,ropa vintage,56.5,consciente_compra,2024,8
+2024-08-01,slow fashion,0.0,consciente_compra,2024,8
+2024-08-01,zara online,30.75,consciente_compra,2024,8
+2024-08-01,cayetana,,sofisticado,2024,8
+2024-08-01,minimalista elegante,,sofisticado,2024,8
+2024-08-01,moda preppy,,sofisticado,2024,8
+2024-08-01,old money,91.0,sofisticado,2024,8
+2024-08-01,pija,56.75,sofisticado,2024,8
+2024-08-01,choni,58.5,urbano,2024,8
+2024-08-01,shein,79.25,urbano,2024,8
+2024-08-01,streetwear,62.5,urbano,2024,8
+2024-08-01,trap style,,urbano,2024,8
+2024-08-01,y2k outfit,,urbano,2024,8
+2024-09-01,comprar ropa online,68.2,consciente_compra,2024,9
+2024-09-01,moda sostenible,39.6,consciente_compra,2024,9
+2024-09-01,ropa vintage,68.6,consciente_compra,2024,9
+2024-09-01,slow fashion,0.0,consciente_compra,2024,9
+2024-09-01,zara online,38.0,consciente_compra,2024,9
+2024-09-01,cayetana,,sofisticado,2024,9
+2024-09-01,minimalista elegante,,sofisticado,2024,9
+2024-09-01,moda preppy,,sofisticado,2024,9
+2024-09-01,old money,77.6,sofisticado,2024,9
+2024-09-01,pija,53.6,sofisticado,2024,9
+2024-09-01,choni,49.0,urbano,2024,9
+2024-09-01,shein,83.6,urbano,2024,9
+2024-09-01,streetwear,70.6,urbano,2024,9
+2024-09-01,trap style,,urbano,2024,9
+2024-09-01,y2k outfit,,urbano,2024,9
+2024-10-01,comprar ropa online,62.25,consciente_compra,2024,10
+2024-10-01,moda sostenible,46.5,consciente_compra,2024,10
+2024-10-01,ropa vintage,72.75,consciente_compra,2024,10
+2024-10-01,slow fashion,0.0,consciente_compra,2024,10
+2024-10-01,zara online,40.25,consciente_compra,2024,10
+2024-10-01,cayetana,,sofisticado,2024,10
+2024-10-01,minimalista elegante,,sofisticado,2024,10
+2024-10-01,moda preppy,,sofisticado,2024,10
+2024-10-01,old money,70.75,sofisticado,2024,10
+2024-10-01,pija,50.5,sofisticado,2024,10
+2024-10-01,choni,47.5,urbano,2024,10
+2024-10-01,shein,85.75,urbano,2024,10
+2024-10-01,streetwear,78.0,urbano,2024,10
+2024-10-01,trap style,,urbano,2024,10
+2024-10-01,y2k outfit,,urbano,2024,10
+2024-11-01,comprar ropa online,54.5,consciente_compra,2024,11
+2024-11-01,moda sostenible,40.5,consciente_compra,2024,11
+2024-11-01,ropa vintage,61.0,consciente_compra,2024,11
+2024-11-01,slow fashion,25.0,consciente_compra,2024,11
+2024-11-01,zara online,55.25,consciente_compra,2024,11
+2024-11-01,cayetana,,sofisticado,2024,11
+2024-11-01,minimalista elegante,,sofisticado,2024,11
+2024-11-01,moda preppy,,sofisticado,2024,11
+2024-11-01,old money,61.75,sofisticado,2024,11
+2024-11-01,pija,51.5,sofisticado,2024,11
+2024-11-01,choni,44.75,urbano,2024,11
+2024-11-01,shein,92.75,urbano,2024,11
+2024-11-01,streetwear,73.75,urbano,2024,11
+2024-11-01,trap style,,urbano,2024,11
+2024-11-01,y2k outfit,,urbano,2024,11
+2024-12-01,comprar ropa online,75.4,consciente_compra,2024,12
+2024-12-01,moda sostenible,10.8,consciente_compra,2024,12
+2024-12-01,ropa vintage,63.6,consciente_compra,2024,12
+2024-12-01,slow fashion,0.0,consciente_compra,2024,12
+2024-12-01,zara online,59.4,consciente_compra,2024,12
+2024-12-01,cayetana,,sofisticado,2024,12
+2024-12-01,minimalista elegante,,sofisticado,2024,12
+2024-12-01,moda preppy,,sofisticado,2024,12
+2024-12-01,old money,59.8,sofisticado,2024,12
+2024-12-01,pija,65.8,sofisticado,2024,12
+2024-12-01,choni,46.2,urbano,2024,12
+2024-12-01,shein,79.8,urbano,2024,12
+2024-12-01,streetwear,85.8,urbano,2024,12
+2024-12-01,trap style,,urbano,2024,12
+2024-12-01,y2k outfit,,urbano,2024,12
+2025-01-01,comprar ropa online,57.75,consciente_compra,2025,1
+2025-01-01,moda sostenible,51.75,consciente_compra,2025,1
+2025-01-01,ropa vintage,,consciente_compra,2025,1
+2025-01-01,slow fashion,0.0,consciente_compra,2025,1
+2025-01-01,zara online,63.25,consciente_compra,2025,1
+2025-01-01,cayetana,,sofisticado,2025,1
+2025-01-01,minimalista elegante,,sofisticado,2025,1
+2025-01-01,moda preppy,0.0,sofisticado,2025,1
+2025-01-01,old money,,sofisticado,2025,1
+2025-01-01,pija,,sofisticado,2025,1
+2025-01-01,choni,,urbano,2025,1
+2025-01-01,shein,82.75,urbano,2025,1
+2025-01-01,streetwear,76.5,urbano,2025,1
+2025-01-01,trap style,0.0,urbano,2025,1
+2025-01-01,y2k outfit,,urbano,2025,1
+2025-02-01,comprar ropa online,13.25,consciente_compra,2025,2
+2025-02-01,moda sostenible,47.75,consciente_compra,2025,2
+2025-02-01,ropa vintage,,consciente_compra,2025,2
+2025-02-01,slow fashion,0.0,consciente_compra,2025,2
+2025-02-01,zara online,39.75,consciente_compra,2025,2
+2025-02-01,cayetana,,sofisticado,2025,2
+2025-02-01,minimalista elegante,,sofisticado,2025,2
+2025-02-01,moda preppy,0.0,sofisticado,2025,2
+2025-02-01,old money,,sofisticado,2025,2
+2025-02-01,pija,,sofisticado,2025,2
+2025-02-01,choni,,urbano,2025,2
+2025-02-01,shein,77.75,urbano,2025,2
+2025-02-01,streetwear,62.75,urbano,2025,2
+2025-02-01,trap style,0.0,urbano,2025,2
+2025-02-01,y2k outfit,,urbano,2025,2
+2025-03-01,comprar ropa online,62.2,consciente_compra,2025,3
+2025-03-01,moda sostenible,73.2,consciente_compra,2025,3
+2025-03-01,ropa vintage,,consciente_compra,2025,3
+2025-03-01,slow fashion,0.0,consciente_compra,2025,3
+2025-03-01,zara online,39.0,consciente_compra,2025,3
+2025-03-01,cayetana,,sofisticado,2025,3
+2025-03-01,minimalista elegante,,sofisticado,2025,3
+2025-03-01,moda preppy,0.0,sofisticado,2025,3
+2025-03-01,old money,,sofisticado,2025,3
+2025-03-01,pija,,sofisticado,2025,3
+2025-03-01,choni,,urbano,2025,3
+2025-03-01,shein,79.0,urbano,2025,3
+2025-03-01,streetwear,66.4,urbano,2025,3
+2025-03-01,trap style,0.0,urbano,2025,3
+2025-03-01,y2k outfit,,urbano,2025,3
+2025-04-01,comprar ropa online,53.0,consciente_compra,2025,4
+2025-04-01,moda sostenible,41.25,consciente_compra,2025,4
+2025-04-01,ropa vintage,,consciente_compra,2025,4
+2025-04-01,slow fashion,0.0,consciente_compra,2025,4
+2025-04-01,zara online,37.25,consciente_compra,2025,4
+2025-04-01,cayetana,,sofisticado,2025,4
+2025-04-01,minimalista elegante,,sofisticado,2025,4
+2025-04-01,moda preppy,0.0,sofisticado,2025,4
+2025-04-01,old money,,sofisticado,2025,4
+2025-04-01,pija,,sofisticado,2025,4
+2025-04-01,choni,,urbano,2025,4
+2025-04-01,shein,77.0,urbano,2025,4
+2025-04-01,streetwear,73.75,urbano,2025,4
+2025-04-01,trap style,25.0,urbano,2025,4
+2025-04-01,y2k outfit,,urbano,2025,4
+2025-05-01,comprar ropa online,47.5,consciente_compra,2025,5
+2025-05-01,moda sostenible,33.5,consciente_compra,2025,5
+2025-05-01,ropa vintage,,consciente_compra,2025,5
+2025-05-01,slow fashion,0.0,consciente_compra,2025,5
+2025-05-01,zara online,33.0,consciente_compra,2025,5
+2025-05-01,cayetana,,sofisticado,2025,5
+2025-05-01,minimalista elegante,,sofisticado,2025,5
+2025-05-01,moda preppy,0.0,sofisticado,2025,5
+2025-05-01,old money,,sofisticado,2025,5
+2025-05-01,pija,,sofisticado,2025,5
+2025-05-01,choni,,urbano,2025,5
+2025-05-01,shein,87.25,urbano,2025,5
+2025-05-01,streetwear,60.25,urbano,2025,5
+2025-05-01,trap style,0.0,urbano,2025,5
+2025-05-01,y2k outfit,,urbano,2025,5
+2025-06-01,comprar ropa online,56.2,consciente_compra,2025,6
+2025-06-01,moda sostenible,38.4,consciente_compra,2025,6
+2025-06-01,ropa vintage,,consciente_compra,2025,6
+2025-06-01,slow fashion,0.0,consciente_compra,2025,6
+2025-06-01,zara online,42.4,consciente_compra,2025,6
+2025-06-01,cayetana,,sofisticado,2025,6
+2025-06-01,minimalista elegante,,sofisticado,2025,6
+2025-06-01,moda preppy,20.0,sofisticado,2025,6
+2025-06-01,old money,,sofisticado,2025,6
+2025-06-01,pija,,sofisticado,2025,6
+2025-06-01,choni,,urbano,2025,6
+2025-06-01,shein,89.4,urbano,2025,6
+2025-06-01,streetwear,68.4,urbano,2025,6
+2025-06-01,trap style,0.0,urbano,2025,6
+2025-06-01,y2k outfit,,urbano,2025,6
+2025-07-01,comprar ropa online,28.25,consciente_compra,2025,7
+2025-07-01,moda sostenible,0.0,consciente_compra,2025,7
+2025-07-01,ropa vintage,,consciente_compra,2025,7
+2025-07-01,slow fashion,25.0,consciente_compra,2025,7
+2025-07-01,zara online,34.0,consciente_compra,2025,7
+2025-07-01,cayetana,,sofisticado,2025,7
+2025-07-01,minimalista elegante,,sofisticado,2025,7
+2025-07-01,moda preppy,0.0,sofisticado,2025,7
+2025-07-01,old money,,sofisticado,2025,7
+2025-07-01,pija,,sofisticado,2025,7
+2025-07-01,choni,,urbano,2025,7
+2025-07-01,shein,79.75,urbano,2025,7
+2025-07-01,streetwear,68.25,urbano,2025,7
+2025-07-01,trap style,0.0,urbano,2025,7
+2025-07-01,y2k outfit,,urbano,2025,7
+2025-08-01,comprar ropa online,46.0,consciente_compra,2025,8
+2025-08-01,moda sostenible,0.0,consciente_compra,2025,8
+2025-08-01,ropa vintage,,consciente_compra,2025,8
+2025-08-01,slow fashion,0.0,consciente_compra,2025,8
+2025-08-01,zara online,26.2,consciente_compra,2025,8
+2025-08-01,cayetana,,sofisticado,2025,8
+2025-08-01,minimalista elegante,,sofisticado,2025,8
+2025-08-01,moda preppy,0.0,sofisticado,2025,8
+2025-08-01,old money,,sofisticado,2025,8
+2025-08-01,pija,,sofisticado,2025,8
+2025-08-01,choni,,urbano,2025,8
+2025-08-01,shein,69.6,urbano,2025,8
+2025-08-01,streetwear,93.2,urbano,2025,8
+2025-08-01,trap style,0.0,urbano,2025,8
+2025-08-01,y2k outfit,,urbano,2025,8
+2025-09-01,comprar ropa online,75.5,consciente_compra,2025,9
+2025-09-01,moda sostenible,36.75,consciente_compra,2025,9
+2025-09-01,ropa vintage,,consciente_compra,2025,9
+2025-09-01,slow fashion,0.0,consciente_compra,2025,9
+2025-09-01,zara online,30.0,consciente_compra,2025,9
+2025-09-01,cayetana,,sofisticado,2025,9
+2025-09-01,minimalista elegante,,sofisticado,2025,9
+2025-09-01,moda preppy,0.0,sofisticado,2025,9
+2025-09-01,old money,,sofisticado,2025,9
+2025-09-01,pija,,sofisticado,2025,9
+2025-09-01,choni,,urbano,2025,9
+2025-09-01,shein,66.0,urbano,2025,9
+2025-09-01,streetwear,83.75,urbano,2025,9
+2025-09-01,trap style,0.0,urbano,2025,9
+2025-09-01,y2k outfit,,urbano,2025,9
+2025-10-01,comprar ropa online,60.75,consciente_compra,2025,10
+2025-10-01,moda sostenible,55.25,consciente_compra,2025,10
+2025-10-01,ropa vintage,,consciente_compra,2025,10
+2025-10-01,slow fashion,4.0,consciente_compra,2025,10
+2025-10-01,zara online,30.25,consciente_compra,2025,10
+2025-10-01,cayetana,,sofisticado,2025,10
+2025-10-01,minimalista elegante,,sofisticado,2025,10
+2025-10-01,moda preppy,1.5,sofisticado,2025,10
+2025-10-01,old money,,sofisticado,2025,10
+2025-10-01,pija,,sofisticado,2025,10
+2025-10-01,choni,,urbano,2025,10
+2025-10-01,shein,70.75,urbano,2025,10
+2025-10-01,streetwear,76.75,urbano,2025,10
+2025-10-01,trap style,0.0,urbano,2025,10
+2025-10-01,y2k outfit,,urbano,2025,10
+2025-11-01,comprar ropa online,78.5,consciente_compra,2025,11
+2025-11-01,moda sostenible,53.5,consciente_compra,2025,11
+2025-11-01,ropa vintage,,consciente_compra,2025,11
+2025-11-01,slow fashion,27.5,consciente_compra,2025,11
+2025-11-01,zara online,34.5,consciente_compra,2025,11
+2025-11-01,cayetana,,sofisticado,2025,11
+2025-11-01,minimalista elegante,,sofisticado,2025,11
+2025-11-01,moda preppy,4.5,sofisticado,2025,11
+2025-11-01,old money,,sofisticado,2025,11
+2025-11-01,pija,,sofisticado,2025,11
+2025-11-01,choni,,urbano,2025,11
+2025-11-01,shein,89.0,urbano,2025,11
+2025-11-01,streetwear,86.5,urbano,2025,11
+2025-11-01,trap style,2.5,urbano,2025,11
+2025-11-01,y2k outfit,,urbano,2025,11
+2025-12-01,comprar ropa online,,consciente_compra,2025,12
+2025-12-01,moda sostenible,,consciente_compra,2025,12
+2025-12-01,ropa vintage,,consciente_compra,2025,12
+2025-12-01,slow fashion,,consciente_compra,2025,12
+2025-12-01,zara online,,consciente_compra,2025,12
+2025-12-01,cayetana,,sofisticado,2025,12
+2025-12-01,minimalista elegante,,sofisticado,2025,12
+2025-12-01,moda preppy,,sofisticado,2025,12
+2025-12-01,old money,,sofisticado,2025,12
+2025-12-01,pija,,sofisticado,2025,12
+2025-12-01,choni,,urbano,2025,12
+2025-12-01,shein,,urbano,2025,12
+2025-12-01,streetwear,,urbano,2025,12
+2025-12-01,trap style,,urbano,2025,12
+2025-12-01,y2k outfit,,urbano,2025,12
