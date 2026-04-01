@@ -8,3 +8,8 @@ __pycache__/
 
 # VS Code
 .vscode/
+
+ing_dato/src/**/archive/
+ing_dato/src/**/__pycache__/
+ing_dato/.vscode/
+.vscode/
