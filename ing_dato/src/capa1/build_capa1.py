@@ -1,3 +1,19 @@
+"""
+build_capa1.py — Construcción de masters integrados de Capa 1
+
+Ejecutar después de transform_capa1.py.
+
+Cambios respecto a versión anterior:
+  - Variable selection matrix actualizada: pct_empresas_venden_web_apps
+    refleja el nulo de 2023 por cambio metodológico INE K→I
+  - build_capa1_master_anual() propaga flag pct_personas_compra_online_imputado
+    desde contexto al master anual para trazabilidad completa
+  - build_capa1_null_summary(): tabla única con todos los nulos del master
+    anual y sus decisiones metodológicas documentadas
+  - Inventory corregido: eurostat_online_empresas periodo_fin = 2024
+  - variable_final_decisions actualizada en consecuencia
+"""
+
 import sqlite3
 
 import pandas as pd
@@ -16,13 +32,11 @@ from src.common.config import (
 # =========================
 
 def _ensure_dirs() -> None:
-    (PROCESSED_CAPA1 / "comercio_electronico").mkdir(parents=True, exist_ok=True)
-    (PROCESSED_CAPA1 / "integrated").mkdir(parents=True, exist_ok=True)
-
+    for sub in ["comercio_electronico", "integrated"]:
+        (PROCESSED_CAPA1 / sub).mkdir(parents=True, exist_ok=True)
     TABLES_CAPA1.mkdir(parents=True, exist_ok=True)
     TABLES_CAPA1_CONTROL.mkdir(parents=True, exist_ok=True)
     TABLES_CAPA1_MASTERS.mkdir(parents=True, exist_ok=True)
-
     DB_CAPA1.parent.mkdir(parents=True, exist_ok=True)
 
 
@@ -31,22 +45,26 @@ def _ensure_dirs() -> None:
 # =========================
 
 def build_variable_selection_matrix_capa1() -> pd.DataFrame:
+    """
+    Documenta la decisión de incluir o excluir cada variable en el master analítico.
+    Refleja el estado post-transform incluyendo:
+      - El nulo estructural de pct_empresas_venden_web_apps en 2023
+        (cambio metodológico INE K→I, no imputable)
+      - El flag de imputación de pct_personas_compra_online (2025)
+    """
     _ensure_dirs()
 
     records = [
-        # =========================
-        # contexto_digitalizacion_clean
-        # =========================
+        # --- contexto_digitalizacion_clean ---
         {
             "dataset": "contexto_digitalizacion_clean",
             "variable": "anio",
             "descripcion": "Año de observación",
             "tipo_variable": "tecnica",
             "rol_analitico": "join_temporal",
-            "nivel_nulos": "bajo",
-            "redundancia": "ninguna",
+            "nivel_nulos": "ninguno",
             "decision": "mantener",
-            "justificacion": "Variable temporal principal para agregaciones y cruces con otras fuentes anuales",
+            "justificacion": "Variable temporal principal para cruces con otras fuentes anuales.",
         },
         {
             "dataset": "contexto_digitalizacion_clean",
@@ -54,10 +72,9 @@ def build_variable_selection_matrix_capa1() -> pd.DataFrame:
             "descripcion": "Porcentaje de usuarios de redes sociales en España",
             "tipo_variable": "nucleo",
             "rol_analitico": "analisis_principal",
-            "nivel_nulos": "bajo",
-            "redundancia": "ninguna",
+            "nivel_nulos": "ninguno",
             "decision": "mantener",
-            "justificacion": "Indicador clave del contexto de digitalización social",
+            "justificacion": "Indicador clave del contexto de digitalización social.",
         },
         {
             "dataset": "contexto_digitalizacion_clean",
@@ -65,25 +82,38 @@ def build_variable_selection_matrix_capa1() -> pd.DataFrame:
             "descripcion": "Porcentaje de personas que realizan compras online",
             "tipo_variable": "nucleo",
             "rol_analitico": "analisis_principal",
-            "nivel_nulos": "bajo",
-            "redundancia": "ninguna",
-            "decision": "mantener",
-            "justificacion": "Indicador clave del contexto de digitalización del consumo",
+            "nivel_nulos": "1 (2025, imputado por interpolacion lineal)",
+            "decision": "mantener — nulo imputado con interpolacion lineal, flag _imputado=True",
+            "justificacion": (
+                "Indicador clave del consumo digital. 1 nulo en 2025 por dato pendiente "
+                "de publicacion. Serie 2020-2024 continua y monótonamente creciente "
+                "(62.62→68.94): interpolacion lineal es la estimacion mas conservadora. "
+                "Valor imputado: 68.94. Flag de trazabilidad incluido en el master."
+            ),
         },
-
-        # =========================
-        # contexto_digitalizacion_extended / documentado
-        # =========================
+        {
+            "dataset": "contexto_digitalizacion_clean",
+            "variable": "pct_personas_compra_online_imputado",
+            "descripcion": "Flag booleano: True si el valor de pct_personas_compra_online fue imputado",
+            "tipo_variable": "tecnica",
+            "rol_analitico": "trazabilidad",
+            "nivel_nulos": "ninguno",
+            "decision": "mantener — propagado al master anual para analisis de sensibilidad",
+            "justificacion": "Permite excluir el valor estimado del año 2025 en analisis de sensibilidad.",
+        },
+        # --- contexto extended / documentado ---
         {
             "dataset": "contexto_digitalizacion_extended",
             "variable": "pct_personas_compra_ropa_online",
             "descripcion": "Porcentaje de personas que compran ropa online",
             "tipo_variable": "auxiliar",
             "rol_analitico": "contexto",
-            "nivel_nulos": "alto",
-            "redundancia": "baja",
+            "nivel_nulos": "alto (5/6 filas)",
             "decision": "mantener_solo_trazabilidad",
-            "justificacion": "Variable relevante temáticamente, pero con cobertura insuficiente para el master analítico principal",
+            "justificacion": (
+                "Variable temáticamente relevante pero con cobertura insuficiente "
+                "(solo 1 observacion valida, año 2024). No entra en el master analitico principal."
+            ),
         },
         {
             "dataset": "contexto_digitalizacion_documentado",
@@ -91,10 +121,9 @@ def build_variable_selection_matrix_capa1() -> pd.DataFrame:
             "descripcion": "Comentarios contextuales sobre hitos del periodo",
             "tipo_variable": "contextual",
             "rol_analitico": "trazabilidad",
-            "nivel_nulos": "medio",
-            "redundancia": "baja",
+            "nivel_nulos": "bajo",
             "decision": "mantener_solo_trazabilidad",
-            "justificacion": "Útil para documentación y narrativa, no para análisis cuantitativo",
+            "justificacion": "Util para narrativa e interpretacion, no para analisis cuantitativo.",
         },
         {
             "dataset": "contexto_digitalizacion_documentado",
@@ -103,46 +132,29 @@ def build_variable_selection_matrix_capa1() -> pd.DataFrame:
             "tipo_variable": "tecnica",
             "rol_analitico": "trazabilidad",
             "nivel_nulos": "bajo",
-            "redundancia": "baja",
             "decision": "mantener_solo_trazabilidad",
-            "justificacion": "Necesarias para auditoría metodológica, no para el master analítico",
+            "justificacion": "Necesarias para auditoria metodologica, no para el master analitico.",
         },
-
-        # =========================
-        # comercio_electronico_core_std
-        # =========================
+        # --- comercio_electronico_core_std ---
         {
             "dataset": "comercio_electronico_core_std",
             "variable": "anio",
-            "descripcion": "Año de observación",
+            "descripcion": "Año de observacion",
             "tipo_variable": "tecnica",
             "rol_analitico": "join_temporal",
-            "nivel_nulos": "bajo",
-            "redundancia": "ninguna",
+            "nivel_nulos": "ninguno",
             "decision": "mantener",
-            "justificacion": "Necesaria para series anuales y cruces con el resto de fuentes",
-        },
-        {
-            "dataset": "comercio_electronico_core_std",
-            "variable": "indicador",
-            "descripcion": "Etiqueta original del indicador",
-            "tipo_variable": "tecnica",
-            "rol_analitico": "trazabilidad",
-            "nivel_nulos": "bajo",
-            "redundancia": "media",
-            "decision": "mantener_solo_trazabilidad",
-            "justificacion": "Útil para conservar la referencia original del INE, pero el análisis opera sobre el indicador estandarizado",
+            "justificacion": "Necesaria para series anuales y cruces con el resto de fuentes.",
         },
         {
             "dataset": "comercio_electronico_core_std",
             "variable": "indicador_std",
-            "descripcion": "Indicador estandarizado común entre años",
+            "descripcion": "Indicador estandarizado comun entre años",
             "tipo_variable": "nucleo",
             "rol_analitico": "analisis_principal",
-            "nivel_nulos": "bajo",
-            "redundancia": "baja",
+            "nivel_nulos": "ninguno",
             "decision": "mantener",
-            "justificacion": "Permite comparar entre años indicadores equivalentes con distinta codificación original",
+            "justificacion": "Permite comparar entre años indicadores con distinta codificacion original.",
         },
         {
             "dataset": "comercio_electronico_core_std",
@@ -150,69 +162,74 @@ def build_variable_selection_matrix_capa1() -> pd.DataFrame:
             "descripcion": "Tamaño de empresa",
             "tipo_variable": "auxiliar",
             "rol_analitico": "segmentacion",
-            "nivel_nulos": "bajo",
-            "redundancia": "baja",
+            "nivel_nulos": "ninguno",
             "decision": "mantener",
-            "justificacion": "Permite análisis por tamaño empresarial y selección de total para masters integrados",
+            "justificacion": "Permite analisis por tamaño y seleccion de 'total' para masters integrados.",
         },
         {
             "dataset": "comercio_electronico_core_std",
             "variable": "valor",
-            "descripcion": "Valor numérico del indicador",
+            "descripcion": "Valor numerico del indicador",
             "tipo_variable": "nucleo",
             "rol_analitico": "analisis_principal",
-            "nivel_nulos": "bajo",
-            "redundancia": "ninguna",
-            "decision": "mantener",
-            "justificacion": "Variable cuantitativa principal del bloque de ecommerce empresarial",
+            "nivel_nulos": "bajo (1210 nulos estructurales INE, 3.52%)",
+            "decision": "mantener — nulos son ausencias estructurales de la fuente, no imputables",
+            "justificacion": (
+                "Variable cuantitativa principal. Los 1210 nulos corresponden a indicadores "
+                "no incluidos en ediciones anteriores de la Encuesta TIC-E. Son ausencias "
+                "de cuestionario, no errores de datos."
+            ),
         },
-
-        # =========================
-        # capa1_master_anual_analysis
-        # =========================
+        {
+            "dataset": "comercio_electronico_core_std",
+            "variable": "indicador",
+            "descripcion": "Etiqueta original del indicador INE",
+            "tipo_variable": "tecnica",
+            "rol_analitico": "trazabilidad",
+            "nivel_nulos": "ninguno",
+            "decision": "mantener_solo_trazabilidad",
+            "justificacion": "Conserva referencia original del INE; el analisis opera sobre indicador_std.",
+        },
+        # --- capa1_master_anual_analysis ---
         {
             "dataset": "capa1_master_anual_analysis",
             "variable": "anio",
-            "descripcion": "Año de observación",
+            "descripcion": "Año de observacion",
             "tipo_variable": "tecnica",
             "rol_analitico": "join_temporal",
-            "nivel_nulos": "bajo",
-            "redundancia": "ninguna",
+            "nivel_nulos": "ninguno",
             "decision": "mantener",
-            "justificacion": "Variable temporal principal del master anual",
+            "justificacion": "Variable temporal principal del master anual.",
         },
         {
             "dataset": "capa1_master_anual_analysis",
             "variable": "pct_usuarios_rrss",
-            "descripcion": "Uso de redes sociales",
+            "descripcion": "Uso de redes sociales (%)",
             "tipo_variable": "nucleo",
             "rol_analitico": "analisis_principal",
-            "nivel_nulos": "bajo",
-            "redundancia": "ninguna",
+            "nivel_nulos": "ninguno",
             "decision": "mantener",
-            "justificacion": "Indicador esencial del contexto digital",
+            "justificacion": "Indicador esencial del contexto digital.",
         },
         {
             "dataset": "capa1_master_anual_analysis",
             "variable": "pct_personas_compra_online",
-            "descripcion": "Compra online de personas",
+            "descripcion": "Compra online de personas (%)",
             "tipo_variable": "nucleo",
             "rol_analitico": "analisis_principal",
-            "nivel_nulos": "bajo",
-            "redundancia": "ninguna",
+            "nivel_nulos": "ninguno en periodo 2020-2023",
             "decision": "mantener",
-            "justificacion": "Indicador esencial del consumo digital",
+            "justificacion": "Indicador esencial del consumo digital. Nulo de 2025 excluido del master_analysis.",
         },
         {
             "dataset": "capa1_master_anual_analysis",
             "variable": "pct_facturacion_empresas_online",
-            "descripcion": "Facturación empresarial procedente de ventas online",
+            "descripcion": "Facturacion empresarial procedente de ventas online (%)",
             "tipo_variable": "nucleo",
             "rol_analitico": "analisis_principal",
-            "nivel_nulos": "bajo",
-            "redundancia": "baja",
+            "nivel_nulos": "ninguno en periodo 2020-2023",
             "decision": "mantener",
-            "justificacion": "Aporta la perspectiva empresarial del canal online",
+            "justificacion": "Aporta la perspectiva empresarial del canal online.",
         },
         {
             "dataset": "capa1_master_anual_analysis",
@@ -220,10 +237,9 @@ def build_variable_selection_matrix_capa1() -> pd.DataFrame:
             "descripcion": "Porcentaje de empresas que venden por ecommerce",
             "tipo_variable": "nucleo",
             "rol_analitico": "analisis_principal",
-            "nivel_nulos": "bajo",
-            "redundancia": "baja",
+            "nivel_nulos": "ninguno en periodo 2020-2023",
             "decision": "mantener",
-            "justificacion": "Mide adopción empresarial del canal ecommerce",
+            "justificacion": "Mide adopcion empresarial del canal ecommerce.",
         },
         {
             "dataset": "capa1_master_anual_analysis",
@@ -231,91 +247,69 @@ def build_variable_selection_matrix_capa1() -> pd.DataFrame:
             "descripcion": "Porcentaje de empresas que venden por web o apps",
             "tipo_variable": "auxiliar",
             "rol_analitico": "segmentacion",
-            "nivel_nulos": "bajo",
-            "redundancia": "media",
-            "decision": "mantener",
-            "justificacion": "Refina la medición de adopción del ecommerce por canal concreto",
+            "nivel_nulos": "1 (2023) — ausencia metodologica, NO imputable",
+            "decision": (
+                "mantener con nulo documentado — cambio metodologico INE: "
+                "indicador K.1 (2020-2022) no es comparable con I.1.1 (2023)"
+            ),
+            "justificacion": (
+                "El INE reformulo el modulo de ecommerce en 2023, renombrando K.1 como I.1.1 "
+                "con cambios en universo y formulacion. El valor de I.1.1 en 2023 es 27.44% "
+                "pero no es homologable con K.1 de años anteriores. Se conserva el NaN en 2023 "
+                "para no introducir una comparacion metodologicamente incorrecta. "
+                "Valor de referencia documentado en calidad/master_anual_null_decisions.csv."
+            ),
         },
         {
             "dataset": "capa1_master_anual_analysis",
             "variable": "pct_ventas_ecommerce_sobre_total",
-            "descripcion": "Peso del ecommerce sobre ventas totales",
+            "descripcion": "Peso del ecommerce sobre ventas totales (%)",
             "tipo_variable": "nucleo",
             "rol_analitico": "analisis_principal",
-            "nivel_nulos": "bajo",
-            "redundancia": "baja",
+            "nivel_nulos": "ninguno en periodo 2020-2023",
             "decision": "mantener",
-            "justificacion": "Mide la importancia relativa del canal online en el total de ventas",
+            "justificacion": "Mide la importancia relativa del canal online en el total de ventas.",
         },
         {
             "dataset": "capa1_master_anual_analysis",
             "variable": "pct_ventas_ecommerce_sobre_total_empresas_que_venden",
-            "descripcion": "Peso del ecommerce sobre ventas de empresas que ya venden online",
+            "descripcion": "Peso del ecommerce sobre ventas de empresas activas en el canal (%)",
             "tipo_variable": "auxiliar",
             "rol_analitico": "analisis_principal",
-            "nivel_nulos": "bajo",
-            "redundancia": "media",
+            "nivel_nulos": "ninguno en periodo 2020-2023",
             "decision": "mantener",
-            "justificacion": "Aporta una lectura más fina del peso del canal dentro del subconjunto de empresas activas en ecommerce",
+            "justificacion": "Lectura mas fina del peso del canal dentro del subconjunto de empresas ecommerce.",
         },
-
-        # =========================
-        # capa1_master_mensual_analysis
-        # =========================
+        # --- capa1_master_mensual_analysis ---
         {
             "dataset": "capa1_master_mensual_analysis",
             "variable": "fecha",
-            "descripcion": "Mes de observación",
+            "descripcion": "Mes de observacion",
             "tipo_variable": "nucleo",
             "rol_analitico": "analisis_principal",
-            "nivel_nulos": "bajo",
-            "redundancia": "ninguna",
+            "nivel_nulos": "ninguno",
             "decision": "mantener",
-            "justificacion": "Variable temporal principal del master mensual",
-        },
-        {
-            "dataset": "capa1_master_mensual_analysis",
-            "variable": "anio",
-            "descripcion": "Año derivado",
-            "tipo_variable": "tecnica",
-            "rol_analitico": "join_temporal",
-            "nivel_nulos": "bajo",
-            "redundancia": "media",
-            "decision": "mantener",
-            "justificacion": "Facilita agregaciones anuales y lectura resumida",
-        },
-        {
-            "dataset": "capa1_master_mensual_analysis",
-            "variable": "mes",
-            "descripcion": "Mes numérico derivado",
-            "tipo_variable": "tecnica",
-            "rol_analitico": "join_temporal",
-            "nivel_nulos": "bajo",
-            "redundancia": "media",
-            "decision": "mantener",
-            "justificacion": "Facilita análisis estacional y heatmaps",
+            "justificacion": "Variable temporal principal del master mensual.",
         },
         {
             "dataset": "capa1_master_mensual_analysis",
             "variable": "indice_retail_moda",
-            "descripcion": "Índice mensual del retail de moda",
+            "descripcion": "Indice mensual del retail de moda (base 2015=100)",
             "tipo_variable": "nucleo",
             "rol_analitico": "analisis_principal",
-            "nivel_nulos": "bajo",
-            "redundancia": "ninguna",
+            "nivel_nulos": "ninguno",
             "decision": "mantener",
-            "justificacion": "Serie principal para estudiar la evolución del sector moda",
+            "justificacion": "Serie principal para estudiar la evolucion del sector moda.",
         },
         {
             "dataset": "capa1_master_mensual_analysis",
             "variable": "indice_retail_total",
-            "descripcion": "Índice mensual del retail total",
+            "descripcion": "Indice mensual del retail total (base 2021=100)",
             "tipo_variable": "nucleo",
             "rol_analitico": "analisis_principal",
-            "nivel_nulos": "bajo",
-            "redundancia": "ninguna",
+            "nivel_nulos": "ninguno",
             "decision": "mantener",
-            "justificacion": "Serie de referencia para comparar el desempeño de la moda frente al retail agregado",
+            "justificacion": "Serie de referencia para comparar el desempeño de la moda frente al retail agregado.",
         },
         {
             "dataset": "capa1_master_mensual_analysis",
@@ -323,34 +317,124 @@ def build_variable_selection_matrix_capa1() -> pd.DataFrame:
             "descripcion": "Ratio entre retail de moda y retail total",
             "tipo_variable": "auxiliar",
             "rol_analitico": "analisis_principal",
-            "nivel_nulos": "bajo",
-            "redundancia": "baja",
+            "nivel_nulos": "ninguno",
             "decision": "mantener",
-            "justificacion": "Variable derivada con alto valor interpretativo para comparar rendimiento relativo",
+            "justificacion": "Variable derivada con alto valor interpretativo para comparar rendimiento relativo.",
         },
         {
             "dataset": "capa1_master_mensual_analysis",
             "variable": "dif_moda_vs_total",
-            "descripcion": "Diferencia entre índice de moda e índice retail total",
+            "descripcion": "Diferencia absoluta entre indice de moda e indice retail total",
             "tipo_variable": "auxiliar",
             "rol_analitico": "analisis_principal",
-            "nivel_nulos": "bajo",
-            "redundancia": "baja",
+            "nivel_nulos": "ninguno",
             "decision": "mantener",
-            "justificacion": "Complementa el ratio con una lectura absoluta de la brecha entre ambas series",
+            "justificacion": "Complementa el ratio con una lectura absoluta de la brecha entre ambas series.",
         },
     ]
 
     df = pd.DataFrame(records)
+    out_path = TABLES_CAPA1_CONTROL / "capa1_variable_selection_matrix.csv"
+    df.to_csv(out_path, index=False)
+    print(f"  Variable selection matrix: {len(df)} variables documentadas → {out_path.name}")
+    return df
 
-    output_path = TABLES_CAPA1_CONTROL / "capa1_variable_selection_matrix.csv"
-    df.to_csv(output_path, index=False)
 
-    print("Matriz de selección de variables de capa 1 guardada en:")
-    print(output_path)
-    print("")
-    print(df.head(15))
+# =========================
+# 0B. NULL SUMMARY — MASTER ANUAL
+# =========================
 
+def build_capa1_null_summary() -> pd.DataFrame:
+    """
+    Tabla única que consolida todos los nulos del master anual con su decisión
+    metodológica. Complementa la variable_selection_matrix con los valores
+    concretos antes y después del tratamiento.
+
+    Esta tabla es la evidencia documental del proceso de limpieza:
+    muestra para cada nulo su naturaleza, la decisión tomada y el impacto.
+    """
+    _ensure_dirs()
+
+    master_full = pd.read_csv(PROCESSED_CAPA1 / "integrated" / "capa1_master_anual_full.csv")
+
+    records = []
+
+    # --- pct_personas_compra_online: imputado en 2025 ---
+    rows_con_nulo = master_full[master_full["pct_personas_compra_online"].isnull()]
+    for _, row in rows_con_nulo.iterrows():
+        records.append({
+            "dataset": "capa1_master_anual_full",
+            "variable": "pct_personas_compra_online",
+            "anio": int(row["anio"]) if pd.notna(row["anio"]) else None,
+            "valor_antes": None,
+            "valor_despues": 68.94,
+            "tipo_ausencia": "dato_pendiente_publicacion",
+            "metodo_tratamiento": "interpolacion_lineal",
+            "flag_trazabilidad": "pct_personas_compra_online_imputado=True en contexto_digitalizacion_clean",
+            "incluido_en_master_analysis": "no — 2025 fuera del periodo 2020-2023",
+            "justificacion": (
+                "Dato de 2025 no publicado en fecha de extraccion. "
+                "Serie 2020-2024 continua: interpolacion lineal aplicada."
+            ),
+        })
+
+    # --- pct_empresas_venden_web_apps: nulo en 2023, NO imputado ---
+    if "pct_empresas_venden_web_apps" in master_full.columns:
+        rows_web = master_full[master_full["pct_empresas_venden_web_apps"].isnull()]
+        for _, row in rows_web.iterrows():
+            records.append({
+                "dataset": "capa1_master_anual_full / capa1_master_anual_analysis",
+                "variable": "pct_empresas_venden_web_apps",
+                "anio": int(row["anio"]) if pd.notna(row["anio"]) else None,
+                "valor_antes": None,
+                "valor_despues": None,
+                "tipo_ausencia": "cambio_metodologico_ine_K_a_I",
+                "metodo_tratamiento": "ninguno — incompatibilidad metodologica",
+                "flag_trazabilidad": "NaN conservado en master; valor referencia I.1.1=27.44% en null_decisions.csv",
+                "incluido_en_master_analysis": "si — con NaN (2023 dentro del periodo 2020-2023)",
+                "justificacion": (
+                    "INE renombro K.1→I.1.1 en 2023 con cambios en universo de referencia. "
+                    "Imputar con I.1.1 introduciria un sesgo metodologico. "
+                    "Se conserva NaN y se documenta el valor de referencia (27.44%)."
+                ),
+            })
+
+    # --- Variables INE sin cobertura en 2024-2025 ---
+    ine_vars = [
+        "pct_facturacion_empresas_online",
+        "pct_empresas_venden_ecommerce",
+        "pct_ventas_ecommerce_sobre_total",
+        "pct_ventas_ecommerce_sobre_total_empresas_que_venden",
+    ]
+    for var in ine_vars:
+        if var not in master_full.columns:
+            continue
+        rows_var = master_full[
+            master_full[var].isnull() & master_full["anio"].isin([2024, 2025])
+        ]
+        for _, row in rows_var.iterrows():
+            records.append({
+                "dataset": "capa1_master_anual_full",
+                "variable": var,
+                "anio": int(row["anio"]) if pd.notna(row["anio"]) else None,
+                "valor_antes": None,
+                "valor_despues": None,
+                "tipo_ausencia": "fuera_cobertura_temporal_ine",
+                "metodo_tratamiento": "ninguno — excluido del master_analysis",
+                "flag_trazabilidad": "presente en master_full, ausente en master_analysis (2020-2023)",
+                "incluido_en_master_analysis": "no — master_analysis cubre 2020-2023",
+                "justificacion": (
+                    "Encuesta TIC-E se publica con ~1 año de desfase. "
+                    "Datos de 2024-2025 no disponibles en fecha de extraccion. "
+                    "El master_analysis se restringe a 2020-2023 para garantizar "
+                    "cobertura completa en todas las variables."
+                ),
+            })
+
+    df = pd.DataFrame(records)
+    out_path = TABLES_CAPA1_CONTROL / "capa1_master_anual_null_summary.csv"
+    df.to_csv(out_path, index=False)
+    print(f"  Null summary master anual: {len(df)} entradas → {out_path.name}")
     return df
 
 
@@ -361,8 +445,7 @@ def build_variable_selection_matrix_capa1() -> pd.DataFrame:
 def build_comercio_core() -> pd.DataFrame:
     _ensure_dirs()
 
-    input_path = PROCESSED_CAPA1 / "comercio_electronico" / "comercio_electronico_clean.csv"
-    df = pd.read_csv(input_path)
+    df = pd.read_csv(PROCESSED_CAPA1 / "comercio_electronico" / "comercio_electronico_clean.csv")
 
     patterns = [
         r"% de empresas que han realizado ventas por comercio electrónico",
@@ -374,17 +457,9 @@ def build_comercio_core() -> pd.DataFrame:
     mask = df["indicador"].str.contains("|".join(patterns), case=False, na=False, regex=True)
     core = df[mask].copy().reset_index(drop=True)
 
-    output_path = PROCESSED_CAPA1 / "comercio_electronico" / "comercio_electronico_core.csv"
-    core.to_csv(output_path, index=False)
-
-    print("Comercio core guardado en:")
-    print(output_path)
-    print("")
-    print("Dimensiones core:", core.shape)
-    print("")
-    print("Indicadores incluidos:")
-    print(core["indicador"].dropna().unique().tolist())
-
+    out_path = PROCESSED_CAPA1 / "comercio_electronico" / "comercio_electronico_core.csv"
+    core.to_csv(out_path, index=False)
+    print(f"  Comercio core: {core.shape[0]} filas, {core['indicador'].nunique()} indicadores únicos")
     return core
 
 
@@ -395,43 +470,29 @@ def build_comercio_core() -> pd.DataFrame:
 def standardize_comercio_core() -> pd.DataFrame:
     _ensure_dirs()
 
-    input_path = PROCESSED_CAPA1 / "comercio_electronico" / "comercio_electronico_core.csv"
-    df = pd.read_csv(input_path)
+    df = pd.read_csv(PROCESSED_CAPA1 / "comercio_electronico" / "comercio_electronico_core.csv")
 
     def map_indicator(text: str) -> str | None:
         if pd.isna(text):
             return None
-
         t = str(text).lower()
-
         if "empresas que han realizado ventas por comercio electrónico" in t:
             return "pct_empresas_venden_ecommerce"
-
-        if "ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico" in t:
+        if "ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden" in t:
             return "pct_ventas_ecommerce_sobre_total_empresas_que_venden"
-
         if "ventas mediante comercio electrónico sobre el total de ventas" in t:
             return "pct_ventas_ecommerce_sobre_total"
-
         if "empresas que han realizado ventas mediante páginas web o apps" in t:
             return "pct_empresas_venden_web_apps"
-
         return None
 
     df["indicador_std"] = df["indicador"].apply(map_indicator)
     df = df[df["indicador_std"].notna()].copy().reset_index(drop=True)
 
-    output_path = PROCESSED_CAPA1 / "comercio_electronico" / "comercio_electronico_core_std.csv"
-    df.to_csv(output_path, index=False)
-
-    print("Comercio core estandarizado guardado en:")
-    print(output_path)
-    print("")
-    print("Dimensiones:", df.shape)
-    print("")
-    print("Indicadores estándar detectados:")
-    print(df["indicador_std"].value_counts())
-
+    out_path = PROCESSED_CAPA1 / "comercio_electronico" / "comercio_electronico_core_std.csv"
+    df.to_csv(out_path, index=False)
+    print(f"  Comercio core_std: {df.shape[0]} filas | indicadores_std: {df['indicador_std'].nunique()}")
+    print(f"    {df['indicador_std'].value_counts().to_dict()}")
     return df
 
 
@@ -440,6 +501,10 @@ def standardize_comercio_core() -> pd.DataFrame:
 # =========================
 
 def build_capa1_inventory() -> pd.DataFrame:
+    """
+    Inventario de datasets procesados con cobertura temporal actualizada.
+    Corrección: eurostat_online_empresas ahora cubre hasta 2024 (no 2023).
+    """
     _ensure_dirs()
 
     records = [
@@ -449,57 +514,61 @@ def build_capa1_inventory() -> pd.DataFrame:
             "frecuencia": "anual",
             "periodo_inicio": 2020,
             "periodo_fin": 2025,
+            "n_observaciones": 6,
             "granularidad": "España",
-            "rol_capa1": "contexto digital",
+            "rol_capa1": "contexto digital — RRSS y compra online",
+            "nota": "1 valor imputado (2025, interpolacion lineal, flag _imputado=True)",
         },
         {
             "dataset": "processed/capa1/eurostat/eurostat_moda_mensual_clean.csv",
-            "fuente": "Eurostat",
+            "fuente": "Eurostat sts_trtu_m (NACE G47.7)",
             "frecuencia": "mensual",
             "periodo_inicio": "2010-01",
             "periodo_fin": "2023-12",
+            "n_observaciones": 168,
             "granularidad": "España",
-            "rol_capa1": "contexto sectorial moda",
+            "rol_capa1": "contexto sectorial moda — indice volumen ventas base 2015=100",
+            "nota": "21 celdas no disponibles (':') para 2024-2025 excluidas y documentadas",
         },
         {
             "dataset": "processed/capa1/eurostat/eurostat_retail_total_mensual_clean.csv",
-            "fuente": "Eurostat",
+            "fuente": "Eurostat sts_trtu_m (NACE G47)",
             "frecuencia": "mensual",
             "periodo_inicio": "2010-01",
             "periodo_fin": "2025-09",
+            "n_observaciones": 189,
             "granularidad": "España",
-            "rol_capa1": "contexto retail general",
+            "rol_capa1": "contexto retail general — indice volumen ventas base 2021=100",
+            "nota": "Base 2021=100 (correccion respecto a nomenclatura anterior)",
         },
         {
             "dataset": "processed/capa1/eurostat/eurostat_online_empresas_clean.csv",
-            "fuente": "Eurostat",
+            "fuente": "Eurostat tin00110",
             "frecuencia": "anual",
             "periodo_inicio": 2015,
-            "periodo_fin": 2023,
+            "periodo_fin": 2024,  # CORREGIDO: antes 2023
+            "n_observaciones": 10,
             "granularidad": "España",
-            "rol_capa1": "adopcion online empresarial",
+            "rol_capa1": "adopcion online empresarial — % facturacion ecommerce",
+            "nota": "Se extiende a 2024 (19.52%) respecto a version anterior que cortaba en 2023",
         },
         {
             "dataset": "processed/capa1/comercio_electronico/comercio_electronico_core_std.csv",
-            "fuente": "INE / Encuesta TIC y Comercio Electrónico",
+            "fuente": "INE / Encuesta TIC y Comercio Electronico",
             "frecuencia": "anual",
             "periodo_inicio": 2015,
             "periodo_fin": 2023,
+            "n_observaciones": "variable (4 indicadores x 4 tamaños x 9 años)",
             "granularidad": "España por tamaño de empresa",
-            "rol_capa1": "contexto ecommerce empresarial",
+            "rol_capa1": "contexto ecommerce empresarial — 4 indicadores estandarizados",
+            "nota": "1210 nulos estructurales (3.52%) por variacion del cuestionario INE entre años",
         },
     ]
 
     inventory = pd.DataFrame(records)
-
-    output_path = PROCESSED_CAPA1 / "integrated" / "capa1_inventory.csv"
-    inventory.to_csv(output_path, index=False)
-
-    print("Inventario guardado en:")
-    print(output_path)
-    print("")
-    print(inventory)
-
+    out_path = PROCESSED_CAPA1 / "integrated" / "capa1_inventory.csv"
+    inventory.to_csv(out_path, index=False)
+    print(f"  Inventory: {len(inventory)} datasets documentados")
     return inventory
 
 
@@ -508,18 +577,29 @@ def build_capa1_inventory() -> pd.DataFrame:
 # =========================
 
 def build_capa1_master_anual() -> tuple[pd.DataFrame, pd.DataFrame]:
+    """
+    Construye los masters anuales full y analysis.
+
+    Cambio respecto a versión anterior:
+      - Propaga la columna pct_personas_compra_online_imputado desde
+        contexto_digitalizacion_clean al master para trazabilidad completa.
+      - master_analysis: periodo 2020-2023 (cobertura completa de todas las fuentes).
+      - master_full: periodo completo 2020-2025 (incluye años con nulos parciales).
+    """
     _ensure_dirs()
 
-    contexto_path = PROCESSED_CAPA1 / "contexto_digitalizacion" / "contexto_digitalizacion_clean.csv"
-    online_empresas_path = PROCESSED_CAPA1 / "eurostat" / "eurostat_online_empresas_clean.csv"
-    comercio_path = PROCESSED_CAPA1 / "comercio_electronico" / "comercio_electronico_core_std.csv"
+    contexto = pd.read_csv(
+        PROCESSED_CAPA1 / "contexto_digitalizacion" / "contexto_digitalizacion_clean.csv"
+    )
+    online_empresas = pd.read_csv(
+        PROCESSED_CAPA1 / "eurostat" / "eurostat_online_empresas_clean.csv"
+    )
+    comercio = pd.read_csv(
+        PROCESSED_CAPA1 / "comercio_electronico" / "comercio_electronico_core_std.csv"
+    )
 
-    contexto = pd.read_csv(contexto_path)
-    online_empresas = pd.read_csv(online_empresas_path)
-    comercio = pd.read_csv(comercio_path)
-
+    # Pivot del comercio al nivel 'total'
     comercio_total = comercio[comercio["tamano_empresa"] == "total"].copy()
-
     comercio_pivot = comercio_total.pivot_table(
         index="anio",
         columns="indicador_std",
@@ -527,32 +607,43 @@ def build_capa1_master_anual() -> tuple[pd.DataFrame, pd.DataFrame]:
         aggfunc="first",
     ).reset_index()
 
+    # Merge — conserva el flag de imputacion desde contexto
     master = contexto.merge(
         online_empresas[["anio", "valor_pct"]],
         on="anio",
         how="left",
-    )
+    ).rename(columns={"valor_pct": "pct_facturacion_empresas_online"})
 
-    master = master.rename(columns={"valor_pct": "pct_facturacion_empresas_online"})
     master = master.merge(comercio_pivot, on="anio", how="left")
 
-    output_full = PROCESSED_CAPA1 / "integrated" / "capa1_master_anual_full.csv"
-    master.to_csv(output_full, index=False)
+    # Reordenar columnas: flag de imputacion al final para legibilidad
+    flag_col = "pct_personas_compra_online_imputado"
+    other_cols = [c for c in master.columns if c != flag_col]
+    master = master[other_cols + [flag_col]] if flag_col in master.columns else master
 
+    # Master full: todos los años
+    out_full = PROCESSED_CAPA1 / "integrated" / "capa1_master_anual_full.csv"
+    master.to_csv(out_full, index=False)
+
+    # Master analysis: solo 2020-2023 (cobertura completa en todas las variables INE)
     master_analysis = master[master["anio"].between(2020, 2023)].copy().reset_index(drop=True)
-    output_analysis = PROCESSED_CAPA1 / "integrated" / "capa1_master_anual_analysis.csv"
-    master_analysis.to_csv(output_analysis, index=False)
+    out_analysis = PROCESSED_CAPA1 / "integrated" / "capa1_master_anual_analysis.csv"
+    master_analysis.to_csv(out_analysis, index=False)
 
-    print("Master anual full guardado en:")
-    print(output_full)
-    print("")
-    print("Master anual analysis guardado en:")
-    print(output_analysis)
-    print("")
-    print(master_analysis)
-    print("")
-    print("Columnas:")
-    print(master_analysis.columns.tolist())
+    # Resumen de nulos en el master_analysis
+    nulos = master_analysis.isnull().sum()
+    nulos_con = nulos[nulos > 0]
+    print(f"  Master anual full: {master.shape} → {out_full.name}")
+    print(f"  Master anual analysis (2020-2023): {master_analysis.shape} → {out_analysis.name}")
+    if len(nulos_con):
+        print(f"  Nulos en master_analysis:")
+        for col, n in nulos_con.items():
+            print(f"    {col}: {n} (documentado en null_summary)")
+    else:
+        print("  Nulos en master_analysis: ninguno en variables core")
+    if flag_col in master_analysis.columns:
+        n_imp = int(master_analysis[flag_col].sum())
+        print(f"  Valores imputados en master_analysis: {n_imp} (pct_personas_compra_online)")
 
     return master, master_analysis
 
@@ -564,23 +655,16 @@ def build_capa1_master_anual() -> tuple[pd.DataFrame, pd.DataFrame]:
 def build_capa1_master_mensual() -> tuple[pd.DataFrame, pd.DataFrame]:
     _ensure_dirs()
 
-    moda_path = PROCESSED_CAPA1 / "eurostat" / "eurostat_moda_mensual_clean.csv"
-    retail_path = PROCESSED_CAPA1 / "eurostat" / "eurostat_retail_total_mensual_clean.csv"
-
-    moda = pd.read_csv(moda_path)
-    retail = pd.read_csv(retail_path)
+    moda = pd.read_csv(PROCESSED_CAPA1 / "eurostat" / "eurostat_moda_mensual_clean.csv")
+    retail = pd.read_csv(PROCESSED_CAPA1 / "eurostat" / "eurostat_retail_total_mensual_clean.csv")
 
     moda["fecha"] = pd.to_datetime(moda["fecha"])
     retail["fecha"] = pd.to_datetime(retail["fecha"])
 
-    moda = moda.rename(columns={"valor_indice": "indice_retail_moda"})
-    retail = retail.rename(columns={"valor_indice": "indice_retail_total"})
-
-    moda = moda[["fecha", "indice_retail_moda"]].copy()
-    retail = retail[["fecha", "indice_retail_total"]].copy()
+    moda = moda[["fecha", "valor_indice"]].rename(columns={"valor_indice": "indice_retail_moda"})
+    retail = retail[["fecha", "valor_indice"]].rename(columns={"valor_indice": "indice_retail_total"})
 
     master_mensual = moda.merge(retail, on="fecha", how="inner")
-
     master_mensual["anio"] = master_mensual["fecha"].dt.year
     master_mensual["mes"] = master_mensual["fecha"].dt.month
     master_mensual["ratio_moda_vs_total"] = (
@@ -589,30 +673,21 @@ def build_capa1_master_mensual() -> tuple[pd.DataFrame, pd.DataFrame]:
     master_mensual["dif_moda_vs_total"] = (
         master_mensual["indice_retail_moda"] - master_mensual["indice_retail_total"]
     )
-
     master_mensual = master_mensual.sort_values("fecha").reset_index(drop=True)
 
-    output_full = PROCESSED_CAPA1 / "integrated" / "capa1_master_mensual_full.csv"
-    master_mensual.to_csv(output_full, index=False)
+    out_full = PROCESSED_CAPA1 / "integrated" / "capa1_master_mensual_full.csv"
+    master_mensual.to_csv(out_full, index=False)
 
+    # Analysis: 2015-2023 (ventana común de ambas series con datos completos de moda)
     master_analysis = master_mensual[
         master_mensual["anio"].between(2015, 2023)
     ].copy().reset_index(drop=True)
+    out_analysis = PROCESSED_CAPA1 / "integrated" / "capa1_master_mensual_analysis.csv"
+    master_analysis.to_csv(out_analysis, index=False)
 
-    output_analysis = PROCESSED_CAPA1 / "integrated" / "capa1_master_mensual_analysis.csv"
-    master_analysis.to_csv(output_analysis, index=False)
-
-    print("Master mensual full guardado en:")
-    print(output_full)
-    print("")
-    print("Master mensual analysis guardado en:")
-    print(output_analysis)
-    print("")
-    print(master_analysis.head(12))
-    print("")
-    print("Columnas:")
-    print(master_analysis.columns.tolist())
-
+    print(f"  Master mensual full: {master_mensual.shape} ({master_mensual['fecha'].min().strftime('%Y-%m')}–{master_mensual['fecha'].max().strftime('%Y-%m')})")
+    print(f"  Master mensual analysis (2015-2023): {master_analysis.shape}")
+    print(f"  Nulos: {master_analysis.isnull().sum().sum()} (ninguno esperado)")
     return master_mensual, master_analysis
 
 
@@ -624,241 +699,48 @@ def build_capa1_variable_final_decisions() -> pd.DataFrame:
     _ensure_dirs()
 
     records = [
-        # =========================
-        # CONTEXTO
-        # =========================
-        {
-            "dataset": "contexto_digitalizacion_clean",
-            "variable": "anio",
-            "mantener_en_base": "si",
-            "usar_en_analisis_principal": "si",
-            "usar_solo_contexto": "no",
-            "comentario": "Eje temporal anual del bloque de contexto.",
-        },
-        {
-            "dataset": "contexto_digitalizacion_clean",
-            "variable": "pct_usuarios_rrss",
-            "mantener_en_base": "si",
-            "usar_en_analisis_principal": "si",
-            "usar_solo_contexto": "no",
-            "comentario": "Indicador clave de digitalización social.",
-        },
-        {
-            "dataset": "contexto_digitalizacion_clean",
-            "variable": "pct_personas_compra_online",
-            "mantener_en_base": "si",
-            "usar_en_analisis_principal": "si",
-            "usar_solo_contexto": "no",
-            "comentario": "Indicador clave del consumo digital.",
-        },
-        {
-            "dataset": "contexto_digitalizacion_extended",
-            "variable": "pct_personas_compra_ropa_online",
-            "mantener_en_base": "si",
-            "usar_en_analisis_principal": "no",
-            "usar_solo_contexto": "si",
-            "comentario": "Variable temática relevante, pero con cobertura insuficiente para el master principal.",
-        },
-        {
-            "dataset": "contexto_digitalizacion_documentado",
-            "variable": "comentarios_hitos",
-            "mantener_en_base": "si",
-            "usar_en_analisis_principal": "no",
-            "usar_solo_contexto": "si",
-            "comentario": "Útil para narrativa e interpretación, no para análisis cuantitativo.",
-        },
-        {
-            "dataset": "contexto_digitalizacion_documentado",
-            "variable": "fuentes_documentales",
-            "mantener_en_base": "si",
-            "usar_en_analisis_principal": "no",
-            "usar_solo_contexto": "si",
-            "comentario": "Trazabilidad metodológica de los datos.",
-        },
-
-        # =========================
-        # COMERCIO ELECTRÓNICO
-        # =========================
-        {
-            "dataset": "comercio_electronico_core_std",
-            "variable": "anio",
-            "mantener_en_base": "si",
-            "usar_en_analisis_principal": "si",
-            "usar_solo_contexto": "no",
-            "comentario": "Eje temporal anual del ecommerce empresarial.",
-        },
-        {
-            "dataset": "comercio_electronico_core_std",
-            "variable": "indicador_std",
-            "mantener_en_base": "si",
-            "usar_en_analisis_principal": "si",
-            "usar_solo_contexto": "no",
-            "comentario": "Variable clave para unificar indicadores entre años.",
-        },
-        {
-            "dataset": "comercio_electronico_core_std",
-            "variable": "tamano_empresa",
-            "mantener_en_base": "si",
-            "usar_en_analisis_principal": "si",
-            "usar_solo_contexto": "no",
-            "comentario": "Permite segmentación empresarial; en el master integrado se usa principalmente total.",
-        },
-        {
-            "dataset": "comercio_electronico_core_std",
-            "variable": "valor",
-            "mantener_en_base": "si",
-            "usar_en_analisis_principal": "si",
-            "usar_solo_contexto": "no",
-            "comentario": "Magnitud principal del bloque ecommerce.",
-        },
-        {
-            "dataset": "comercio_electronico_core_std",
-            "variable": "indicador",
-            "mantener_en_base": "si",
-            "usar_en_analisis_principal": "no",
-            "usar_solo_contexto": "si",
-            "comentario": "Se conserva por trazabilidad del indicador original.",
-        },
-
-        # =========================
-        # MASTER ANUAL
-        # =========================
-        {
-            "dataset": "capa1_master_anual_analysis",
-            "variable": "anio",
-            "mantener_en_base": "si",
-            "usar_en_analisis_principal": "si",
-            "usar_solo_contexto": "no",
-            "comentario": "Eje temporal del master anual.",
-        },
-        {
-            "dataset": "capa1_master_anual_analysis",
-            "variable": "pct_usuarios_rrss",
-            "mantener_en_base": "si",
-            "usar_en_analisis_principal": "si",
-            "usar_solo_contexto": "no",
-            "comentario": "Indicador principal de digitalización.",
-        },
-        {
-            "dataset": "capa1_master_anual_analysis",
-            "variable": "pct_personas_compra_online",
-            "mantener_en_base": "si",
-            "usar_en_analisis_principal": "si",
-            "usar_solo_contexto": "no",
-            "comentario": "Indicador principal de consumo online.",
-        },
-        {
-            "dataset": "capa1_master_anual_analysis",
-            "variable": "pct_facturacion_empresas_online",
-            "mantener_en_base": "si",
-            "usar_en_analisis_principal": "si",
-            "usar_solo_contexto": "no",
-            "comentario": "Indicador principal de penetración económica del canal online.",
-        },
-        {
-            "dataset": "capa1_master_anual_analysis",
-            "variable": "pct_empresas_venden_ecommerce",
-            "mantener_en_base": "si",
-            "usar_en_analisis_principal": "si",
-            "usar_solo_contexto": "no",
-            "comentario": "Indicador de adopción empresarial del ecommerce.",
-        },
-        {
-            "dataset": "capa1_master_anual_analysis",
-            "variable": "pct_empresas_venden_web_apps",
-            "mantener_en_base": "si",
-            "usar_en_analisis_principal": "si",
-            "usar_solo_contexto": "no",
-            "comentario": "Indicador complementario de canal.",
-        },
-        {
-            "dataset": "capa1_master_anual_analysis",
-            "variable": "pct_ventas_ecommerce_sobre_total",
-            "mantener_en_base": "si",
-            "usar_en_analisis_principal": "si",
-            "usar_solo_contexto": "no",
-            "comentario": "Mide el peso del ecommerce sobre las ventas totales.",
-        },
-        {
-            "dataset": "capa1_master_anual_analysis",
-            "variable": "pct_ventas_ecommerce_sobre_total_empresas_que_venden",
-            "mantener_en_base": "si",
-            "usar_en_analisis_principal": "si",
-            "usar_solo_contexto": "no",
-            "comentario": "Refina el peso del ecommerce sobre empresas activas en el canal.",
-        },
-
-        # =========================
-        # MASTER MENSUAL
-        # =========================
-        {
-            "dataset": "capa1_master_mensual_analysis",
-            "variable": "fecha",
-            "mantener_en_base": "si",
-            "usar_en_analisis_principal": "si",
-            "usar_solo_contexto": "no",
-            "comentario": "Eje temporal mensual.",
-        },
-        {
-            "dataset": "capa1_master_mensual_analysis",
-            "variable": "anio",
-            "mantener_en_base": "si",
-            "usar_en_analisis_principal": "si",
-            "usar_solo_contexto": "no",
-            "comentario": "Variable auxiliar temporal.",
-        },
-        {
-            "dataset": "capa1_master_mensual_analysis",
-            "variable": "mes",
-            "mantener_en_base": "si",
-            "usar_en_analisis_principal": "si",
-            "usar_solo_contexto": "no",
-            "comentario": "Variable auxiliar temporal para estacionalidad.",
-        },
-        {
-            "dataset": "capa1_master_mensual_analysis",
-            "variable": "indice_retail_moda",
-            "mantener_en_base": "si",
-            "usar_en_analisis_principal": "si",
-            "usar_solo_contexto": "no",
-            "comentario": "Serie mensual principal del sector moda.",
-        },
-        {
-            "dataset": "capa1_master_mensual_analysis",
-            "variable": "indice_retail_total",
-            "mantener_en_base": "si",
-            "usar_en_analisis_principal": "si",
-            "usar_solo_contexto": "no",
-            "comentario": "Serie de referencia del retail agregado.",
-        },
-        {
-            "dataset": "capa1_master_mensual_analysis",
-            "variable": "ratio_moda_vs_total",
-            "mantener_en_base": "si",
-            "usar_en_analisis_principal": "si",
-            "usar_solo_contexto": "no",
-            "comentario": "Indicador derivado de rendimiento relativo.",
-        },
-        {
-            "dataset": "capa1_master_mensual_analysis",
-            "variable": "dif_moda_vs_total",
-            "mantener_en_base": "si",
-            "usar_en_analisis_principal": "si",
-            "usar_solo_contexto": "no",
-            "comentario": "Indicador derivado de brecha absoluta.",
-        },
+        {"dataset": "contexto_digitalizacion_clean", "variable": "anio",
+         "mantener_en_base": "si", "usar_en_analisis_principal": "si", "usar_solo_contexto": "no",
+         "comentario": "Eje temporal anual del bloque de contexto."},
+        {"dataset": "contexto_digitalizacion_clean", "variable": "pct_usuarios_rrss",
+         "mantener_en_base": "si", "usar_en_analisis_principal": "si", "usar_solo_contexto": "no",
+         "comentario": "Indicador clave de digitalización social."},
+        {"dataset": "contexto_digitalizacion_clean", "variable": "pct_personas_compra_online",
+         "mantener_en_base": "si", "usar_en_analisis_principal": "si", "usar_solo_contexto": "no",
+         "comentario": "Indicador clave del consumo digital. 1 valor imputado (2025)."},
+        {"dataset": "contexto_digitalizacion_clean", "variable": "pct_personas_compra_online_imputado",
+         "mantener_en_base": "si", "usar_en_analisis_principal": "no", "usar_solo_contexto": "si",
+         "comentario": "Flag de trazabilidad de imputacion. Propagado al master anual."},
+        {"dataset": "contexto_digitalizacion_extended", "variable": "pct_personas_compra_ropa_online",
+         "mantener_en_base": "si", "usar_en_analisis_principal": "no", "usar_solo_contexto": "si",
+         "comentario": "Cobertura insuficiente (1/6 obs). Solo trazabilidad."},
+        {"dataset": "contexto_digitalizacion_documentado", "variable": "comentarios_hitos",
+         "mantener_en_base": "si", "usar_en_analisis_principal": "no", "usar_solo_contexto": "si",
+         "comentario": "Util para narrativa e interpretacion."},
+        {"dataset": "comercio_electronico_core_std", "variable": "indicador_std",
+         "mantener_en_base": "si", "usar_en_analisis_principal": "si", "usar_solo_contexto": "no",
+         "comentario": "Clave para unificar indicadores entre años."},
+        {"dataset": "comercio_electronico_core_std", "variable": "valor",
+         "mantener_en_base": "si", "usar_en_analisis_principal": "si", "usar_solo_contexto": "no",
+         "comentario": "Magnitud principal. Nulos estructurales conservados como NaN."},
+        {"dataset": "capa1_master_anual_analysis", "variable": "pct_empresas_venden_web_apps",
+         "mantener_en_base": "si", "usar_en_analisis_principal": "si", "usar_solo_contexto": "no",
+         "comentario": (
+             "NaN en 2023 conservado (cambio metodologico K→I). "
+             "Analisis sobre 2020-2022 unicamente para esta variable."
+         )},
+        {"dataset": "capa1_master_mensual_analysis", "variable": "indice_retail_moda",
+         "mantener_en_base": "si", "usar_en_analisis_principal": "si", "usar_solo_contexto": "no",
+         "comentario": "Serie principal del sector moda. Descomposicion ST aplicada en EDA."},
+        {"dataset": "capa1_master_mensual_analysis", "variable": "ratio_moda_vs_total",
+         "mantener_en_base": "si", "usar_en_analisis_principal": "si", "usar_solo_contexto": "no",
+         "comentario": "Variable derivada de alto valor interpretativo para comparacion relativa."},
     ]
 
     df = pd.DataFrame(records)
-
-    output_path = TABLES_CAPA1_CONTROL / "capa1_variable_final_decisions.csv"
-    df.to_csv(output_path, index=False)
-
-    print("Decisiones finales de variables guardadas en:")
-    print(output_path)
-    print("")
-    print(df.head(15))
-
+    out_path = TABLES_CAPA1_CONTROL / "capa1_variable_final_decisions.csv"
+    df.to_csv(out_path, index=False)
+    print(f"  Variable final decisions: {len(df)} entradas → {out_path.name}")
     return df
 
 
@@ -868,21 +750,13 @@ def build_capa1_variable_final_decisions() -> pd.DataFrame:
 
 def export_capa1_master_previews() -> None:
     _ensure_dirs()
-
-    inventory_path = PROCESSED_CAPA1 / "integrated" / "capa1_inventory.csv"
-    anual_path = PROCESSED_CAPA1 / "integrated" / "capa1_master_anual_analysis.csv"
-    mensual_path = PROCESSED_CAPA1 / "integrated" / "capa1_master_mensual_analysis.csv"
-
-    inventory = pd.read_csv(inventory_path)
-    master_anual = pd.read_csv(anual_path)
-    master_mensual = pd.read_csv(mensual_path)
-
-    inventory.head(10).to_csv(TABLES_CAPA1_MASTERS / "capa1_inventory_head.csv", index=False)
-    master_anual.head(10).to_csv(TABLES_CAPA1_MASTERS / "capa1_master_anual_head.csv", index=False)
-    master_mensual.head(12).to_csv(TABLES_CAPA1_MASTERS / "capa1_master_mensual_head.csv", index=False)
-
-    print("Previews de masters guardados en:")
-    print(TABLES_CAPA1_MASTERS)
+    pd.read_csv(PROCESSED_CAPA1 / "integrated" / "capa1_inventory.csv").head(10).to_csv(
+        TABLES_CAPA1_MASTERS / "capa1_inventory_head.csv", index=False)
+    pd.read_csv(PROCESSED_CAPA1 / "integrated" / "capa1_master_anual_analysis.csv").to_csv(
+        TABLES_CAPA1_MASTERS / "capa1_master_anual_head.csv", index=False)
+    pd.read_csv(PROCESSED_CAPA1 / "integrated" / "capa1_master_mensual_analysis.csv").head(12).to_csv(
+        TABLES_CAPA1_MASTERS / "capa1_master_mensual_head.csv", index=False)
+    print(f"  Previews exportados → {TABLES_CAPA1_MASTERS}")
 
 
 # =========================
@@ -905,20 +779,20 @@ def build_capa1_sqlite() -> None:
         "capa1_master_anual_analysis": PROCESSED_CAPA1 / "integrated" / "capa1_master_anual_analysis.csv",
         "capa1_master_mensual_full": PROCESSED_CAPA1 / "integrated" / "capa1_master_mensual_full.csv",
         "capa1_master_mensual_analysis": PROCESSED_CAPA1 / "integrated" / "capa1_master_mensual_analysis.csv",
+        "capa1_variable_selection_matrix": TABLES_CAPA1_CONTROL / "capa1_variable_selection_matrix.csv",
+        "capa1_master_anual_null_summary": TABLES_CAPA1_CONTROL / "capa1_master_anual_null_summary.csv",
     }
 
     conn = sqlite3.connect(DB_CAPA1)
-
     for table_name, path in tables.items():
-        df = pd.read_csv(path)
-        df.to_sql(table_name, conn, if_exists="replace", index=False)
-        print(f"Tabla cargada: {table_name}")
-
+        if path.exists():
+            df = pd.read_csv(path)
+            df.to_sql(table_name, conn, if_exists="replace", index=False)
+            print(f"  SQLite ← {table_name} ({len(df)} filas)")
+        else:
+            print(f"  [SKIP] {table_name}: archivo no encontrado")
     conn.close()
-
-    print("")
-    print("Base SQLite creada en:")
-    print(DB_CAPA1)
+    print(f"  Base de datos: {DB_CAPA1}")
 
 
 # =========================
@@ -926,16 +800,48 @@ def build_capa1_sqlite() -> None:
 # =========================
 
 def run_all_builds() -> None:
+    sep = "=" * 65
+    print(sep)
+    print("CAPA 1 — BUILD")
+    print(sep)
+
+    print("\n[0/8] Variable selection matrix...")
     build_variable_selection_matrix_capa1()
+
+    print("\n[1/8] Comercio core...")
     build_comercio_core()
+
+    print("\n[2/8] Estandarizar comercio core...")
     standardize_comercio_core()
+
+    print("\n[3/8] Inventory...")
     build_capa1_inventory()
+
+    print("\n[4/8] Master anual...")
     build_capa1_master_anual()
+
+    print("\n[5/8] Master mensual...")
     build_capa1_master_mensual()
+
+    print("\n[6/8] Null summary master anual...")
+    build_capa1_null_summary()
+
+    print("\n[7/8] Variable final decisions...")
     build_capa1_variable_final_decisions()
+
+    print("\n[8/8] Previews + SQLite...")
     export_capa1_master_previews()
     build_capa1_sqlite()
-    print("Todos los builds de capa 1 completados.")
+
+    print(f"\n{sep}")
+    print("BUILD CAPA 1 COMPLETADO")
+    print("Tablas de control generadas:")
+    print("  · capa1_variable_selection_matrix.csv")
+    print("  · capa1_master_anual_null_summary.csv  ← NUEVO")
+    print("  · capa1_variable_final_decisions.csv")
+    print("  · capa1_master_anual_head.csv")
+    print("  · capa1_master_mensual_head.csv")
+    print(sep)
 
 
 if __name__ == "__main__":
