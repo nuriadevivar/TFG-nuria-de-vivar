@@ -45,6 +45,51 @@ def _safe_numeric(df: pd.DataFrame, cols: list[str]) -> pd.DataFrame:
 
 
 # =========================
+# HELPER OUTLIERS
+# =========================
+
+def _iqr_outlier_summary(df: pd.DataFrame, cols: list[str], bloque: str) -> pd.DataFrame:
+    records = []
+
+    for col in cols:
+        if col not in df.columns:
+            continue
+
+        s = pd.to_numeric(df[col], errors="coerce").dropna()
+        if s.empty:
+            continue
+
+        q1 = s.quantile(0.25)
+        q3 = s.quantile(0.75)
+        iqr = q3 - q1
+        lower = q1 - 1.5 * iqr
+        upper = q3 + 1.5 * iqr
+
+        mask = (s < lower) | (s > upper)
+        n_outliers = int(mask.sum())
+        pct_outliers = round((n_outliers / len(s)) * 100, 2) if len(s) > 0 else 0.0
+
+        records.append(
+            {
+                "bloque": bloque,
+                "variable": col,
+                "n_obs": int(len(s)),
+                "q1": round(float(q1), 4),
+                "q3": round(float(q3), 4),
+                "iqr": round(float(iqr), 4),
+                "lower_bound": round(float(lower), 4),
+                "upper_bound": round(float(upper), 4),
+                "n_outliers": n_outliers,
+                "pct_outliers": pct_outliers,
+                "tipo_atipicidad": "extremo_estadistico_no_error",
+                "decision_metodologica": "mantener_y_documentar",
+            }
+        )
+
+    return pd.DataFrame(records)
+
+
+# =========================
 # 1. PROFILE
 # =========================
 
@@ -278,6 +323,48 @@ def eda_capa3_sample_structure() -> pd.DataFrame:
 
     print("EDA estructura muestral completado.")
     return df
+
+# =========================
+# 4B. OUTLIERS MASTER ENCUESTA
+# =========================
+
+def eda_capa3_outliers_master() -> pd.DataFrame:
+    _ensure_dirs()
+
+    df = pd.read_csv(PROCESSED_CAPA3 / "integrated" / "capa3_master_encuesta.csv")
+
+    outlier_cols = [
+        "indice_influencia_rrss",
+        "indice_impulso_tendencia",
+        "indice_confianza_influencers",
+        "indice_escepticismo_influencers",
+        "indice_difusion_fastfashion",
+        "indice_postcompra",
+        "indice_riesgo_arrepentimiento",
+    ]
+    df = _safe_numeric(df, outlier_cols)
+
+    outlier_df = _iqr_outlier_summary(
+        df=df,
+        cols=outlier_cols,
+        bloque="master_encuesta",
+    )
+
+    outlier_df.to_csv(TABLES_CAPA3_EDA / "capa3_outliers_master_summary.csv", index=False)
+
+    for col in outlier_cols:
+        if col not in df.columns:
+            continue
+        plt.figure(figsize=(8, 5))
+        plt.boxplot(df[col].dropna())
+        plt.title(f"Boxplot - {col}")
+        plt.ylabel(col)
+        _save_plot(f"capa3_outliers_boxplot_{col}.png")
+
+    print("EDA outliers master encuesta completado.")
+    print(outlier_df)
+
+    return outlier_df
 
 # =========================
 # 5. EDA GENERACIONES
@@ -607,6 +694,45 @@ def eda_capa3_clustering_ready() -> pd.DataFrame:
     return df
 
 # =========================
+# 11B. OUTLIERS CLUSTERING READY
+# =========================
+
+def eda_capa3_outliers_clustering_ready() -> pd.DataFrame:
+    _ensure_dirs()
+
+    df = pd.read_csv(PROCESSED_CAPA3 / "integrated" / "capa3_clustering_ready.csv")
+
+    numeric_cols = [
+        "freq_compra_anual",
+        "canal_compra_moda",
+        "tiempo_rrss_dia",
+        "freq_contenido_moda_rrss",
+        "sigue_influencers_moda",
+        "indice_influencia_rrss",
+        "indice_impulso_tendencia",
+        "indice_confianza_influencers",
+        "indice_escepticismo_influencers",
+        "indice_difusion_fastfashion",
+        "indice_postcompra",
+        "indice_riesgo_arrepentimiento",
+        "compra_ult_6m_por_rrss_bin",
+    ]
+    numeric_cols = [c for c in numeric_cols if c in df.columns]
+
+    outlier_df = _iqr_outlier_summary(
+        df=df,
+        cols=numeric_cols,
+        bloque="clustering_ready",
+    )
+
+    outlier_df.to_csv(TABLES_CAPA3_EDA / "capa3_outliers_clustering_ready_summary.csv", index=False)
+
+    print("EDA outliers clustering ready completado.")
+    print(outlier_df)
+
+    return outlier_df
+
+# =========================
 # 12. EDA SUPERVISED READY
 # =========================
 
@@ -641,6 +767,46 @@ def eda_capa3_supervised_ready() -> pd.DataFrame:
     return df
 
 # =========================
+# 12B. OUTLIERS SUPERVISED READY
+# =========================
+
+def eda_capa3_outliers_supervised_ready() -> pd.DataFrame:
+    _ensure_dirs()
+
+    df = pd.read_csv(PROCESSED_CAPA3 / "integrated" / "capa3_supervised_ready.csv")
+
+    numeric_cols = [
+        "freq_compra_anual",
+        "canal_compra_moda",
+        "tiempo_rrss_dia",
+        "freq_contenido_moda_rrss",
+        "sigue_influencers_moda",
+        "compra_ult_6m_por_rrss_bin",
+        "indice_influencia_rrss",
+        "indice_impulso_tendencia",
+        "indice_confianza_influencers",
+        "indice_escepticismo_influencers",
+        "indice_difusion_fastfashion",
+        "indice_riesgo_arrepentimiento",
+        "target_recomendaria_bin",
+        "target_seguira_comprando_bin",
+    ]
+    numeric_cols = [c for c in numeric_cols if c in df.columns]
+
+    outlier_df = _iqr_outlier_summary(
+        df=df,
+        cols=numeric_cols,
+        bloque="supervised_ready",
+    )
+
+    outlier_df.to_csv(TABLES_CAPA3_EDA / "capa3_outliers_supervised_ready_summary.csv", index=False)
+
+    print("EDA outliers supervised ready completado.")
+    print(outlier_df)
+
+    return outlier_df
+
+# =========================
 # RUN ALL
 # =========================
 
@@ -649,13 +815,16 @@ def run_all_eda() -> None:
     analyze_nulls_capa3()
     eda_capa3_master_encuesta()
     eda_capa3_indices_descriptivos()
+    eda_capa3_outliers_master()
     eda_capa3_generaciones()
     eda_capa3_targets()
     eda_capa3_cruces_generacion()
     eda_capa3_boxplots_generacion()
     eda_capa3_multirrespuesta()
     eda_capa3_clustering_ready()
+    eda_capa3_outliers_clustering_ready()
     eda_capa3_supervised_ready()
+    eda_capa3_outliers_supervised_ready()
     eda_capa3_correlations()
     eda_capa3_sample_structure()
     eda_capa3_target_summary()

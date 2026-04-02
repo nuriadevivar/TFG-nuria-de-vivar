@@ -1,0 +1,15 @@
+bloque,variable,n_obs,q1,q3,iqr,lower_bound,upper_bound,n_outliers,pct_outliers,tipo_atipicidad,decision_metodologica
+supervised_ready,freq_compra_anual,318,2.0,4.0,2.0,-1.0,7.0,0,0.0,extremo_estadistico_no_error,mantener_y_documentar
+supervised_ready,canal_compra_moda,318,2.0,5.0,3.0,-2.5,9.5,0,0.0,extremo_estadistico_no_error,mantener_y_documentar
+supervised_ready,tiempo_rrss_dia,318,2.0,4.0,2.0,-1.0,7.0,0,0.0,extremo_estadistico_no_error,mantener_y_documentar
+supervised_ready,freq_contenido_moda_rrss,318,1.0,4.0,3.0,-3.5,8.5,0,0.0,extremo_estadistico_no_error,mantener_y_documentar
+supervised_ready,sigue_influencers_moda,318,1.0,3.0,2.0,-2.0,6.0,0,0.0,extremo_estadistico_no_error,mantener_y_documentar
+supervised_ready,compra_ult_6m_por_rrss_bin,318,0.0,1.0,1.0,-1.5,2.5,0,0.0,extremo_estadistico_no_error,mantener_y_documentar
+supervised_ready,indice_influencia_rrss,318,2.0,4.2,2.2,-1.3,7.5,0,0.0,extremo_estadistico_no_error,mantener_y_documentar
+supervised_ready,indice_impulso_tendencia,318,1.8,3.4,1.6,-0.6,5.8,0,0.0,extremo_estadistico_no_error,mantener_y_documentar
+supervised_ready,indice_confianza_influencers,318,1.5,3.5,2.0,-1.5,6.5,0,0.0,extremo_estadistico_no_error,mantener_y_documentar
+supervised_ready,indice_escepticismo_influencers,318,4.0,5.0,1.0,2.5,6.5,21,6.6,extremo_estadistico_no_error,mantener_y_documentar
+supervised_ready,indice_difusion_fastfashion,318,4.0,5.0,1.0,2.5,6.5,10,3.14,extremo_estadistico_no_error,mantener_y_documentar
+supervised_ready,indice_riesgo_arrepentimiento,318,1.5,3.0,1.5,-0.75,5.25,0,0.0,extremo_estadistico_no_error,mantener_y_documentar
+supervised_ready,target_recomendaria_bin,318,0.0,1.0,1.0,-1.5,2.5,0,0.0,extremo_estadistico_no_error,mantener_y_documentar
+supervised_ready,target_seguira_comprando_bin,318,0.0,1.0,1.0,-1.5,2.5,0,0.0,extremo_estadistico_no_error,mantener_y_documentar
