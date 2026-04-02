@@ -1,8 +1,0 @@
-variable,count,mean,median,std,min,p25,p75,max
-indice_influencia_rrss,318,3.0818,3.3,1.2542,1.0,2.0,4.2,5.0
-indice_impulso_tendencia,318,2.6145,2.6,1.0224,1.0,1.8,3.4,5.0
-indice_confianza_influencers,318,2.7358,3.0,1.146,1.0,1.5,3.5,5.0
-indice_escepticismo_influencers,318,4.3176,5.0,0.9872,1.0,4.0,5.0,5.0
-indice_difusion_fastfashion,318,4.3381,4.5,0.8451,1.0,4.0,5.0,5.0
-indice_postcompra,318,2.8889,3.0,1.0927,1.0,2.0,3.6667,5.0
-indice_riesgo_arrepentimiento,318,2.467,2.5,1.1571,1.0,1.5,3.0,5.0

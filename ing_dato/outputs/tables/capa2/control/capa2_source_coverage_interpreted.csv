@@ -1,8 +1,0 @@
-fuente,fecha_inicio,fecha_fin,n_filas,n_columnas,uso_analitico
-brand_digital,2014-12-01,2025-12-01,660,16,integracion_marca_ventana_comun
-eventos,2015-10-01,2025-03-01,20,6,contexto
-googletrends_marcas,2014-12-01,2025-12-01,660,6,historico_principal
-googletrends_productos,2015-01-01,2025-12-01,2640,7,historico_complementario
-googletrends_terminos,2015-01-01,2025-12-01,2505,9,historico_principal
-instagram_brand_monthly,2025-01-01,2026-03-01,65,12,social_reciente_agregado
-instagram_posts,2025-01-02,2026-03-30,2369,16,social_reciente

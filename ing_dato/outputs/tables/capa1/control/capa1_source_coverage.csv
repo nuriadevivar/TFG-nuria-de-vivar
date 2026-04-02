@@ -1,9 +1,0 @@
-fuente,fecha_inicio,fecha_fin,n_filas,n_columnas,uso_analitico
-contexto_digitalizacion_clean,2020,2025,6,3,contexto_macro_anual
-contexto_digitalizacion_documentado,2020,2025,6,8,trazabilidad_contextual
-eurostat_moda_mensual_clean,2010-01-01,2023-12-01,168,4,historico_sectorial_mensual
-eurostat_retail_total_mensual_clean,2010-01-01,2025-09-01,189,4,historico_general_mensual
-eurostat_online_empresas_clean,2015,2023,9,5,adopcion_online_empresarial
-comercio_electronico_core_std,2015,2023,2380,5,ecommerce_empresarial_anual
-capa1_master_anual_analysis,2020,2023,4,8,master_anual_final
-capa1_master_mensual_analysis,2015-01-01,2023-12-01,108,7,master_mensual_final
