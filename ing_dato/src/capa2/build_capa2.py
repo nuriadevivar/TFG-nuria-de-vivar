@@ -1265,6 +1265,7 @@ def build_capa2_sqlite() -> None:
         "capa2_master_terminos_main": PROCESSED_CAPA2 / "integrated" / "capa2_master_terminos_main.csv",
         "capa2_variable_selection_matrix": TABLES_CAPA2_CONTROL / "capa2_variable_selection_matrix.csv",
         "capa2_variable_final_decisions": TABLES_CAPA2_CONTROL / "capa2_variable_final_decisions.csv",
+        "capa2_null_summary": TABLES_CAPA2_CONTROL / "capa2_null_summary.csv",
     }
 
     conn = sqlite3.connect(DB_CAPA2)
@@ -1282,11 +1283,181 @@ def build_capa2_sqlite() -> None:
 
 
 # =========================
+# NULL SUMMARY
+# =========================
+ 
+def build_capa2_null_summary() -> pd.DataFrame:
+    """
+    Tabla única con todos los nulos y valores especiales documentados en capa 2.
+ 
+    Casos documentados:
+    1. valor_trends = 0 (Google Trends): no es ausencia de interés sino volumen
+       de búsqueda insuficiente para ser representado en escala 0-100.
+       Decisión: mantener con flag valor_cero_trends=True.
+ 
+    2. NaN en valor_trends: dato genuinamente no disponible en la API de Google
+       Trends para ese término/mes. Decisión: mantener NaN.
+ 
+    3. NaN en likes/comentarios (Instagram Apify): la API devolvió null para ese
+       campo. Decisión: imputar a 0 con flag metricas_imputadas=True.
+ 
+    4. NaN en hashtags (Instagram): campo opcional en la API. Sin impacto analítico.
+       Decisión: mantener NaN, no se usa como variable cuantitativa.
+ 
+    5. Términos con quality_flag='baja' (cobertura < 60%): se conservan en el
+       dataset pero se excluyen del análisis principal (master_terminos_main).
+    """
+    _ensure_dirs()
+ 
+    records = [
+        {
+            "dataset": "trends_grupos_unificados_clean / trends_marcas_clean",
+            "variable": "valor_trends",
+            "tipo_valor_especial": "cero_GT",
+            "descripcion": (
+                "valor_trends=0 en Google Trends indica que el volumen de busquedas "
+                "es demasiado bajo para ser representado en la escala 0-100 de la API. "
+                "No equivale a ausencia de interes — es un artefacto de la normalizacion "
+                "de Google Trends que escala el termino con mayor volumen a 100."
+            ),
+            "decision": "mantener_con_flag — valor_cero_trends=True permite filtrar en analisis sensibles",
+            "impacto_si_se_imputa": "Distorsionaria la comparacion entre terminos con diferente popularidad base",
+            "impacto_si_se_elimina": "Perdida de contexto temporal; podria enmascarar periodos de baja actividad real",
+        },
+        {
+            "dataset": "trends_grupos_unificados_clean",
+            "variable": "valor_trends",
+            "tipo_valor_especial": "NaN",
+            "descripcion": (
+                "NaN genuino: dato no disponible en la API de Google Trends para ese "
+                "termino/mes. Puede deberse a que el termino fue introducido en la "
+                "busqueda fuera de su ventana temporal o a limitaciones de la API."
+            ),
+            "decision": "mantener_NaN — no imputable sin distorsion",
+            "impacto_si_se_imputa": "Cualquier imputacion seria arbitraria sin referencia valida",
+            "impacto_si_se_elimina": "Perdida de filas que podrian tener otros campos validos",
+        },
+        {
+            "dataset": "instagram_posts_clean",
+            "variable": "likes / comentarios",
+            "tipo_valor_especial": "NaN_imputado_0",
+            "descripcion": (
+                "La API de Apify devolvio null para likes/comentarios en algunos posts. "
+                "Puede ocurrir por posts con engagement bloqueado, posts muy recientes o "
+                "limitaciones de la API en el momento del scraping. "
+                "Se imputa a 0 (decision conservadora) con flag metricas_imputadas=True."
+            ),
+            "decision": "imputar_0_con_flag — el engagement calculado puede estar subestimado para posts afectados",
+            "impacto_si_se_imputa": "Subestimacion del engagement real en posts afectados (conservador)",
+            "impacto_si_se_elimina": "Perdida de posts validos en otras variables (caption, fecha, tipo_post)",
+        },
+        {
+            "dataset": "instagram_posts_clean",
+            "variable": "hashtags",
+            "tipo_valor_especial": "NaN",
+            "descripcion": (
+                "Campo opcional en la API de Apify. Muchos posts no incluyen hashtags "
+                "o la API no los extrajo en algunos casos. No se usa como variable "
+                "cuantitativa en el analisis principal."
+            ),
+            "decision": "mantener_NaN — sin impacto analitico en variables cuantitativas",
+            "impacto_si_se_imputa": "No aplicable (campo de texto no cuantitativo)",
+            "impacto_si_se_elimina": "Perdida de posts validos en otras variables",
+        },
+        {
+            "dataset": "capa2_term_coverage / capa2_term_analysis_priority",
+            "variable": "quality_flag / prioridad_analitica",
+            "tipo_valor_especial": "baja_cobertura_o_prioridad_exploratoria",
+            "descripcion": (
+                "Terminos con cobertura insuficiente y/o prioridad analitica exploratoria "
+                "no se eliminan del dataset base. Se conservan por trazabilidad, pero pueden "
+                "quedar fuera del subconjunto principal usado en el EDA principal."
+            ),
+            "decision": (
+                "mantener_en_base_y_filtrar_en_subset_principal — "
+                "la seleccion final depende de prioridad_analitica y no solo de quality_flag"
+            ),
+            "impacto_si_se_imputa": "Podria crear tendencias artificiales en terminos debiles",
+            "impacto_si_se_elimina": "Se pierde trazabilidad sobre terminos de nicho o baja señal",
+        },
+    ]
+ 
+    df = pd.DataFrame(records)
+    out_path = TABLES_CAPA2_CONTROL / "capa2_null_summary.csv"
+    df.to_csv(out_path, index=False)
+    print(f"  Null summary capa2: {len(df)} casos documentados → {out_path.name}")
+    return df
+ 
+ 
+# =========================
+# VARIABLE SELECTION MATRIX — ENTRADAS ADICIONALES
+# para valor_cero_trends y metricas_imputadas
+# =========================
+ 
+def build_capa2_vsm_flags() -> pd.DataFrame:
+    """
+    Añade a la variable selection matrix las entradas para los flags
+    de calidad introducidos en el transform mejorado.
+    """
+    _ensure_dirs()
+
+    records = [
+        {
+            "dataset": "trends_grupos_unificados_clean / trends_marcas_clean",
+            "variable": "valor_cero_trends",
+            "descripcion": "Flag booleano: True si valor_trends=0 (volumen insuficiente en GT, no interés cero)",
+            "tipo_variable": "tecnica",
+            "rol_analitico": "trazabilidad",
+            "nivel_nulos": "ninguno",
+            "redundancia": "baja",
+            "decision": "mantener — permite filtrar ceros en analisis sensibles a la distribucion",
+            "justificacion": (
+                "El valor 0 en Google Trends no es equivalente a ausencia de interes. "
+                "La API escala el maximo a 100 y trunca los valores bajos a 0. "
+                "Este flag permite decidir si incluir o excluir ceros segun el objetivo del analisis."
+            ),
+        },
+        {
+            "dataset": "instagram_posts_clean / instagram_brand_monthly",
+            "variable": "metricas_imputadas",
+            "descripcion": "Flag booleano: True si likes o comentarios fueron imputados a 0 desde NaN",
+            "tipo_variable": "tecnica",
+            "rol_analitico": "trazabilidad",
+            "nivel_nulos": "ninguno",
+            "redundancia": "baja",
+            "decision": "mantener — permite evaluar sesgo potencial en calculos de engagement",
+            "justificacion": (
+                "Los posts con metricas_imputadas=True pueden tener engagement subestimado. "
+                "En el agregado mensual permite contextualizar la fiabilidad de likes, comentarios y engagement."
+            ),
+        },
+    ]
+
+    df = pd.DataFrame(records)
+
+    vsm_path = TABLES_CAPA2_CONTROL / "capa2_variable_selection_matrix.csv"
+
+    if vsm_path.exists():
+        vsm_existing = pd.read_csv(vsm_path)
+        vsm_combined = pd.concat([vsm_existing, df], ignore_index=True)
+        vsm_combined = vsm_combined.drop_duplicates(subset=["dataset", "variable"], keep="last")
+        vsm_combined.to_csv(vsm_path, index=False)
+        print(f"  VSM actualizada: {len(vsm_combined)} variables totales (añadidos flags de calidad)")
+    else:
+        df.to_csv(vsm_path, index=False)
+        print(f"  VSM flags creada: {len(df)} entradas")
+
+    return df
+
+
+# =========================
 # RUN ALL
 # =========================
 
 def run_all_builds() -> None:
     build_variable_selection_matrix_capa2()
+    build_capa2_vsm_flags()
+    build_capa2_null_summary()
     build_capa2_inventory()
     build_capa2_master_terminos()
     build_term_analysis_priority()

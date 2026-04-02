@@ -1318,36 +1318,232 @@ def eda_capa2_brand_digital() -> pd.DataFrame:
 def eda_capa2_outliers_brand_digital() -> pd.DataFrame:
     _ensure_dirs()
 
-    input_path = TABLES_CAPA2_EDA / "capa2_brand_digital_common_window.csv"
+    input_path = PROCESSED_CAPA2 / "integrated" / "capa2_master_brand_digital.csv"
     df = pd.read_csv(input_path)
+    df["fecha"] = pd.to_datetime(df["fecha"], errors="coerce")
 
-    if df.empty:
-        print("EDA outliers brand digital completado. No hay datos en ventana común.")
-        return pd.DataFrame()
-
-    brand_numeric_cols = [
+    cols = [
         "valor_trends",
         "n_posts",
+        "likes_totales",
+        "comentarios_totales",
         "engagement_total",
-        "valor_trends_norm",
-        "n_posts_norm",
-        "engagement_total_norm",
+        "engagement_medio_post",
     ]
-    brand_numeric_cols = [c for c in brand_numeric_cols if c in df.columns]
 
-    outlier_df = _iqr_outlier_summary(
-        df=df,
-        cols=brand_numeric_cols,
-        bloque="brand_digital_common_window",
-    )
+    records = []
 
-    outlier_df["decision_metodologica"] = "mantener_y_documentar_en_ventana_comun"
-    outlier_df.to_csv(TABLES_CAPA2_EDA / "capa2_outliers_brand_digital_summary.csv", index=False)
+    for col in cols:
+        if col not in df.columns:
+            continue
+
+        s = pd.to_numeric(df[col], errors="coerce").dropna()
+        if s.empty:
+            continue
+
+        q1 = s.quantile(0.25)
+        q3 = s.quantile(0.75)
+        iqr = q3 - q1
+        lower = q1 - 1.5 * iqr
+        upper = q3 + 1.5 * iqr
+
+        n_outliers = int(((s < lower) | (s > upper)).sum())
+        pct_outliers = round((n_outliers / len(s)) * 100, 2) if len(s) > 0 else 0.0
+
+        records.append(
+            {
+                "bloque": "brand_digital_common_window",
+                "variable": col,
+                "n_obs": int(len(s)),
+                "q1": round(float(q1), 4),
+                "q3": round(float(q3), 4),
+                "iqr": round(float(iqr), 4),
+                "lower_bound": round(float(lower), 4),
+                "upper_bound": round(float(upper), 4),
+                "n_outliers": n_outliers,
+                "pct_outliers": pct_outliers,
+                "tipo_atipicidad": "extremo_estadistico_no_error",
+                "decision_metodologica": "mantener_y_documentar_en_ventana_comun",
+            }
+        )
+
+    summary_df = pd.DataFrame(records)
+    out_path = TABLES_CAPA2_EDA / "capa2_outliers_brand_digital_summary.csv"
+    summary_df.to_csv(out_path, index=False)
 
     print("EDA outliers brand digital completado.")
-    print(outlier_df)
+    print(summary_df)
 
-    return outlier_df
+    return summary_df
+
+
+# =========================
+# JUSTIFICACION ANALITICA
+# =========================
+
+def eda_capa2_justificacion_analitica() -> pd.DataFrame:
+    """
+    Documenta y exporta la justificación del tipo de análisis descriptivo
+    aplicado a cada dataset de capa 2.
+    """
+    _ensure_dirs()
+
+    records = [
+        {
+            "dataset": "capa2_master_terminos_mensual",
+            "tipo_dato": "series_temporales_multivariadas",
+            "frecuencia": "mensual",
+            "periodo": "2015-2025 (serie mensual, con longitud variable según término y cobertura)",
+            "tipo_analisis_elegido": "analisis_series_temporales_con_segmentacion",
+            "justificacion": (
+                "Google Trends devuelve series mensuales de interes relativo (0-100) para cada termino. "
+                "El analisis temporal permite detectar emergencia, auge y decaimiento de terminos. "
+                "Se aplican descriptivos por termino y grupo, rankings por volumen medio, evolucion temporal, "
+                "heatmaps y comparaciones entre familias analiticas. "
+                "El valor_trends=0 se mantiene documentado porque en Google Trends significa volumen insuficiente "
+                "para ser representado en la escala, no ausencia real de interes."
+            ),
+            "alternativa_descartada": (
+                "Analisis transversal: perderia la dimension temporal, que es el nucleo del fenomeno estudiado."
+            ),
+        },
+        {
+            "dataset": "capa2_master_terminos_main",
+            "tipo_dato": "series_temporales_filtradas_por_calidad",
+            "frecuencia": "mensual",
+            "periodo": "2015-2025 (subset principal de términos)",
+            "tipo_analisis_elegido": "analisis_tendencia_con_control_calidad",
+            "justificacion": (
+                "Subconjunto del master de terminos restringido a terminos con suficiente robustez analitica. "
+                "Permite realizar analisis de tendencias con menor ruido y mayor continuidad temporal."
+            ),
+            "alternativa_descartada": (
+                "Usar todos los terminos sin filtro introduciria ruido por señales demasiado débiles o discontinuas."
+            ),
+        },
+        {
+            "dataset": "capa2_master_eventos",
+            "tipo_dato": "datos_categoricos_con_fecha",
+            "frecuencia": "irregular",
+            "periodo": "2015-2025",
+            "tipo_analisis_elegido": "analisis_frecuencias_y_distribucion_temporal",
+            "justificacion": (
+                "Los eventos son hitos discretos no regulares. Tiene sentido analizarlos por frecuencia, "
+                "distribucion temporal, plataforma y categoria, y utilizarlos como contexto interpretativo "
+                "para los picos de interes digital."
+            ),
+            "alternativa_descartada": (
+                "Serie temporal clasica: no procede porque no existe una frecuencia regular intrinseca del dato."
+            ),
+        },
+        {
+            "dataset": "capa2_master_social",
+            "tipo_dato": "panel_mensual_por_marca",
+            "frecuencia": "mensual",
+            "periodo": "ventana reciente disponible por marca",
+            "tipo_analisis_elegido": "analisis_panel_engagement_por_marca",
+            "justificacion": (
+                "Los datos agregados de Instagram permiten estudiar volumen de actividad y engagement por marca "
+                "a nivel mensual. Se aplican descriptivos, rankings y evolucion temporal del engagement. "
+                "Los posts con metricas_imputadas=True pueden subestimar el engagement real y por ello se documentan."
+            ),
+            "alternativa_descartada": (
+                "Analisis exclusivo a nivel de post: excesivamente granular para identificar patrones temporales por marca."
+            ),
+        },
+        {
+            "dataset": "capa2_master_brand_digital",
+            "tipo_dato": "master_integrado_marca_mes",
+            "frecuencia": "mensual",
+            "periodo": "ventana comun entre Google Trends e Instagram",
+            "tipo_analisis_elegido": "analisis_conjunto_trends_social_eventos",
+            "justificacion": (
+                "Este master integra interes digital, actividad social y contexto de eventos a nivel marca-mes. "
+                "Permite observar si los picos de Google Trends coinciden con picos de engagement y con hitos "
+                "del sector, siempre dentro de una ventana temporal comparable."
+            ),
+            "alternativa_descartada": (
+                "Analisis aislado por fuente: impediria estudiar la relacion entre señales digitales complementarias."
+            ),
+        },
+    ]
+
+    df = pd.DataFrame(records)
+    out_path = TABLES_CAPA2_CONTROL / "capa2_justificacion_tipo_analisis.csv"
+    df.to_csv(out_path, index=False)
+    print(f"  Justificación tipo análisis capa2: {len(df)} datasets → {out_path.name}")
+    return df
+
+
+def eda_capa2_source_coverage_v2() -> pd.DataFrame:
+    """
+    Cobertura temporal y nota metodológica de cada fuente de capa 2.
+    """
+    _ensure_dirs()
+
+    source_map = {
+        "googletrends_marcas": PROCESSED_CAPA2 / "googletrends" / "trends_marcas_clean.csv",
+        "googletrends_productos": PROCESSED_CAPA2 / "googletrends" / "trends_productos_clean.csv",
+        "googletrends_terminos": PROCESSED_CAPA2 / "integrated" / "capa2_master_terminos_mensual.csv",
+        "eventos": PROCESSED_CAPA2 / "integrated" / "capa2_master_eventos_mensual.csv",
+        "instagram_posts": PROCESSED_CAPA2 / "apify" / "instagram_posts_clean.csv",
+        "instagram_brand_monthly": PROCESSED_CAPA2 / "apify" / "instagram_brand_monthly.csv",
+        "brand_digital": PROCESSED_CAPA2 / "integrated" / "capa2_master_brand_digital.csv",
+    }
+
+    notas = {
+        "googletrends_marcas": (
+            "Series mensuales de interes relativo para marcas. Google Trends usa escala 0-100 relativa al maximo del termino. "
+            "El valor 0 indica volumen insuficiente para la escala, no interes nulo."
+        ),
+        "googletrends_productos": (
+            "Series mensuales por categoria de producto y marca. Permiten comparar interes relativo por tipo de producto."
+        ),
+        "googletrends_terminos": (
+            "Master unificado de terminos de marcas, esteticas y comportamientos. Base del analisis de tendencias digitales."
+        ),
+        "eventos": (
+            "Dataset contextual de hitos del sector moda, utilizado para interpretar picos temporales y cambios de señal."
+        ),
+        "instagram_posts": (
+            "Posts scrapeados de perfiles oficiales. No recoge menciones externas ni UGC. Algunas metricas pueden haber sido imputadas a 0."
+        ),
+        "instagram_brand_monthly": (
+            "Agregacion mensual por marca de actividad y engagement en Instagram."
+        ),
+        "brand_digital": (
+            "Master integrado marca-mes con Google Trends, señal social y contexto de eventos en ventana temporal comparable."
+        ),
+    }
+
+    records = []
+
+    for source_name, path in source_map.items():
+        df = _safe_read_csv(path)
+        if df is None:
+            continue
+
+        fecha_col = "fecha_post" if "fecha_post" in df.columns else "fecha"
+        fechas = pd.to_datetime(df.get(fecha_col, pd.Series(dtype="object")), errors="coerce")
+
+        start = str(fechas.min().date()) if fechas.notna().any() else "n/a"
+        end = str(fechas.max().date()) if fechas.notna().any() else "n/a"
+
+        records.append({
+            "fuente": source_name,
+            "fecha_inicio": start,
+            "fecha_fin": end,
+            "n_filas": len(df),
+            "n_columnas": df.shape[1],
+            "nota_metodologica": notas.get(source_name, ""),
+        })
+
+    coverage_df = pd.DataFrame(records)
+    out_path = TABLES_CAPA2_CONTROL / "capa2_source_coverage.csv"
+    coverage_df.to_csv(out_path, index=False)
+    print(f"  Source coverage capa2: {len(coverage_df)} fuentes documentadas → {out_path.name}")
+    return coverage_df
+
 
 # =========================
 # RUN ALL
@@ -1356,6 +1552,7 @@ def eda_capa2_outliers_brand_digital() -> pd.DataFrame:
 def run_all_eda() -> None:
     profile_capa2()
     analyze_nulls_capa2()
+    eda_capa2_justificacion_analitica()
     eda_capa2_terminos()
     eda_capa2_terminos_main()
     eda_capa2_outliers_terminos()
@@ -1363,7 +1560,7 @@ def run_all_eda() -> None:
     eda_capa2_eventos()
     eda_capa2_integrated()
     eda_capa2_term_quality_decisions()
-    eda_capa2_source_coverage()
+    eda_capa2_source_coverage_v2()
     eda_capa2_social()
     eda_capa2_outliers_social()
     eda_capa2_brand_common_window()
