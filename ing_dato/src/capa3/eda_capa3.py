@@ -807,6 +807,86 @@ def eda_capa3_outliers_supervised_ready() -> pd.DataFrame:
     return outlier_df
 
 # =========================
+# SOURCE COVERAGE
+# =========================
+
+def eda_capa3_source_coverage() -> pd.DataFrame:
+    """
+    Cobertura y justificación analítica de los datasets de capa 3.
+    Incluye nota sobre limitaciones metodológicas de la encuesta.
+    """
+    _ensure_dirs()
+
+    source_map = {
+        "encuesta_fastfashion_clean": PROCESSED_CAPA3 / "survey" / "encuesta_fastfashion_clean.csv",
+        "encuesta_rrss_long": PROCESSED_CAPA3 / "survey" / "encuesta_rrss_long.csv",
+        "encuesta_marcas_vistas_long": PROCESSED_CAPA3 / "survey" / "encuesta_marcas_vistas_long.csv",
+        "encuesta_marcas_influyen_long": PROCESSED_CAPA3 / "survey" / "encuesta_marcas_influyen_long.csv",
+        "capa3_master_encuesta": PROCESSED_CAPA3 / "integrated" / "capa3_master_encuesta.csv",
+        "capa3_clustering_ready": PROCESSED_CAPA3 / "integrated" / "capa3_clustering_ready.csv",
+        "capa3_supervised_ready": PROCESSED_CAPA3 / "integrated" / "capa3_supervised_ready.csv",
+    }
+
+    justificaciones = {
+        "encuesta_fastfashion_clean": (
+            "Dataset principal de la encuesta. Elaboracion propia via Google Forms. "
+            "Variables Likert 1-5 (actitud/comportamiento) + categoricas + multirrespuesta. "
+            "7 indices compuestos calculados como media de items conceptualmente relacionados. "
+            "Validacion de consistencia interna: alpha de Cronbach (ver capa3_cronbach_alpha.csv). "
+            "LIMITACION: muestra de conveniencia (no probabilistica) — los resultados "
+            "son exploratorios y no extrapolables a la poblacion general."
+        ),
+        "encuesta_rrss_long": (
+            "Tabla long de redes sociales habituales por encuestado. "
+            "Cada fila = 1 red social mencionada por 1 encuestado. "
+            "Permite ranking de RRSS y segmentacion por generacion."
+        ),
+        "encuesta_marcas_vistas_long": (
+            "Tabla long de marcas vistas en RRSS por encuestado. "
+            "Permite ranking de visibilidad de marcas en el ecosistema digital."
+        ),
+        "encuesta_marcas_influyen_long": (
+            "Tabla long de marcas que mas influyen en compra por encuestado. "
+            "Permite ranking de influencia de marca y cruce con capa 2 (Google Trends + Instagram)."
+        ),
+        "capa3_master_encuesta": (
+            "Dataset integrado principal. Incluye variables raw + indices compuestos + targets binarios. "
+            "Base para EDA exploratorio y segmentacion por generacion."
+        ),
+        "capa3_clustering_ready": (
+            "Subconjunto de indices compuestos normalizados (min-max). "
+            "Listo para algoritmos de clustering no supervisado (K-Means, DBSCAN). "
+            "Variables: 6 indices (excluye indice_escepticismo por ser 1 item)."
+        ),
+        "capa3_supervised_ready": (
+            "Dataset con features e indices para clasificacion supervisada. "
+            "Targets: target_recomendaria_bin y target_seguira_comprando_bin. "
+            "Excluye variables con fuga de informacion hacia los targets."
+        ),
+    }
+
+    records = []
+    for source_name, path in source_map.items():
+        try:
+            df = pd.read_csv(path)
+            records.append({
+                "fuente": source_name,
+                "n_filas": len(df),
+                "n_columnas": df.shape[1],
+                "nulos_totales": int(df.isna().sum().sum()),
+                "avg_nulos_por_fila": round(float(df.isna().sum(axis=1).mean()), 4) if len(df) > 0 else 0,
+                "justificacion_inclusion": justificaciones.get(source_name, ""),
+            })
+        except FileNotFoundError:
+            print(f"  [WARN] {source_name}: archivo no encontrado, se omite")
+
+    coverage_df = pd.DataFrame(records)
+    out_path = TABLES_CAPA3_CONTROL / "capa3_source_coverage.csv"
+    coverage_df.to_csv(out_path, index=False)
+    print(f"  Source coverage capa3: {len(coverage_df)} datasets documentados → {out_path.name}")
+    return coverage_df
+
+# =========================
 # RUN ALL
 # =========================
 
@@ -828,6 +908,7 @@ def run_all_eda() -> None:
     eda_capa3_correlations()
     eda_capa3_sample_structure()
     eda_capa3_target_summary()
+    eda_capa3_source_coverage()
     print("Todo el EDA de capa 3 completado.")
 
 if __name__ == "__main__":

@@ -1,5 +1,6 @@
 import sqlite3
 import pandas as pd
+import numpy as np
 
 from src.common.config import (
     DB_CAPA3,
@@ -613,6 +614,8 @@ def build_capa3_sqlite() -> None:
         "capa3_variable_selection_matrix": TABLES_CAPA3_CONTROL / "capa3_variable_selection_matrix.csv",
         "capa3_variable_final_decisions": TABLES_CAPA3_CONTROL / "capa3_variable_final_decisions.csv",
         "capa3_dataset_quality_summary": TABLES_CAPA3_CONTROL / "capa3_dataset_quality_summary.csv",
+        "capa3_cronbach_alpha": TABLES_CAPA3_CONTROL / "capa3_cronbach_alpha.csv",
+        "capa3_justificacion_tipo_analisis": TABLES_CAPA3_CONTROL / "capa3_justificacion_tipo_analisis.csv",
     }
 
     conn = sqlite3.connect(DB_CAPA3)
@@ -677,12 +680,239 @@ def build_capa3_dataset_quality_summary() -> pd.DataFrame:
 
     return quality_df
 
+
+# =========================
+# CRONBACH
+# =========================
+
+def build_capa3_cronbach_alpha() -> pd.DataFrame:
+    """
+    Calcula el alpha de Cronbach para cada índice compuesto de la encuesta.
+
+    El alpha de Cronbach mide la consistencia interna de un conjunto de ítems
+    que se supone miden el mismo constructo. Formula:
+        α = (k / (k-1)) * (1 - Σvar_items / var_total)
+    donde k = número de ítems, var_items = varianza de cada ítem,
+    var_total = varianza de la suma de los ítems.
+
+    Interpretación:
+        α < 0.6  → inaceptable (cuestionar la agrupación)
+        0.6–0.7  → aceptable en ciencias sociales exploratorias
+        0.7–0.8  → bueno
+        0.8–0.9  → muy bueno
+        > 0.9    → excelente (posible redundancia entre ítems)
+
+    Referencia: Cronbach, L. J. (1951). Coefficient alpha and the internal
+    structure of tests. Psychometrika, 16(3), 297-334.
+
+    NOTA: Para índices de 1 ítem (indice_escepticismo_influencers) el alpha
+    no es aplicable — se documenta como N/A con nota metodológica.
+    Para índices de 2 ítems el alpha puede ser bajo pero es aceptable si la
+    correlación entre ítems es alta (r > 0.4).
+    """
+    _ensure_dirs()
+
+    input_path = PROCESSED_CAPA3 / "survey" / "encuesta_fastfashion_clean.csv"
+    df = pd.read_csv(input_path)
+
+    INDICES_ITEMS = {
+        "indice_influencia_rrss": [
+            "rs_influyen_compra", "ha_comprado_por_ver_en_rrss",
+            "descubre_marcas_por_rrss", "contenido_moda_aumenta_ganas",
+            "rrss_mas_que_publicidad",
+        ],
+        "indice_impulso_tendencia": [
+            "compra_por_repeticion_rrss", "atraen_prendas_de_moda",
+            "compra_impulso", "influye_prueba_social", "interes_productos_virales",
+        ],
+        "indice_confianza_influencers": [
+            "confia_influencers", "autenticidad_influencer_compra",
+        ],
+        "indice_escepticismo_influencers": [
+            "influencers_interes_comercial",
+        ],
+        "indice_difusion_fastfashion": [
+            "rrss_aceleran_tendencias", "rrss_favorecen_consumo_rapido",
+        ],
+        "indice_postcompra": [
+            "satisfaccion_compra_rrss", "seguira_comprando_influido_rrss",
+            "recomendaria_productos_descubiertos_rrss",
+        ],
+        "indice_riesgo_arrepentimiento": [
+            "ha_comprado_y_apenas_usado", "arrepentimiento_compra_rrss",
+        ],
+    }
+
+    def cronbach_alpha(data: pd.DataFrame) -> float:
+        """Calcula alpha de Cronbach para un DataFrame de ítems (filas=sujetos, cols=ítems)."""
+        data_clean = data.dropna()
+        if len(data_clean) < 2 or data_clean.shape[1] < 2:
+            return float("nan")
+        k = data_clean.shape[1]
+        var_items = data_clean.var(axis=0, ddof=1).sum()
+        var_total = data_clean.sum(axis=1).var(ddof=1)
+        if var_total == 0:
+            return float("nan")
+        return round((k / (k - 1)) * (1 - var_items / var_total), 4)
+
+    def interpretar_alpha(alpha: float, k: int) -> str:
+        if k == 1:
+            return "N/A — indice de 1 item, alpha no aplicable"
+        if pd.isna(alpha):
+            return "N/A — datos insuficientes"
+        if alpha >= 0.9:
+            return "excelente (posible redundancia entre items)"
+        if alpha >= 0.8:
+            return "muy_bueno"
+        if alpha >= 0.7:
+            return "bueno"
+        if alpha >= 0.6:
+            return "aceptable"
+        return "inaceptable — revisar agrupacion de items"
+
+    records = []
+    for indice_name, items in INDICES_ITEMS.items():
+        items_presentes = [c for c in items if c in df.columns]
+        k = len(items_presentes)
+
+        if k == 1:
+            alpha = float("nan")
+            # Para 1 item: calcular estadísticos descriptivos del item
+            s = pd.to_numeric(df[items_presentes[0]], errors="coerce").dropna()
+            correlacion_media_items = float("nan")
+        else:
+            data = df[items_presentes].apply(pd.to_numeric, errors="coerce")
+            alpha = cronbach_alpha(data)
+            # Correlación media inter-items (complementa el alpha para n=2)
+            corr_matrix = data.corr()
+            mask = ~np.eye(k, dtype=bool)
+            correlacion_media_items = (
+                round(float(corr_matrix.where(mask).stack().mean()), 4)
+                if k > 1 else np.nan
+            ) if k > 1 else float("nan")
+
+        records.append({
+            "indice": indice_name,
+            "n_items": k,
+            "items": ", ".join(items_presentes),
+            "n_respondentes": int(df[items_presentes].dropna().shape[0]) if k > 0 else 0,
+            "alpha_cronbach": alpha if not pd.isna(alpha) else None,
+            "correlacion_media_items": correlacion_media_items if not pd.isna(correlacion_media_items) else None,
+            "interpretacion": interpretar_alpha(alpha, k),
+            "decision": (
+                "validar_agrupacion" if not pd.isna(alpha) and alpha < 0.6
+                else "agrupacion_aceptada"
+            ),
+        })
+
+    alpha_df = pd.DataFrame(records)
+    out_path = TABLES_CAPA3_CONTROL / "capa3_cronbach_alpha.csv"
+    alpha_df.to_csv(out_path, index=False)
+
+    print(f"  Alpha de Cronbach calculado para {len(alpha_df)} índices → {out_path.name}")
+    print()
+    for _, row in alpha_df.iterrows():
+        alpha_str = f"α={row['alpha_cronbach']:.3f}" if row["alpha_cronbach"] is not None else "N/A"
+        print(f"    {row['indice']:45s} {alpha_str:12s} → {row['interpretacion']}")
+
+    return alpha_df
+
+
+def build_capa3_justificacion_analitica() -> pd.DataFrame:
+    """
+    Documenta la justificación del tipo de análisis descriptivo aplicado
+    a la encuesta de fast fashion.
+
+    La rúbrica exige "justificación del tipo de análisis descriptivo":
+    esta función responde a ese requisito para los datos de encuesta Likert.
+    """
+    _ensure_dirs()
+
+    records = [
+        {
+            "dataset": "capa3_master_encuesta",
+            "tipo_dato": "encuesta_likert_transversal",
+            "n_respondentes": "~200",
+            "tipo_analisis_elegido": "analisis_descriptivo_transversal_con_indices_compuestos",
+            "justificacion": (
+                "Los datos son de corte transversal (una sola recogida) con variables "
+                "de actitud y comportamiento en escala Likert 1-5. El analisis aplica: "
+                "(1) estadisticos descriptivos por variable (media, mediana, desv. tipica, "
+                "percentiles); (2) analisis de distribucion de respuestas para detectar "
+                "sesgos (efecto techo/suelo en items Likert); (3) analisis de indices "
+                "compuestos con validacion de consistencia interna (alpha de Cronbach); "
+                "(4) analisis segmentado por generacion (Millennials, Gen-Z, etc.) para "
+                "detectar diferencias de actitud entre cohortes; "
+                "(5) tablas de contingencia para preguntas categoricas."
+            ),
+            "alternativa_descartada": (
+                "Series temporales: no aplicable, datos de corte transversal. "
+                "Analisis factorial confirmatorio (CFA): requiere n >> 200 y software "
+                "especializado; el alpha de Cronbach es suficiente para validacion basica. "
+                "Tests de hipotesis parametricos (t-test, ANOVA): requieren normalidad "
+                "— los datos Likert 1-5 son ordinales, se usan descriptivos y pruebas "
+                "no parametricas si procede."
+            ),
+        },
+        {
+            "dataset": "capa3_clustering_ready",
+            "tipo_dato": "datos_numericos_normalizados_para_clustering",
+            "n_respondentes": "~200",
+            "tipo_analisis_elegido": "analisis_descriptivo_pre_clustering",
+            "justificacion": (
+                "Dataset con indices compuestos normalizados (min-max) listo para "
+                "algoritmos de clustering no supervisado. El EDA descriptivo verifica: "
+                "ausencia de nulos, distribucion de variables, outliers IQR. "
+                "Los boxplots por generacion anticipan si existen grupos naturales "
+                "en el espacio de caracteristicas de los indices."
+            ),
+            "alternativa_descartada": "Datos raw Likert: requieren normalizacion antes de clustering por distancias.",
+        },
+        {
+            "dataset": "capa3_supervised_ready",
+            "tipo_dato": "datos_para_clasificacion_supervisada",
+            "n_respondentes": "~200",
+            "tipo_analisis_elegido": "analisis_balance_clases_y_distribucion_features",
+            "justificacion": (
+                "Dataset con targets binarios (target_recomendaria_bin, "
+                "target_seguira_comprando_bin) para modelos supervisados. "
+                "El EDA verifica el balance de clases (% clase 1 vs 0), "
+                "la distribucion de features por clase para anticipar separabilidad, "
+                "y la correlacion entre features para detectar multicolinealidad."
+            ),
+            "alternativa_descartada": "Regresion ordinal sobre escala 1-5: viable pero fuera del alcance del TFG.",
+        },
+        {
+            "dataset": "tablas_long_multirrespuesta",
+            "tipo_dato": "datos_categoricos_multirrespuesta",
+            "n_respondentes": "~200",
+            "tipo_analisis_elegido": "analisis_frecuencias_ranking",
+            "justificacion": (
+                "Las preguntas de seleccion multiple (RRSS habituales, marcas) "
+                "se expanden a formato long para analisis de frecuencias. "
+                "Se calcula: ranking de RRSS por frecuencia de uso, "
+                "ranking de marcas por visibilidad e influencia en compra, "
+                "y segmentacion del ranking por generacion."
+            ),
+            "alternativa_descartada": "Variables dummy por opcion: genera alta dimensionalidad con n=200.",
+        },
+    ]
+
+    df = pd.DataFrame(records)
+    out_path = TABLES_CAPA3_CONTROL / "capa3_justificacion_tipo_analisis.csv"
+    df.to_csv(out_path, index=False)
+    print(f"  Justificación tipo análisis capa3: {len(df)} datasets → {out_path.name}")
+    return df
+
+
 # =========================
 # RUN ALL
 # =========================
 
 def run_all_builds() -> None:
     build_capa3_inventory()
+    build_capa3_cronbach_alpha()
+    build_capa3_justificacion_analitica()
     build_capa3_master_encuesta()
     build_capa3_clustering_ready()
     build_capa3_supervised_ready()
