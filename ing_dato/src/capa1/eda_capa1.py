@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-from statsmodels.tsa.seasonal import seasonal_decompose 
+from statsmodels.tsa.seasonal import seasonal_decompose
 
 from src.common.config import (
     FIGURES_CAPA1,
@@ -60,6 +60,24 @@ def _numeric_descriptives(df: pd.DataFrame, cols: list[str]) -> pd.DataFrame:
     return pd.DataFrame(records)
 
 
+def _get_period_bounds(df: pd.DataFrame) -> tuple[str | int | None, str | int | None]:
+    start_period = None
+    end_period = None
+
+    if "fecha" in df.columns:
+        fechas = pd.to_datetime(df["fecha"], errors="coerce")
+        if fechas.notna().any():
+            start_period = str(fechas.min().date())
+            end_period = str(fechas.max().date())
+    elif "anio" in df.columns:
+        anios = pd.to_numeric(df["anio"], errors="coerce")
+        if anios.notna().any():
+            start_period = int(anios.min())
+            end_period = int(anios.max())
+
+    return start_period, end_period
+
+
 # =========================
 # 1. PROFILE GENERAL
 # =========================
@@ -70,13 +88,13 @@ def profile_capa1() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     datasets = {
         "contexto_digitalizacion_clean": PROCESSED_CAPA1 / "contexto_digitalizacion" / "contexto_digitalizacion_clean.csv",
         "contexto_digitalizacion_extended": PROCESSED_CAPA1 / "contexto_digitalizacion" / "contexto_digitalizacion_extended.csv",
+        "contexto_digitalizacion_documentado": PROCESSED_CAPA1 / "contexto_digitalizacion" / "contexto_digitalizacion_documentado.csv",
         "eurostat_moda_mensual_clean": PROCESSED_CAPA1 / "eurostat" / "eurostat_moda_mensual_clean.csv",
         "eurostat_retail_total_mensual_clean": PROCESSED_CAPA1 / "eurostat" / "eurostat_retail_total_mensual_clean.csv",
         "eurostat_online_empresas_clean": PROCESSED_CAPA1 / "eurostat" / "eurostat_online_empresas_clean.csv",
         "comercio_electronico_core_std": PROCESSED_CAPA1 / "comercio_electronico" / "comercio_electronico_core_std.csv",
         "capa1_master_anual_analysis": PROCESSED_CAPA1 / "integrated" / "capa1_master_anual_analysis.csv",
         "capa1_master_mensual_analysis": PROCESSED_CAPA1 / "integrated" / "capa1_master_mensual_analysis.csv",
-        "contexto_digitalizacion_documentado": PROCESSED_CAPA1 / "contexto_digitalizacion" / "contexto_digitalizacion_documentado.csv",
     }
 
     summary_records = []
@@ -85,26 +103,13 @@ def profile_capa1() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
 
     for name, path in datasets.items():
         df = pd.read_csv(path)
-
-        start_period = None
-        end_period = None
-
-        if "fecha" in df.columns:
-            fechas = pd.to_datetime(df["fecha"], errors="coerce")
-            if fechas.notna().any():
-                start_period = str(fechas.min().date())
-                end_period = str(fechas.max().date())
-        elif "anio" in df.columns:
-            anios = pd.to_numeric(df["anio"], errors="coerce")
-            if anios.notna().any():
-                start_period = int(anios.min())
-                end_period = int(anios.max())
+        start_period, end_period = _get_period_bounds(df)
 
         summary_records.append(
             {
                 "dataset": name,
-                "rows": df.shape[0],
-                "cols": df.shape[1],
+                "rows": int(df.shape[0]),
+                "cols": int(df.shape[1]),
                 "start_period": start_period,
                 "end_period": end_period,
                 "columns": ", ".join(df.columns.tolist()),
@@ -162,18 +167,26 @@ def analyze_nulls_capa1() -> tuple[pd.DataFrame, pd.DataFrame]:
     detailed.to_csv(TABLES_CAPA1_CONTROL / "capa1_nulls_detailed.csv", index=False)
 
     def assign_null_decision(row: pd.Series) -> str:
-        dataset = str(row["dataset"])
         variable = str(row["variable"])
         pct = float(row["pct_nulls"])
 
-        if variable in {"comentarios_hitos", "fuente_usuarios_redes", "fuente_compra_online", "fuente_compra_ropa_online"}:
+        if variable in {
+            "comentarios_hitos",
+            "fuente_usuarios_redes",
+            "fuente_compra_online",
+            "fuente_compra_ropa_online",
+        }:
             return "mantener_solo_trazabilidad"
+
         if variable == "pct_personas_compra_ropa_online":
             return "mantener_solo_contexto"
+
         if pct >= 80:
             return "descartar_analiticamente"
+
         if pct >= 20:
             return "mantener_con_cautela"
+
         return "mantener"
 
     def assign_null_comment(row: pd.Series) -> str:
@@ -182,14 +195,19 @@ def analyze_nulls_capa1() -> tuple[pd.DataFrame, pd.DataFrame]:
 
         if variable == "pct_personas_compra_ropa_online":
             return "Variable temática útil, pero con cobertura insuficiente para incorporarla al master analítico principal."
+
         if variable == "comentarios_hitos":
             return "Campo cualitativo útil para interpretación narrativa, no para análisis cuantitativo."
+
         if variable.startswith("fuente_"):
             return "Campo de trazabilidad documental; no forma parte del análisis numérico."
+
         if pct >= 80:
             return "Nivel de nulos demasiado alto para uso analítico robusto."
+
         if pct >= 20:
             return "Variable utilizable solo con cautela y sin sobreponderarla en conclusiones."
+
         return "Nivel de nulos asumible."
 
     decisions = detailed.copy()
@@ -222,7 +240,118 @@ def analyze_nulls_capa1() -> tuple[pd.DataFrame, pd.DataFrame]:
 
 
 # =========================
-# 3. EDA ANUAL
+# 3. JUSTIFICACION TIPO ANALISIS DESCRIPTIVO
+# =========================
+
+def eda_capa1_justificacion_analitica() -> pd.DataFrame:
+    """
+    Exporta la justificación del tipo de análisis descriptivo por dataset.
+    Refuerza la trazabilidad metodológica del EDA y ayuda a documentar la rúbrica.
+    """
+    _ensure_dirs()
+
+    records = [
+        {
+            "dataset": "capa1_master_mensual_analysis",
+            "tipo_dato": "serie_temporal_regular",
+            "frecuencia": "mensual",
+            "periodo": "2015-2023 (108 obs)",
+            "tipo_analisis_elegido": "analisis_series_temporales",
+            "justificacion": (
+                "Serie mensual regular con suficiente longitud temporal para analizar "
+                "tendencia, estacionalidad, evolución interanual y cambios estructurales. "
+                "Se aplica descomposición temporal aditiva con periodo 12 por tratarse de "
+                "una frecuencia mensual y ser adecuada para separar tendencia, componente "
+                "estacional y residuo en una primera aproximación descriptiva. "
+                "Se complementa con detección de outliers por IQR para identificar "
+                "meses atípicos asociados a shocks estructurales."
+            ),
+            "alternativa_descartada": (
+                "Análisis puramente transversal descartado porque ignoraría la dimensión "
+                "temporal, que es la fuente principal de información del dataset."
+            ),
+        },
+        {
+            "dataset": "capa1_master_anual_analysis",
+            "tipo_dato": "panel_longitudinal_corto",
+            "frecuencia": "anual",
+            "periodo": "2020-2023 (4 obs)",
+            "tipo_analisis_elegido": "analisis_descriptivo_comparativo",
+            "justificacion": (
+                "Con solo cuatro observaciones anuales, el enfoque adecuado es un análisis "
+                "descriptivo comparativo basado en evolución temporal, rangos, medias y "
+                "comparación entre indicadores. El valor analítico se encuentra en la lectura "
+                "conjunta de las variables de digitalización, compra online y ecommerce "
+                "empresarial, más que en contrastes estadísticos formales."
+            ),
+            "alternativa_descartada": (
+                "No se aplica descomposición temporal ni análisis estacional porque la serie "
+                "es anual y demasiado corta para ello."
+            ),
+        },
+        {
+            "dataset": "eurostat_moda_mensual_clean / eurostat_retail_total_mensual_clean",
+            "tipo_dato": "series_temporales_con_bases_distintas",
+            "frecuencia": "mensual",
+            "periodo": "2010-2023 / 2010-2025",
+            "tipo_analisis_elegido": "comparacion_relativa_con_variables_derivadas",
+            "justificacion": (
+                "Los índices proceden de series con bases distintas, por lo que no es "
+                "metodológicamente correcto comparar directamente sus niveles absolutos. "
+                "Se construyen variables derivadas como ratio y diferencia para realizar una "
+                "comparación relativa consistente entre la evolución del retail de moda y la "
+                "del retail total."
+            ),
+            "alternativa_descartada": (
+                "Comparación directa de valores absolutos descartada por no ser homogénea "
+                "entre series con distinta base de referencia."
+            ),
+        },
+        {
+            "dataset": "comercio_electronico_core_std",
+            "tipo_dato": "panel_anual_por_tamano_empresa",
+            "frecuencia": "anual",
+            "periodo": "2015-2023 (9 años x segmentos)",
+            "tipo_analisis_elegido": "analisis_panel_con_segmentacion",
+            "justificacion": (
+                "El dataset combina dimensión temporal, indicador y segmentación por tamaño "
+                "de empresa, lo que permite estudiar heterogeneidad empresarial en la adopción "
+                "del canal ecommerce. Para el master anual se utiliza el agregado total con el "
+                "fin de mantener comparabilidad con el resto de fuentes integradas."
+            ),
+            "alternativa_descartada": (
+                "Agregación completa sin conservar la segmentación descartada como enfoque "
+                "único porque haría perder información sobre brechas empresariales."
+            ),
+        },
+        {
+            "dataset": "eurostat_online_empresas_clean",
+            "tipo_dato": "serie_temporal_anual",
+            "frecuencia": "anual",
+            "periodo": "2015-2024 (10 obs)",
+            "tipo_analisis_elegido": "analisis_tendencia_anual",
+            "justificacion": (
+                "Serie anual adecuada para describir la evolución de la adopción del ecommerce "
+                "empresarial a lo largo del tiempo mediante tasas de cambio, tendencia visual "
+                "y comparación interanual. Al no tratarse de una serie mensual, no procede "
+                "analizar estacionalidad."
+            ),
+            "alternativa_descartada": (
+                "Descomposición estacional descartada por no ser aplicable a una serie anual."
+            ),
+        },
+    ]
+
+    df = pd.DataFrame(records)
+    out_path = TABLES_CAPA1_CONTROL / "capa1_justificacion_tipo_analisis.csv"
+    df.to_csv(out_path, index=False)
+
+    print(f"Justificación tipo análisis: {len(df)} datasets → {out_path.name}")
+    return df
+
+
+# =========================
+# 4. EDA ANUAL
 # =========================
 
 def eda_capa1_anual() -> pd.DataFrame:
@@ -295,13 +424,14 @@ def eda_capa1_anual() -> pd.DataFrame:
 
     print("EDA anual completado.")
     print("Descriptivos guardados en:", TABLES_CAPA1_EDA / "capa1_anual_descriptivos.csv")
+    print("Descriptivos numéricos guardados en:", TABLES_CAPA1_EDA / "capa1_anual_numeric_descriptives.csv")
     print("Gráficos guardados en:", FIGURES_CAPA1_EDA)
 
     return df
 
 
 # =========================
-# 4. EDA MENSUAL
+# 5. EDA MENSUAL
 # =========================
 
 def eda_capa1_mensual() -> tuple[pd.DataFrame, pd.DataFrame]:
@@ -310,6 +440,7 @@ def eda_capa1_mensual() -> tuple[pd.DataFrame, pd.DataFrame]:
     input_path = PROCESSED_CAPA1 / "integrated" / "capa1_master_mensual_analysis.csv"
     df = pd.read_csv(input_path)
     df["fecha"] = pd.to_datetime(df["fecha"])
+    df = df.sort_values("fecha").reset_index(drop=True)
 
     descriptivos = df.describe(include="all")
     descriptivos.to_csv(TABLES_CAPA1_EDA / "capa1_mensual_descriptivos.csv")
@@ -336,7 +467,7 @@ def eda_capa1_mensual() -> tuple[pd.DataFrame, pd.DataFrame]:
     plt.plot(df["fecha"], df["indice_retail_total"], label="Retail total")
     plt.title("Evolución mensual del retail de moda frente al retail total")
     plt.xlabel("Fecha")
-    plt.ylabel("Índice base 2015=100")
+    plt.ylabel("Índice")
     plt.legend()
     plt.grid(True, alpha=0.3)
     _save_plot("capa1_mensual_moda_vs_total.png", FIGURES_CAPA1_EDA)
@@ -356,7 +487,7 @@ def eda_capa1_mensual() -> tuple[pd.DataFrame, pd.DataFrame]:
     plt.axhline(0, linestyle="--")
     plt.title("Diferencia entre retail de moda y retail total")
     plt.xlabel("Fecha")
-    plt.ylabel("Diferencia de índices")
+    plt.ylabel("Diferencia")
     plt.grid(True, alpha=0.3)
     _save_plot("capa1_mensual_dif_moda_vs_total.png", FIGURES_CAPA1_EDA)
 
@@ -397,6 +528,7 @@ def eda_capa1_mensual() -> tuple[pd.DataFrame, pd.DataFrame]:
 
     print("EDA mensual completado.")
     print("Descriptivos guardados en:", TABLES_CAPA1_EDA / "capa1_mensual_descriptivos.csv")
+    print("Descriptivos numéricos guardados en:", TABLES_CAPA1_EDA / "capa1_mensual_numeric_descriptives.csv")
     print("Resumen anual guardado en:", TABLES_CAPA1_EDA / "capa1_mensual_media_anual.csv")
     print("Gráficos guardados en:", FIGURES_CAPA1_EDA)
 
@@ -404,7 +536,82 @@ def eda_capa1_mensual() -> tuple[pd.DataFrame, pd.DataFrame]:
 
 
 # =========================
-# 5. OUTLIERS MENSUALES
+# 6. DESCOMPOSICION TEMPORAL
+# =========================
+
+def decomposition_capa1_mensual() -> pd.DataFrame:
+    _ensure_dirs()
+
+    input_path = PROCESSED_CAPA1 / "integrated" / "capa1_master_mensual_analysis.csv"
+    df = pd.read_csv(input_path)
+    df["fecha"] = pd.to_datetime(df["fecha"])
+    df = df.sort_values("fecha").reset_index(drop=True)
+
+    series_cols = [
+        "indice_retail_moda",
+        "indice_retail_total",
+        "ratio_moda_vs_total",
+    ]
+
+    records = []
+
+    for col in series_cols:
+        ts = df[["fecha", col]].copy()
+        ts[col] = pd.to_numeric(ts[col], errors="coerce")
+        ts = ts.dropna()
+        ts = ts.set_index("fecha")[col].asfreq("MS")
+
+        if ts.dropna().shape[0] < 24:
+            records.append(
+                {
+                    "serie": col,
+                    "n_obs_validas": int(ts.dropna().shape[0]),
+                    "periodo_estacional": 12,
+                    "descomposicion_realizada": "no",
+                    "comentario": "Serie demasiado corta para una descomposición robusta.",
+                }
+            )
+            continue
+
+        result = seasonal_decompose(ts, model="additive", period=12, extrapolate_trend="freq")
+
+        comp_df = pd.DataFrame(
+            {
+                "fecha": ts.index,
+                "observed": result.observed.values,
+                "trend": result.trend.values,
+                "seasonal": result.seasonal.values,
+                "resid": result.resid.values,
+            }
+        )
+        comp_df.to_csv(TABLES_CAPA1_EDA / f"capa1_decomposition_{col}.csv", index=False)
+
+        fig = result.plot()
+        fig.set_size_inches(12, 8)
+        plt.suptitle(f"Descomposición temporal - {col}", y=1.02)
+        _save_plot(f"capa1_decomposition_{col}.png", FIGURES_CAPA1_EDA)
+
+        records.append(
+            {
+                "serie": col,
+                "n_obs_validas": int(ts.dropna().shape[0]),
+                "periodo_estacional": 12,
+                "descomposicion_realizada": "si",
+                "comentario": "Se separan los componentes de tendencia, estacionalidad y residuo.",
+            }
+        )
+
+    summary_df = pd.DataFrame(records)
+    summary_df.to_csv(TABLES_CAPA1_EDA / "capa1_decomposition_summary.csv", index=False)
+
+    print("Descomposición temporal completada.")
+    print(summary_df)
+
+    return summary_df
+
+
+# =========================
+# 7. OUTLIERS MENSUALES
 # =========================
 
 def outliers_capa1_mensual() -> pd.DataFrame:
@@ -454,7 +661,7 @@ def outliers_capa1_mensual() -> pd.DataFrame:
 
 
 # =========================
-# 5B. RESUMEN DE OUTLIERS MENSUALES
+# 7B. RESUMEN DE OUTLIERS
 # =========================
 
 def outlier_summary_capa1_mensual() -> pd.DataFrame:
@@ -511,85 +718,7 @@ def outlier_summary_capa1_mensual() -> pd.DataFrame:
 
 
 # =========================
-# 5C. DESCOMPOSICION TEMPORAL
-# =========================
-
-def decomposition_capa1_mensual() -> pd.DataFrame:
-    _ensure_dirs()
-
-    input_path = PROCESSED_CAPA1 / "integrated" / "capa1_master_mensual_analysis.csv"
-    df = pd.read_csv(input_path)
-    df["fecha"] = pd.to_datetime(df["fecha"])
-    df = df.sort_values("fecha").reset_index(drop=True)
-
-    series_cols = [
-        "indice_retail_moda",
-        "indice_retail_total",
-        "ratio_moda_vs_total",
-    ]
-
-    records = []
-
-    for col in series_cols:
-        ts = df[["fecha", col]].copy()
-        ts[col] = pd.to_numeric(ts[col], errors="coerce")
-        ts = ts.dropna()
-        ts = ts.set_index("fecha")[col]
-
-        # Frecuencia mensual para asegurar regularidad
-        ts = ts.asfreq("MS")
-
-        if ts.dropna().shape[0] < 24:
-            records.append(
-                {
-                    "serie": col,
-                    "n_obs_validas": int(ts.dropna().shape[0]),
-                    "periodo_estacional": 12,
-                    "descomposicion_realizada": "no",
-                    "comentario": "Serie demasiado corta para una descomposición robusta.",
-                }
-            )
-            continue
-
-        result = seasonal_decompose(ts, model="additive", period=12, extrapolate_trend="freq")
-
-        comp_df = pd.DataFrame(
-            {
-                "fecha": ts.index,
-                "observed": result.observed.values,
-                "trend": result.trend.values,
-                "seasonal": result.seasonal.values,
-                "resid": result.resid.values,
-            }
-        )
-        comp_df.to_csv(TABLES_CAPA1_EDA / f"capa1_decomposition_{col}.csv", index=False)
-
-        fig = result.plot()
-        fig.set_size_inches(12, 8)
-        plt.suptitle(f"Descomposición temporal - {col}", y=1.02)
-        _save_plot(f"capa1_decomposition_{col}.png", FIGURES_CAPA1_EDA)
-
-        records.append(
-            {
-                "serie": col,
-                "n_obs_validas": int(ts.dropna().shape[0]),
-                "periodo_estacional": 12,
-                "descomposicion_realizada": "si",
-                "comentario": "Se observan los componentes de tendencia, estacionalidad y residuo.",
-            }
-        )
-
-    summary_df = pd.DataFrame(records)
-    summary_df.to_csv(TABLES_CAPA1_EDA / "capa1_decomposition_summary.csv", index=False)
-
-    print("Descomposición temporal completada.")
-    print(summary_df)
-
-    return summary_df
-
-
-# =========================
-# 6. CORRELACION MENSUAL
+# 8. CORRELACION MENSUAL
 # =========================
 
 def correlation_capa1_mensual() -> pd.DataFrame:
@@ -627,10 +756,14 @@ def correlation_capa1_mensual() -> pd.DataFrame:
 
 
 # =========================
-# 7. SOURCE COVERAGE
+# 9. SOURCE COVERAGE CON JUSTIFICACION
 # =========================
 
 def source_coverage_capa1() -> pd.DataFrame:
+    """
+    Cobertura temporal y justificación analítica de inclusión de cada fuente.
+    Refuerza la parte de trazabilidad y control de ingeniería del dato.
+    """
     _ensure_dirs()
 
     source_map = {
@@ -644,24 +777,51 @@ def source_coverage_capa1() -> pd.DataFrame:
         "capa1_master_mensual_analysis": PROCESSED_CAPA1 / "integrated" / "capa1_master_mensual_analysis.csv",
     }
 
+    uso_map = {
+        "contexto_digitalizacion_clean": "contexto_macro_anual",
+        "contexto_digitalizacion_documentado": "trazabilidad_contextual",
+        "eurostat_moda_mensual_clean": "serie_temporal_sectorial_mensual",
+        "eurostat_retail_total_mensual_clean": "serie_temporal_referencia_mensual",
+        "eurostat_online_empresas_clean": "adopcion_online_empresarial_anual",
+        "comercio_electronico_core_std": "ecommerce_empresarial_anual_segmentado",
+        "capa1_master_anual_analysis": "master_analitico_anual_integrado",
+        "capa1_master_mensual_analysis": "master_analitico_mensual_integrado",
+    }
+
+    justificaciones = {
+        "contexto_digitalizacion_clean": (
+            "Incluye la serie anual principal de contexto digital. El valor imputado de 2025, "
+            "si existe, debe usarse solo como apoyo contextual y con trazabilidad explícita."
+        ),
+        "contexto_digitalizacion_documentado": (
+            "Dataset orientado a trazabilidad documental y soporte metodológico, no a análisis cuantitativo principal."
+        ),
+        "eurostat_moda_mensual_clean": (
+            "Serie principal mensual del sector moda utilizada para analizar patrón temporal del retail especializado."
+        ),
+        "eurostat_retail_total_mensual_clean": (
+            "Serie de referencia general del retail. Su función es contextualizar el desempeño relativo del retail de moda."
+        ),
+        "eurostat_online_empresas_clean": (
+            "Serie anual de adopción empresarial del canal online, útil para contextualizar digitalización de la oferta."
+        ),
+        "comercio_electronico_core_std": (
+            "Fuente anual segmentada por tamaño de empresa. Se utiliza para integrar indicadores de ecommerce "
+            "empresarial, priorizando el agregado total para asegurar comparabilidad."
+        ),
+        "capa1_master_anual_analysis": (
+            "Integración anual final de variables comparables entre fuentes. Se limita al tramo común con cobertura suficiente."
+        ),
+        "capa1_master_mensual_analysis": (
+            "Integración mensual final del retail de moda frente al retail total y variables derivadas para comparación relativa."
+        ),
+    }
+
     records = []
 
     for source_name, path in source_map.items():
         df = pd.read_csv(path)
-
-        start_period = None
-        end_period = None
-
-        if "fecha" in df.columns:
-            fechas = pd.to_datetime(df["fecha"], errors="coerce")
-            if fechas.notna().any():
-                start_period = str(fechas.min().date())
-                end_period = str(fechas.max().date())
-        elif "anio" in df.columns:
-            anios = pd.to_numeric(df["anio"], errors="coerce")
-            if anios.notna().any():
-                start_period = str(int(anios.min()))
-                end_period = str(int(anios.max()))
+        start_period, end_period = _get_period_bounds(df)
 
         records.append(
             {
@@ -670,28 +830,15 @@ def source_coverage_capa1() -> pd.DataFrame:
                 "fecha_fin": end_period,
                 "n_filas": int(df.shape[0]),
                 "n_columnas": int(df.shape[1]),
+                "uso_analitico": uso_map.get(source_name, "otro"),
+                "nota_metodologica": justificaciones.get(source_name, ""),
             }
         )
 
     coverage_df = pd.DataFrame(records)
-
-    use_map = {
-        "contexto_digitalizacion_clean": "contexto_macro_anual",
-        "contexto_digitalizacion_documentado": "trazabilidad_contextual",
-        "eurostat_moda_mensual_clean": "historico_sectorial_mensual",
-        "eurostat_retail_total_mensual_clean": "historico_general_mensual",
-        "eurostat_online_empresas_clean": "adopcion_online_empresarial",
-        "comercio_electronico_core_std": "ecommerce_empresarial_anual",
-        "capa1_master_anual_analysis": "master_anual_final",
-        "capa1_master_mensual_analysis": "master_mensual_final",
-    }
-
-    coverage_df["uso_analitico"] = coverage_df["fuente"].map(use_map)
     coverage_df.to_csv(TABLES_CAPA1_CONTROL / "capa1_source_coverage.csv", index=False)
 
-    print("Cobertura temporal de fuentes calculada.")
-    print(coverage_df)
-
+    print(f"Source coverage: {len(coverage_df)} fuentes documentadas")
     return coverage_df
 
 
@@ -700,16 +847,53 @@ def source_coverage_capa1() -> pd.DataFrame:
 # =========================
 
 def run_all_eda() -> None:
+    sep = "=" * 65
+    print(sep)
+    print("CAPA 1 — EDA")
+    print(sep)
+
+    print("\n[1/9] Profiling general...")
     profile_capa1()
+
+    print("\n[2/9] Análisis de nulos...")
     analyze_nulls_capa1()
+
+    print("\n[3/9] Justificación tipo análisis descriptivo...")
+    eda_capa1_justificacion_analitica()
+
+    print("\n[4/9] EDA anual...")
     eda_capa1_anual()
+
+    print("\n[5/9] EDA mensual...")
     eda_capa1_mensual()
+
+    print("\n[6/9] Descomposición temporal...")
+    decomposition_capa1_mensual()
+
+    print("\n[7/9] Outliers mensuales...")
     outliers_capa1_mensual()
     outlier_summary_capa1_mensual()
-    decomposition_capa1_mensual()
+
+    print("\n[8/9] Correlación mensual...")
     correlation_capa1_mensual()
+
+    print("\n[9/9] Source coverage...")
     source_coverage_capa1()
-    print("Todo el EDA de capa 1 completado.")
+
+    print(f"\n{sep}")
+    print("EDA CAPA 1 COMPLETADO")
+    print("Tablas clave generadas:")
+    print("  · capa1_profile_summary.csv")
+    print("  · capa1_nulls_decision_matrix.csv")
+    print("  · capa1_justificacion_tipo_analisis.csv")
+    print("  · capa1_anual_descriptivos.csv")
+    print("  · capa1_mensual_descriptivos.csv")
+    print("  · capa1_decomposition_summary.csv")
+    print("  · capa1_mensual_outliers_iqr.csv")
+    print("  · capa1_mensual_outliers_summary.csv")
+    print("  · capa1_mensual_correlation.csv")
+    print("  · capa1_source_coverage.csv")
+    print(sep)
 
 
 if __name__ == "__main__":

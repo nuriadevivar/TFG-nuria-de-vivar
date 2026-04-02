@@ -15,6 +15,7 @@ Cambios respecto a versión anterior:
 """
 
 import sqlite3
+import re
 
 import pandas as pd
 
@@ -447,18 +448,31 @@ def build_comercio_core() -> pd.DataFrame:
 
     df = pd.read_csv(PROCESSED_CAPA1 / "comercio_electronico" / "comercio_electronico_clean.csv")
 
-    patterns = [
-        r"% de empresas que han realizado ventas por comercio electrónico",
-        r"% ventas mediante comercio electrónico sobre el total de ventas$",
-        r"% ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico",
-        r"% de empresas que han realizado ventas mediante páginas web o apps",
-    ]
+    indicador_norm = (
+        df["indicador"]
+        .astype(str)
+        .str.lower()
+        .str.replace(",", " ", regex=False)
+        .str.replace(r"\s+", " ", regex=True)
+        .str.strip()
+    )
 
-    mask = df["indicador"].str.contains("|".join(patterns), case=False, na=False, regex=True)
+    mask = (
+        indicador_norm.str.contains(r"% de empresas que han realizado ventas por comercio electrónico", na=False)
+        | indicador_norm.str.contains(r"% de empresas que han realizado ventas mediante páginas web", na=False)
+        | indicador_norm.str.contains(r"% ventas mediante comercio electrónico sobre el total de ventas$", na=False, regex=True)
+        | indicador_norm.str.contains(
+            r"% ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico$",
+            na=False,
+            regex=True,
+        )
+    )
+
     core = df[mask].copy().reset_index(drop=True)
 
     out_path = PROCESSED_CAPA1 / "comercio_electronico" / "comercio_electronico_core.csv"
     core.to_csv(out_path, index=False)
+
     print(f"  Comercio core: {core.shape[0]} filas, {core['indicador'].nunique()} indicadores únicos")
     return core
 
@@ -475,24 +489,43 @@ def standardize_comercio_core() -> pd.DataFrame:
     def map_indicator(text: str) -> str | None:
         if pd.isna(text):
             return None
-        t = str(text).lower()
+
+        t = str(text).lower().strip()
+        t = t.replace(",", " ")
+        t = re.sub(r"\s+", " ", t)
+
         if "empresas que han realizado ventas por comercio electrónico" in t:
             return "pct_empresas_venden_ecommerce"
+
+        if "empresas que han realizado ventas mediante páginas web" in t:
+            return "pct_empresas_venden_web_apps"
+
         if "ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden" in t:
             return "pct_ventas_ecommerce_sobre_total_empresas_que_venden"
+
         if "ventas mediante comercio electrónico sobre el total de ventas" in t:
             return "pct_ventas_ecommerce_sobre_total"
-        if "empresas que han realizado ventas mediante páginas web o apps" in t:
-            return "pct_empresas_venden_web_apps"
+
         return None
 
     df["indicador_std"] = df["indicador"].apply(map_indicator)
+
+    unmatched = df[df["indicador_std"].isna()].copy()
+    if not unmatched.empty:
+        unmatched.to_csv(
+            PROCESSED_CAPA1 / "comercio_electronico" / "comercio_electronico_core_unmatched.csv",
+            index=False,
+        )
+        print(f"  [WARN] Indicadores no mapeados: {len(unmatched)} -> comercio_electronico_core_unmatched.csv")
+
     df = df[df["indicador_std"].notna()].copy().reset_index(drop=True)
 
     out_path = PROCESSED_CAPA1 / "comercio_electronico" / "comercio_electronico_core_std.csv"
     df.to_csv(out_path, index=False)
+
     print(f"  Comercio core_std: {df.shape[0]} filas | indicadores_std: {df['indicador_std'].nunique()}")
     print(f"    {df['indicador_std'].value_counts().to_dict()}")
+
     return df
 
 
