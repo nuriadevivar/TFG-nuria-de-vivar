@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+from statsmodels.tsa.seasonal import seasonal_decompose 
 
 from src.common.config import (
     FIGURES_CAPA1,
@@ -453,6 +454,141 @@ def outliers_capa1_mensual() -> pd.DataFrame:
 
 
 # =========================
+# 5B. RESUMEN DE OUTLIERS MENSUALES
+# =========================
+
+def outlier_summary_capa1_mensual() -> pd.DataFrame:
+    _ensure_dirs()
+
+    input_path = PROCESSED_CAPA1 / "integrated" / "capa1_master_mensual_analysis.csv"
+    df = pd.read_csv(input_path)
+
+    numeric_cols = [
+        "indice_retail_moda",
+        "indice_retail_total",
+        "ratio_moda_vs_total",
+        "dif_moda_vs_total",
+    ]
+
+    records = []
+
+    for col in numeric_cols:
+        s = pd.to_numeric(df[col], errors="coerce").dropna()
+
+        q1 = s.quantile(0.25)
+        q3 = s.quantile(0.75)
+        iqr = q3 - q1
+        lower = q1 - 1.5 * iqr
+        upper = q3 + 1.5 * iqr
+
+        mask = (s < lower) | (s > upper)
+        n_outliers = int(mask.sum())
+        pct_outliers = round((n_outliers / len(s)) * 100, 2) if len(s) > 0 else 0.0
+
+        records.append(
+            {
+                "variable": col,
+                "n_obs": int(len(s)),
+                "q1": round(float(q1), 4),
+                "q3": round(float(q3), 4),
+                "iqr": round(float(iqr), 4),
+                "lower_bound": round(float(lower), 4),
+                "upper_bound": round(float(upper), 4),
+                "n_outliers": n_outliers,
+                "pct_outliers": pct_outliers,
+                "tipo_atipicidad": "extremo_estadistico_no_error",
+                "decision_metodologica": "mantener_por_shock_estructural",
+            }
+        )
+
+    summary_df = pd.DataFrame(records)
+    summary_df.to_csv(TABLES_CAPA1_EDA / "capa1_mensual_outliers_summary.csv", index=False)
+
+    print("Resumen de outliers completado.")
+    print(summary_df)
+
+    return summary_df
+
+
+# =========================
+# 5C. DESCOMPOSICION TEMPORAL
+# =========================
+
+def decomposition_capa1_mensual() -> pd.DataFrame:
+    _ensure_dirs()
+
+    input_path = PROCESSED_CAPA1 / "integrated" / "capa1_master_mensual_analysis.csv"
+    df = pd.read_csv(input_path)
+    df["fecha"] = pd.to_datetime(df["fecha"])
+    df = df.sort_values("fecha").reset_index(drop=True)
+
+    series_cols = [
+        "indice_retail_moda",
+        "indice_retail_total",
+        "ratio_moda_vs_total",
+    ]
+
+    records = []
+
+    for col in series_cols:
+        ts = df[["fecha", col]].copy()
+        ts[col] = pd.to_numeric(ts[col], errors="coerce")
+        ts = ts.dropna()
+        ts = ts.set_index("fecha")[col]
+
+        # Frecuencia mensual para asegurar regularidad
+        ts = ts.asfreq("MS")
+
+        if ts.dropna().shape[0] < 24:
+            records.append(
+                {
+                    "serie": col,
+                    "n_obs_validas": int(ts.dropna().shape[0]),
+                    "periodo_estacional": 12,
+                    "descomposicion_realizada": "no",
+                    "comentario": "Serie demasiado corta para una descomposición robusta.",
+                }
+            )
+            continue
+
+        result = seasonal_decompose(ts, model="additive", period=12, extrapolate_trend="freq")
+
+        comp_df = pd.DataFrame(
+            {
+                "fecha": ts.index,
+                "observed": result.observed.values,
+                "trend": result.trend.values,
+                "seasonal": result.seasonal.values,
+                "resid": result.resid.values,
+            }
+        )
+        comp_df.to_csv(TABLES_CAPA1_EDA / f"capa1_decomposition_{col}.csv", index=False)
+
+        fig = result.plot()
+        fig.set_size_inches(12, 8)
+        plt.suptitle(f"Descomposición temporal - {col}", y=1.02)
+        _save_plot(f"capa1_decomposition_{col}.png", FIGURES_CAPA1_EDA)
+
+        records.append(
+            {
+                "serie": col,
+                "n_obs_validas": int(ts.dropna().shape[0]),
+                "periodo_estacional": 12,
+                "descomposicion_realizada": "si",
+                "comentario": "Se observan los componentes de tendencia, estacionalidad y residuo.",
+            }
+        )
+
+    summary_df = pd.DataFrame(records)
+    summary_df.to_csv(TABLES_CAPA1_EDA / "capa1_decomposition_summary.csv", index=False)
+
+    print("Descomposición temporal completada.")
+    print(summary_df)
+
+    return summary_df
+
+
+# =========================
 # 6. CORRELACION MENSUAL
 # =========================
 
@@ -569,6 +705,8 @@ def run_all_eda() -> None:
     eda_capa1_anual()
     eda_capa1_mensual()
     outliers_capa1_mensual()
+    outlier_summary_capa1_mensual()
+    decomposition_capa1_mensual()
     correlation_capa1_mensual()
     source_coverage_capa1()
     print("Todo el EDA de capa 1 completado.")
