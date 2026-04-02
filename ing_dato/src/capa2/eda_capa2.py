@@ -58,6 +58,51 @@ def _plot_correlation_matrix(corr_df: pd.DataFrame, title: str, filename: str) -
 
 
 # =========================
+# HELPER OUTLIERS
+# =========================
+
+def _iqr_outlier_summary(df: pd.DataFrame, cols: list[str], bloque: str) -> pd.DataFrame:
+    records = []
+
+    for col in cols:
+        if col not in df.columns:
+            continue
+
+        s = pd.to_numeric(df[col], errors="coerce").dropna()
+        if s.empty:
+            continue
+
+        q1 = s.quantile(0.25)
+        q3 = s.quantile(0.75)
+        iqr = q3 - q1
+        lower = q1 - 1.5 * iqr
+        upper = q3 + 1.5 * iqr
+
+        mask = (s < lower) | (s > upper)
+        n_outliers = int(mask.sum())
+        pct_outliers = round((n_outliers / len(s)) * 100, 2) if len(s) > 0 else 0.0
+
+        records.append(
+            {
+                "bloque": bloque,
+                "variable": col,
+                "n_obs": int(len(s)),
+                "q1": round(float(q1), 4),
+                "q3": round(float(q3), 4),
+                "iqr": round(float(iqr), 4),
+                "lower_bound": round(float(lower), 4),
+                "upper_bound": round(float(upper), 4),
+                "n_outliers": n_outliers,
+                "pct_outliers": pct_outliers,
+                "tipo_atipicidad": "extremo_estadistico_no_error",
+                "decision_metodologica": "mantener_y_documentar",
+            }
+        )
+
+    return pd.DataFrame(records)
+
+
+# =========================
 # 1. PROFILE GENERAL
 # =========================
 
@@ -518,6 +563,36 @@ def eda_capa2_terminos_main() -> pd.DataFrame:
 
 
 # =========================
+# 3C. OUTLIERS TÉRMINOS
+# =========================
+
+def eda_capa2_outliers_terminos() -> pd.DataFrame:
+    _ensure_dirs()
+
+    input_path = PROCESSED_CAPA2 / "integrated" / "capa2_master_terminos_mensual.csv"
+    df = pd.read_csv(input_path)
+
+    outlier_df = _iqr_outlier_summary(
+        df=df,
+        cols=["valor_trends"],
+        bloque="terminos",
+    )
+
+    outlier_df.to_csv(TABLES_CAPA2_EDA / "capa2_outliers_terminos_summary.csv", index=False)
+
+    plt.figure(figsize=(8, 5))
+    plt.boxplot(pd.to_numeric(df["valor_trends"], errors="coerce").dropna())
+    plt.title("Boxplot - valor_trends (términos)")
+    plt.ylabel("valor_trends")
+    _save_plot("capa2_outliers_boxplot_terminos.png")
+
+    print("EDA outliers términos completado.")
+    print(outlier_df)
+
+    return outlier_df
+
+
+# =========================
 # 4. EDA PRODUCTOS
 # =========================
 
@@ -917,6 +992,49 @@ def eda_capa2_social() -> pd.DataFrame:
 
 
 # =========================
+# 9B. OUTLIERS SOCIAL
+# =========================
+
+def eda_capa2_outliers_social() -> pd.DataFrame:
+    _ensure_dirs()
+
+    input_path = PROCESSED_CAPA2 / "integrated" / "capa2_master_social.csv"
+    df = pd.read_csv(input_path)
+
+    social_numeric_cols = [
+        "n_posts",
+        "likes_totales",
+        "comentarios_totales",
+        "engagement_total",
+        "likes_medios_post",
+        "comentarios_medios_post",
+        "engagement_medio_post",
+    ]
+
+    outlier_df = _iqr_outlier_summary(
+        df=df,
+        cols=social_numeric_cols,
+        bloque="social",
+    )
+
+    outlier_df.to_csv(TABLES_CAPA2_EDA / "capa2_outliers_social_summary.csv", index=False)
+
+    for col in social_numeric_cols:
+        if col not in df.columns:
+            continue
+        plt.figure(figsize=(8, 5))
+        plt.boxplot(pd.to_numeric(df[col], errors="coerce").dropna())
+        plt.title(f"Boxplot - {col} (social)")
+        plt.ylabel(col)
+        _save_plot(f"capa2_outliers_boxplot_social_{col}.png")
+
+    print("EDA outliers social completado.")
+    print(outlier_df)
+
+    return outlier_df
+
+
+# =========================
 # 10. VENTANA COMÚN POR MARCA
 # =========================
 
@@ -1194,6 +1312,44 @@ def eda_capa2_brand_digital() -> pd.DataFrame:
 
 
 # =========================
+# 11B. OUTLIERS BRAND DIGITAL
+# =========================
+
+def eda_capa2_outliers_brand_digital() -> pd.DataFrame:
+    _ensure_dirs()
+
+    input_path = TABLES_CAPA2_EDA / "capa2_brand_digital_common_window.csv"
+    df = pd.read_csv(input_path)
+
+    if df.empty:
+        print("EDA outliers brand digital completado. No hay datos en ventana común.")
+        return pd.DataFrame()
+
+    brand_numeric_cols = [
+        "valor_trends",
+        "n_posts",
+        "engagement_total",
+        "valor_trends_norm",
+        "n_posts_norm",
+        "engagement_total_norm",
+    ]
+    brand_numeric_cols = [c for c in brand_numeric_cols if c in df.columns]
+
+    outlier_df = _iqr_outlier_summary(
+        df=df,
+        cols=brand_numeric_cols,
+        bloque="brand_digital_common_window",
+    )
+
+    outlier_df["decision_metodologica"] = "mantener_y_documentar_en_ventana_comun"
+    outlier_df.to_csv(TABLES_CAPA2_EDA / "capa2_outliers_brand_digital_summary.csv", index=False)
+
+    print("EDA outliers brand digital completado.")
+    print(outlier_df)
+
+    return outlier_df
+
+# =========================
 # RUN ALL
 # =========================
 
@@ -1202,15 +1358,18 @@ def run_all_eda() -> None:
     analyze_nulls_capa2()
     eda_capa2_terminos()
     eda_capa2_terminos_main()
+    eda_capa2_outliers_terminos()
     eda_capa2_productos()
     eda_capa2_eventos()
     eda_capa2_integrated()
     eda_capa2_term_quality_decisions()
     eda_capa2_source_coverage()
     eda_capa2_social()
+    eda_capa2_outliers_social()
     eda_capa2_brand_common_window()
     eda_capa2_brand_digital_common_window()
     eda_capa2_brand_digital()
+    eda_capa2_outliers_brand_digital()
     print("Todo el EDA de capa 2 completado.")
 
 
