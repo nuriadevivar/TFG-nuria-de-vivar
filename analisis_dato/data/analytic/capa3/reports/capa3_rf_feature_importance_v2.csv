@@ -1,0 +1,25 @@
+feature,importance
+num__indice_influencia_rrss,0.2422981609382372
+num__indice_impulso_tendencia,0.17169317962332017
+num__indice_confianza_influencers,0.14652784350883563
+num__compra_ult_6m_por_rrss_bin,0.13809123877977678
+num__freq_contenido_moda_rrss,0.052448019034968964
+num__sigue_influencers_moda,0.05065236828000755
+num__indice_riesgo_arrepentimiento,0.04748679736174157
+num__tiempo_rrss_dia,0.03515381139993837
+num__freq_compra_anual,0.024920724759009326
+num__canal_compra_moda,0.02057775977806978
+num__indice_difusion_fastfashion,0.017795751600208246
+cat__grupo_edad_18 - 28 años,0.012593386641536825
+num__indice_escepticismo_influencers,0.006490510853116625
+cat__gasto_mensual_moda_Menos de 30€,0.006473319254846049
+cat__grupo_edad_56 años o más,0.006014488418214307
+cat__sexo_Hombre,0.004467567179338801
+cat__sexo_Mujer,0.0038505022864031117
+cat__grupo_edad_45 - 55 años,0.0033009167508245554
+cat__gasto_mensual_moda_30 - 60€,0.003000743128707806
+cat__gasto_mensual_moda_101 - 200€,0.0024453323253660854
+cat__grupo_edad_29 - 44 años,0.002268854005737307
+cat__gasto_mensual_moda_61 - 100€,0.001448724091794885
+cat__sexo_Prefiero no decirlo,0.0
+cat__gasto_mensual_moda_Más de 200€,0.0

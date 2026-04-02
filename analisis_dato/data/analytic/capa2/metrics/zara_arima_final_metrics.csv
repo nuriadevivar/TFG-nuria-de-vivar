@@ -1,0 +1,2 @@
+model,target,mae,rmse,mape
+"ARIMA(2,1,2)",valor_trends_zara,4.7781338905811435,5.382411100753742,8.91534811033536
