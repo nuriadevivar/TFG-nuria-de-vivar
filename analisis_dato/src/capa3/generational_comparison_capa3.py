@@ -5,8 +5,9 @@ import matplotlib.pyplot as plt
 # =====================================================
 # Rutas
 # =====================================================
-INPUT_PATH = "analisis_dato/data/input/capa3/capa3_supervised_ready.csv"
-OUTPUT_DIR = "analisis_dato/data/analytic/capa3"
+INPUT_PATH = "data/input/capa3/capa3_supervised_ready.csv"
+
+OUTPUT_DIR = "data/analytic/capa3"
 FIGURES_DIR = os.path.join(OUTPUT_DIR, "figures")
 REPORTS_DIR = os.path.join(OUTPUT_DIR, "reports")
 

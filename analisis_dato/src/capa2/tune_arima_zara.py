@@ -13,13 +13,16 @@ warnings.filterwarnings("ignore")
 # =====================================================
 # Rutas
 # =====================================================
-INPUT_PATH = "analisis_dato/data/input/capa2/trends_marcas_clean.csv"
-OUTPUT_DIR = "analisis_dato/data/analytic/capa2"
-REPORTS_DIR = os.path.join(OUTPUT_DIR, "reports")
+INPUT_PATH = "data/input/capa2/trends_marcas_clean.csv"
+OUTPUT_DIR = "data/analytic/capa2"
+FIGURES_DIR = os.path.join(OUTPUT_DIR, "figures")
 METRICS_DIR = os.path.join(OUTPUT_DIR, "metrics")
+REPORTS_DIR = os.path.join(OUTPUT_DIR, "reports")
 
-os.makedirs(REPORTS_DIR, exist_ok=True)
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+os.makedirs(FIGURES_DIR, exist_ok=True)
 os.makedirs(METRICS_DIR, exist_ok=True)
+os.makedirs(REPORTS_DIR, exist_ok=True)
 
 # =====================================================
 # Función MAPE
@@ -35,15 +38,23 @@ def mean_absolute_percentage_error(y_true, y_pred):
 df = pd.read_csv(INPUT_PATH)
 df["fecha"] = pd.to_datetime(df["fecha"], errors="coerce")
 
-zara = (
-    df[df["termino"] == "zara"]
-    .copy()
-    .sort_values("fecha")
-    .set_index("fecha")
-    .asfreq("MS")
-)
+# Compatibilidad con distintos nombres de columna
+if "termino" in df.columns:
+    zara = df[df["termino"].astype(str).str.lower() == "zara"].copy()
+elif "marca" in df.columns:
+    zara = df[df["marca"].astype(str).str.lower() == "zara"].copy()
+else:
+    raise KeyError(
+        f"No existe ni 'termino' ni 'marca' en el input. Columnas disponibles: {df.columns.tolist()}"
+    )
 
-series = zara["valor_trends"].dropna()
+# Ordenar y construir serie temporal
+zara = zara.sort_values("fecha").copy()
+
+if zara.empty:
+    raise ValueError("No se encontraron registros de Zara en el archivo de entrada.")
+
+series = zara.set_index("fecha")["valor_trends"].asfreq("MS")
 
 print("\n--- INFO ZARA ---")
 print(series.head())

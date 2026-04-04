@@ -1,0 +1,9 @@
+{
+    "objetivo": "Predecir alto engagement a partir del texto del caption",
+    "modelo_ganador": "A_TFIDF_LogisticRegression",
+    "test_auc": 0.852305284699651,
+    "test_f1": 0.6557377049180327,
+    "tiene_texto_real": true,
+    "interpretacion": "El análisis TF-IDF sobre los captions de Instagram identifica los términos más asociados al alto engagement. Los coeficientes de la regresión logística son directamente interpretables: términos con coeficiente positivo predicen alto engagement, mientras que los negativos predicen bajo engagement. Este análisis complementa los modelos de features estructuradas al incorporar la dimensión semántica del contenido publicado.",
+    "comparacion_con_features_estructuradas": "Comparar el AUC de los modelos TF-IDF con el AUC de los modelos de features estructuradas (marca, tipo_post, mes) permite cuantificar el valor añadido del contenido textual en la predicción del engagement."
+}

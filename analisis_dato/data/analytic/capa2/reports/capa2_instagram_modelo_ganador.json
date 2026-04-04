@@ -1,0 +1,12 @@
+{
+    "modelo_ganador": "B_Random_Forest",
+    "criterio": "mayor_test_AUC",
+    "test_auc": 0.9050418967815655,
+    "test_f1": 0.7606837606837606,
+    "test_accuracy": 0.8818565400843882,
+    "gap_f1": -0.011477411477411437,
+    "gap_auc": 0.014220701317473217,
+    "sobreajuste": "no",
+    "interpretacion": "El modelo B_Random_Forest obtiene el mayor AUC en test (0.905), indicando buena capacidad discriminativa entre posts de alto y bajo engagement. Un AUC > 0.7 es considerado aceptable para clasificación de comportamiento en redes sociales (He et al., 2014). La feature importance del Random Forest revela qué características de los posts (marca, tipo de contenido, estacionalidad) son más determinantes para predecir alta respuesta del público.",
+    "limitaciones": "El dataset de posts es pequeño (n=2369) y cubre solo ~15 meses de actividad (2025), lo que limita la generalización del modelo. Las features disponibles son básicas (no incluyen texto del caption, número de seguidores en el momento de la publicación, ni información del algoritmo de distribución de Instagram). El engagement también depende fuertemente de la base de seguidores, que difiere sustancialmente entre marcas (Zara vs Massimo Dutti)."
+}

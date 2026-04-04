@@ -3,15 +3,17 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-# =====================================================
-# Rutas
-# =====================================================
-INPUT_PATH = "analisis_dato/data/input/capa2/instagram_posts_clean.csv"
-OUTPUT_DIR = "analisis_dato/data/analytic/capa2"
+INPUT_PATH = "data/input/capa2/instagram_posts_clean.csv"
+OUTPUT_DIR = "data/analytic/capa2"
+OUTPUT_PATH = os.path.join(OUTPUT_DIR, "instagram_model_input.csv")
+
 FIGURES_DIR = os.path.join(OUTPUT_DIR, "figures")
+METRICS_DIR = os.path.join(OUTPUT_DIR, "metrics")
 REPORTS_DIR = os.path.join(OUTPUT_DIR, "reports")
 
+os.makedirs(OUTPUT_DIR, exist_ok=True)
 os.makedirs(FIGURES_DIR, exist_ok=True)
+os.makedirs(METRICS_DIR, exist_ok=True)
 os.makedirs(REPORTS_DIR, exist_ok=True)
 
 # =====================================================

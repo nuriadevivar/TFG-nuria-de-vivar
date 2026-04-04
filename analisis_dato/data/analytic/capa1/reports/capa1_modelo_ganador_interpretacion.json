@@ -1,0 +1,9 @@
+{
+    "modelo_ganador": "SARIMA(0,1,1)(0,1,0,12)",
+    "criterio_seleccion": "menor_RMSE_en_test",
+    "mae": 5.978047182420763,
+    "rmse": 8.953051620770093,
+    "mape": 4.7503080267003845,
+    "interpretacion": "El modelo SARIMA(0,1,1)(0,1,0,12) obtiene el menor error cuadrático medio en el conjunto de test (año 2023), con un MAPE de 4.75%. Un MAPE < 10% es considerado bueno para series de consumo (Lewis, 1982). El modelo captura correctamente el patrón estacional del retail de moda (picos en enero/julio por rebajas y en diciembre por navidad). Los residuos no presentan estructura sistemática, indicando que el modelo ha capturado los componentes principales de la serie.",
+    "limitaciones": "La serie de test solo abarca 12 meses (n=12), lo que limita la significación estadística de la comparación. El modelo no incorpora variables externas (ecommerce, RRSS) que podrían mejorar la predicción en horizontes más largos. El shock COVID-19 (2020) está incluido en el train pero puede distorsionar los parámetros del modelo."
+}

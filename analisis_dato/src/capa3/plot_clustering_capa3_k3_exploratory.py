@@ -16,20 +16,37 @@ from sklearn.decomposition import PCA
 USE_BALANCED = True
 
 if USE_BALANCED:
-    INPUT_PATH = "analisis_dato/data/analytic/capa3/capa3_clustering_balanced_generation.csv"
+    INPUT_PATH = "data/analytic/capa3/capa3_clustering_balanced_generation.csv"
     suffix = "balanced"
     title_suffix = "BALANCED"
 else:
-    INPUT_PATH = "analisis_dato/data/input/capa3/capa3_clustering_ready.csv"
+    INPUT_PATH = "data/input/capa3/capa3_clustering_ready.csv"
     suffix = "main"
     title_suffix = "MAIN"
 
-OUTPUT_DIR = "analisis_dato/data/analytic/capa3"
+INPUT_PATH = "data/analytic/capa3/reports/capa3_cluster_assignments.csv"
+
+OUTPUT_DIR = "data/analytic/capa3"
 FIGURES_DIR = os.path.join(OUTPUT_DIR, "figures")
 REPORTS_DIR = os.path.join(OUTPUT_DIR, "reports")
 
 os.makedirs(FIGURES_DIR, exist_ok=True)
 os.makedirs(REPORTS_DIR, exist_ok=True)
+
+def relabel_clusters_by_influence(df_base: pd.DataFrame, cluster_labels, influence_col: str = "indice_influencia_rrss"):
+    df_tmp = df_base.copy()
+    df_tmp["cluster_tmp"] = cluster_labels
+
+    ordered_labels = (
+        df_tmp.groupby("cluster_tmp")[influence_col]
+        .mean()
+        .sort_values(ascending=True)
+        .index.tolist()
+    )
+
+    label_map = {old_label: new_label for new_label, old_label in enumerate(ordered_labels)}
+    relabeled = pd.Series(cluster_labels).map(label_map).values
+    return relabeled, label_map
 
 # =====================================================
 # Carga
@@ -76,8 +93,25 @@ explained_var = pca.explained_variance_ratio_
 # KMeans exploratorio con k=3 en PCA 2D
 # =====================================================
 kmeans_k3 = KMeans(n_clusters=3, random_state=42, n_init=20)
-labels_k3 = kmeans_k3.fit_predict(X_pca)
-centroids_k3 = kmeans_k3.cluster_centers_
+labels_k3_raw = kmeans_k3.fit_predict(X_pca)
+
+# Re-etiquetar para que:
+# cluster_k3 = 0 -> menor influencia RRSS
+# cluster_k3 = 1 -> nivel intermedio
+# cluster_k3 = 2 -> mayor influencia RRSS
+labels_k3, label_map_k3 = relabel_clusters_by_influence(
+    df_base=df,
+    cluster_labels=labels_k3_raw,
+    influence_col="indice_influencia_rrss",
+)
+
+df["cluster_k3"] = labels_k3
+
+# Reordenar centroides para que coincidan con las nuevas etiquetas
+old_labels_in_new_order_k3 = [
+    old_label for old_label, new_label in sorted(label_map_k3.items(), key=lambda x: x[1])
+]
+centroids_k3 = kmeans_k3.cluster_centers_[old_labels_in_new_order_k3]
 
 # =====================================================
 # Guardar asignaciones

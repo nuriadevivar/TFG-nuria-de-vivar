@@ -1,0 +1,44 @@
+{
+    "k_optimo": 2,
+    "silhouette_score": 0.3530922882837414,
+    "inercia": 1333.01972413451,
+    "n_obs": 318,
+    "variables_segmentacion": [
+        "indice_influencia_rrss",
+        "indice_impulso_tendencia",
+        "indice_confianza_influencers",
+        "indice_escepticismo_influencers",
+        "indice_difusion_fastfashion",
+        "indice_postcompra",
+        "indice_riesgo_arrepentimiento"
+    ],
+    "variables_solo_perfilado": [
+        "freq_compra_anual",
+        "tiempo_rrss_dia",
+        "freq_contenido_moda_rrss",
+        "sigue_influencers_moda",
+        "compra_ult_6m_por_rrss_bin",
+        "grupo_edad",
+        "sexo",
+        "gasto_mensual_moda",
+        "canal_compra_moda"
+    ],
+    "distribucion_clusters": [
+        {
+            "cluster": 0,
+            "n_obs": 127,
+            "pct": 39.9
+        },
+        {
+            "cluster": 1,
+            "n_obs": 191,
+            "pct": 60.1
+        }
+    ],
+    "interpretacion_clusters": {
+        "0": "Perfil_baja_influencia_digital",
+        "1": "Perfil_alta_influencia_digital"
+    },
+    "interpretacion": "El análisis K-Means identifica 2 perfiles diferenciados de consumidor construidos exclusivamente a partir de 7 índices compuestos que sintetizan la influencia de las RRSS, el impulso de compra, la confianza en influencers, la difusión del fast fashion, la experiencia postcompra y el riesgo de arrepentimiento. El Silhouette Score de 0.353 indica una separación buena entre clústeres. Las variables demográficas y de conducta se reservan para la caracterización posterior de los segmentos, evitando que dominen artificialmente la segmentación.",
+    "limitaciones": "K-Means asume clústeres aproximadamente esféricos y de tamaño relativamente homogéneo. Con n=318 la solución sigue siendo exploratoria. La muestra de conveniencia limita la generalización de los perfiles identificados."
+}

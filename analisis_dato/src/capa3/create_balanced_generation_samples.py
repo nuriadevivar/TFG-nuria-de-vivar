@@ -4,11 +4,15 @@ import pandas as pd
 # =====================================================
 # Rutas
 # =====================================================
-INPUT_SUP_PATH = "analisis_dato/data/input/capa3/capa3_supervised_ready.csv"
-INPUT_CLUSTER_PATH = "analisis_dato/data/input/capa3/capa3_clustering_ready.csv"
+INPUT_CLUSTER_PATH = "data/input/capa3/capa3_clustering_ready.csv"
+INPUT_SUP_PATH = "data/input/capa3/capa3_supervised_ready.csv"
 
-OUTPUT_DIR = "analisis_dato/data/analytic/capa3"
+OUTPUT_DIR = "data/analytic/capa3"
 REPORTS_DIR = os.path.join(OUTPUT_DIR, "reports")
+
+OUTPUT_CLUSTER_BALANCED = os.path.join(OUTPUT_DIR, "capa3_clustering_balanced_generation.csv")
+OUTPUT_SUP_BALANCED = os.path.join(OUTPUT_DIR, "capa3_supervised_balanced_generation.csv")
+OUTPUT_REPORT = os.path.join(REPORTS_DIR, "capa3_generation_balancing_report.txt")
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 os.makedirs(REPORTS_DIR, exist_ok=True)

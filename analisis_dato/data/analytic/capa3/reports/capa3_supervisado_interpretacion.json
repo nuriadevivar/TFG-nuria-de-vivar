@@ -1,0 +1,13 @@
+{
+    "modelo_ganador": "A_Logistic_Regression",
+    "criterio": "mayor_test_AUC",
+    "test_auc": 0.9426900584795321,
+    "test_f1": 0.7659574468085106,
+    "test_accuracy": 0.828125,
+    "gap_f1": 0.06536785439630866,
+    "gap_auc": 0.004423535561436154,
+    "sobreajuste": "no",
+    "feature_mas_importante": "num__indice_influencia_rrss",
+    "interpretacion": "El modelo A_Logistic_Regression obtiene el mayor AUC en test (0.943). La variable más predictiva de la intención de compra futura es 'num__indice_influencia_rrss'. El F1-Score de 0.766 refleja la capacidad del modelo para detectar consumidores con alta intención de compra (clase minoritaria, 29.6%). La curva ROC y la matriz de confusión permiten visualizar el equilibrio entre precision y recall en el umbral de clasificación por defecto (0.5).",
+    "limitaciones": "El target es una pregunta declarativa ('seguiré comprando'), lo que introduce sesgo de deseabilidad social. Con n=318 y target desbalanceado (29.6% clase 1), los modelos pueden ser sensibles al conjunto de test (64 observaciones). Se recomienda validación cruzada en trabajos futuros con mayor muestra."
+}

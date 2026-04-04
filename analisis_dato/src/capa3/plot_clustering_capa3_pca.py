@@ -15,17 +15,37 @@ from sklearn.decomposition import PCA
 USE_BALANCED = True
 
 if USE_BALANCED:
-    INPUT_PATH = "analisis_dato/data/analytic/capa3/capa3_clustering_balanced_generation.csv"
+    INPUT_PATH = "data/analytic/capa3/capa3_clustering_balanced_generation.csv"
     OUTPUT_NAME = "capa3_clusters_pca_2d_balanced.png"
     TITLE_SUFFIX = "BALANCED"
 else:
-    INPUT_PATH = "analisis_dato/data/input/capa3/capa3_clustering_ready.csv"
+    INPUT_PATH = "data/input/capa3/capa3_clustering_ready.csv"
     OUTPUT_NAME = "capa3_clusters_pca_2d_main.png"
     TITLE_SUFFIX = "MAIN"
 
-OUTPUT_DIR = "analisis_dato/data/analytic/capa3"
+INPUT_PATH = "data/analytic/capa3/reports/capa3_cluster_assignments.csv"
+
+OUTPUT_DIR = "data/analytic/capa3"
 FIGURES_DIR = os.path.join(OUTPUT_DIR, "figures")
+REPORTS_DIR = os.path.join(OUTPUT_DIR, "reports")
+
 os.makedirs(FIGURES_DIR, exist_ok=True)
+os.makedirs(REPORTS_DIR, exist_ok=True)
+
+def relabel_clusters_by_influence(df_base: pd.DataFrame, cluster_labels, influence_col: str = "indice_influencia_rrss"):
+    df_tmp = df_base.copy()
+    df_tmp["cluster_tmp"] = cluster_labels
+
+    ordered_labels = (
+        df_tmp.groupby("cluster_tmp")[influence_col]
+        .mean()
+        .sort_values(ascending=True)
+        .index.tolist()
+    )
+
+    label_map = {old_label: new_label for new_label, old_label in enumerate(ordered_labels)}
+    relabeled = pd.Series(cluster_labels).map(label_map).values
+    return relabeled, label_map
 
 # =====================================================
 # Carga
@@ -56,14 +76,27 @@ preprocessor = ColumnTransformer(
 )
 
 X_processed = preprocessor.fit_transform(X)
+X_dense = X_processed.toarray() if hasattr(X_processed, "toarray") else X_processed
 
 kmeans = KMeans(n_clusters=2, random_state=42, n_init=20)
-labels = kmeans.fit_predict(X_processed)
+labels_raw = kmeans.fit_predict(X_dense)
+
+labels, label_map = relabel_clusters_by_influence(
+    df_base=df,
+    cluster_labels=labels_raw,
+    influence_col="indice_influencia_rrss",
+)
+
+df["cluster"] = labels
+
+old_labels_in_new_order = [
+    old_label for old_label, new_label in sorted(label_map.items(), key=lambda x: x[1])
+]
+centers_reordered = kmeans.cluster_centers_[old_labels_in_new_order]
 
 pca = PCA(n_components=2, random_state=42)
-X_dense = X_processed.toarray() if hasattr(X_processed, "toarray") else X_processed
 X_pca = pca.fit_transform(X_dense)
-centroids_pca = pca.transform(kmeans.cluster_centers_)
+centroids_pca = pca.transform(centers_reordered)
 
 explained_var = pca.explained_variance_ratio_
 

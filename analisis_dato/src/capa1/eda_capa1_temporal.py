@@ -12,11 +12,12 @@ warnings.filterwarnings("ignore")
 # =====================================================
 # Rutas
 # =====================================================
-INPUT_PATH = "analisis_dato/data/input/capa1/capa1_master_mensual_analysis.csv"
-OUTPUT_DIR = "analisis_dato/data/analytic/capa1"
+INPUT_PATH = "data/input/capa1/capa1_master_mensual_analysis.csv"
+OUTPUT_DIR = "data/analytic/capa1"
 FIGURES_DIR = os.path.join(OUTPUT_DIR, "figures")
 REPORTS_DIR = os.path.join(OUTPUT_DIR, "reports")
 
+os.makedirs(OUTPUT_DIR, exist_ok=True)
 os.makedirs(FIGURES_DIR, exist_ok=True)
 os.makedirs(REPORTS_DIR, exist_ok=True)
 
