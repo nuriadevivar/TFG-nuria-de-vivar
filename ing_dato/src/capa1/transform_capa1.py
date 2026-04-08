@@ -514,7 +514,7 @@ def transform_eurostat_online_empresas() -> pd.DataFrame:
             {
                 "anio": r["anio"],
                 "geo": "Spain",
-                "valor_pct": round(float(r["valor_numerico"]), 4),
+                "valor_pct": round(float(r["valor_numerico"]) / 100, 4),
                 "fuente": "Eurostat",
                 "indicador": "participacion_empresas_facturacion_ecommerce_pct",
                 "provisional": False,
