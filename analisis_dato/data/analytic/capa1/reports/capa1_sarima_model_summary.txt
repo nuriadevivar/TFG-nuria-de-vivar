@@ -2,8 +2,8 @@
 ===========================================================================================
 Dep. Variable:                  indice_retail_moda   No. Observations:                   96
 Model:             SARIMAX(0, 1, 1)x(0, 1, [], 12)   Log Likelihood                -335.267
-Date:                             Wed, 08 Apr 2026   AIC                            674.534
-Time:                                     17:09:44   BIC                            679.323
+Date:                             Mon, 13 Apr 2026   AIC                            674.534
+Time:                                     19:29:37   BIC                            679.323
 Sample:                                 01-01-2015   HQIC                           676.456
                                       - 12-01-2022                                         
 Covariance Type:                               opg                                         

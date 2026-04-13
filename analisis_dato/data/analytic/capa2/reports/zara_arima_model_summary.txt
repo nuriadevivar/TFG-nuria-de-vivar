@@ -2,8 +2,8 @@
 ==============================================================================
 Dep. Variable:           valor_trends   No. Observations:                  121
 Model:                 ARIMA(2, 1, 2)   Log Likelihood                -414.128
-Date:                Sat, 04 Apr 2026   AIC                            838.255
-Time:                        00:22:26   BIC                            852.192
+Date:                Mon, 13 Apr 2026   AIC                            838.255
+Time:                        19:30:57   BIC                            852.192
 Sample:                    12-01-2014   HQIC                           843.915
                          - 12-01-2024                                         
 Covariance Type:                  opg                                         
