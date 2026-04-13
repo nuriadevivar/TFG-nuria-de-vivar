@@ -1,0 +1,533 @@
+fecha,termino,valor_trends,anio,mes_num,grupo,valor_cero_trends
+2014-12-01,choni,29.0,2014,12,urbano,False
+2015-01-01,choni,32.25,2015,1,urbano,False
+2015-02-01,choni,42.5,2015,2,urbano,False
+2015-03-01,choni,52.2,2015,3,urbano,False
+2015-04-01,choni,35.0,2015,4,urbano,False
+2015-05-01,choni,33.4,2015,5,urbano,False
+2015-06-01,choni,32.5,2015,6,urbano,False
+2015-07-01,choni,35.0,2015,7,urbano,False
+2015-08-01,choni,38.8,2015,8,urbano,False
+2015-09-01,choni,37.75,2015,9,urbano,False
+2015-10-01,choni,34.25,2015,10,urbano,False
+2015-11-01,choni,35.0,2015,11,urbano,False
+2015-12-01,choni,49.25,2015,12,urbano,False
+2016-01-01,choni,79.8,2016,1,urbano,False
+2016-02-01,choni,72.0,2016,2,urbano,False
+2016-03-01,choni,63.0,2016,3,urbano,False
+2016-04-01,choni,61.5,2016,4,urbano,False
+2016-05-01,choni,68.6,2016,5,urbano,False
+2016-06-01,choni,59.5,2016,6,urbano,False
+2016-07-01,choni,62.8,2016,7,urbano,False
+2016-08-01,choni,65.0,2016,8,urbano,False
+2016-09-01,choni,70.75,2016,9,urbano,False
+2016-10-01,choni,63.2,2016,10,urbano,False
+2016-11-01,choni,53.75,2016,11,urbano,False
+2016-12-01,choni,62.25,2016,12,urbano,False
+2017-01-01,choni,70.8,2017,1,urbano,False
+2017-02-01,choni,71.0,2017,2,urbano,False
+2017-03-01,choni,69.25,2017,3,urbano,False
+2017-04-01,choni,57.6,2017,4,urbano,False
+2017-05-01,choni,59.0,2017,5,urbano,False
+2017-06-01,choni,52.75,2017,6,urbano,False
+2017-07-01,choni,59.0,2017,7,urbano,False
+2017-08-01,choni,59.5,2017,8,urbano,False
+2017-09-01,choni,56.75,2017,9,urbano,False
+2017-10-01,choni,49.0,2017,10,urbano,False
+2017-11-01,choni,50.0,2017,11,urbano,False
+2017-12-01,choni,60.0,2017,12,urbano,False
+2018-01-01,choni,78.0,2018,1,urbano,False
+2018-02-01,choni,81.0,2018,2,urbano,False
+2018-03-01,choni,72.5,2018,3,urbano,False
+2018-04-01,choni,78.6,2018,4,urbano,False
+2018-05-01,choni,66.0,2018,5,urbano,False
+2018-06-01,choni,65.5,2018,6,urbano,False
+2018-07-01,choni,72.2,2018,7,urbano,False
+2018-08-01,choni,82.75,2018,8,urbano,False
+2018-09-01,choni,67.0,2018,9,urbano,False
+2018-10-01,choni,72.0,2018,10,urbano,False
+2018-11-01,choni,75.0,2018,11,urbano,False
+2018-12-01,choni,66.2,2018,12,urbano,False
+2019-01-01,choni,65.5,2019,1,urbano,False
+2019-02-01,choni,78.75,2019,2,urbano,False
+2019-03-01,choni,60.6,2019,3,urbano,False
+2019-04-01,choni,69.25,2019,4,urbano,False
+2019-05-01,choni,65.75,2019,5,urbano,False
+2019-06-01,choni,62.8,2019,6,urbano,False
+2019-07-01,choni,67.5,2019,7,urbano,False
+2019-08-01,choni,62.0,2019,8,urbano,False
+2019-09-01,choni,65.4,2019,9,urbano,False
+2019-10-01,choni,57.0,2019,10,urbano,False
+2019-11-01,choni,51.25,2019,11,urbano,False
+2019-12-01,choni,55.6,2019,12,urbano,False
+2020-01-01,choni,58.25,2020,1,urbano,False
+2020-02-01,choni,79.0,2020,2,urbano,False
+2020-03-01,choni,55.4,2020,3,urbano,False
+2020-04-01,choni,71.0,2020,4,urbano,False
+2020-05-01,choni,58.2,2020,5,urbano,False
+2020-06-01,choni,66.25,2020,6,urbano,False
+2020-07-01,choni,64.0,2020,7,urbano,False
+2020-08-01,choni,73.4,2020,8,urbano,False
+2020-09-01,choni,57.0,2020,9,urbano,False
+2020-10-01,choni,54.25,2020,10,urbano,False
+2020-11-01,choni,53.6,2020,11,urbano,False
+2020-12-01,choni,58.75,2020,12,urbano,False
+2021-01-01,choni,59.2,2021,1,urbano,False
+2021-02-01,choni,63.5,2021,2,urbano,False
+2021-03-01,choni,51.0,2021,3,urbano,False
+2021-04-01,choni,50.25,2021,4,urbano,False
+2021-05-01,choni,54.6,2021,5,urbano,False
+2021-06-01,choni,54.0,2021,6,urbano,False
+2021-07-01,choni,59.25,2021,7,urbano,False
+2021-08-01,choni,64.8,2021,8,urbano,False
+2021-09-01,choni,51.5,2021,9,urbano,False
+2021-10-01,choni,55.4,2021,10,urbano,False
+2021-11-01,choni,56.25,2021,11,urbano,False
+2021-12-01,choni,62.0,2021,12,urbano,False
+2022-01-01,choni,69.2,2022,1,urbano,False
+2022-02-01,choni,80.75,2022,2,urbano,False
+2022-03-01,choni,56.5,2022,3,urbano,False
+2022-04-01,choni,65.25,2022,4,urbano,False
+2022-05-01,choni,64.8,2022,5,urbano,False
+2022-06-01,choni,67.25,2022,6,urbano,False
+2022-07-01,choni,69.8,2022,7,urbano,False
+2022-08-01,choni,75.0,2022,8,urbano,False
+2022-09-01,choni,58.5,2022,9,urbano,False
+2022-10-01,choni,59.6,2022,10,urbano,False
+2022-11-01,choni,59.75,2022,11,urbano,False
+2022-12-01,choni,58.25,2022,12,urbano,False
+2023-01-01,choni,58.6,2023,1,urbano,False
+2023-02-01,choni,72.75,2023,2,urbano,False
+2023-03-01,choni,59.0,2023,3,urbano,False
+2023-04-01,choni,54.0,2023,4,urbano,False
+2023-05-01,choni,53.5,2023,5,urbano,False
+2023-06-01,choni,56.75,2023,6,urbano,False
+2023-07-01,choni,53.8,2023,7,urbano,False
+2023-08-01,choni,63.75,2023,8,urbano,False
+2023-09-01,choni,58.75,2023,9,urbano,False
+2023-10-01,choni,52.8,2023,10,urbano,False
+2023-11-01,choni,54.25,2023,11,urbano,False
+2023-12-01,choni,58.8,2023,12,urbano,False
+2024-01-01,choni,55.5,2024,1,urbano,False
+2024-02-01,choni,65.75,2024,2,urbano,False
+2024-03-01,choni,49.0,2024,3,urbano,False
+2024-04-01,choni,47.75,2024,4,urbano,False
+2024-05-01,choni,48.5,2024,5,urbano,False
+2024-06-01,choni,46.2,2024,6,urbano,False
+2024-07-01,choni,46.75,2024,7,urbano,False
+2024-08-01,choni,58.5,2024,8,urbano,False
+2024-09-01,choni,49.0,2024,9,urbano,False
+2024-10-01,choni,47.5,2024,10,urbano,False
+2024-11-01,choni,44.75,2024,11,urbano,False
+2024-12-01,choni,46.2,2024,12,urbano,False
+2025-01-01,choni,,2025,1,urbano,False
+2025-02-01,choni,,2025,2,urbano,False
+2025-03-01,choni,,2025,3,urbano,False
+2025-04-01,choni,,2025,4,urbano,False
+2025-05-01,choni,,2025,5,urbano,False
+2025-06-01,choni,,2025,6,urbano,False
+2025-07-01,choni,,2025,7,urbano,False
+2025-08-01,choni,,2025,8,urbano,False
+2025-09-01,choni,,2025,9,urbano,False
+2025-10-01,choni,,2025,10,urbano,False
+2025-11-01,choni,,2025,11,urbano,False
+2025-12-01,choni,,2025,12,urbano,False
+2014-12-01,trap style,,2014,12,urbano,False
+2015-01-01,trap style,,2015,1,urbano,False
+2015-02-01,trap style,,2015,2,urbano,False
+2015-03-01,trap style,,2015,3,urbano,False
+2015-04-01,trap style,,2015,4,urbano,False
+2015-05-01,trap style,,2015,5,urbano,False
+2015-06-01,trap style,,2015,6,urbano,False
+2015-07-01,trap style,,2015,7,urbano,False
+2015-08-01,trap style,,2015,8,urbano,False
+2015-09-01,trap style,,2015,9,urbano,False
+2015-10-01,trap style,,2015,10,urbano,False
+2015-11-01,trap style,,2015,11,urbano,False
+2015-12-01,trap style,,2015,12,urbano,False
+2016-01-01,trap style,,2016,1,urbano,False
+2016-02-01,trap style,,2016,2,urbano,False
+2016-03-01,trap style,,2016,3,urbano,False
+2016-04-01,trap style,,2016,4,urbano,False
+2016-05-01,trap style,,2016,5,urbano,False
+2016-06-01,trap style,,2016,6,urbano,False
+2016-07-01,trap style,,2016,7,urbano,False
+2016-08-01,trap style,,2016,8,urbano,False
+2016-09-01,trap style,,2016,9,urbano,False
+2016-10-01,trap style,,2016,10,urbano,False
+2016-11-01,trap style,,2016,11,urbano,False
+2016-12-01,trap style,,2016,12,urbano,False
+2017-01-01,trap style,,2017,1,urbano,False
+2017-02-01,trap style,,2017,2,urbano,False
+2017-03-01,trap style,,2017,3,urbano,False
+2017-04-01,trap style,,2017,4,urbano,False
+2017-05-01,trap style,,2017,5,urbano,False
+2017-06-01,trap style,,2017,6,urbano,False
+2017-07-01,trap style,,2017,7,urbano,False
+2017-08-01,trap style,,2017,8,urbano,False
+2017-09-01,trap style,,2017,9,urbano,False
+2017-10-01,trap style,,2017,10,urbano,False
+2017-11-01,trap style,,2017,11,urbano,False
+2017-12-01,trap style,,2017,12,urbano,False
+2018-01-01,trap style,,2018,1,urbano,False
+2018-02-01,trap style,,2018,2,urbano,False
+2018-03-01,trap style,,2018,3,urbano,False
+2018-04-01,trap style,,2018,4,urbano,False
+2018-05-01,trap style,,2018,5,urbano,False
+2018-06-01,trap style,,2018,6,urbano,False
+2018-07-01,trap style,,2018,7,urbano,False
+2018-08-01,trap style,,2018,8,urbano,False
+2018-09-01,trap style,,2018,9,urbano,False
+2018-10-01,trap style,,2018,10,urbano,False
+2018-11-01,trap style,,2018,11,urbano,False
+2018-12-01,trap style,,2018,12,urbano,False
+2019-01-01,trap style,,2019,1,urbano,False
+2019-02-01,trap style,,2019,2,urbano,False
+2019-03-01,trap style,,2019,3,urbano,False
+2019-04-01,trap style,,2019,4,urbano,False
+2019-05-01,trap style,,2019,5,urbano,False
+2019-06-01,trap style,,2019,6,urbano,False
+2019-07-01,trap style,,2019,7,urbano,False
+2019-08-01,trap style,,2019,8,urbano,False
+2019-09-01,trap style,,2019,9,urbano,False
+2019-10-01,trap style,,2019,10,urbano,False
+2019-11-01,trap style,,2019,11,urbano,False
+2019-12-01,trap style,,2019,12,urbano,False
+2020-01-01,trap style,,2020,1,urbano,False
+2020-02-01,trap style,,2020,2,urbano,False
+2020-03-01,trap style,,2020,3,urbano,False
+2020-04-01,trap style,,2020,4,urbano,False
+2020-05-01,trap style,,2020,5,urbano,False
+2020-06-01,trap style,,2020,6,urbano,False
+2020-07-01,trap style,,2020,7,urbano,False
+2020-08-01,trap style,,2020,8,urbano,False
+2020-09-01,trap style,,2020,9,urbano,False
+2020-10-01,trap style,,2020,10,urbano,False
+2020-11-01,trap style,,2020,11,urbano,False
+2020-12-01,trap style,,2020,12,urbano,False
+2021-01-01,trap style,,2021,1,urbano,False
+2021-02-01,trap style,,2021,2,urbano,False
+2021-03-01,trap style,,2021,3,urbano,False
+2021-04-01,trap style,,2021,4,urbano,False
+2021-05-01,trap style,,2021,5,urbano,False
+2021-06-01,trap style,,2021,6,urbano,False
+2021-07-01,trap style,,2021,7,urbano,False
+2021-08-01,trap style,,2021,8,urbano,False
+2021-09-01,trap style,,2021,9,urbano,False
+2021-10-01,trap style,,2021,10,urbano,False
+2021-11-01,trap style,,2021,11,urbano,False
+2021-12-01,trap style,0.0,2021,12,urbano,True
+2022-01-01,trap style,20.0,2022,1,urbano,False
+2022-02-01,trap style,0.0,2022,2,urbano,True
+2022-03-01,trap style,0.0,2022,3,urbano,True
+2022-04-01,trap style,0.0,2022,4,urbano,True
+2022-05-01,trap style,0.0,2022,5,urbano,True
+2022-06-01,trap style,0.0,2022,6,urbano,True
+2022-07-01,trap style,0.0,2022,7,urbano,True
+2022-08-01,trap style,0.0,2022,8,urbano,True
+2022-09-01,trap style,0.0,2022,9,urbano,True
+2022-10-01,trap style,0.0,2022,10,urbano,True
+2022-11-01,trap style,0.0,2022,11,urbano,True
+2022-12-01,trap style,0.0,2022,12,urbano,True
+2023-01-01,trap style,0.0,2023,1,urbano,True
+2023-02-01,trap style,0.0,2023,2,urbano,True
+2023-03-01,trap style,0.0,2023,3,urbano,True
+2023-04-01,trap style,0.0,2023,4,urbano,True
+2023-05-01,trap style,0.0,2023,5,urbano,True
+2023-06-01,trap style,0.0,2023,6,urbano,True
+2023-07-01,trap style,0.0,2023,7,urbano,True
+2023-08-01,trap style,0.0,2023,8,urbano,True
+2023-09-01,trap style,0.0,2023,9,urbano,True
+2023-10-01,trap style,0.0,2023,10,urbano,True
+2023-11-01,trap style,25.0,2023,11,urbano,False
+2023-12-01,trap style,0.0,2023,12,urbano,True
+2024-01-01,trap style,,2024,1,urbano,False
+2024-02-01,trap style,,2024,2,urbano,False
+2024-03-01,trap style,,2024,3,urbano,False
+2024-04-01,trap style,,2024,4,urbano,False
+2024-05-01,trap style,,2024,5,urbano,False
+2024-06-01,trap style,,2024,6,urbano,False
+2024-07-01,trap style,,2024,7,urbano,False
+2024-08-01,trap style,,2024,8,urbano,False
+2024-09-01,trap style,,2024,9,urbano,False
+2024-10-01,trap style,,2024,10,urbano,False
+2024-11-01,trap style,,2024,11,urbano,False
+2024-12-01,trap style,,2024,12,urbano,False
+2025-01-01,trap style,0.0,2025,1,urbano,True
+2025-02-01,trap style,0.0,2025,2,urbano,True
+2025-03-01,trap style,0.0,2025,3,urbano,True
+2025-04-01,trap style,25.0,2025,4,urbano,False
+2025-05-01,trap style,0.0,2025,5,urbano,True
+2025-06-01,trap style,0.0,2025,6,urbano,True
+2025-07-01,trap style,0.0,2025,7,urbano,True
+2025-08-01,trap style,0.0,2025,8,urbano,True
+2025-09-01,trap style,0.0,2025,9,urbano,True
+2025-10-01,trap style,0.0,2025,10,urbano,True
+2025-11-01,trap style,2.5,2025,11,urbano,False
+2025-12-01,trap style,,2025,12,urbano,False
+2014-12-01,y2k outfit,,2014,12,urbano,False
+2015-01-01,y2k outfit,,2015,1,urbano,False
+2015-02-01,y2k outfit,,2015,2,urbano,False
+2015-03-01,y2k outfit,,2015,3,urbano,False
+2015-04-01,y2k outfit,,2015,4,urbano,False
+2015-05-01,y2k outfit,,2015,5,urbano,False
+2015-06-01,y2k outfit,,2015,6,urbano,False
+2015-07-01,y2k outfit,,2015,7,urbano,False
+2015-08-01,y2k outfit,,2015,8,urbano,False
+2015-09-01,y2k outfit,,2015,9,urbano,False
+2015-10-01,y2k outfit,,2015,10,urbano,False
+2015-11-01,y2k outfit,,2015,11,urbano,False
+2015-12-01,y2k outfit,,2015,12,urbano,False
+2016-01-01,y2k outfit,,2016,1,urbano,False
+2016-02-01,y2k outfit,,2016,2,urbano,False
+2016-03-01,y2k outfit,,2016,3,urbano,False
+2016-04-01,y2k outfit,,2016,4,urbano,False
+2016-05-01,y2k outfit,,2016,5,urbano,False
+2016-06-01,y2k outfit,,2016,6,urbano,False
+2016-07-01,y2k outfit,,2016,7,urbano,False
+2016-08-01,y2k outfit,,2016,8,urbano,False
+2016-09-01,y2k outfit,,2016,9,urbano,False
+2016-10-01,y2k outfit,,2016,10,urbano,False
+2016-11-01,y2k outfit,,2016,11,urbano,False
+2016-12-01,y2k outfit,,2016,12,urbano,False
+2017-01-01,y2k outfit,,2017,1,urbano,False
+2017-02-01,y2k outfit,,2017,2,urbano,False
+2017-03-01,y2k outfit,,2017,3,urbano,False
+2017-04-01,y2k outfit,,2017,4,urbano,False
+2017-05-01,y2k outfit,,2017,5,urbano,False
+2017-06-01,y2k outfit,,2017,6,urbano,False
+2017-07-01,y2k outfit,,2017,7,urbano,False
+2017-08-01,y2k outfit,,2017,8,urbano,False
+2017-09-01,y2k outfit,,2017,9,urbano,False
+2017-10-01,y2k outfit,,2017,10,urbano,False
+2017-11-01,y2k outfit,,2017,11,urbano,False
+2017-12-01,y2k outfit,,2017,12,urbano,False
+2018-01-01,y2k outfit,,2018,1,urbano,False
+2018-02-01,y2k outfit,,2018,2,urbano,False
+2018-03-01,y2k outfit,,2018,3,urbano,False
+2018-04-01,y2k outfit,,2018,4,urbano,False
+2018-05-01,y2k outfit,,2018,5,urbano,False
+2018-06-01,y2k outfit,,2018,6,urbano,False
+2018-07-01,y2k outfit,,2018,7,urbano,False
+2018-08-01,y2k outfit,,2018,8,urbano,False
+2018-09-01,y2k outfit,,2018,9,urbano,False
+2018-10-01,y2k outfit,,2018,10,urbano,False
+2018-11-01,y2k outfit,,2018,11,urbano,False
+2018-12-01,y2k outfit,,2018,12,urbano,False
+2019-01-01,y2k outfit,,2019,1,urbano,False
+2019-02-01,y2k outfit,,2019,2,urbano,False
+2019-03-01,y2k outfit,,2019,3,urbano,False
+2019-04-01,y2k outfit,,2019,4,urbano,False
+2019-05-01,y2k outfit,,2019,5,urbano,False
+2019-06-01,y2k outfit,,2019,6,urbano,False
+2019-07-01,y2k outfit,,2019,7,urbano,False
+2019-08-01,y2k outfit,,2019,8,urbano,False
+2019-09-01,y2k outfit,,2019,9,urbano,False
+2019-10-01,y2k outfit,,2019,10,urbano,False
+2019-11-01,y2k outfit,,2019,11,urbano,False
+2019-12-01,y2k outfit,,2019,12,urbano,False
+2020-01-01,y2k outfit,,2020,1,urbano,False
+2020-02-01,y2k outfit,,2020,2,urbano,False
+2020-03-01,y2k outfit,,2020,3,urbano,False
+2020-04-01,y2k outfit,,2020,4,urbano,False
+2020-05-01,y2k outfit,,2020,5,urbano,False
+2020-06-01,y2k outfit,,2020,6,urbano,False
+2020-07-01,y2k outfit,,2020,7,urbano,False
+2020-08-01,y2k outfit,,2020,8,urbano,False
+2020-09-01,y2k outfit,,2020,9,urbano,False
+2020-10-01,y2k outfit,,2020,10,urbano,False
+2020-11-01,y2k outfit,,2020,11,urbano,False
+2020-12-01,y2k outfit,0.0,2020,12,urbano,True
+2021-01-01,y2k outfit,0.0,2021,1,urbano,True
+2021-02-01,y2k outfit,0.0,2021,2,urbano,True
+2021-03-01,y2k outfit,0.0,2021,3,urbano,True
+2021-04-01,y2k outfit,0.0,2021,4,urbano,True
+2021-05-01,y2k outfit,0.0,2021,5,urbano,True
+2021-06-01,y2k outfit,0.0,2021,6,urbano,True
+2021-07-01,y2k outfit,25.0,2021,7,urbano,False
+2021-08-01,y2k outfit,0.0,2021,8,urbano,True
+2021-09-01,y2k outfit,0.0,2021,9,urbano,True
+2021-10-01,y2k outfit,0.0,2021,10,urbano,True
+2021-11-01,y2k outfit,0.0,2021,11,urbano,True
+2021-12-01,y2k outfit,0.0,2021,12,urbano,True
+2022-01-01,y2k outfit,,2022,1,urbano,False
+2022-02-01,y2k outfit,,2022,2,urbano,False
+2022-03-01,y2k outfit,,2022,3,urbano,False
+2022-04-01,y2k outfit,,2022,4,urbano,False
+2022-05-01,y2k outfit,,2022,5,urbano,False
+2022-06-01,y2k outfit,,2022,6,urbano,False
+2022-07-01,y2k outfit,,2022,7,urbano,False
+2022-08-01,y2k outfit,,2022,8,urbano,False
+2022-09-01,y2k outfit,,2022,9,urbano,False
+2022-10-01,y2k outfit,,2022,10,urbano,False
+2022-11-01,y2k outfit,,2022,11,urbano,False
+2022-12-01,y2k outfit,,2022,12,urbano,False
+2023-01-01,y2k outfit,,2023,1,urbano,False
+2023-02-01,y2k outfit,,2023,2,urbano,False
+2023-03-01,y2k outfit,,2023,3,urbano,False
+2023-04-01,y2k outfit,,2023,4,urbano,False
+2023-05-01,y2k outfit,,2023,5,urbano,False
+2023-06-01,y2k outfit,,2023,6,urbano,False
+2023-07-01,y2k outfit,,2023,7,urbano,False
+2023-08-01,y2k outfit,,2023,8,urbano,False
+2023-09-01,y2k outfit,,2023,9,urbano,False
+2023-10-01,y2k outfit,,2023,10,urbano,False
+2023-11-01,y2k outfit,,2023,11,urbano,False
+2023-12-01,y2k outfit,,2023,12,urbano,False
+2024-01-01,y2k outfit,,2024,1,urbano,False
+2024-02-01,y2k outfit,,2024,2,urbano,False
+2024-03-01,y2k outfit,,2024,3,urbano,False
+2024-04-01,y2k outfit,,2024,4,urbano,False
+2024-05-01,y2k outfit,,2024,5,urbano,False
+2024-06-01,y2k outfit,,2024,6,urbano,False
+2024-07-01,y2k outfit,,2024,7,urbano,False
+2024-08-01,y2k outfit,,2024,8,urbano,False
+2024-09-01,y2k outfit,,2024,9,urbano,False
+2024-10-01,y2k outfit,,2024,10,urbano,False
+2024-11-01,y2k outfit,,2024,11,urbano,False
+2024-12-01,y2k outfit,,2024,12,urbano,False
+2025-01-01,y2k outfit,,2025,1,urbano,False
+2025-02-01,y2k outfit,,2025,2,urbano,False
+2025-03-01,y2k outfit,,2025,3,urbano,False
+2025-04-01,y2k outfit,,2025,4,urbano,False
+2025-05-01,y2k outfit,,2025,5,urbano,False
+2025-06-01,y2k outfit,,2025,6,urbano,False
+2025-07-01,y2k outfit,,2025,7,urbano,False
+2025-08-01,y2k outfit,,2025,8,urbano,False
+2025-09-01,y2k outfit,,2025,9,urbano,False
+2025-10-01,y2k outfit,,2025,10,urbano,False
+2025-11-01,y2k outfit,,2025,11,urbano,False
+2025-12-01,y2k outfit,,2025,12,urbano,False
+2014-12-01,streetwear,0.0,2014,12,urbano,True
+2015-01-01,streetwear,17.0,2015,1,urbano,False
+2015-02-01,streetwear,19.25,2015,2,urbano,False
+2015-03-01,streetwear,0.0,2015,3,urbano,True
+2015-04-01,streetwear,74.25,2015,4,urbano,False
+2015-05-01,streetwear,15.2,2015,5,urbano,False
+2015-06-01,streetwear,0.0,2015,6,urbano,True
+2015-07-01,streetwear,20.5,2015,7,urbano,False
+2015-08-01,streetwear,14.6,2015,8,urbano,False
+2015-09-01,streetwear,60.5,2015,9,urbano,False
+2015-10-01,streetwear,21.0,2015,10,urbano,False
+2015-11-01,streetwear,43.0,2015,11,urbano,False
+2015-12-01,streetwear,52.5,2015,12,urbano,False
+2016-01-01,streetwear,12.6,2016,1,urbano,False
+2016-02-01,streetwear,25.0,2016,2,urbano,False
+2016-03-01,streetwear,0.0,2016,3,urbano,True
+2016-04-01,streetwear,14.0,2016,4,urbano,False
+2016-05-01,streetwear,34.6,2016,5,urbano,False
+2016-06-01,streetwear,27.25,2016,6,urbano,False
+2016-07-01,streetwear,0.0,2016,7,urbano,True
+2016-08-01,streetwear,0.0,2016,8,urbano,True
+2016-09-01,streetwear,13.0,2016,9,urbano,False
+2016-10-01,streetwear,22.8,2016,10,urbano,False
+2016-11-01,streetwear,50.25,2016,11,urbano,False
+2016-12-01,streetwear,29.25,2016,12,urbano,False
+2017-01-01,streetwear,10.4,2017,1,urbano,False
+2017-02-01,streetwear,28.75,2017,2,urbano,False
+2017-03-01,streetwear,19.0,2017,3,urbano,False
+2017-04-01,streetwear,9.0,2017,4,urbano,False
+2017-05-01,streetwear,32.75,2017,5,urbano,False
+2017-06-01,streetwear,23.25,2017,6,urbano,False
+2017-07-01,streetwear,46.6,2017,7,urbano,False
+2017-08-01,streetwear,36.75,2017,8,urbano,False
+2017-09-01,streetwear,26.75,2017,9,urbano,False
+2017-10-01,streetwear,50.4,2017,10,urbano,False
+2017-11-01,streetwear,59.25,2017,11,urbano,False
+2017-12-01,streetwear,60.2,2017,12,urbano,False
+2018-01-01,streetwear,41.0,2018,1,urbano,False
+2018-02-01,streetwear,48.25,2018,2,urbano,False
+2018-03-01,streetwear,48.0,2018,3,urbano,False
+2018-04-01,streetwear,43.4,2018,4,urbano,False
+2018-05-01,streetwear,46.75,2018,5,urbano,False
+2018-06-01,streetwear,38.25,2018,6,urbano,False
+2018-07-01,streetwear,69.8,2018,7,urbano,False
+2018-08-01,streetwear,57.25,2018,8,urbano,False
+2018-09-01,streetwear,64.6,2018,9,urbano,False
+2018-10-01,streetwear,71.25,2018,10,urbano,False
+2018-11-01,streetwear,80.0,2018,11,urbano,False
+2018-12-01,streetwear,78.2,2018,12,urbano,False
+2019-01-01,streetwear,69.5,2019,1,urbano,False
+2019-02-01,streetwear,56.25,2019,2,urbano,False
+2019-03-01,streetwear,66.6,2019,3,urbano,False
+2019-04-01,streetwear,63.0,2019,4,urbano,False
+2019-05-01,streetwear,65.5,2019,5,urbano,False
+2019-06-01,streetwear,55.4,2019,6,urbano,False
+2019-07-01,streetwear,80.0,2019,7,urbano,False
+2019-08-01,streetwear,81.75,2019,8,urbano,False
+2019-09-01,streetwear,69.4,2019,9,urbano,False
+2019-10-01,streetwear,81.5,2019,10,urbano,False
+2019-11-01,streetwear,83.25,2019,11,urbano,False
+2019-12-01,streetwear,78.0,2019,12,urbano,False
+2020-01-01,streetwear,68.75,2020,1,urbano,False
+2020-02-01,streetwear,64.0,2020,2,urbano,False
+2020-03-01,streetwear,49.6,2020,3,urbano,False
+2020-04-01,streetwear,66.75,2020,4,urbano,False
+2020-05-01,streetwear,59.8,2020,5,urbano,False
+2020-06-01,streetwear,73.5,2020,6,urbano,False
+2020-07-01,streetwear,70.25,2020,7,urbano,False
+2020-08-01,streetwear,84.8,2020,8,urbano,False
+2020-09-01,streetwear,82.25,2020,9,urbano,False
+2020-10-01,streetwear,77.5,2020,10,urbano,False
+2020-11-01,streetwear,68.0,2020,11,urbano,False
+2020-12-01,streetwear,75.5,2020,12,urbano,False
+2021-01-01,streetwear,85.4,2021,1,urbano,False
+2021-02-01,streetwear,64.0,2021,2,urbano,False
+2021-03-01,streetwear,60.0,2021,3,urbano,False
+2021-04-01,streetwear,59.0,2021,4,urbano,False
+2021-05-01,streetwear,55.4,2021,5,urbano,False
+2021-06-01,streetwear,51.0,2021,6,urbano,False
+2021-07-01,streetwear,59.25,2021,7,urbano,False
+2021-08-01,streetwear,76.8,2021,8,urbano,False
+2021-09-01,streetwear,66.5,2021,9,urbano,False
+2021-10-01,streetwear,69.8,2021,10,urbano,False
+2021-11-01,streetwear,65.75,2021,11,urbano,False
+2021-12-01,streetwear,66.75,2021,12,urbano,False
+2022-01-01,streetwear,72.8,2022,1,urbano,False
+2022-02-01,streetwear,53.5,2022,2,urbano,False
+2022-03-01,streetwear,71.25,2022,3,urbano,False
+2022-04-01,streetwear,77.0,2022,4,urbano,False
+2022-05-01,streetwear,59.2,2022,5,urbano,False
+2022-06-01,streetwear,56.0,2022,6,urbano,False
+2022-07-01,streetwear,59.4,2022,7,urbano,False
+2022-08-01,streetwear,70.75,2022,8,urbano,False
+2022-09-01,streetwear,68.75,2022,9,urbano,False
+2022-10-01,streetwear,64.2,2022,10,urbano,False
+2022-11-01,streetwear,64.0,2022,11,urbano,False
+2022-12-01,streetwear,66.25,2022,12,urbano,False
+2023-01-01,streetwear,73.8,2023,1,urbano,False
+2023-02-01,streetwear,71.75,2023,2,urbano,False
+2023-03-01,streetwear,68.5,2023,3,urbano,False
+2023-04-01,streetwear,75.0,2023,4,urbano,False
+2023-05-01,streetwear,59.0,2023,5,urbano,False
+2023-06-01,streetwear,62.5,2023,6,urbano,False
+2023-07-01,streetwear,68.2,2023,7,urbano,False
+2023-08-01,streetwear,78.25,2023,8,urbano,False
+2023-09-01,streetwear,61.75,2023,9,urbano,False
+2023-10-01,streetwear,71.6,2023,10,urbano,False
+2023-11-01,streetwear,81.25,2023,11,urbano,False
+2023-12-01,streetwear,81.2,2023,12,urbano,False
+2024-01-01,streetwear,52.0,2024,1,urbano,False
+2024-02-01,streetwear,47.5,2024,2,urbano,False
+2024-03-01,streetwear,50.6,2024,3,urbano,False
+2024-04-01,streetwear,50.75,2024,4,urbano,False
+2024-05-01,streetwear,44.25,2024,5,urbano,False
+2024-06-01,streetwear,42.8,2024,6,urbano,False
+2024-07-01,streetwear,44.25,2024,7,urbano,False
+2024-08-01,streetwear,62.5,2024,8,urbano,False
+2024-09-01,streetwear,70.6,2024,9,urbano,False
+2024-10-01,streetwear,78.0,2024,10,urbano,False
+2024-11-01,streetwear,73.75,2024,11,urbano,False
+2024-12-01,streetwear,85.8,2024,12,urbano,False
+2025-01-01,streetwear,76.5,2025,1,urbano,False
+2025-02-01,streetwear,62.75,2025,2,urbano,False
+2025-03-01,streetwear,66.4,2025,3,urbano,False
+2025-04-01,streetwear,73.75,2025,4,urbano,False
+2025-05-01,streetwear,60.25,2025,5,urbano,False
+2025-06-01,streetwear,68.4,2025,6,urbano,False
+2025-07-01,streetwear,68.25,2025,7,urbano,False
+2025-08-01,streetwear,93.2,2025,8,urbano,False
+2025-09-01,streetwear,83.75,2025,9,urbano,False
+2025-10-01,streetwear,76.75,2025,10,urbano,False
+2025-11-01,streetwear,86.5,2025,11,urbano,False
+2025-12-01,streetwear,,2025,12,urbano,False

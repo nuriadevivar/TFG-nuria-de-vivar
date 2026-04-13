@@ -1,0 +1,389 @@
+indicador
+I.1 % de empresas que han realizado ventas por comercio electrónico (0)
+"I.1 % de empresas que han realizado ventas por comercio electrónico mediante páginas web, aplicaciones móviles o mensajes tipo EDI (0)"
+I.1.1 % de empresas que han realizado ventas mediante páginas web o apps (0)
+"I.1.1 % de empresas que han realizado ventas mediante páginas web, apps o plataformas digitales (marketplace) (0)"
+I.1.1.A % de empresas que recibieron pedidos/reservas por su propia página web o app (1)
+I.1.1.B % de empresas que reciberon pedidos/reservas por una plataforma digital (marketplace) (1)
+I.1.2.A % de empresas cuyas ventas mediante páginas web o apps son >= 1% ventas totales (0)
+I.1.2.B % de empresas cuyas ventas mediante páginas web o apps son >= 2% ventas totales (0)
+I.1.2.C % de empresas cuyas ventas mediante páginas web o apps son >= 5% ventas totales (0)
+I.1.2.D % de empresas cuyas ventas mediante páginas web o apps son >= 10% ventas totales (0)
+I.1.2.E % de empresas cuyas ventas mediante páginas web o apps son >= 25% ventas totales (0)
+I.1.2.F % de empresas cuyas ventas mediante páginas web o apps son >= 50% ventas totales (0)
+I.1.2.G ventas mediante páginas web o apps (miles de euros)
+I.1.2.H % ventas mediante páginas web o apps sobre el total de ventas
+I.1.2.I % ventas mediante páginas web o apps sobre el total de ventas de las empresas que venden por páginas web o apps
+I.1.3.A % ventas realizadas por su propia página web o app (2)
+I.1.3.B % ventas realizadas por marketplace (2)
+I.1.4.A % del importe de ventas mediante páginas web o apps realizadas a hogares (B2C) (2)
+I.1.4.A Distribución de ventas mediante páginas web o apps realizadas a hogares (B2C) (2)
+I.1.4.B % del importe de ventas mediante páginas web o apps realizadas a otras empresas (B2B) (2)
+I.1.4.B Distribución de ventas mediante páginas web o apps realizadas a otras empresas (B2B) (2)
+I.1.4.C % del importe de ventas mediante páginas web o apps realizadas a la Administración Pública (B2G) (2)
+I.1.4.C Distribución de ventas mediante páginas web o apps realizadas a la Administración Pública (B2G) (2)
+I.1.5.A % del importe de ventas web realizadas a España (2)
+I.1.5.B % del importe de ventas web realizadas a otros países de la UE (2)
+I.1.5.C % del importe de ventas web realizadas al resto de países (2)
+I.1.6 % de empresas que han realizado ventas mediante mensajes tipo EDI (0)
+I.1.7 % de empresas que han realizado ventas mediante mensajes tipo EDI (0)
+I.1.7.A % de empresas cuyas ventas mediante mensajes tipo EDI son >= 1% ventas totales (0)
+I.1.7.B % de empresas cuyas ventas mediante mensajes tipo EDI son >= 2% ventas totales (0)
+I.1.7.C % de empresas cuyas ventas mediante mensajes tipo EDI son >= 5% ventas totales (0)
+I.1.7.D % de empresas cuyas ventas mediante mensajes tipo EDI son >= 10% ventas totales (0)
+I.1.7.E % de empresas cuyas ventas mediante mensajes tipo EDI son >= 25% ventas totales (0)
+I.1.7.F % de empresas cuyas ventas mediante mensajes tipo EDI son >= 50% ventas totales (0)
+I.1.7.G ventas mediante mensajes tipo EDI (miles de euros)
+I.1.7.H % ventas mediante mensajes tipo EDI sobre el total de ventas
+I.1.7.I % ventas mediante mensajes tipo EDI sobre el total de ventas de las empresas que venden por mensajes tipo EDI
+I.1.8.A % de empresas cuyas ventas mediante mensajes tipo EDI son >= 1% ventas totales (0)
+I.1.8.A % del importe de ventas realizadas mediante mensajes tipo EDI a otras empresas (B2B) (3)
+I.1.8.B % de empresas cuyas ventas mediante mensajes tipo EDI son >= 2% ventas totales (0)
+I.1.8.B % del importe de ventas realizadas mediante mensajes tipo EDI a la Administración Pública (B2G) (3)
+I.1.8.C % de empresas cuyas ventas mediante mensajes tipo EDI son >= 5% ventas totales (0)
+I.1.8.D % de empresas cuyas ventas mediante mensajes tipo EDI son >= 10% ventas totales (0)
+I.1.8.E % de empresas cuyas ventas mediante mensajes tipo EDI son >= 25% ventas totales (0)
+I.1.8.F % de empresas cuyas ventas mediante mensajes tipo EDI son >= 50% ventas totales (0)
+I.1.8.G ventas mediante mensajes tipo EDI (miles de euros)
+I.1.8.H % ventas mediante mensajes tipo EDI sobre el total de ventas
+I.1.8.I % ventas mediante mensajes tipo EDI sobre el total de ventas de las empresas que venden por mensajes tipo EDI
+I.1.9.A % del importe de ventas realizadas mediante mensajes tipo EDI a España (3)
+I.1.9.B % del importe de ventas realizadas mediante mensajes tipo EDI a otros países de la UE (3)
+I.1.9.C % del importe de ventas realizadas mediante mensajes tipo EDI al resto de países (3)
+I.1.A % de empresas cuyas ventas por comercio electrónico son >= 1% ventas totales (0)
+I.1.B % de empresas cuyas ventas por comercio electrónico son >= 2% ventas totales (0)
+I.1.C % de empresas cuyas ventas por comercio electrónico son >= 5% ventas totales (0)
+I.1.D % de empresas cuyas ventas por comercio electrónico son >= 10% ventas totales (0)
+I.1.E % de empresas cuyas ventas por comercio electrónico son >= 25% ventas totales (0)
+I.1.F % de empresas cuyas ventas por comercio electrónico son >= 50% ventas totales (0)
+I.1.G ventas mediante comercio electrónico (miles de euros)
+I.1.H % ventas mediante comercio electrónico sobre el total de ventas
+I.1.I % ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico
+J.1 % de empresas que han realizado ventas por comercio electrónico
+J.1.1 % de empresas que han realizado ventas mediante páginas web o apps
+J.1.1.A % de empresas que recibieron pedidos/reservas por su propia página web o app (5)
+J.1.1.B % de empresas que reciberon pedidos/reservas por una plataforma digital (marketplace) (5)
+J.1.10.A Distribución de ventas mediante mensajes tipo EDI por área geográfica: España(4)
+J.1.10.B Distribución de ventas mediante mensajes tipo EDI por área geográfica: Otros países de la UE(4)(1)
+J.1.10.C Distribución de ventas mediante mensajes tipo EDI por área geográfica: Resto de países (4)
+J.1.2.A % de empresas cuyas ventas mediante páginas web o apps son >= 1% ventas totales
+J.1.2.B % de empresas cuyas ventas mediante páginas web o apps son >= 2% ventas totales
+J.1.2.C % de empresas cuyas ventas mediante páginas web o apps son >= 5% ventas totales
+J.1.2.D % de empresas cuyas ventas mediante páginas web o apps son >= 10% ventas totales
+J.1.2.E % de empresas cuyas ventas mediante páginas web o apps son >= 25% ventas totales
+J.1.2.F % de empresas cuyas ventas mediante páginas web o apps son >= 50% ventas totales
+J.1.2.G ventas mediante páginas web o apps (miles de euros)
+J.1.2.H % ventas mediante páginas web o apps sobre el total de ventas
+J.1.2.I % ventas mediante páginas web o apps sobre el total de ventas de las empresas que venden por páginas web o apps
+J.1.3.A % ventas realizadas por su propia página web o app (3)
+J.1.3.B % ventas realizadas por marketplace (3)
+J.1.4.A Distribución de ventas mediante páginas web o apps realizadas a hogares (B2C) (3)
+J.1.4.B Distribución de ventas mediante páginas web o apps realizadas a otras empresas (B2B) (3)
+J.1.4.C Distribución de ventas mediante páginas web o apps realizadas a la Administración Pública (B2G) (3)
+J.1.5.A Distribución de ventas mediante páginas web o apps por área geográfica: España(3)
+J.1.5.B Distribución de ventas mediante páginas web o apps por área geográfica: Otros países de la UE(3)(1)
+J.1.5.C Distribución de ventas mediante páginas web o apps por área geográfica: Resto de países (3)
+J.1.6 % de empresas con ventas a la UE por web o apps que tuvieron dificultades (6) (1)
+J.1.6.A % de empresas con ventas a la UE con dificultades por los elevados costes de entrega o devolución de productos(6) (1)
+J.1.6.B % de empresas con ventas a la UE con dificultades por la dificultad de resolver quejas sobre las ventas(6) (1)
+J.1.6.C % de empresas con ventas a la UE con dificultades por la adaptación del etiquetado del producto(6) (1)
+J.1.6.D % de empresas con ventas a la UE con dificultades por falta de conocimiento de lenguas extranjeras para comunicarse con clientes(6) (1)
+J.1.6.E % de empresas con ventas a la UE con dificultades por las restricciones de sus socios comerciales con la UE(6) (1)
+J.1.6.F % de empresas con ventas a la UE con dificultades relacionadas con el sistema del IVA(6) (1)
+J.1.6.G % de empresas con ventas a la UE con dificultades por problemas con la seguridad TIC(6) (1)
+J.1.7 % de empresas que han realizado ventas mediante mensajes tipo EDI
+J.1.8.A % de empresas cuyas ventas mediante mensajes tipo EDI son >= 1% ventas totales
+J.1.8.B % de empresas cuyas ventas mediante mensajes tipo EDI son >= 2% ventas totales
+J.1.8.C % de empresas cuyas ventas mediante mensajes tipo EDI son >= 5% ventas totales
+J.1.8.D % de empresas cuyas ventas mediante mensajes tipo EDI son >= 10% ventas totales
+J.1.8.E % de empresas cuyas ventas mediante mensajes tipo EDI son >= 25% ventas totales
+J.1.8.F % de empresas cuyas ventas mediante mensajes tipo EDI son >= 50% ventas totales
+J.1.8.G ventas mediante mensajes tipo EDI (miles de euros)
+J.1.8.H % ventas mediante mensajes tipo EDI sobre el total de ventas
+J.1.8.I % ventas mediante mensajes tipo EDI sobre el total de ventas de las empresas que venden por mensajes tipo EDI
+J.1.9.A Distribución de ventas mediante EDI realizadas a otras empresas (B2B) (4)
+J.1.9.B Distribución de ventas mediante EDI realizadas a la Administración Pública (B2G) (4)
+J.1.A % de empresas cuyas ventas por comercio electrónico son >= 1% ventas totales
+J.1.B % de empresas cuyas ventas por comercio electrónico son >= 2% ventas totales
+J.1.C % de empresas cuyas ventas por comercio electrónico son >= 5% ventas totales
+J.1.D % de empresas cuyas ventas por comercio electrónico son >= 10% ventas totales
+J.1.E % de empresas cuyas ventas por comercio electrónico son >= 25% ventas totales
+J.1.F % de empresas cuyas ventas por comercio electrónico son >= 50% ventas totales
+J.1.G ventas mediante comercio electrónico (miles de euros)
+J.1.H % ventas mediante comercio electrónico sobre el total de ventas
+J.1.I % ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico
+J.1.J Distribución de ventas por comercio electrónico por área geográfica: España(2)
+J.1.K Distribución de ventas por comercio electrónico por área geográfica: Otros países de la UE(2)(1)
+J.1.L Distribución de ventas por comercio electrónico por área geográfica: Resto de países (2)
+K.1 % de empresas que han realizado ventas por comercio electrónico
+K.1.1 % de empresas que han realizado ventas mediante páginas web o apps
+K.1.1.A % de empresas que recibieron pedidos/reservas por su propia página web o app (5)
+K.1.1.B % de empresas que reciberon pedidos/reservas por una plataforma digital (marketplace) (5)
+K.1.10.A % de empresas cuyas ventas mediante mensajes tipo EDI son >= 1% ventas totales
+K.1.10.A Distribución de ventas mediante EDI realizadas a otras empresas (B2B) (4)
+K.1.10.A Distribución de ventas mediante mensajes tipo EDI por área geográfica: España(5)
+K.1.10.B % de empresas cuyas ventas mediante mensajes tipo EDI son >= 2% ventas totales
+K.1.10.B Distribución de ventas mediante EDI realizadas a la Administración Pública (B2G) (4)
+K.1.10.B Distribución de ventas mediante mensajes tipo EDI por área geográfica: Otros países de la UE(5)(6)
+K.1.10.C % de empresas cuyas ventas mediante mensajes tipo EDI son >= 5% ventas totales
+K.1.10.C Distribución de ventas mediante mensajes tipo EDI por área geográfica: Resto de países (5)
+K.1.10.D % de empresas cuyas ventas mediante mensajes tipo EDI son >= 10% ventas totales
+K.1.10.E % de empresas cuyas ventas mediante mensajes tipo EDI son >= 25% ventas totales
+K.1.10.F % de empresas cuyas ventas mediante mensajes tipo EDI son >= 50% ventas totales
+K.1.10.G ventas mediante mensajes tipo EDI (miles de euros)
+K.1.10.H % ventas mediante mensajes tipo EDI sobre el total de ventas
+K.1.10.I % ventas mediante mensajes tipo EDI sobre el total de ventas de las empresas que venden por mensajes tipo EDI
+K.1.11.A Distribución de ventas mediante EDI realizadas a otras empresas (B2B) (4)
+K.1.11.A Distribución de ventas mediante mensajes tipo EDI por área geográfica: España(4)
+K.1.11.B Distribución de ventas mediante EDI realizadas a la Administración Pública (B2G) (4)
+K.1.11.B Distribución de ventas mediante mensajes tipo EDI por área geográfica: Otros países de la UE(4)(1)
+K.1.11.C Distribución de ventas mediante mensajes tipo EDI por área geográfica: Resto de países (4)
+K.1.12.A Distribución de ventas mediante mensajes tipo EDI por área geográfica: España(4)
+K.1.12.B Distribución de ventas mediante mensajes tipo EDI por área geográfica: Otros países de la UE(4)(1)
+K.1.12.C Distribución de ventas mediante mensajes tipo EDI por área geográfica: Resto de países (4)
+K.1.2.A % de empresas cuyas ventas mediante páginas web o apps son >= 1% ventas totales
+K.1.2.B % de empresas cuyas ventas mediante páginas web o apps son >= 2% ventas totales
+K.1.2.C % de empresas cuyas ventas mediante páginas web o apps son >= 5% ventas totales
+K.1.2.D % de empresas cuyas ventas mediante páginas web o apps son >= 10% ventas totales
+K.1.2.E % de empresas cuyas ventas mediante páginas web o apps son >= 25% ventas totales
+K.1.2.F % de empresas cuyas ventas mediante páginas web o apps son >= 50% ventas totales
+K.1.2.G ventas mediante páginas web o apps (miles de euros)
+K.1.2.H % ventas mediante páginas web o apps sobre el total de ventas
+K.1.2.I % ventas mediante páginas web o apps sobre el total de ventas de las empresas que venden por páginas web o apps
+K.1.3.A % ventas realizadas por su propia página web o app (3)
+K.1.3.A Distribución de ventas mediante páginas web o apps realizadas a hogares (B2C) (3)
+K.1.3.A Distribución de ventas mediante páginas web o apps realizadas a hogares (B2C) (4)
+K.1.3.B % ventas realizadas por marketplace (3)
+K.1.3.B Distribución de ventas mediante páginas web o apps realizadas a otras empresas (B2B) (3)
+K.1.3.B Distribución de ventas mediante páginas web o apps realizadas a otras empresas (B2B) (4)
+K.1.3.C Distribución de ventas mediante páginas web o apps realizadas a la Administración Pública (B2G) (3)
+K.1.3.C Distribución de ventas mediante páginas web o apps realizadas a la Administración Pública (B2G) (4)
+K.1.4.A % de empresas que recibieron pedidos/reservas por su página web o app (5)
+K.1.4.A % de empresas que vendieron a través de una única plataforma digital (6)
+K.1.4.A Distribución de ventas mediante páginas web o apps por área geográfica: España(4)
+K.1.4.B % de empresas que reciberon pedidos/reservas por un Marketplace (5)
+K.1.4.B % de empresas que vendieron a través de dos plataformas digitales (6)
+K.1.4.B Distribución de ventas mediante páginas web o apps por área geográfica: Otros países de la UE(4)(6)
+K.1.4.C % de empresas que vendieron a través de tres o más plataformas digitales (6)
+K.1.4.C Distribución de ventas mediante páginas web o apps por área geográfica: Resto de países (4)
+K.1.5 % de empresas con ventas en plataformas digitales y la mayoría de las ventas provienen de una sola plataforma digital(7)
+K.1.5.A % de empresas que aceptaron pagos online en las ventas realizadas mediante web o apps (7)
+K.1.5.A % ventas realizadas por su propia página web o app (3)
+K.1.5.B % de empresas que aceptaron pagos offline en las ventas realizadas mediante web o apps (7)
+K.1.5.B % ventas realizadas por Marketplace (3)
+K.1.6 % de empresas con/sin ventas por web o apps que tuvieron limitaciones
+K.1.6.A Distribución de ventas mediante páginas web o apps por área geográfica: España(3)
+K.1.6.A Distribución de ventas mediante páginas web o apps realizadas a hogares (B2C) (3)
+K.1.6.A.1 % de empresas con ventas por web o apps con límites porque los bienes o servicios no son adecuados
+K.1.6.A.2 % de empresas sin ventas por web o apps porque los bienes o servicios no son adecuados
+K.1.6.B Distribución de ventas mediante páginas web o apps por área geográfica: Otros países de la UE(3)(1)
+K.1.6.B Distribución de ventas mediante páginas web o apps realizadas a otras empresas (B2B) (3)
+K.1.6.B.1 % de empresas con ventas por web o apps con límites por tener problemas con la logística
+K.1.6.B.2 % de empresas sin ventas por web o apps por tener problemas con la logística
+K.1.6.C Distribución de ventas mediante páginas web o apps por área geográfica: Resto de países (3)
+K.1.6.C Distribución de ventas mediante páginas web o apps realizadas a la Administración Pública (B2G) (3)
+K.1.6.C.1 % de empresas con ventas por web o apps con límites por problemas con los pagos
+K.1.6.C.2 % de empresas sin ventas por web o apps por problemas con los pagos
+K.1.6.D.1 % de empresas con ventas por web o apps con límites por problemas con la seguridad TIC
+K.1.6.D.2 % de empresas sin ventas por web o apps por problemas con la seguridad TIC
+K.1.6.E.1 % de empresas con ventas por web o apps con límites por problemas con el marco legal
+K.1.6.E.2 % de empresas sin ventas por web o apps por problemas con el marco legal
+K.1.6.F.1 % de empresas con ventas por web o apps con límites por problemas de coste
+K.1.6.F.2 % de empresas sin ventas por web o apps por problemas de coste
+K.1.7 % de empresas con ventas a la UE por web o apps que tuvieron dificultades (6) (1)
+K.1.7 % de empresas que han realizado ventas mediante mensajes tipo EDI
+K.1.7.A % de empresas con ventas a la UE con dificultades por los elevados costes de entrega o devolución de productos(6) (1)
+K.1.7.A Distribución de ventas mediante páginas web o apps por área geográfica: España(3)
+K.1.7.B % de empresas con ventas a la UE con dificultades por la dificultad de resolver quejas sobre las ventas(6) (1)
+K.1.7.B Distribución de ventas mediante páginas web o apps por área geográfica: Otros países de la UE(3)(1)
+K.1.7.C % de empresas con ventas a la UE con dificultades por la adaptación del etiquetado del producto(6) (1)
+K.1.7.C Distribución de ventas mediante páginas web o apps por área geográfica: Resto de países (3)
+K.1.7.D % de empresas con ventas a la UE con dificultades por falta de conocimiento de lenguas extranjeras para comunicarse con clientes(6) (1)
+K.1.7.E % de empresas con ventas a la UE con dificultades por las restricciones de sus socios comerciales con la UE(6) (1)
+K.1.7.F % de empresas con ventas a la UE con dificultades por problemas con la seguridad TIC(6) (1)
+K.1.8 % de empresas con ventas a la UE por web o apps que tuvieron dificultades (8) (1)
+K.1.8 % de empresas que han realizado ventas mediante mensajes tipo EDI
+K.1.8. % de empresas con ventas mediante web o apps que tuvieron dificultades relacionadas con la seguridad TIC o protección de datos (5)
+K.1.8.A % de empresas con ventas a la UE con dificultades por los elevados costes de entrega o devolución de productos(8) (1)
+K.1.8.A % de empresas cuyas ventas mediante mensajes tipo EDI son >= 1% ventas totales
+K.1.8.B % de empresas con ventas a la UE con dificultades por la dificultad de resolver quejas sobre las ventas(8) (1)
+K.1.8.B % de empresas cuyas ventas mediante mensajes tipo EDI son >= 2% ventas totales
+K.1.8.C % de empresas con ventas a la UE con dificultades por la adaptación del etiquetado del producto(8) (1)
+K.1.8.C % de empresas cuyas ventas mediante mensajes tipo EDI son >= 5% ventas totales
+K.1.8.D % de empresas con ventas a la UE con dificultades por falta de conocimiento de lenguas extranjeras para comunicarse con clientes(8) (1)
+K.1.8.D % de empresas cuyas ventas mediante mensajes tipo EDI son >= 10% ventas totales
+K.1.8.E % de empresas con ventas a la UE con dificultades por las restricciones de sus socios comerciales con la UE(8) (1)
+K.1.8.E % de empresas cuyas ventas mediante mensajes tipo EDI son >= 25% ventas totales
+K.1.8.F % de empresas con ventas a la UE con dificultades relacionadas con el sistema del IVA(8) (1)
+K.1.8.F % de empresas cuyas ventas mediante mensajes tipo EDI son >= 50% ventas totales
+K.1.8.G % de empresas con ventas a la UE con dificultades por problemas con la seguridad TIC(8) (1)
+K.1.8.G ventas mediante mensajes tipo EDI (miles de euros)
+K.1.8.H % ventas mediante mensajes tipo EDI sobre el total de ventas
+K.1.8.I % ventas mediante mensajes tipo EDI sobre el total de ventas de las empresas que venden por mensajes tipo EDI
+K.1.9 % de empresas que han realizado ventas mediante mensajes tipo EDI
+K.1.9.A % de empresas cuyas ventas mediante mensajes tipo EDI son >= 1% ventas totales
+K.1.9.A Distribución de ventas mediante EDI realizadas a otras empresas (B2B) (5)
+K.1.9.B % de empresas cuyas ventas mediante mensajes tipo EDI son >= 2% ventas totales
+K.1.9.B Distribución de ventas mediante EDI realizadas a la Administración Pública (B2G) (5)
+K.1.9.C % de empresas cuyas ventas mediante mensajes tipo EDI son >= 5% ventas totales
+K.1.9.D % de empresas cuyas ventas mediante mensajes tipo EDI son >= 10% ventas totales
+K.1.9.E % de empresas cuyas ventas mediante mensajes tipo EDI son >= 25% ventas totales
+K.1.9.F % de empresas cuyas ventas mediante mensajes tipo EDI son >= 50% ventas totales
+K.1.9.G ventas mediante mensajes tipo EDI (miles de euros)
+K.1.9.H % ventas mediante mensajes tipo EDI sobre el total de ventas
+K.1.9.I % ventas mediante mensajes tipo EDI sobre el total de ventas de las empresas que venden por mensajes tipo EDI
+K.1.A % de empresas cuyas ventas por comercio electrónico son >= 1% ventas totales
+K.1.B % de empresas cuyas ventas por comercio electrónico son >= 2% ventas totales
+K.1.C % de empresas cuyas ventas por comercio electrónico son >= 5% ventas totales
+K.1.D % de empresas cuyas ventas por comercio electrónico son >= 10% ventas totales
+K.1.E % de empresas cuyas ventas por comercio electrónico son >= 25% ventas totales
+K.1.F % de empresas cuyas ventas por comercio electrónico son >= 50% ventas totales
+K.1.G ventas mediante comercio electrónico (miles de euros)
+K.1.H % ventas mediante comercio electrónico sobre el total de ventas
+K.1.I % ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico
+K.1.J Distribución de ventas por comercio electrónico por área geográfica: España(2)
+K.1.K Distribución de ventas por comercio electrónico por área geográfica: Otros países de la UE(2)(1)
+K.1.L Distribución de ventas por comercio electrónico por área geográfica: Resto de países (2)
+K.2 % de empresas que han realizado compras por comercio electrónico
+K.2.1 % de empresas que han realizado compras mediante páginas web o apps
+K.2.2.A % de empresas cuyas compras mediante páginas web o apps son >= 1% compras totales
+K.2.2.B % de empresas cuyas compras mediante páginas web o apps son >= 2% compras totales
+K.2.2.C % de empresas cuyas compras mediante páginas web o apps son >= 5% compras totales
+K.2.2.D % de empresas cuyas compras mediante páginas web o apps son >= 10% compras totales
+K.2.2.E % de empresas cuyas compras mediante páginas web o apps son >= 25% compras totales
+K.2.2.F % de empresas cuyas compras mediante páginas web o apps son >= 50% compras totales
+K.2.2.G Compras mediante páginas web o apps (miles de euros)
+K.2.2.H % compras mediante páginas web o apps sobre el total de compras
+K.2.2.I % compras mediante páginas web o apps sobre el total de compras de las empresas que compran por páginas web o apps
+K.2.3.A Distribución de compras mediante páginas web o apps por área geográfica: España(2)
+K.2.3.B Distribución de compras mediante páginas web o apps por área geográfica: Otros países de la UE(2)(6)
+K.2.3.C Distribución de compras mediante páginas web o apps por área geográfica: Resto de países (2)
+K.2.4 % de empresas que han realizado compras mediante mensajes tipo EDI
+K.2.5.A % de empresas cuyas compras mediante mensajes tipo EDI son >= 1% compras totales
+K.2.5.B % de empresas cuyas compras mediante mensajes tipo EDI son >= 2% compras totales
+K.2.5.C % de empresas cuyas compras mediante mensajes tipo EDI son >= 5% compras totales
+K.2.5.D % de empresas cuyas compras mediante mensajes tipo EDI son >= 10% compras totales
+K.2.5.E % de empresas cuyas compras mediante mensajes tipo EDI son >= 25% compras totales
+K.2.5.F % de empresas cuyas compras mediante mensajes tipo EDI son >= 50% compras totales
+K.2.5.G Compras mediante mensajes tipo EDI (miles de euros)
+K.2.5.H % compras mediante mensajes tipo EDI sobre el total de compras
+K.2.5.I % compras mediante mensajes tipo EDI sobre el total de compras de las empresas que compran por mensajes tipo EDI
+K.2.6.A Distribución de compras mediante mensajes tipo EDI por área geográfica: España(3)
+K.2.6.B Distribución de compras mediante mensajes tipo EDI por área geográfica: Otros países de la UE(3)(6)
+K.2.6.C Distribución de compras mediante mensajes tipo EDI por área geográfica: Resto de países (3)
+K.2.A % de empresas cuyas compras por comercio electrónico son >= 1% compras totales
+K.2.B % de empresas cuyas compras por comercio electrónico son >= 2% compras totales
+K.2.C % de empresas cuyas compras por comercio electrónico son >= 5% compras totales
+K.2.D % de empresas cuyas compras por comercio electrónico son >= 10% compras totales
+K.2.E % de empresas cuyas compras por comercio electrónico son >= 25% compras totales
+K.2.F % de empresas cuyas compras por comercio electrónico son >= 50% compras totales
+K.2.G Compras mediante comercio electrónico (miles de euros)
+K.2.H % compras mediante comercio electrónico sobre el total de compras
+K.2.I % compras mediante comercio electrónico sobre el total de compras de las empresas que compran por comercio electrónico
+K.2.J Distribución de compras por comercio electrónico por área geográfica: España(1)
+K.2.K Distribución de compras por comercio electrónico por área geográfica: Otros países de la UE(1)(6)
+K.2.L Distribución de compras por comercio electrónico por área geográfica: Resto de países (1)
+L.1 % de empresas que han realizado ventas por comercio electrónico
+L.1.1 % de empresas que han realizado ventas mediante páginas web o apps
+L.1.10.A Distribución de ventas mediante EDI realizadas a otras empresas (B2B) (4)
+L.1.10.B Distribución de ventas mediante EDI realizadas a la Administración Pública (B2G) (4)
+L.1.11.A Distribución de ventas mediante mensajes tipo EDI por área geográfica: España(4)
+L.1.11.B Distribución de ventas mediante mensajes tipo EDI por área geográfica: Otros países de la UE(4)(1)
+L.1.11.C Distribución de ventas mediante mensajes tipo EDI por área geográfica: Resto de países (4)
+L.1.2.A % de empresas cuyas ventas mediante páginas web o apps son >= 1% ventas totales
+L.1.2.B % de empresas cuyas ventas mediante páginas web o apps son >= 2% ventas totales
+L.1.2.C % de empresas cuyas ventas mediante páginas web o apps son >= 5% ventas totales
+L.1.2.D % de empresas cuyas ventas mediante páginas web o apps son >= 10% ventas totales
+L.1.2.E % de empresas cuyas ventas mediante páginas web o apps son >= 25% ventas totales
+L.1.2.F % de empresas cuyas ventas mediante páginas web o apps son >= 50% ventas totales
+L.1.2.G ventas mediante páginas web o apps (miles de euros)
+L.1.2.H % ventas mediante páginas web o apps sobre el total de ventas
+L.1.2.I % ventas mediante páginas web o apps sobre el total de ventas de las empresas que venden por páginas web o apps
+L.1.3.A Distribución de ventas mediante páginas web o apps realizadas a hogares (B2C) (3)
+L.1.3.B Distribución de ventas mediante páginas web o apps realizadas a otras empresas (B2B) (3)
+L.1.3.C Distribución de ventas mediante páginas web o apps realizadas a la Administración Pública (B2G) (3)
+L.1.4.A % de empresas que recibieron pedidos/reservas por su página web o app (5)
+L.1.4.B % de empresas que reciberon pedidos/reservas por un marketplace (5)
+L.1.5.A % ventas realizadas por su propia página web o app (3)
+L.1.5.B % ventas realizadas por marketplace (3)
+L.1.6.A Distribución de ventas mediante páginas web o apps por área geográfica: España(3)
+L.1.6.B Distribución de ventas mediante páginas web o apps por área geográfica: Otros países de la UE(3)(1)
+L.1.6.C Distribución de ventas mediante páginas web o apps por área geográfica: Resto de países (3)
+L.1.7 % de empresas con ventas a la UE por web o apps que tuvieron limitaciones (6) (1)
+L.1.8 % de empresas que han realizado ventas mediante mensajes tipo EDI
+L.1.9.A % de empresas cuyas ventas mediante mensajes tipo EDI son >= 1% ventas totales
+L.1.9.B % de empresas cuyas ventas mediante mensajes tipo EDI son >= 2% ventas totales
+L.1.9.C % de empresas cuyas ventas mediante mensajes tipo EDI son >= 5% ventas totales
+L.1.9.D % de empresas cuyas ventas mediante mensajes tipo EDI son >= 10% ventas totales
+L.1.9.E % de empresas cuyas ventas mediante mensajes tipo EDI son >= 25% ventas totales
+L.1.9.F % de empresas cuyas ventas mediante mensajes tipo EDI son >= 50% ventas totales
+L.1.9.G ventas mediante mensajes tipo EDI (miles de euros)
+L.1.9.H % ventas mediante mensajes tipo EDI sobre el total de ventas
+L.1.9.I % ventas mediante mensajes tipo EDI sobre el total de ventas de las empresas que venden por mensajes tipo EDI
+L.1.A % de empresas cuyas ventas por comercio electrónico son >= 1% ventas totales
+L.1.B % de empresas cuyas ventas por comercio electrónico son >= 2% ventas totales
+L.1.C % de empresas cuyas ventas por comercio electrónico son >= 5% ventas totales
+L.1.D % de empresas cuyas ventas por comercio electrónico son >= 10% ventas totales
+L.1.E % de empresas cuyas ventas por comercio electrónico son >= 25% ventas totales
+L.1.F % de empresas cuyas ventas por comercio electrónico son >= 50% ventas totales
+L.1.G ventas mediante comercio electrónico (miles de euros)
+L.1.H % ventas mediante comercio electrónico sobre el total de ventas
+L.1.I % ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico
+L.1.J Distribución de ventas por comercio electrónico por área geográfica: España(2)
+L.1.K Distribución de ventas por comercio electrónico por área geográfica: Otros países de la UE(2)(1)
+L.1.L Distribución de ventas por comercio electrónico por área geográfica: Resto de países (2)
+M.1 % de empresas que han realizado ventas por comercio electrónico
+M.1.1 % de empresas que han realizado ventas mediante páginas web o apps
+M.1.10.A Distribución de ventas mediante EDI realizadas a otras empresas (B2B) (4)
+M.1.10.B Distribución de ventas mediante EDI realizadas a la Administración Pública (B2G) (4)
+M.1.11.A Distribución de ventas mediante mensajes tipo EDI por área geográfica: España(4)
+M.1.11.B Distribución de ventas mediante mensajes tipo EDI por área geográfica: Otros países de la UE(4)(1)
+M.1.11.C Distribución de ventas mediante mensajes tipo EDI por área geográfica: Resto de países (4)
+M.1.2.A % de empresas cuyas ventas mediante páginas web o apps son >= 1% ventas totales
+M.1.2.B % de empresas cuyas ventas mediante páginas web o apps son >= 2% ventas totales
+M.1.2.C % de empresas cuyas ventas mediante páginas web o apps son >= 5% ventas totales
+M.1.2.D % de empresas cuyas ventas mediante páginas web o apps son >= 10% ventas totales
+M.1.2.E % de empresas cuyas ventas mediante páginas web o apps son >= 25% ventas totales
+M.1.2.F % de empresas cuyas ventas mediante páginas web o apps son >= 50% ventas totales
+M.1.2.G ventas mediante páginas web o apps (miles de euros)
+M.1.2.H % ventas mediante páginas web o apps sobre el total de ventas
+M.1.2.I % ventas mediante páginas web o apps sobre el total de ventas de las empresas que venden por páginas web o apps
+M.1.3.A Distribución de ventas mediante páginas web o apps realizadas a hogares (B2C) (3)
+M.1.3.B Distribución de ventas mediante páginas web o apps realizadas a otras empresas (B2B) (3)
+M.1.3.C Distribución de ventas mediante páginas web o apps realizadas a la Administración Pública (B2G) (3)
+M.1.4.A % de empresas que recibieron pedidos/reservas por su página web o app (5)
+M.1.4.B % de empresas que reciberon pedidos/reservas por un marketplace (5)
+M.1.5.A % ventas realizadas por su propia página web o app (3)
+M.1.5.B % ventas realizadas por marketplace (3)
+M.1.6.A Distribución de ventas mediante páginas web o apps por área geográfica: España(3)
+M.1.6.B Distribución de ventas mediante páginas web o apps por área geográfica: Otros países de la UE(3)(1)
+M.1.6.C Distribución de ventas mediante páginas web o apps por área geográfica: Resto de países (3)
+M.1.7 % de empresas con ventas a la UE por web o apps que tuvieron limitaciones (6) (1)
+M.1.7.A % de empresas con ventas a la UE con limitaciones por los elevados costes de entrega o devolución de productos(6) (1)
+M.1.7.B % de empresas con ventas a la UE con limitaciones por la dificultad de resolver quejas sobre las ventas(6) (1)
+M.1.7.C % de empresas con ventas a la UE con limitaciones por la adaptación del etiquetado del producto(6) (1)
+M.1.7.D % de empresas con ventas a la UE con limitaciones por falta de conocimiento de lenguas extranjeras para comunicarse con clientes(6) (1)
+M.1.7.E % de empresas con ventas a la UE con limitaciones por las restricciones de sus socios comerciales con la UE(6) (1)
+M.1.7.F % de empresas con ventas a la UE con limitaciones por problemas con la seguridad TIC(6) (1)
+M.1.8 % de empresas que han realizado ventas mediante mensajes tipo EDI
+M.1.9.A % de empresas cuyas ventas mediante mensajes tipo EDI son >= 1% ventas totales
+M.1.9.B % de empresas cuyas ventas mediante mensajes tipo EDI son >= 2% ventas totales
+M.1.9.C % de empresas cuyas ventas mediante mensajes tipo EDI son >= 5% ventas totales
+M.1.9.D % de empresas cuyas ventas mediante mensajes tipo EDI son >= 10% ventas totales
+M.1.9.E % de empresas cuyas ventas mediante mensajes tipo EDI son >= 25% ventas totales
+M.1.9.F % de empresas cuyas ventas mediante mensajes tipo EDI son >= 50% ventas totales
+M.1.9.G ventas mediante mensajes tipo EDI (miles de euros)
+M.1.9.H % ventas mediante mensajes tipo EDI sobre el total de ventas
+M.1.9.I % ventas mediante mensajes tipo EDI sobre el total de ventas de las empresas que venden por mensajes tipo EDI
+M.1.A % de empresas cuyas ventas por comercio electrónico son >= 1% ventas totales
+M.1.B % de empresas cuyas ventas por comercio electrónico son >= 2% ventas totales
+M.1.C % de empresas cuyas ventas por comercio electrónico son >= 5% ventas totales
+M.1.D % de empresas cuyas ventas por comercio electrónico son >= 10% ventas totales
+M.1.E % de empresas cuyas ventas por comercio electrónico son >= 25% ventas totales
+M.1.F % de empresas cuyas ventas por comercio electrónico son >= 50% ventas totales
+M.1.G ventas mediante comercio electrónico (miles de euros)
+M.1.H % ventas mediante comercio electrónico sobre el total de ventas
+M.1.I % ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico
+M.1.J Distribución de ventas por comercio electrónico por área geográfica: España(2)
+M.1.K Distribución de ventas por comercio electrónico por área geográfica: Otros países de la UE(2)(1)
+M.1.L Distribución de ventas por comercio electrónico por área geográfica: Resto de países (2)

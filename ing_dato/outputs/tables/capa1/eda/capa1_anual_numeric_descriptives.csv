@@ -1,0 +1,8 @@
+variable,count,mean,median,std,min,p25,p75,max
+pct_usuarios_rrss,4,78.675,82.8,11.5289,62.0,75.5,85.975,87.1
+pct_personas_compra_online,4,66.51,67.27,2.7522,62.62,65.6275,68.1525,68.88
+pct_facturacion_empresas_online,4,19.325,19.245,0.3923,18.95,19.0925,19.4775,19.86
+pct_empresas_venden_ecommerce,4,30.2025,31.13,2.2751,26.86,29.7175,31.615,31.69
+pct_empresas_venden_web_apps,4,26.3475,27.345,2.0942,23.21,26.24,27.4525,27.49
+pct_ventas_ecommerce_sobre_total,4,19.52,19.53,0.3628,19.07,19.37,19.68,19.95
+pct_ventas_ecommerce_sobre_total_empresas_que_venden,4,32.46,30.825,3.5975,30.35,30.5525,32.7325,37.84

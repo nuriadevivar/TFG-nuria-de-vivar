@@ -1,0 +1,8 @@
+indice,n_items,items,n_respondentes,alpha_cronbach,correlacion_media_items,interpretacion,decision
+indice_influencia_rrss,5,"rs_influyen_compra, ha_comprado_por_ver_en_rrss, descubre_marcas_por_rrss, contenido_moda_aumenta_ganas, rrss_mas_que_publicidad",318,0.927,0.7194,excelente (posible redundancia entre items),agrupacion_aceptada
+indice_impulso_tendencia,5,"compra_por_repeticion_rrss, atraen_prendas_de_moda, compra_impulso, influye_prueba_social, interes_productos_virales",318,0.8632,0.5583,muy_bueno,agrupacion_aceptada
+indice_confianza_influencers,2,"confia_influencers, autenticidad_influencer_compra",318,0.7686,0.6356,bueno,agrupacion_aceptada
+indice_escepticismo_influencers,1,influencers_interes_comercial,318,,,"N/A — indice de 1 item, alpha no aplicable",agrupacion_aceptada
+indice_difusion_fastfashion,2,"rrss_aceleran_tendencias, rrss_favorecen_consumo_rapido",318,0.8333,0.7143,muy_bueno,agrupacion_aceptada
+indice_postcompra,3,"satisfaccion_compra_rrss, seguira_comprando_influido_rrss, recomendaria_productos_descubiertos_rrss",318,0.867,0.6852,muy_bueno,agrupacion_aceptada
+indice_riesgo_arrepentimiento,2,"ha_comprado_y_apenas_usado, arrepentimiento_compra_rrss",318,0.672,0.5061,aceptable,agrupacion_aceptada

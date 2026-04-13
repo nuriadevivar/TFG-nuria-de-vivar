@@ -1,0 +1,2 @@
+variable,n_nulos,pct_nulos,decision,comentario
+freq_compra_por_rrss_6m,141,44.34,esperado — solo aplica a quien respondio Si en compra_ult_6m_por_rrss,Pregunta condicional: NaN valido para quienes respondieron No.

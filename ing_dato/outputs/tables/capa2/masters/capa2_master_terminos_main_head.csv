@@ -1,0 +1,16 @@
+fecha,termino,valor_trends,anio,mes_num,grupo,valor_cero_trends,subgrupo,tipo_termino,familia_analitica,prioridad_analitica,decision_uso
+2015-01-01,comprar ropa online,91.25,2015,1,consciente_compra,False,canal_compra_online,comportamiento,consumo_online,principal,usar_en_analisis_principal
+2015-02-01,comprar ropa online,79.75,2015,2,consciente_compra,False,canal_compra_online,comportamiento,consumo_online,principal,usar_en_analisis_principal
+2015-03-01,comprar ropa online,77.4,2015,3,consciente_compra,False,canal_compra_online,comportamiento,consumo_online,principal,usar_en_analisis_principal
+2015-04-01,comprar ropa online,74.25,2015,4,consciente_compra,False,canal_compra_online,comportamiento,consumo_online,principal,usar_en_analisis_principal
+2015-05-01,comprar ropa online,64.4,2015,5,consciente_compra,False,canal_compra_online,comportamiento,consumo_online,principal,usar_en_analisis_principal
+2015-06-01,comprar ropa online,54.75,2015,6,consciente_compra,False,canal_compra_online,comportamiento,consumo_online,principal,usar_en_analisis_principal
+2015-07-01,comprar ropa online,55.0,2015,7,consciente_compra,False,canal_compra_online,comportamiento,consumo_online,principal,usar_en_analisis_principal
+2015-08-01,comprar ropa online,60.4,2015,8,consciente_compra,False,canal_compra_online,comportamiento,consumo_online,principal,usar_en_analisis_principal
+2015-09-01,comprar ropa online,74.0,2015,9,consciente_compra,False,canal_compra_online,comportamiento,consumo_online,principal,usar_en_analisis_principal
+2015-10-01,comprar ropa online,80.5,2015,10,consciente_compra,False,canal_compra_online,comportamiento,consumo_online,principal,usar_en_analisis_principal
+2015-11-01,comprar ropa online,74.6,2015,11,consciente_compra,False,canal_compra_online,comportamiento,consumo_online,principal,usar_en_analisis_principal
+2015-12-01,comprar ropa online,70.0,2015,12,consciente_compra,False,canal_compra_online,comportamiento,consumo_online,principal,usar_en_analisis_principal
+2016-01-01,comprar ropa online,85.2,2016,1,consciente_compra,False,canal_compra_online,comportamiento,consumo_online,principal,usar_en_analisis_principal
+2016-02-01,comprar ropa online,77.25,2016,2,consciente_compra,False,canal_compra_online,comportamiento,consumo_online,principal,usar_en_analisis_principal
+2016-03-01,comprar ropa online,70.5,2016,3,consciente_compra,False,canal_compra_online,comportamiento,consumo_online,principal,usar_en_analisis_principal

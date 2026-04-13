@@ -1,0 +1,21 @@
+_fase,mes,termino,valor,grupo,fecha,valor_trends,anio,mes_num,valor_cero_trends
+ANTES,2014-12-31,comprar ropa online,97.0,consciente_compra,,,,,
+ANTES,2014-12-31,moda sostenible,0.0,consciente_compra,,,,,
+ANTES,2014-12-31,ropa vintage,48.0,consciente_compra,,,,,
+ANTES,2014-12-31,slow fashion,,consciente_compra,,,,,
+ANTES,2014-12-31,zara online,39.0,consciente_compra,,,,,
+ANTES,2014-12-31,cayetana,,sofisticado,,,,,
+ANTES,2014-12-31,minimalista elegante,,sofisticado,,,,,
+ANTES,2014-12-31,moda preppy,,sofisticado,,,,,
+ANTES,2014-12-31,old money,0.0,sofisticado,,,,,
+ANTES,2014-12-31,pija,,sofisticado,,,,,
+DESPUÉS,,comprar ropa online,,consciente_compra,2014-12-01,97.0,2014.0,12.0,False
+DESPUÉS,,moda sostenible,,consciente_compra,2014-12-01,0.0,2014.0,12.0,True
+DESPUÉS,,ropa vintage,,consciente_compra,2014-12-01,48.0,2014.0,12.0,False
+DESPUÉS,,slow fashion,,consciente_compra,2014-12-01,,2014.0,12.0,False
+DESPUÉS,,zara online,,consciente_compra,2014-12-01,39.0,2014.0,12.0,False
+DESPUÉS,,cayetana,,sofisticado,2014-12-01,,2014.0,12.0,False
+DESPUÉS,,minimalista elegante,,sofisticado,2014-12-01,,2014.0,12.0,False
+DESPUÉS,,moda preppy,,sofisticado,2014-12-01,,2014.0,12.0,False
+DESPUÉS,,old money,,sofisticado,2014-12-01,0.0,2014.0,12.0,True
+DESPUÉS,,pija,,sofisticado,2014-12-01,,2014.0,12.0,False

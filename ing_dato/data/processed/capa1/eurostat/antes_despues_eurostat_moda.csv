@@ -1,0 +1,358 @@
+_fase,fecha,valor_raw,flag,tipo,valor_indice,fuente,indicador,provisional
+ANTES,2010-01,119.7,p,provisional,,,,
+ANTES,2010-02,117.8,p,provisional,,,,
+ANTES,2010-03,120.8,p,provisional,,,,
+ANTES,2010-04,119.9,p,provisional,,,,
+ANTES,2010-05,115.8,p,provisional,,,,
+ANTES,2010-06,116.3,p,provisional,,,,
+ANTES,2010-07,116.1,p,provisional,,,,
+ANTES,2010-08,115.3,p,provisional,,,,
+ANTES,2010-09,117.1,p,provisional,,,,
+ANTES,2010-10,119.9,p,provisional,,,,
+ANTES,2010-11,116.3,p,provisional,,,,
+ANTES,2010-12,114.1,p,provisional,,,,
+ANTES,2011-01,112.5,p,provisional,,,,
+ANTES,2011-02,114.8,p,provisional,,,,
+ANTES,2011-03,109,p,provisional,,,,
+ANTES,2011-04,127.3,p,provisional,,,,
+ANTES,2011-05,110.5,p,provisional,,,,
+ANTES,2011-06,110.2,p,provisional,,,,
+ANTES,2011-07,111.1,p,provisional,,,,
+ANTES,2011-08,108.8,p,provisional,,,,
+ANTES,2011-09,104.5,p,provisional,,,,
+ANTES,2011-10,104.8,p,provisional,,,,
+ANTES,2011-11,104.7,p,provisional,,,,
+ANTES,2011-12,105.6,p,provisional,,,,
+ANTES,2012-01,106.6,p,provisional,,,,
+ANTES,2012-02,103.2,p,provisional,,,,
+ANTES,2012-03,106.9,p,provisional,,,,
+ANTES,2012-04,100.3,p,provisional,,,,
+ANTES,2012-05,104.2,p,provisional,,,,
+ANTES,2012-06,101.4,p,provisional,,,,
+ANTES,2012-07,100.6,p,provisional,,,,
+ANTES,2012-08,99.9,p,provisional,,,,
+ANTES,2012-09,95.2,p,provisional,,,,
+ANTES,2012-10,95.9,p,provisional,,,,
+ANTES,2012-11,92.5,p,provisional,,,,
+ANTES,2012-12,93.5,p,provisional,,,,
+ANTES,2013-01,93.4,p,provisional,,,,
+ANTES,2013-02,92.9,p,provisional,,,,
+ANTES,2013-03,91.8,p,provisional,,,,
+ANTES,2013-04,92.5,p,provisional,,,,
+ANTES,2013-05,91.1,p,provisional,,,,
+ANTES,2013-06,94.4,p,provisional,,,,
+ANTES,2013-07,94.2,p,provisional,,,,
+ANTES,2013-08,96.1,p,provisional,,,,
+ANTES,2013-09,94.4,p,provisional,,,,
+ANTES,2013-10,92.9,p,provisional,,,,
+ANTES,2013-11,96.7,p,provisional,,,,
+ANTES,2013-12,93.9,p,provisional,,,,
+ANTES,2014-01,94.7,p,provisional,,,,
+ANTES,2014-02,96.6,p,provisional,,,,
+ANTES,2014-03,95,p,provisional,,,,
+ANTES,2014-04,98.7,p,provisional,,,,
+ANTES,2014-05,96.7,p,provisional,,,,
+ANTES,2014-06,96.2,p,provisional,,,,
+ANTES,2014-07,95,p,provisional,,,,
+ANTES,2014-08,97.3,p,provisional,,,,
+ANTES,2014-09,95.8,p,provisional,,,,
+ANTES,2014-10,94,p,provisional,,,,
+ANTES,2014-11,97.3,p,provisional,,,,
+ANTES,2014-12,99.1,p,provisional,,,,
+ANTES,2015-01,98.6,p,provisional,,,,
+ANTES,2015-02,98.2,p,provisional,,,,
+ANTES,2015-03,99.6,p,provisional,,,,
+ANTES,2015-04,98.3,p,provisional,,,,
+ANTES,2015-05,101.8,p,provisional,,,,
+ANTES,2015-06,97.9,p,provisional,,,,
+ANTES,2015-07,99.9,p,provisional,,,,
+ANTES,2015-08,99.9,p,provisional,,,,
+ANTES,2015-09,102.2,p,provisional,,,,
+ANTES,2015-10,103.2,p,provisional,,,,
+ANTES,2015-11,99.7,p,provisional,,,,
+ANTES,2015-12,100.7,p,provisional,,,,
+ANTES,2016-01,101.8,p,provisional,,,,
+ANTES,2016-02,100.1,p,provisional,,,,
+ANTES,2016-03,101,p,provisional,,,,
+ANTES,2016-04,100.7,p,provisional,,,,
+ANTES,2016-05,99.2,p,provisional,,,,
+ANTES,2016-06,102.8,p,provisional,,,,
+ANTES,2016-07,103.7,p,provisional,,,,
+ANTES,2016-08,101.7,p,provisional,,,,
+ANTES,2016-09,100.4,p,provisional,,,,
+ANTES,2016-10,101.9,p,provisional,,,,
+ANTES,2016-11,101.2,p,provisional,,,,
+ANTES,2016-12,101.9,p,provisional,,,,
+ANTES,2017-01,101.8,p,provisional,,,,
+ANTES,2017-02,102.8,p,provisional,,,,
+ANTES,2017-03,101.8,p,provisional,,,,
+ANTES,2017-04,106.7,p,provisional,,,,
+ANTES,2017-05,104.7,p,provisional,,,,
+ANTES,2017-06,102.4,p,provisional,,,,
+ANTES,2017-07,102.9,p,provisional,,,,
+ANTES,2017-08,103.5,p,provisional,,,,
+ANTES,2017-09,106.3,p,provisional,,,,
+ANTES,2017-10,92,p,provisional,,,,
+ANTES,2017-11,103.3,p,provisional,,,,
+ANTES,2017-12,102.2,p,provisional,,,,
+ANTES,2018-01,101.3,p,provisional,,,,
+ANTES,2018-02,101.3,p,provisional,,,,
+ANTES,2018-03,102.5,p,provisional,,,,
+ANTES,2018-04,100.8,p,provisional,,,,
+ANTES,2018-05,99.4,p,provisional,,,,
+ANTES,2018-06,101.6,p,provisional,,,,
+ANTES,2018-07,100.5,p,provisional,,,,
+ANTES,2018-08,100.8,p,provisional,,,,
+ANTES,2018-09,97.9,p,provisional,,,,
+ANTES,2018-10,103.2,p,provisional,,,,
+ANTES,2018-11,102.4,p,provisional,,,,
+ANTES,2018-12,101.8,p,provisional,,,,
+ANTES,2019-01,103,p,provisional,,,,
+ANTES,2019-02,104.8,p,provisional,,,,
+ANTES,2019-03,101.4,p,provisional,,,,
+ANTES,2019-04,102.2,p,provisional,,,,
+ANTES,2019-05,102.4,p,provisional,,,,
+ANTES,2019-06,101.3,p,provisional,,,,
+ANTES,2019-07,101.7,p,provisional,,,,
+ANTES,2019-08,102.4,p,provisional,,,,
+ANTES,2019-09,103,p,provisional,,,,
+ANTES,2019-10,101.2,p,provisional,,,,
+ANTES,2019-11,102.9,p,provisional,,,,
+ANTES,2019-12,103.1,p,provisional,,,,
+ANTES,2020-01,105.1,p,provisional,,,,
+ANTES,2020-02,108.1,p,provisional,,,,
+ANTES,2020-03,38.4,p,provisional,,,,
+ANTES,2020-04,10.3,p,provisional,,,,
+ANTES,2020-05,33.5,p,provisional,,,,
+ANTES,2020-06,70.2,p,provisional,,,,
+ANTES,2020-07,76.5,p,provisional,,,,
+ANTES,2020-08,76.8,p,provisional,,,,
+ANTES,2020-09,78.2,p,provisional,,,,
+ANTES,2020-10,77.1,p,provisional,,,,
+ANTES,2020-11,66.5,p,provisional,,,,
+ANTES,2020-12,79.8,p,provisional,,,,
+ANTES,2021-01,69.1,p,provisional,,,,
+ANTES,2021-02,74.8,p,provisional,,,,
+ANTES,2021-03,82.6,p,provisional,,,,
+ANTES,2021-04,80,p,provisional,,,,
+ANTES,2021-05,82.5,p,provisional,,,,
+ANTES,2021-06,84.1,p,provisional,,,,
+ANTES,2021-07,83.9,p,provisional,,,,
+ANTES,2021-08,84.3,p,provisional,,,,
+ANTES,2021-09,90.4,p,provisional,,,,
+ANTES,2021-10,93.8,p,provisional,,,,
+ANTES,2021-11,93.6,p,provisional,,,,
+ANTES,2021-12,91.4,p,provisional,,,,
+ANTES,2022-01,90.3,p,provisional,,,,
+ANTES,2022-02,104.2,p,provisional,,,,
+ANTES,2022-03,90.5,p,provisional,,,,
+ANTES,2022-04,113.3,p,provisional,,,,
+ANTES,2022-05,105.7,p,provisional,,,,
+ANTES,2022-06,94.6,p,provisional,,,,
+ANTES,2022-07,94.3,p,provisional,,,,
+ANTES,2022-08,96.3,p,provisional,,,,
+ANTES,2022-09,96.4,p,provisional,,,,
+ANTES,2022-10,97.6,p,provisional,,,,
+ANTES,2022-11,96.6,p,provisional,,,,
+ANTES,2022-12,104.2,p,provisional,,,,
+ANTES,2023-01,116.3,p,provisional,,,,
+ANTES,2023-02,116.6,p,provisional,,,,
+ANTES,2023-03,127,p,provisional,,,,
+ANTES,2023-04,146.6,p,provisional,,,,
+ANTES,2023-05,122.2,p,provisional,,,,
+ANTES,2023-06,117.3,p,provisional,,,,
+ANTES,2023-07,112.4,p,provisional,,,,
+ANTES,2023-08,111.1,p,provisional,,,,
+ANTES,2023-09,113.4,p,provisional,,,,
+ANTES,2023-10,112.7,p,provisional,,,,
+ANTES,2023-11,117.5,p,provisional,,,,
+ANTES,2023-12,118.9,p,provisional,,,,
+ANTES,2024-01,:,nan,no_disponible,,,,
+ANTES,2024-02,:,nan,no_disponible,,,,
+ANTES,2024-03,:,nan,no_disponible,,,,
+ANTES,2024-04,:,nan,no_disponible,,,,
+ANTES,2024-05,:,nan,no_disponible,,,,
+ANTES,2024-06,:,nan,no_disponible,,,,
+ANTES,2024-07,:,nan,no_disponible,,,,
+ANTES,2024-08,:,nan,no_disponible,,,,
+ANTES,2024-09,:,nan,no_disponible,,,,
+ANTES,2024-10,:,nan,no_disponible,,,,
+ANTES,2024-11,:,nan,no_disponible,,,,
+ANTES,2024-12,:,nan,no_disponible,,,,
+ANTES,2025-01,:,nan,no_disponible,,,,
+ANTES,2025-02,:,nan,no_disponible,,,,
+ANTES,2025-03,:,nan,no_disponible,,,,
+ANTES,2025-04,:,nan,no_disponible,,,,
+ANTES,2025-05,:,nan,no_disponible,,,,
+ANTES,2025-06,:,nan,no_disponible,,,,
+ANTES,2025-07,:,nan,no_disponible,,,,
+ANTES,2025-08,:,nan,no_disponible,,,,
+ANTES,2025-09,:,,no_disponible,,,,
+DESPUES,2010-01-01 00:00:00,,,,119.7,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2010-02-01 00:00:00,,,,117.8,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2010-03-01 00:00:00,,,,120.8,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2010-04-01 00:00:00,,,,119.9,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2010-05-01 00:00:00,,,,115.8,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2010-06-01 00:00:00,,,,116.3,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2010-07-01 00:00:00,,,,116.1,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2010-08-01 00:00:00,,,,115.3,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2010-09-01 00:00:00,,,,117.1,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2010-10-01 00:00:00,,,,119.9,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2010-11-01 00:00:00,,,,116.3,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2010-12-01 00:00:00,,,,114.1,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2011-01-01 00:00:00,,,,112.5,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2011-02-01 00:00:00,,,,114.8,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2011-03-01 00:00:00,,,,109.0,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2011-04-01 00:00:00,,,,127.3,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2011-05-01 00:00:00,,,,110.5,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2011-06-01 00:00:00,,,,110.2,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2011-07-01 00:00:00,,,,111.1,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2011-08-01 00:00:00,,,,108.8,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2011-09-01 00:00:00,,,,104.5,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2011-10-01 00:00:00,,,,104.8,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2011-11-01 00:00:00,,,,104.7,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2011-12-01 00:00:00,,,,105.6,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2012-01-01 00:00:00,,,,106.6,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2012-02-01 00:00:00,,,,103.2,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2012-03-01 00:00:00,,,,106.9,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2012-04-01 00:00:00,,,,100.3,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2012-05-01 00:00:00,,,,104.2,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2012-06-01 00:00:00,,,,101.4,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2012-07-01 00:00:00,,,,100.6,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2012-08-01 00:00:00,,,,99.9,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2012-09-01 00:00:00,,,,95.2,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2012-10-01 00:00:00,,,,95.9,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2012-11-01 00:00:00,,,,92.5,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2012-12-01 00:00:00,,,,93.5,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2013-01-01 00:00:00,,,,93.4,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2013-02-01 00:00:00,,,,92.9,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2013-03-01 00:00:00,,,,91.8,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2013-04-01 00:00:00,,,,92.5,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2013-05-01 00:00:00,,,,91.1,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2013-06-01 00:00:00,,,,94.4,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2013-07-01 00:00:00,,,,94.2,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2013-08-01 00:00:00,,,,96.1,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2013-09-01 00:00:00,,,,94.4,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2013-10-01 00:00:00,,,,92.9,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2013-11-01 00:00:00,,,,96.7,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2013-12-01 00:00:00,,,,93.9,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2014-01-01 00:00:00,,,,94.7,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2014-02-01 00:00:00,,,,96.6,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2014-03-01 00:00:00,,,,95.0,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2014-04-01 00:00:00,,,,98.7,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2014-05-01 00:00:00,,,,96.7,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2014-06-01 00:00:00,,,,96.2,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2014-07-01 00:00:00,,,,95.0,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2014-08-01 00:00:00,,,,97.3,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2014-09-01 00:00:00,,,,95.8,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2014-10-01 00:00:00,,,,94.0,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2014-11-01 00:00:00,,,,97.3,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2014-12-01 00:00:00,,,,99.1,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2015-01-01 00:00:00,,,,98.6,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2015-02-01 00:00:00,,,,98.2,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2015-03-01 00:00:00,,,,99.6,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2015-04-01 00:00:00,,,,98.3,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2015-05-01 00:00:00,,,,101.8,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2015-06-01 00:00:00,,,,97.9,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2015-07-01 00:00:00,,,,99.9,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2015-08-01 00:00:00,,,,99.9,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2015-09-01 00:00:00,,,,102.2,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2015-10-01 00:00:00,,,,103.2,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2015-11-01 00:00:00,,,,99.7,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2015-12-01 00:00:00,,,,100.7,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2016-01-01 00:00:00,,,,101.8,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2016-02-01 00:00:00,,,,100.1,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2016-03-01 00:00:00,,,,101.0,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2016-04-01 00:00:00,,,,100.7,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2016-05-01 00:00:00,,,,99.2,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2016-06-01 00:00:00,,,,102.8,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2016-07-01 00:00:00,,,,103.7,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2016-08-01 00:00:00,,,,101.7,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2016-09-01 00:00:00,,,,100.4,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2016-10-01 00:00:00,,,,101.9,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2016-11-01 00:00:00,,,,101.2,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2016-12-01 00:00:00,,,,101.9,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2017-01-01 00:00:00,,,,101.8,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2017-02-01 00:00:00,,,,102.8,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2017-03-01 00:00:00,,,,101.8,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2017-04-01 00:00:00,,,,106.7,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2017-05-01 00:00:00,,,,104.7,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2017-06-01 00:00:00,,,,102.4,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2017-07-01 00:00:00,,,,102.9,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2017-08-01 00:00:00,,,,103.5,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2017-09-01 00:00:00,,,,106.3,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2017-10-01 00:00:00,,,,92.0,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2017-11-01 00:00:00,,,,103.3,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2017-12-01 00:00:00,,,,102.2,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2018-01-01 00:00:00,,,,101.3,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2018-02-01 00:00:00,,,,101.3,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2018-03-01 00:00:00,,,,102.5,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2018-04-01 00:00:00,,,,100.8,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2018-05-01 00:00:00,,,,99.4,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2018-06-01 00:00:00,,,,101.6,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2018-07-01 00:00:00,,,,100.5,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2018-08-01 00:00:00,,,,100.8,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2018-09-01 00:00:00,,,,97.9,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2018-10-01 00:00:00,,,,103.2,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2018-11-01 00:00:00,,,,102.4,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2018-12-01 00:00:00,,,,101.8,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2019-01-01 00:00:00,,,,103.0,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2019-02-01 00:00:00,,,,104.8,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2019-03-01 00:00:00,,,,101.4,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2019-04-01 00:00:00,,,,102.2,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2019-05-01 00:00:00,,,,102.4,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2019-06-01 00:00:00,,,,101.3,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2019-07-01 00:00:00,,,,101.7,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2019-08-01 00:00:00,,,,102.4,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2019-09-01 00:00:00,,,,103.0,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2019-10-01 00:00:00,,,,101.2,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2019-11-01 00:00:00,,,,102.9,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2019-12-01 00:00:00,,,,103.1,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2020-01-01 00:00:00,,,,105.1,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2020-02-01 00:00:00,,,,108.1,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2020-03-01 00:00:00,,,,38.4,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2020-04-01 00:00:00,,,,10.3,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2020-05-01 00:00:00,,,,33.5,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2020-06-01 00:00:00,,,,70.2,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2020-07-01 00:00:00,,,,76.5,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2020-08-01 00:00:00,,,,76.8,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2020-09-01 00:00:00,,,,78.2,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2020-10-01 00:00:00,,,,77.1,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2020-11-01 00:00:00,,,,66.5,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2020-12-01 00:00:00,,,,79.8,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2021-01-01 00:00:00,,,,69.1,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2021-02-01 00:00:00,,,,74.8,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2021-03-01 00:00:00,,,,82.6,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2021-04-01 00:00:00,,,,80.0,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2021-05-01 00:00:00,,,,82.5,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2021-06-01 00:00:00,,,,84.1,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2021-07-01 00:00:00,,,,83.9,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2021-08-01 00:00:00,,,,84.3,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2021-09-01 00:00:00,,,,90.4,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2021-10-01 00:00:00,,,,93.8,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2021-11-01 00:00:00,,,,93.6,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2021-12-01 00:00:00,,,,91.4,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2022-01-01 00:00:00,,,,90.3,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2022-02-01 00:00:00,,,,104.2,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2022-03-01 00:00:00,,,,90.5,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2022-04-01 00:00:00,,,,113.3,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2022-05-01 00:00:00,,,,105.7,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2022-06-01 00:00:00,,,,94.6,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2022-07-01 00:00:00,,,,94.3,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2022-08-01 00:00:00,,,,96.3,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2022-09-01 00:00:00,,,,96.4,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2022-10-01 00:00:00,,,,97.6,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2022-11-01 00:00:00,,,,96.6,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2022-12-01 00:00:00,,,,104.2,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2023-01-01 00:00:00,,,,116.3,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2023-02-01 00:00:00,,,,116.6,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2023-03-01 00:00:00,,,,127.0,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2023-04-01 00:00:00,,,,146.6,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2023-05-01 00:00:00,,,,122.2,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2023-06-01 00:00:00,,,,117.3,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2023-07-01 00:00:00,,,,112.4,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2023-08-01 00:00:00,,,,111.1,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2023-09-01 00:00:00,,,,113.4,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2023-10-01 00:00:00,,,,112.7,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2023-11-01 00:00:00,,,,117.5,Eurostat,retail_moda_volumen_ventas_indice_base2015,True
+DESPUES,2023-12-01 00:00:00,,,,118.9,Eurostat,retail_moda_volumen_ventas_indice_base2015,True

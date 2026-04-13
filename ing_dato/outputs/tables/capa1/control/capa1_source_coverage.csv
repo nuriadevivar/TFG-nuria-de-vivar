@@ -1,0 +1,9 @@
+fuente,fecha_inicio,fecha_fin,n_filas,n_columnas,uso_analitico,nota_metodologica
+contexto_digitalizacion_clean,2020,2025,6,4,contexto_macro_anual,"Incluye la serie anual principal de contexto digital. El valor imputado de 2025, si existe, debe usarse solo como apoyo contextual y con trazabilidad explícita."
+contexto_digitalizacion_documentado,2020,2025,6,9,trazabilidad_contextual,"Dataset orientado a trazabilidad documental y soporte metodológico, no a análisis cuantitativo principal."
+eurostat_moda_mensual_clean,2010-01-01,2023-12-01,168,5,serie_temporal_sectorial_mensual,Serie principal mensual del sector moda utilizada para analizar patrón temporal del retail especializado.
+eurostat_retail_total_mensual_clean,2010-01-01,2025-09-01,189,5,serie_temporal_referencia_mensual,Serie de referencia general del retail. Su función es contextualizar el desempeño relativo del retail de moda.
+eurostat_online_empresas_clean,2015,2024,10,6,adopcion_online_empresarial_anual,"Serie anual de adopción empresarial del canal online, útil para contextualizar digitalización de la oferta."
+comercio_electronico_core_std,2015,2023,144,5,ecommerce_empresarial_anual_segmentado,"Fuente anual segmentada por tamaño de empresa. Se utiliza para integrar indicadores de ecommerce empresarial, priorizando el agregado total para asegurar comparabilidad."
+capa1_master_anual_analysis,2020,2023,4,9,master_analitico_anual_integrado,Integración anual final de variables comparables entre fuentes. Se limita al tramo común con cobertura suficiente.
+capa1_master_mensual_analysis,2015-01-01,2023-12-01,108,7,master_analitico_mensual_integrado,Integración mensual final del retail de moda frente al retail total y variables derivadas para comparación relativa.

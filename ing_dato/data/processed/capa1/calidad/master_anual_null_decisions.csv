@@ -1,0 +1,4 @@
+dataset,variable,anio_afectado,n_nulos,tipo_ausencia,descripcion,decision,valor_referencia,fuente_referencia
+capa1_master_anual_analysis,pct_empresas_venden_web_apps,2023,1,cambio_metodologico_ine_K_a_I,INE cambió K.1 -> I.1.1 en 2023. El valor I.1.1=27.44% no es comparable con K.1 de 2020-2022 por cambios en universo y formulación.,no_imputar — incompatibilidad metodologica,27.44,"INE Encuesta TIC-E 2023, indicador I.1.1"
+capa1_master_anual_full,variables_ine_multiples,2024-2025,hasta 6 por variable,fuera_cobertura_temporal,Encuesta TIC-E no publicada para 2024-2025 en fecha de extracción.,no_imputar — excluir del master_analitico,,
+contexto_digitalizacion_clean,pct_personas_compra_online,2025,1,dato_pendiente_publicacion,Dato pendiente de publicación en fecha de extracción. Se aplica interpolación lineal y se documenta con flag de trazabilidad.,interpolar_linealmente — flag _imputado=True,,interpolacion lineal sobre tendencia observada

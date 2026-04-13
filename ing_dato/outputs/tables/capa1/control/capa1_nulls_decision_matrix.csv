@@ -1,0 +1,5 @@
+dataset,variable,n_nulls,pct_nulls,decision_analitica,comentario
+contexto_digitalizacion_documentado,pct_personas_compra_ropa_online,5,83.33,mantener_solo_contexto,"Variable temática útil, pero con cobertura insuficiente para incorporarla al master analítico principal."
+contexto_digitalizacion_documentado,fuente_compra_ropa_online,5,83.33,mantener_solo_trazabilidad,Campo de trazabilidad documental; no forma parte del análisis numérico.
+contexto_digitalizacion_extended,pct_personas_compra_ropa_online,5,83.33,mantener_solo_contexto,"Variable temática útil, pero con cobertura insuficiente para incorporarla al master analítico principal."
+contexto_digitalizacion_extended,fuente_compra_ropa_online,5,83.33,mantener_solo_trazabilidad,Campo de trazabilidad documental; no forma parte del análisis numérico.

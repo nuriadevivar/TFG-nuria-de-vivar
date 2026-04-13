@@ -1,0 +1,12 @@
+dataset,variable,mantener_en_base,usar_en_analisis_principal,usar_solo_contexto,comentario
+contexto_digitalizacion_clean,anio,si,si,no,Eje temporal anual del bloque de contexto.
+contexto_digitalizacion_clean,pct_usuarios_rrss,si,si,no,Indicador clave de digitalización social.
+contexto_digitalizacion_clean,pct_personas_compra_online,si,si,no,Indicador clave del consumo digital. 1 valor imputado (2025).
+contexto_digitalizacion_clean,pct_personas_compra_online_imputado,si,no,si,Flag de trazabilidad de imputacion. Propagado al master anual.
+contexto_digitalizacion_extended,pct_personas_compra_ropa_online,si,no,si,Cobertura insuficiente (1/6 obs). Solo trazabilidad.
+contexto_digitalizacion_documentado,comentarios_hitos,si,no,si,Util para narrativa e interpretacion.
+comercio_electronico_core_std,indicador_std,si,si,no,Clave para unificar indicadores entre años.
+comercio_electronico_core_std,valor,si,si,no,Magnitud principal. Nulos estructurales conservados como NaN.
+capa1_master_anual_analysis,pct_empresas_venden_web_apps,si,si,no,NaN en 2023 conservado (cambio metodologico K→I). Analisis sobre 2020-2022 unicamente para esta variable.
+capa1_master_mensual_analysis,indice_retail_moda,si,si,no,Serie principal del sector moda. Descomposicion ST aplicada en EDA.
+capa1_master_mensual_analysis,ratio_moda_vs_total,si,si,no,Variable derivada de alto valor interpretativo para comparacion relativa.

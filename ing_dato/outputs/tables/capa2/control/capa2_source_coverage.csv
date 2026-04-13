@@ -1,0 +1,8 @@
+fuente,fecha_inicio,fecha_fin,n_filas,n_columnas,nota_metodologica
+googletrends_marcas,2014-12-01,2025-12-01,660,7,"Series mensuales de interes relativo para marcas. Google Trends usa escala 0-100 relativa al maximo del termino. El valor 0 indica volumen insuficiente para la escala, no interes nulo."
+googletrends_productos,2015-01-01,2025-12-01,2640,8,Series mensuales por categoria de producto y marca. Permiten comparar interes relativo por tipo de producto.
+googletrends_terminos,2015-01-01,2025-12-01,2505,10,"Master unificado de terminos de marcas, esteticas y comportamientos. Base del analisis de tendencias digitales."
+eventos,2015-10-01,2025-03-01,20,6,"Dataset contextual de hitos del sector moda, utilizado para interpretar picos temporales y cambios de señal."
+instagram_posts,2025-01-02,2026-03-30,2369,17,Posts scrapeados de perfiles oficiales. No recoge menciones externas ni UGC. Algunas metricas pueden haber sido imputadas a 0.
+instagram_brand_monthly,2025-01-01,2026-03-01,65,13,Agregacion mensual por marca de actividad y engagement en Instagram.
+brand_digital,2014-12-01,2025-12-01,660,16,"Master integrado marca-mes con Google Trends, señal social y contexto de eventos en ventana temporal comparable."

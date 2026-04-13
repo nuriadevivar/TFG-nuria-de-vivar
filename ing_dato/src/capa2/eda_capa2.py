@@ -1,3 +1,19 @@
+# ============================================================
+# eda_capa2.py
+#
+# EDA (Exploratory Data Analysis) completo para la Capa 2 del
+# proyecto. Esta capa integra señales digitales externas:
+#   - Google Trends (términos, marcas, productos, estéticas)
+#   - Eventos de moda (hitos del sector)
+#   - Redes sociales (Instagram via Apify)
+#   - Datasets integrados (masters marca-mes, términos, social)
+#
+# El script genera tablas CSV de control y análisis, y figuras
+# PNG, organizadas en directorios configurados en src.common.config.
+#
+# Punto de entrada principal: run_all_eda()
+# ============================================================
+
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
@@ -21,31 +37,42 @@ def _ensure_dirs() -> None:
 
 
 def _save_plot(filename: str) -> None:
+    # Ajusta márgenes, guarda la figura y la cierra
     plt.tight_layout()
     plt.savefig(FIGURES_CAPA2_EDA / filename, dpi=300, bbox_inches="tight")
     plt.close()
 
 
 def _safe_read_csv(path):
+    # Lee un CSV solo si existe
     if not path.exists():
         return None
     return pd.read_csv(path)
 
 
 def _normalize_series_minmax(series: pd.Series) -> pd.Series:
+    """
+    Normaliza una serie numérica al rango [0, 1] usando min-max scaling.
+    - Si la serie está vacía o es toda NaN, devuelve NaN.
+    - Si min == max (varianza cero), devuelve 0.0 para todos los valores.
+    """
     s = pd.to_numeric(series, errors="coerce")
     if s.notna().sum() == 0:
         return pd.Series(np.nan, index=series.index)
+    
     min_val = s.min()
     max_val = s.max()
+
     if pd.isna(min_val) or pd.isna(max_val):
         return pd.Series(np.nan, index=series.index)
+    
     if max_val == min_val:
         return pd.Series(0.0, index=series.index)
     return (s - min_val) / (max_val - min_val)
 
 
 def _plot_correlation_matrix(corr_df: pd.DataFrame, title: str, filename: str) -> None:
+    # Dibuja una matriz de correlación simple
     labels = corr_df.columns.tolist()
 
     plt.figure(figsize=(9, 7))
@@ -62,26 +89,32 @@ def _plot_correlation_matrix(corr_df: pd.DataFrame, title: str, filename: str) -
 # =========================
 
 def _iqr_outlier_summary(df: pd.DataFrame, cols: list[str], bloque: str) -> pd.DataFrame:
+    # Resume outliers por variable usando IQR
     records = []
 
     for col in cols:
+        # Salta variables que no existan
         if col not in df.columns:
             continue
-
+        
+        # Convierte a numérico y elimina nulos
         s = pd.to_numeric(df[col], errors="coerce").dropna()
         if s.empty:
             continue
 
+        # Calcula cuartiles, IQR y límites
         q1 = s.quantile(0.25)
         q3 = s.quantile(0.75)
         iqr = q3 - q1
         lower = q1 - 1.5 * iqr
         upper = q3 + 1.5 * iqr
 
+        # Detecta valores fuera de rango
         mask = (s < lower) | (s > upper)
         n_outliers = int(mask.sum())
         pct_outliers = round((n_outliers / len(s)) * 100, 2) if len(s) > 0 else 0.0
 
+        # Guarda resumen metodológico
         records.append(
             {
                 "bloque": bloque,
@@ -133,11 +166,13 @@ def profile_capa2() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
         "capa2_master_terminos_main": PROCESSED_CAPA2 / "integrated" / "capa2_master_terminos_main.csv",
     }
 
+    # Listas donde se irán acumulando resultados
     summary_records = []
     nulls_records = []
     numeric_records = []
 
     for name, path in datasets.items():
+        # Intenta leer el dataset
         df = _safe_read_csv(path)
         if df is None:
             continue
@@ -145,6 +180,7 @@ def profile_capa2() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
         start_period = None
         end_period = None
 
+        # Detecta periodo temporal según la columna disponible
         if "fecha" in df.columns:
             fechas = pd.to_datetime(df["fecha"], errors="coerce")
             if fechas.notna().any():
@@ -161,6 +197,7 @@ def profile_capa2() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
                 start_period = int(anios.min())
                 end_period = int(anios.max())
 
+        # Resumen general del dataset
         summary_records.append(
             {
                 "dataset": name,
@@ -172,6 +209,7 @@ def profile_capa2() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
             }
         )
 
+        # Nulos por variable
         for col in df.columns:
             nulls_records.append(
                 {
@@ -182,16 +220,19 @@ def profile_capa2() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
                 }
             )
 
+        # Descriptivos solo para variables numéricas
         numeric_df = df.select_dtypes(include=[np.number])
         if not numeric_df.empty:
             desc = numeric_df.describe().T.reset_index().rename(columns={"index": "variable"})
             desc.insert(0, "dataset", name)
             numeric_records.append(desc)
 
+    # Convierte listas a DataFrames finales
     summary_df = pd.DataFrame(summary_records)
     nulls_df = pd.DataFrame(nulls_records)
     numeric_df = pd.concat(numeric_records, ignore_index=True) if numeric_records else pd.DataFrame()
 
+    # Exporta resultados de profiling
     summary_df.to_csv(TABLES_CAPA2_CONTROL / "capa2_profile_summary.csv", index=False)
     nulls_df.to_csv(TABLES_CAPA2_CONTROL / "capa2_profile_nulls.csv", index=False)
     numeric_df.to_csv(TABLES_CAPA2_CONTROL / "capa2_profile_numeric.csv", index=False)

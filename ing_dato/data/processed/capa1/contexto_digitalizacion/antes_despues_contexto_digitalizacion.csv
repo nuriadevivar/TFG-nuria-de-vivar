@@ -1,0 +1,13 @@
+_fase,anio,pct_usuarios_rrss,pct_personas_compra_online,pct_personas_compra_online_imputado,_n_nulos_fila
+ANTES,2020,62.0,62.62,False,0
+ANTES,2021,80.0,66.63,False,0
+ANTES,2022,87.1,67.91,False,0
+ANTES,2023,85.6,68.88,False,0
+ANTES,2024,83.6,68.94,False,0
+ANTES,2025,82.89999999999999,,False,1
+DESPUES,2020,62.0,62.62,False,0
+DESPUES,2021,80.0,66.63,False,0
+DESPUES,2022,87.1,67.91,False,0
+DESPUES,2023,85.6,68.88,False,0
+DESPUES,2024,83.6,68.94,False,0
+DESPUES,2025,82.89999999999999,68.94,True,0

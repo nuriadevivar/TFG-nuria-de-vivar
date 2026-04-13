@@ -1,0 +1,7 @@
+dataset,variable,n_obs,n_nulos,pct_nulos
+eurostat_online_empresas_clean,anio,10,0,0.0
+eurostat_online_empresas_clean,geo,10,0,0.0
+eurostat_online_empresas_clean,valor_pct,10,0,0.0
+eurostat_online_empresas_clean,fuente,10,0,0.0
+eurostat_online_empresas_clean,indicador,10,0,0.0
+eurostat_online_empresas_clean,provisional,10,0,0.0

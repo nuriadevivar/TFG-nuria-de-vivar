@@ -1,0 +1,6 @@
+marca,fecha_inicio_trends,fecha_fin_trends,fecha_inicio_social,fecha_fin_social,fecha_inicio_comun,fecha_fin_comun,n_meses_comunes,comentario_metodologico
+hm,2015-01-01,2025-12-01,2025-01-01,2026-03-01,2025-01-01,2025-12-01,12,Ventana común suficiente para comparación descriptiva.
+mango,2014-12-01,2025-11-01,2025-01-01,2026-03-01,2025-01-01,2025-11-01,11,Ventana común suficiente para comparación descriptiva.
+massimo_dutti,2015-01-01,2025-12-01,2025-01-01,2026-03-01,2025-01-01,2025-12-01,12,Ventana común suficiente para comparación descriptiva.
+shein,2014-12-01,2025-11-01,2025-11-01,2026-03-01,2025-11-01,2025-11-01,1,Comparabilidad muy limitada; excluir del análisis comparativo fuerte en ventana común.
+zara,2014-12-01,2025-11-01,2025-01-01,2026-03-01,2025-01-01,2025-11-01,11,Ventana común suficiente para comparación descriptiva.

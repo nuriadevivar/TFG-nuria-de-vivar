@@ -1,0 +1,8 @@
+fuente,n_filas,n_columnas,nulos_totales,avg_nulos_por_fila,justificacion_inclusion
+encuesta_fastfashion_clean,318,45,141,0.4434,Dataset principal de la encuesta. Elaboracion propia via Google Forms. Variables Likert 1-5 (actitud/comportamiento) + categoricas + multirrespuesta. 7 indices compuestos calculados como media de items conceptualmente relacionados. Validacion de consistencia interna: alpha de Cronbach (ver capa3_cronbach_alpha.csv). LIMITACION: muestra de conveniencia (no probabilistica) — los resultados son exploratorios y no extrapolables a la poblacion general.
+encuesta_rrss_long,826,2,0,0.0,Tabla long de redes sociales habituales por encuestado. Cada fila = 1 red social mencionada por 1 encuestado. Permite ranking de RRSS y segmentacion por generacion.
+encuesta_marcas_vistas_long,633,2,0,0.0,Tabla long de marcas vistas en RRSS por encuestado. Permite ranking de visibilidad de marcas en el ecosistema digital.
+encuesta_marcas_influyen_long,548,2,0,0.0,Tabla long de marcas que mas influyen en compra por encuestado. Permite ranking de influencia de marca y cruce con capa 2 (Google Trends + Instagram).
+capa3_master_encuesta,318,45,141,0.4434,Dataset integrado principal. Incluye variables raw + indices compuestos + targets binarios. Base para EDA exploratorio y segmentacion por generacion.
+capa3_clustering_ready,318,17,0,0.0,"Subconjunto de indices compuestos normalizados (min-max). Listo para algoritmos de clustering no supervisado (K-Means, DBSCAN). Variables: 6 indices (excluye indice_escepticismo por ser 1 item)."
+capa3_supervised_ready,318,18,0,0.0,Dataset con features e indices para clasificacion supervisada. Targets: target_recomendaria_bin y target_seguira_comprando_bin. Excluye variables con fuga de informacion hacia los targets.

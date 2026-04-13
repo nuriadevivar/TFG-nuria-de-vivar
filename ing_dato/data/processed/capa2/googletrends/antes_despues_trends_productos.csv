@@ -1,0 +1,11 @@
+_fase,fecha,interes_trends,marca,categoria_producto,termino_busqueda,valor_trends,anio,mes_num,valor_cero_trends
+ANTES,2015-01-01,30.0,H&M,pantalones,h&m pantalones,,,,
+ANTES,2015-01-01,0.0,H&M,tops,h&m tops,,,,
+ANTES,2015-01-01,26.0,H&M,vestidos,h&m vestidos,,,,
+ANTES,2015-01-01,60.0,H&M,zapatos,h&m zapatos,,,,
+ANTES,2015-01-01,23.0,Mango,pantalones,mango pantalones,,,,
+DESPUÉS,2015-01-01 00:00:00,,hm,pantalones,h&m pantalones,30.0,2015.0,1.0,False
+DESPUÉS,2015-01-01 00:00:00,,hm,tops,h&m tops,0.0,2015.0,1.0,True
+DESPUÉS,2015-01-01 00:00:00,,hm,vestidos,h&m vestidos,26.0,2015.0,1.0,False
+DESPUÉS,2015-01-01 00:00:00,,hm,zapatos,h&m zapatos,60.0,2015.0,1.0,False
+DESPUÉS,2015-01-01 00:00:00,,mango,pantalones,mango pantalones,23.0,2015.0,1.0,False

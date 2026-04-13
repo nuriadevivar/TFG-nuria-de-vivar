@@ -1,0 +1,3 @@
+_fase,n_filas,n_nulos_valor,pct_nulos,n_indicadores_unicos,decision
+ANTES,144,0,0.0,22,ausencia estructural INE — preguntas no formuladas ese año
+DESPUES,144,0,0.0,22,nulos conservados como NaN — no se imputa por ser estructurales

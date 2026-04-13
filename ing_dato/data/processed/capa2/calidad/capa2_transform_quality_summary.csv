@@ -1,0 +1,12 @@
+marca,n_posts_raw,n_fecha_nat,n_likes_nan_imputados_0,n_comentarios_nan_imputados_0,pct_metricas_imputadas,fuente,n_total,n_validos,n_nan,pct_nan,n_cero,pct_cero,decision_nan,decision_cero,media_sin_ceros
+hm,352.0,0.0,0.0,0.0,0.0,,,,,,,,,,
+mango,474.0,0.0,0.0,0.0,0.0,,,,,,,,,,
+massimo_dutti,338.0,0.0,0.0,0.0,0.0,,,,,,,,,,
+shein,799.0,0.0,0.0,0.0,0.0,,,,,,,,,,
+zara,406.0,0.0,0.0,0.0,0.0,,,,,,,,,,
+,,,,,,trends_consciente_compra,665.0,637.0,28.0,4.21,105.0,16.48,mantener_nan — dato no disponible en Google Trends API,"mantener_cero con flag valor_cero_trends=True — valor 0 en GT indica volumen de busqueda insuficiente para ser representado en escala 0-100, no ausencia real de interes. Imputar distorsionaria la comparacion entre terminos.",51.13
+,,,,,,trends_marcas,660.0,649.0,11.0,1.67,4.0,0.62,mantener_nan — dato no disponible en Google Trends API,"mantener_cero con flag valor_cero_trends=True — valor 0 en GT indica volumen de busqueda insuficiente para ser representado en escala 0-100, no ausencia real de interes. Imputar distorsionaria la comparacion entre terminos.",51.83
+,,,,,,trends_moda_total,1995.0,1376.0,619.0,31.03,305.0,22.17,mantener_nan — dato no disponible en Google Trends API,"mantener_cero con flag valor_cero_trends=True — valor 0 en GT indica volumen de busqueda insuficiente para ser representado en escala 0-100, no ausencia real de interes. Imputar distorsionaria la comparacion entre terminos.",51.76
+,,,,,,trends_productos,2640.0,2640.0,0.0,0.0,253.0,9.58,mantener_nan — dato no disponible en Google Trends API,"mantener_cero con flag valor_cero_trends=True — valor 0 en GT indica volumen de busqueda insuficiente para ser representado en escala 0-100, no ausencia real de interes. Imputar distorsionaria la comparacion entre terminos.",44.13
+,,,,,,trends_sofisticado,665.0,316.0,349.0,52.48,146.0,46.2,mantener_nan — dato no disponible en Google Trends API,"mantener_cero con flag valor_cero_trends=True — valor 0 en GT indica volumen de busqueda insuficiente para ser representado en escala 0-100, no ausencia real de interes. Imputar distorsionaria la comparacion entre terminos.",38.44
+,,,,,,trends_urbano,532.0,302.0,230.0,43.23,50.0,16.56,mantener_nan — dato no disponible en Google Trends API,"mantener_cero con flag valor_cero_trends=True — valor 0 en GT indica volumen de busqueda insuficiente para ser representado en escala 0-100, no ausencia real de interes. Imputar distorsionaria la comparacion entre terminos.",57.62

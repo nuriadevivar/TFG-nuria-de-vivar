@@ -1,0 +1,23 @@
+_fase,anio,valor_raw,valor_numerico,incluido,motivo_exclusion,geo,valor_pct,fuente,indicador,provisional
+ANTES,2013,13.81,1381.0,False,"año < 2015, fuera cobertura analitica",,,,,
+ANTES,2014,14.96,1496.0,False,"año < 2015, fuera cobertura analitica",,,,,
+ANTES,2015,14.33,1433.0,True,,,,,,
+ANTES,2016,15.52,1552.0,True,,,,,,
+ANTES,2017,16.37,1637.0,True,,,,,,
+ANTES,2018,17.13,1713.0,True,,,,,,
+ANTES,2019,17.09,1709.0,True,,,,,,
+ANTES,2020,19.14,1914.0,True,,,,,,
+ANTES,2021,18.95,1895.0,True,,,,,,
+ANTES,2022,19.86,1986.0,True,,,,,,
+ANTES,2023,19.35,1935.0,True,,,,,,
+ANTES,2024,19.52,1952.0,True,,,,,,
+DESPUES,2015,,,,,Spain,14.33,Eurostat,participacion_empresas_facturacion_ecommerce_pct,False
+DESPUES,2016,,,,,Spain,15.52,Eurostat,participacion_empresas_facturacion_ecommerce_pct,False
+DESPUES,2017,,,,,Spain,16.37,Eurostat,participacion_empresas_facturacion_ecommerce_pct,False
+DESPUES,2018,,,,,Spain,17.13,Eurostat,participacion_empresas_facturacion_ecommerce_pct,False
+DESPUES,2019,,,,,Spain,17.09,Eurostat,participacion_empresas_facturacion_ecommerce_pct,False
+DESPUES,2020,,,,,Spain,19.14,Eurostat,participacion_empresas_facturacion_ecommerce_pct,False
+DESPUES,2021,,,,,Spain,18.95,Eurostat,participacion_empresas_facturacion_ecommerce_pct,False
+DESPUES,2022,,,,,Spain,19.86,Eurostat,participacion_empresas_facturacion_ecommerce_pct,False
+DESPUES,2023,,,,,Spain,19.35,Eurostat,participacion_empresas_facturacion_ecommerce_pct,False
+DESPUES,2024,,,,,Spain,19.52,Eurostat,participacion_empresas_facturacion_ecommerce_pct,False

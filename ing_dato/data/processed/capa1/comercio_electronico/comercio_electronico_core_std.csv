@@ -1,0 +1,145 @@
+anio,indicador,tamano_empresa,valor,indicador_std
+2015,K.1 % de empresas que han realizado ventas por comercio electrónico,de_10_a_49,17.98,pct_empresas_venden_ecommerce
+2015,K.1 % de empresas que han realizado ventas por comercio electrónico,de_250_y_mas,39.78,pct_empresas_venden_ecommerce
+2015,K.1 % de empresas que han realizado ventas por comercio electrónico,de_50_a_249,29.02,pct_empresas_venden_ecommerce
+2015,K.1 % de empresas que han realizado ventas por comercio electrónico,total,20.14,pct_empresas_venden_ecommerce
+2015,K.1.1 % de empresas que han realizado ventas mediante páginas web o apps,de_10_a_49,13.56,pct_empresas_venden_web_apps
+2015,K.1.1 % de empresas que han realizado ventas mediante páginas web o apps,de_250_y_mas,22.96,pct_empresas_venden_web_apps
+2015,K.1.1 % de empresas que han realizado ventas mediante páginas web o apps,de_50_a_249,19.05,pct_empresas_venden_web_apps
+2015,K.1.1 % de empresas que han realizado ventas mediante páginas web o apps,total,1.46,pct_empresas_venden_web_apps
+2015,K.1.H % ventas mediante comercio electrónico sobre el total de ventas,de_10_a_49,5.98,pct_ventas_ecommerce_sobre_total
+2015,K.1.H % ventas mediante comercio electrónico sobre el total de ventas,de_250_y_mas,2.16,pct_ventas_ecommerce_sobre_total
+2015,K.1.H % ventas mediante comercio electrónico sobre el total de ventas,de_50_a_249,13.24,pct_ventas_ecommerce_sobre_total
+2015,K.1.H % ventas mediante comercio electrónico sobre el total de ventas,total,15.69,pct_ventas_ecommerce_sobre_total
+2015,K.1.I % ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico,de_10_a_49,26.74,pct_ventas_ecommerce_sobre_total_empresas_que_venden
+2015,K.1.I % ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico,de_250_y_mas,3.75,pct_ventas_ecommerce_sobre_total_empresas_que_venden
+2015,K.1.I % ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico,de_50_a_249,37.39,pct_ventas_ecommerce_sobre_total_empresas_que_venden
+2015,K.1.I % ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico,total,36.09,pct_ventas_ecommerce_sobre_total_empresas_que_venden
+2016,M.1 % de empresas que han realizado ventas por comercio electrónico,de_10_a_49,1.82,pct_empresas_venden_ecommerce
+2016,M.1 % de empresas que han realizado ventas por comercio electrónico,de_250_y_mas,41.36,pct_empresas_venden_ecommerce
+2016,M.1 % de empresas que han realizado ventas por comercio electrónico,de_50_a_249,29.73,pct_empresas_venden_ecommerce
+2016,M.1 % de empresas que han realizado ventas por comercio electrónico,total,20.41,pct_empresas_venden_ecommerce
+2016,M.1.1 % de empresas que han realizado ventas mediante páginas web o apps,de_10_a_49,13.96,pct_empresas_venden_web_apps
+2016,M.1.1 % de empresas que han realizado ventas mediante páginas web o apps,de_250_y_mas,25.18,pct_empresas_venden_web_apps
+2016,M.1.1 % de empresas que han realizado ventas mediante páginas web o apps,de_50_a_249,19.17,pct_empresas_venden_web_apps
+2016,M.1.1 % de empresas que han realizado ventas mediante páginas web o apps,total,14.98,pct_empresas_venden_web_apps
+2016,M.1.H % ventas mediante comercio electrónico sobre el total de ventas,de_10_a_49,5.81,pct_ventas_ecommerce_sobre_total
+2016,M.1.H % ventas mediante comercio electrónico sobre el total de ventas,de_250_y_mas,22.85,pct_ventas_ecommerce_sobre_total
+2016,M.1.H % ventas mediante comercio electrónico sobre el total de ventas,de_50_a_249,15.14,pct_ventas_ecommerce_sobre_total
+2016,M.1.H % ventas mediante comercio electrónico sobre el total de ventas,total,16.55,pct_ventas_ecommerce_sobre_total
+2016,M.1.I % ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico,de_10_a_49,24.81,pct_ventas_ecommerce_sobre_total_empresas_que_venden
+2016,M.1.I % ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico,de_250_y_mas,38.33,pct_ventas_ecommerce_sobre_total_empresas_que_venden
+2016,M.1.I % ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico,de_50_a_249,37.22,pct_ventas_ecommerce_sobre_total_empresas_que_venden
+2016,M.1.I % ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico,total,36.27,pct_ventas_ecommerce_sobre_total_empresas_que_venden
+2017,L.1 % de empresas que han realizado ventas por comercio electrónico,de_10_a_49,17.22,pct_empresas_venden_ecommerce
+2017,L.1 % de empresas que han realizado ventas por comercio electrónico,de_250_y_mas,40.48,pct_empresas_venden_ecommerce
+2017,L.1 % de empresas que han realizado ventas por comercio electrónico,de_50_a_249,29.22,pct_empresas_venden_ecommerce
+2017,L.1 % de empresas que han realizado ventas por comercio electrónico,total,19.61,pct_empresas_venden_ecommerce
+2017,L.1.1 % de empresas que han realizado ventas mediante páginas web o apps,de_10_a_49,14.04,pct_empresas_venden_web_apps
+2017,L.1.1 % de empresas que han realizado ventas mediante páginas web o apps,de_250_y_mas,2.51,pct_empresas_venden_web_apps
+2017,L.1.1 % de empresas que han realizado ventas mediante páginas web o apps,de_50_a_249,19.34,pct_empresas_venden_web_apps
+2017,L.1.1 % de empresas que han realizado ventas mediante páginas web o apps,total,15.12,pct_empresas_venden_web_apps
+2017,L.1.H % ventas mediante comercio electrónico sobre el total de ventas,de_10_a_49,5.72,pct_ventas_ecommerce_sobre_total
+2017,L.1.H % ventas mediante comercio electrónico sobre el total de ventas,de_250_y_mas,2.47,pct_ventas_ecommerce_sobre_total
+2017,L.1.H % ventas mediante comercio electrónico sobre el total de ventas,de_50_a_249,13.97,pct_ventas_ecommerce_sobre_total
+2017,L.1.H % ventas mediante comercio electrónico sobre el total de ventas,total,17.31,pct_ventas_ecommerce_sobre_total
+2017,L.1.I % ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico,de_10_a_49,26.67,pct_ventas_ecommerce_sobre_total_empresas_que_venden
+2017,L.1.I % ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico,de_250_y_mas,41.17,pct_ventas_ecommerce_sobre_total_empresas_que_venden
+2017,L.1.I % ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico,de_50_a_249,36.73,pct_ventas_ecommerce_sobre_total_empresas_que_venden
+2017,L.1.I % ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico,total,38.51,pct_ventas_ecommerce_sobre_total_empresas_que_venden
+2018,K.1 % de empresas que han realizado ventas por comercio electrónico,de_10_a_49,18.17,pct_empresas_venden_ecommerce
+2018,K.1 % de empresas que han realizado ventas por comercio electrónico,de_250_y_mas,41.68,pct_empresas_venden_ecommerce
+2018,K.1 % de empresas que han realizado ventas por comercio electrónico,de_50_a_249,28.86,pct_empresas_venden_ecommerce
+2018,K.1 % de empresas que han realizado ventas por comercio electrónico,total,20.36,pct_empresas_venden_ecommerce
+2018,K.1.1 % de empresas que han realizado ventas mediante páginas web o apps,de_10_a_49,15.24,pct_empresas_venden_web_apps
+2018,K.1.1 % de empresas que han realizado ventas mediante páginas web o apps,de_250_y_mas,26.02,pct_empresas_venden_web_apps
+2018,K.1.1 % de empresas que han realizado ventas mediante páginas web o apps,de_50_a_249,2.09,pct_empresas_venden_web_apps
+2018,K.1.1 % de empresas que han realizado ventas mediante páginas web o apps,total,16.35,pct_empresas_venden_web_apps
+2018,K.1.H % ventas mediante comercio electrónico sobre el total de ventas,de_10_a_49,0.54,pct_ventas_ecommerce_sobre_total
+2018,K.1.H % ventas mediante comercio electrónico sobre el total de ventas,de_250_y_mas,25.03,pct_ventas_ecommerce_sobre_total
+2018,K.1.H % ventas mediante comercio electrónico sobre el total de ventas,de_50_a_249,13.18,pct_ventas_ecommerce_sobre_total
+2018,K.1.H % ventas mediante comercio electrónico sobre el total de ventas,total,17.31,pct_ventas_ecommerce_sobre_total
+2018,K.1.I % ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico,de_10_a_49,25.01,pct_ventas_ecommerce_sobre_total_empresas_que_venden
+2018,K.1.I % ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico,de_250_y_mas,41.56,pct_ventas_ecommerce_sobre_total_empresas_que_venden
+2018,K.1.I % ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico,de_50_a_249,38.65,pct_ventas_ecommerce_sobre_total_empresas_que_venden
+2018,K.1.I % ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico,total,39.04,pct_ventas_ecommerce_sobre_total_empresas_que_venden
+2019,K.1 % de empresas que han realizado ventas por comercio electrónico,de_10_a_49,23.31,pct_empresas_venden_ecommerce
+2019,K.1 % de empresas que han realizado ventas por comercio electrónico,de_250_y_mas,45.39,pct_empresas_venden_ecommerce
+2019,K.1 % de empresas que han realizado ventas por comercio electrónico,de_50_a_249,33.76,pct_empresas_venden_ecommerce
+2019,K.1 % de empresas que han realizado ventas por comercio electrónico,total,25.46,pct_empresas_venden_ecommerce
+2019,K.1.1 % de empresas que han realizado ventas mediante páginas web o apps,de_10_a_49,20.52,pct_empresas_venden_web_apps
+2019,K.1.1 % de empresas que han realizado ventas mediante páginas web o apps,de_250_y_mas,29.84,pct_empresas_venden_web_apps
+2019,K.1.1 % de empresas que han realizado ventas mediante páginas web o apps,de_50_a_249,2.64,pct_empresas_venden_web_apps
+2019,K.1.1 % de empresas que han realizado ventas mediante páginas web o apps,total,21.64,pct_empresas_venden_web_apps
+2019,K.1.H % ventas mediante comercio electrónico sobre el total de ventas,de_10_a_49,6.51,pct_ventas_ecommerce_sobre_total
+2019,K.1.H % ventas mediante comercio electrónico sobre el total de ventas,de_250_y_mas,2.82,pct_ventas_ecommerce_sobre_total
+2019,K.1.H % ventas mediante comercio electrónico sobre el total de ventas,de_50_a_249,1.27,pct_ventas_ecommerce_sobre_total
+2019,K.1.H % ventas mediante comercio electrónico sobre el total de ventas,total,19.34,pct_ventas_ecommerce_sobre_total
+2019,K.1.I % ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico,de_10_a_49,24.54,pct_ventas_ecommerce_sobre_total_empresas_que_venden
+2019,K.1.I % ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico,de_250_y_mas,43.97,pct_ventas_ecommerce_sobre_total_empresas_que_venden
+2019,K.1.I % ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico,de_50_a_249,31.85,pct_ventas_ecommerce_sobre_total_empresas_que_venden
+2019,K.1.I % ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico,total,39.13,pct_ventas_ecommerce_sobre_total_empresas_que_venden
+2020,K.1 % de empresas que han realizado ventas por comercio electrónico,de_10_a_49,25.16,pct_empresas_venden_ecommerce
+2020,K.1 % de empresas que han realizado ventas por comercio electrónico,de_250_y_mas,44.89,pct_empresas_venden_ecommerce
+2020,K.1 % de empresas que han realizado ventas por comercio electrónico,de_50_a_249,33.91,pct_empresas_venden_ecommerce
+2020,K.1 % de empresas que han realizado ventas por comercio electrónico,total,26.86,pct_empresas_venden_ecommerce
+2020,K.1.1 % de empresas que han realizado ventas mediante páginas web o apps,de_10_a_49,22.64,pct_empresas_venden_web_apps
+2020,K.1.1 % de empresas que han realizado ventas mediante páginas web o apps,de_250_y_mas,2.94,pct_empresas_venden_web_apps
+2020,K.1.1 % de empresas que han realizado ventas mediante páginas web o apps,de_50_a_249,25.55,pct_empresas_venden_web_apps
+2020,K.1.1 % de empresas que han realizado ventas mediante páginas web o apps,total,23.21,pct_empresas_venden_web_apps
+2020,K.1.H % ventas mediante comercio electrónico sobre el total de ventas,de_10_a_49,5.54,pct_ventas_ecommerce_sobre_total
+2020,K.1.H % ventas mediante comercio electrónico sobre el total de ventas,de_250_y_mas,29.13,pct_ventas_ecommerce_sobre_total
+2020,K.1.H % ventas mediante comercio electrónico sobre el total de ventas,de_50_a_249,13.05,pct_ventas_ecommerce_sobre_total
+2020,K.1.H % ventas mediante comercio electrónico sobre el total de ventas,total,19.07,pct_ventas_ecommerce_sobre_total
+2020,K.1.I % ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico,de_10_a_49,22.63,pct_ventas_ecommerce_sobre_total_empresas_que_venden
+2020,K.1.I % ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico,de_250_y_mas,42.71,pct_ventas_ecommerce_sobre_total_empresas_que_venden
+2020,K.1.I % ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico,de_50_a_249,31.19,pct_ventas_ecommerce_sobre_total_empresas_que_venden
+2020,K.1.I % ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico,total,37.84,pct_ventas_ecommerce_sobre_total_empresas_que_venden
+2021,J.1 % de empresas que han realizado ventas por comercio electrónico,de_10_a_49,29.37,pct_empresas_venden_ecommerce
+2021,J.1 % de empresas que han realizado ventas por comercio electrónico,de_250_y_mas,54.54,pct_empresas_venden_ecommerce
+2021,J.1 % de empresas que han realizado ventas por comercio electrónico,de_50_a_249,40.17,pct_empresas_venden_ecommerce
+2021,J.1 % de empresas que han realizado ventas por comercio electrónico,total,31.59,pct_empresas_venden_ecommerce
+2021,J.1.1 % de empresas que han realizado ventas mediante páginas web o apps,de_10_a_49,25.97,pct_empresas_venden_web_apps
+2021,J.1.1 % de empresas que han realizado ventas mediante páginas web o apps,de_250_y_mas,41.21,pct_empresas_venden_web_apps
+2021,J.1.1 % de empresas que han realizado ventas mediante páginas web o apps,de_50_a_249,32.07,pct_empresas_venden_web_apps
+2021,J.1.1 % de empresas que han realizado ventas mediante páginas web o apps,total,27.25,pct_empresas_venden_web_apps
+2021,J.1.H % ventas mediante comercio electrónico sobre el total de ventas,de_10_a_49,7.17,pct_ventas_ecommerce_sobre_total
+2021,J.1.H % ventas mediante comercio electrónico sobre el total de ventas,de_250_y_mas,27.57,pct_ventas_ecommerce_sobre_total
+2021,J.1.H % ventas mediante comercio electrónico sobre el total de ventas,de_50_a_249,13.06,pct_ventas_ecommerce_sobre_total
+2021,J.1.H % ventas mediante comercio electrónico sobre el total de ventas,total,19.95,pct_ventas_ecommerce_sobre_total
+2021,J.1.I % ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico,de_10_a_49,1.85,pct_ventas_ecommerce_sobre_total_empresas_que_venden
+2021,J.1.I % ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico,de_250_y_mas,0.34,pct_ventas_ecommerce_sobre_total_empresas_que_venden
+2021,J.1.I % ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico,de_50_a_249,24.64,pct_ventas_ecommerce_sobre_total_empresas_que_venden
+2021,J.1.I % ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico,total,30.35,pct_ventas_ecommerce_sobre_total_empresas_que_venden
+2022,I.1 % de empresas que han realizado ventas por comercio electrónico (0),de_10_a_49,29.41,pct_empresas_venden_ecommerce
+2022,I.1 % de empresas que han realizado ventas por comercio electrónico (0),de_250_y_mas,56.18,pct_empresas_venden_ecommerce
+2022,I.1 % de empresas que han realizado ventas por comercio electrónico (0),de_50_a_249,39.69,pct_empresas_venden_ecommerce
+2022,I.1 % de empresas que han realizado ventas por comercio electrónico (0),total,31.69,pct_empresas_venden_ecommerce
+2022,I.1.1 % de empresas que han realizado ventas mediante páginas web o apps (0),de_10_a_49,26.23,pct_empresas_venden_web_apps
+2022,I.1.1 % de empresas que han realizado ventas mediante páginas web o apps (0),de_250_y_mas,43.49,pct_empresas_venden_web_apps
+2022,I.1.1 % de empresas que han realizado ventas mediante páginas web o apps (0),de_50_a_249,31.38,pct_empresas_venden_web_apps
+2022,I.1.1 % de empresas que han realizado ventas mediante páginas web o apps (0),total,27.49,pct_empresas_venden_web_apps
+2022,I.1.H % ventas mediante comercio electrónico sobre el total de ventas,de_10_a_49,7.44,pct_ventas_ecommerce_sobre_total
+2022,I.1.H % ventas mediante comercio electrónico sobre el total de ventas,de_250_y_mas,26.74,pct_ventas_ecommerce_sobre_total
+2022,I.1.H % ventas mediante comercio electrónico sobre el total de ventas,de_50_a_249,11.57,pct_ventas_ecommerce_sobre_total
+2022,I.1.H % ventas mediante comercio electrónico sobre el total de ventas,total,19.47,pct_ventas_ecommerce_sobre_total
+2022,I.1.I % ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico,de_10_a_49,21.01,pct_ventas_ecommerce_sobre_total_empresas_que_venden
+2022,I.1.I % ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico,de_250_y_mas,33.47,pct_ventas_ecommerce_sobre_total_empresas_que_venden
+2022,I.1.I % ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico,de_50_a_249,24.62,pct_ventas_ecommerce_sobre_total_empresas_que_venden
+2022,I.1.I % ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico,total,30.62,pct_ventas_ecommerce_sobre_total_empresas_que_venden
+2023,"I.1 % de empresas que han realizado ventas por comercio electrónico mediante páginas web, aplicaciones móviles o mensajes tipo EDI (0)",de_10_a_49,28.69,pct_empresas_venden_ecommerce
+2023,"I.1 % de empresas que han realizado ventas por comercio electrónico mediante páginas web, aplicaciones móviles o mensajes tipo EDI (0)",de_250_y_mas,55.44,pct_empresas_venden_ecommerce
+2023,"I.1 % de empresas que han realizado ventas por comercio electrónico mediante páginas web, aplicaciones móviles o mensajes tipo EDI (0)",de_50_a_249,3.65,pct_empresas_venden_ecommerce
+2023,"I.1 % de empresas que han realizado ventas por comercio electrónico mediante páginas web, aplicaciones móviles o mensajes tipo EDI (0)",total,30.67,pct_empresas_venden_ecommerce
+2023,"I.1.1 % de empresas que han realizado ventas mediante páginas web, apps o plataformas digitales (marketplace) (0)",de_10_a_49,26.32,pct_empresas_venden_web_apps
+2023,"I.1.1 % de empresas que han realizado ventas mediante páginas web, apps o plataformas digitales (marketplace) (0)",de_250_y_mas,4.29,pct_empresas_venden_web_apps
+2023,"I.1.1 % de empresas que han realizado ventas mediante páginas web, apps o plataformas digitales (marketplace) (0)",de_50_a_249,30.44,pct_empresas_venden_web_apps
+2023,"I.1.1 % de empresas que han realizado ventas mediante páginas web, apps o plataformas digitales (marketplace) (0)",total,27.44,pct_empresas_venden_web_apps
+2023,I.1.H % ventas mediante comercio electrónico sobre el total de ventas,de_10_a_49,6.67,pct_ventas_ecommerce_sobre_total
+2023,I.1.H % ventas mediante comercio electrónico sobre el total de ventas,de_250_y_mas,26.78,pct_ventas_ecommerce_sobre_total
+2023,I.1.H % ventas mediante comercio electrónico sobre el total de ventas,de_50_a_249,12.28,pct_ventas_ecommerce_sobre_total
+2023,I.1.H % ventas mediante comercio electrónico sobre el total de ventas,total,19.59,pct_ventas_ecommerce_sobre_total
+2023,I.1.I % ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico,de_10_a_49,20.57,pct_ventas_ecommerce_sobre_total_empresas_que_venden
+2023,I.1.I % ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico,de_250_y_mas,33.44,pct_ventas_ecommerce_sobre_total_empresas_que_venden
+2023,I.1.I % ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico,de_50_a_249,26.59,pct_ventas_ecommerce_sobre_total_empresas_que_venden
+2023,I.1.I % ventas mediante comercio electrónico sobre el total de ventas de las empresas que venden por comercio electrónico,total,31.03,pct_ventas_ecommerce_sobre_total_empresas_que_venden

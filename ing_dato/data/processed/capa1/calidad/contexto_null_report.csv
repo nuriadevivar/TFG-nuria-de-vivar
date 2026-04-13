@@ -1,0 +1,4 @@
+dataset,variable,n_obs,n_nulos,pct_nulos
+contexto_digitalizacion_clean,anio,6,0,0.0
+contexto_digitalizacion_clean,pct_usuarios_rrss,6,0,0.0
+contexto_digitalizacion_clean,pct_personas_compra_online,6,0,0.0

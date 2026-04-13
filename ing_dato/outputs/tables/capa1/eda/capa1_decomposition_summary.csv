@@ -1,0 +1,4 @@
+serie,n_obs_validas,periodo_estacional,descomposicion_realizada,comentario
+indice_retail_moda,108,12,si,"Se separan los componentes de tendencia, estacionalidad y residuo."
+indice_retail_total,108,12,si,"Se separan los componentes de tendencia, estacionalidad y residuo."
+ratio_moda_vs_total,108,12,si,"Se separan los componentes de tendencia, estacionalidad y residuo."

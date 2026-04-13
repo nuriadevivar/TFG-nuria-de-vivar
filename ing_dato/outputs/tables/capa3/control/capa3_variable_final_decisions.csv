@@ -1,0 +1,13 @@
+dataset,variable,usar_en_modelos,usar_en_eda,usar_solo_contexto,comentario
+capa3_master_encuesta,id_respuesta,no,si,no,Identificador técnico para trazabilidad y cruces.
+capa3_master_encuesta,timestamp,no,si,si,Útil para control de captura; no forma parte del núcleo analítico.
+capa3_master_encuesta,grupo_edad,si,si,no,Segmentación generacional principal.
+capa3_master_encuesta,sexo,si,si,no,Variable auxiliar de perfilado.
+capa3_clustering_ready,bloque_clustering,si,si,no,Tabla final para segmentación de consumidores.
+capa3_supervised_ready,bloque_supervisado_sin_fuga,si,si,no,Tabla final supervisada sin variables derivadas que contengan los targets.
+capa3_generacion_summary,metricas_agregadas,no,si,si,Resumen interpretativo por generación.
+encuesta_rrss_long,rrss,no,si,no,Base long para análisis multirrespuesta.
+encuesta_marcas_vistas_long,marca_vista_rrss,no,si,no,Base long para exposición a marcas.
+encuesta_marcas_influyen_long,marca_influye_compra_rrss,no,si,no,Base long para influencia de marcas en compra.
+capa3_sample_structure,grupo_edad + sexo + n_respuestas,no,si,si,Resume la composición muestral de la encuesta y apoya la interpretación.
+capa3_target_summary,target + n_validos + pct_clase_1 + pct_clase_0,no,si,si,Resume el balance de clases de los targets supervisados.

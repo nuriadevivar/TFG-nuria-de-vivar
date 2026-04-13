@@ -1,0 +1,20 @@
+grupo,termino,n_obs,n_non_null,avg_trends,pct_non_null,quality_flag,prioridad_analitica,decision_uso,comentario,mantener_en_base,usar_en_analisis_principal,usar_solo_exploratorio
+consciente_compra,comprar ropa online,132,131,62.85152671755725,99.24,alta,principal,usar_en_analisis_principal,Término robusto por cobertura y señal media; apto para análisis principal.,si,si,no
+consciente_compra,moda sostenible,132,131,33.10076335877862,99.24,alta,principal,usar_en_analisis_principal,Término robusto por cobertura y señal media; apto para análisis principal.,si,si,no
+consciente_compra,ropa vintage,132,120,66.89458333333333,90.91,alta,principal,usar_en_analisis_principal,Término robusto por cobertura y señal media; apto para análisis principal.,si,si,no
+consciente_compra,slow fashion,132,120,7.834166666666666,90.91,alta,secundario,usar_en_analisis_secundario,Cobertura alta pero señal débil; mantener como término exploratorio o secundario según contexto.,si,no,no
+consciente_compra,zara online,132,131,41.83053435114504,99.24,alta,principal,usar_en_analisis_principal,Término robusto por cobertura y señal media; apto para análisis principal.,si,si,no
+marcas,hm,132,132,52.14393939393939,100.0,alta,principal,usar_en_analisis_principal,Término robusto por cobertura y señal media; apto para análisis principal.,si,si,no
+marcas,mango,131,131,50.9763358778626,100.0,alta,principal,usar_en_analisis_principal,Término robusto por cobertura y señal media; apto para análisis principal.,si,si,no
+marcas,massimo_dutti,132,132,44.97727272727273,100.0,alta,principal,usar_en_analisis_principal,Término robusto por cobertura y señal media; apto para análisis principal.,si,si,no
+marcas,shein,131,120,59.805,91.6,alta,principal,usar_en_analisis_principal,Término robusto por cobertura y señal media; apto para análisis principal.,si,si,no
+marcas,zara,131,131,50.60343511450382,100.0,alta,principal,usar_en_analisis_principal,Término robusto por cobertura y señal media; apto para análisis principal.,si,si,no
+sofisticado,cayetana,132,48,19.225,36.36,baja,secundario,usar_en_analisis_secundario,"Interés conceptual alto, pero continuidad temporal limitada; usar con prudencia.",si,no,no
+sofisticado,minimalista elegante,132,61,2.315573770491804,46.21,baja,exploratorio,usar_solo_exploratorio,"Cobertura y señal débiles; mantener solo para exploración, no para análisis principal.",si,no,si
+sofisticado,moda preppy,132,37,2.5,28.03,baja,exploratorio,usar_solo_exploratorio,"Cobertura y señal débiles; mantener solo para exploración, no para análisis principal.",si,no,si
+sofisticado,old money,132,120,22.096666666666668,90.91,alta,principal,usar_en_analisis_principal,Término robusto por cobertura y señal media; apto para análisis principal.,si,si,no
+sofisticado,pija,132,49,55.63061224489796,37.12,baja,secundario,usar_en_analisis_secundario,"Interés conceptual alto, pero continuidad temporal limitada; usar con prudencia.",si,no,no
+urbano,choni,132,120,59.25416666666667,90.91,alta,principal,usar_en_analisis_principal,Término robusto por cobertura y señal media; apto para análisis principal.,si,si,no
+urbano,streetwear,132,131,55.58854961832061,99.24,alta,principal,usar_en_analisis_principal,Término robusto por cobertura y señal media; apto para análisis principal.,si,si,no
+urbano,trap style,132,36,2.013888888888889,27.27,baja,exploratorio,usar_solo_exploratorio,"Cobertura y señal débiles; mantener solo para exploración, no para análisis principal.",si,no,si
+urbano,y2k outfit,132,13,1.9230769230769231,9.85,baja,exploratorio,usar_solo_exploratorio,"Cobertura y señal débiles; mantener solo para exploración, no para análisis principal.",si,no,si

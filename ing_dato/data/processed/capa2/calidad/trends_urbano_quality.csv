@@ -1,0 +1,2 @@
+fuente,n_total,n_validos,n_nan,pct_nan,n_cero,pct_cero,decision_nan,decision_cero,media_sin_ceros
+trends_urbano,532,302,230,43.23,50,16.56,mantener_nan — dato no disponible en Google Trends API,"mantener_cero con flag valor_cero_trends=True — valor 0 en GT indica volumen de busqueda insuficiente para ser representado en escala 0-100, no ausencia real de interes. Imputar distorsionaria la comparacion entre terminos.",57.62

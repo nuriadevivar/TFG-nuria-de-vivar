@@ -42,9 +42,14 @@ def _ensure_dirs() -> None:
 
 
 def _clean_trends_long(df: pd.DataFrame, date_col: str, value_col: str) -> pd.DataFrame:
+    # Normaliza un dataframe de Google Trends en formato largo:
+    # renombra columnas a nombres canónicos, parsea fecha al primer día del mes
+    # y añade columnas de año y mes para facilitar agregaciones posteriores.
     df = df.copy()
     df = df.rename(columns={date_col: "fecha", value_col: "valor_trends"})
     df["fecha"] = pd.to_datetime(df["fecha"], errors="coerce")
+    # Trunca al primer día del mes para garantizar consistencia entre fuentes
+    # que pueden tener fechas en distintos formatos (día variable)
     df["fecha"] = df["fecha"].dt.to_period("M").dt.to_timestamp()
     df["valor_trends"] = pd.to_numeric(df["valor_trends"], errors="coerce")
     df["anio"] = df["fecha"].dt.year
@@ -54,6 +59,10 @@ def _clean_trends_long(df: pd.DataFrame, date_col: str, value_col: str) -> pd.Da
 
 def _reshape_wide_trends(file_path: Path, date_col: str,
                          group_name: str, output_name: str) -> pd.DataFrame:
+    
+    # Convierte ficheros de Google Trends en formato ancho (fecha × términos)
+    # a formato largo (fecha, termino, valor_trends). Patrón habitual en las
+    # exportaciones de pytrends donde cada término es una columna.
     df = pd.read_csv(file_path)
     value_cols = [c for c in df.columns if c != date_col]
     long_df = df.melt(
@@ -70,6 +79,9 @@ def _trends_quality_report(df: pd.DataFrame, label: str) -> pd.DataFrame:
     Genera informe de calidad para un dataset de Google Trends.
     Documenta NaN (dato no disponible) y ceros (volumen insuficiente en GT).
     """
+    # Distingue dos tipos de ausencia de señal en Google Trends:
+    # NaN: dato genuinamente no disponible en la API para ese término/mes
+    # Cero: volumen de búsquedas real pero demasiado bajo para la escala 0-100
     n_total = len(df)
     n_nan = int(df["valor_trends"].isna().sum())
     n_zero = int((df["valor_trends"] == 0).sum())
@@ -98,6 +110,8 @@ def _trends_quality_report(df: pd.DataFrame, label: str) -> pd.DataFrame:
 
 def _save_antes_despues(before: pd.DataFrame, after: pd.DataFrame,
                          label: str, out_dir: Path) -> None:
+    # Exporta una tabla antes/después de la transformación para auditoría.
+    # Permite verificar qué filas se modificaron o excluyeron en cada paso ETL.
     b = before.copy()
     b.insert(0, "_fase", "ANTES")
     a = after.copy()
@@ -109,6 +123,9 @@ def _save_antes_despues(before: pd.DataFrame, after: pd.DataFrame,
 
 
 def normalize_brand_name(text: str) -> str | None:
+    # Mapea variantes del nombre de marca a un identificador canónico.
+    # Necesario porque la misma marca puede aparecer con distintos formatos
+    # en Google Trends, Instagram y eventos según cómo se introdujo el término.
     if pd.isna(text):
         return None
     t = str(text).strip().lower()
@@ -123,6 +140,9 @@ def normalize_brand_name(text: str) -> str | None:
 
 
 def infer_brand_from_filename(filename: str) -> str | None:
+    # Infiere la marca a partir del nombre del fichero CSV de Apify.
+    # Apify genera un fichero por perfil scrapeado y su nombre incluye
+    # el handle o nombre de la marca.
     name = filename.lower()
     if "massimo" in name:
         return "massimo_dutti"
@@ -136,7 +156,9 @@ def infer_brand_from_filename(filename: str) -> str | None:
         return "hm"
     return None
 
-
+# Diccionario de validación de términos por grupo estético.
+# Define el conjunto esperado de términos para cada grupo y se usa
+# para filtrar términos no previstos que puedan aparecer en las exportaciones.
 VALID_TERMS_BY_GROUP = {
     "sofisticado": {"cayetana", "pija", "old money", "moda preppy", "minimalista elegante"},
     "urbano": {"choni", "trap style", "y2k outfit", "streetwear"},
@@ -169,14 +191,16 @@ def transform_trends_moda_total() -> pd.DataFrame:
     df["grupo"] = df["grupo"].astype(str).str.strip()
     df["termino"] = df["termino"].astype(str).str.strip()
 
-    # Flag ceros GT
+    # Flag que distingue cero real de Google Trends (volumen insuficiente)
+    # de NaN (dato no disponible). Crítico para no confundir ambas situaciones
+    # en el análisis comparativo entre términos.
     df["valor_cero_trends"] = df["valor_trends"] == 0
 
     # Snapshot DESPUÉS
     after = df.head(10).copy()
     _save_antes_despues(before, after, "trends_moda_total", out_dir)
 
-    # Calidad
+    # Informe de calidad: documenta NaN y ceros por fuente
     quality = _trends_quality_report(df, "trends_moda_total")
     quality.to_csv(cal_dir / "trends_moda_total_quality.csv", index=False)
 
@@ -211,6 +235,9 @@ def transform_trends_marcas() -> pd.DataFrame:
 
     n_raw_base = len(base_df)
 
+    # Manejo flexible del formato: el fichero base puede venir en formato largo
+    # (con columnas fecha/termino/valor_trends) o ancho (fecha × marcas).
+    # Se detecta automáticamente para garantizar robustez ante cambios de formato.
     if "fecha" in base_df.columns and "termino" in base_df.columns and "valor_trends" in base_df.columns:
         base_long = base_df.copy()
     else:
@@ -240,12 +267,15 @@ def transform_trends_marcas() -> pd.DataFrame:
     extra_df["grupo"] = "marcas"
     extra_df = extra_df[["fecha", "termino", "valor_trends", "anio", "mes_num", "grupo"]].copy()
 
+    # Concatena base y extra; la deduplicación posterior resuelve solapamientos
     df = pd.concat([base_long, extra_df], ignore_index=True)
 
     main_brands = ["zara", "shein", "mango", "hm", "massimo_dutti"]
     df = df[df["termino"].isin(main_brands)].copy()
     n_antes_dedup = len(df)
 
+    # Deduplicación por (fecha, termino): si base y extra tienen el mismo mes
+    # para la misma marca, se conserva el último valor (extra tiene prioridad)
     df = (
         df.sort_values(["termino", "fecha"])
         .drop_duplicates(subset=["fecha", "termino"], keep="last")
@@ -273,6 +303,9 @@ def transform_trends_marcas() -> pd.DataFrame:
 # =========================
 
 def _transform_trends_grupo(group_name: str, file_suffix: str) -> pd.DataFrame:
+    # Función genérica para transformar grupos de términos estéticos.
+    # Aplica el mismo pipeline ETL a los tres grupos (sofisticado, urbano,
+    # consciente_compra), filtrando solo los términos incluidos en VALID_TERMS_BY_GROUP.
     _ensure_dirs()
     cal_dir = PROCESSED_CAPA2 / "calidad"
     out_dir = PROCESSED_CAPA2 / "googletrends"
@@ -289,6 +322,9 @@ def _transform_trends_grupo(group_name: str, file_suffix: str) -> pd.DataFrame:
     n_before_filter = len(df)
 
     df["termino"] = df["termino"].astype(str).str.strip().str.lower()
+    # Filtra solo los términos validados para este grupo.
+    # Descarta términos que puedan haberse colado en la exportación de pytrends
+    # por solapamiento de consultas o errores de nomenclatura.
     df = df[df["termino"].isin(VALID_TERMS_BY_GROUP[group_name])].copy().reset_index(drop=True)
     df["valor_cero_trends"] = df["valor_trends"] == 0
 
@@ -307,7 +343,8 @@ def _transform_trends_grupo(group_name: str, file_suffix: str) -> pd.DataFrame:
     )
     return df
 
-
+# Cada función pública delega en _transform_trends_grupo con su nombre de grupo
+# y sufijo de fichero correspondiente
 def transform_trends_sofisticado() -> pd.DataFrame:
     return _transform_trends_grupo("sofisticado", "sofisticado")
 
@@ -336,10 +373,12 @@ def transform_trends_productos() -> pd.DataFrame:
     df_raw = pd.read_csv(file_path)
     before = df_raw.head(5).copy()
 
+    # Este fichero usa 'interes_trends' como nombre de columna en lugar de 'valor_trends'
     df = df_raw.rename(columns={"interes_trends": "valor_trends"})
     df["fecha"] = pd.to_datetime(df["fecha"], errors="coerce").dt.to_period("M").dt.to_timestamp()
     df["valor_trends"] = pd.to_numeric(df["valor_trends"], errors="coerce")
 
+    # Normalización de campos textuales para garantizar consistencia con el resto de fuentes
     if "marca" in df.columns:
         df["marca"] = df["marca"].apply(normalize_brand_name)
     if "categoria_producto" in df.columns:
@@ -381,15 +420,20 @@ def transform_eventos_moda() -> pd.DataFrame:
     before = df_raw.copy()
 
     df = df_raw.copy()
+    # La fecha viene en formato "YYYY-MM" (fecha_aprox); se añade "-01" para
+    # obtener el primer día del mes y poder parsear con pd.to_datetime
     df["fecha"] = pd.to_datetime(df["fecha_aprox"] + "-01", errors="coerce")
     df["anio"] = df["fecha"].dt.year
     df["mes_num"] = df["fecha"].dt.month
 
+    # Limpieza de campos de texto: elimina espacios y caracteres invisibles
     text_cols = ["marca_o_tendencia", "plataforma", "tipo_evento", "descripcion_evento", "fuente"]
     for col in text_cols:
         if col in df.columns:
             df[col] = df[col].astype(str).str.strip()
 
+    # Exclusión de eventos con fecha no parseable. Se avisa en consola para
+    # revisión manual si ocurre, aunque no debería con la fuente actual.
     n_nat = int(df["fecha"].isna().sum())
     if n_nat > 0:
         print(f"  [WARN] eventos_moda: {n_nat} fechas no parseables → excluidas")
@@ -419,6 +463,8 @@ def build_trends_grupos_unificados() -> pd.DataFrame:
     _ensure_dirs()
     out_dir = PROCESSED_CAPA2 / "googletrends"
 
+    # Se unen los cuatro grupos principales. trends_productos se mantiene
+    # separado porque tiene estructura distinta (marca × categoría vs término × grupo)
     files = [
         out_dir / "trends_marcas_clean.csv",
         out_dir / "trends_sofisticado_clean.csv",
@@ -440,6 +486,8 @@ def build_trends_grupos_unificados() -> pd.DataFrame:
     full_df["anio"] = full_df["fecha"].dt.year
     full_df["mes_num"] = full_df["fecha"].dt.month
 
+    # Deduplicación final por (fecha, grupo, termino): garantiza una única
+    # observación por clave en el dataset unificado
     full_df = (
         full_df
         .sort_values(["grupo", "termino", "fecha"])
@@ -485,6 +533,8 @@ def transform_apify_instagram_posts() -> pd.DataFrame:
     quality_records = []
 
     for file_path in files:
+        # La marca se infiere del nombre del fichero, no de una columna del CSV,
+        # porque Apify no incluye la marca como campo en la exportación
         brand = infer_brand_from_filename(file_path.name)
         if brand is None:
             print(f"  [WARN] No se pudo inferir marca para {file_path.name}. Se omite.")
@@ -501,6 +551,8 @@ def transform_apify_instagram_posts() -> pd.DataFrame:
         }
         df = df.rename(columns={old: new for old, new in rename_map.items() if old in df.columns})
 
+        # Reindexación defensiva: garantiza que todas las columnas esperadas
+        # están presentes aunque no aparezcan en algún fichero de Apify
         expected_cols = ["caption", "comentarios", "likes", "fecha_post", "url_post",
                          "hashtags", "tipo_post", "perfil_origen", "perfil_nombre", "inputUrl"]
         base = df.reindex(columns=expected_cols).copy()
@@ -508,13 +560,22 @@ def transform_apify_instagram_posts() -> pd.DataFrame:
         n_likes_nan = int(base["likes"].isna().sum())
         n_comentarios_nan = int(base["comentarios"].isna().sum())
 
+        # Flag que identifica posts cuyas métricas fueron imputadas.
+        # Permite evaluar el potencial sesgo en el engagement calculado.
         base["metricas_imputadas"] = base["likes"].isna() | base["comentarios"].isna()
+        
+        # Normalización de timezone: Apify devuelve fechas UTC, se elimina tz
+        # para consistencia con el resto de columnas temporales del proyecto
         base["fecha_post"] = pd.to_datetime(base["fecha_post"], errors="coerce", utc=True).dt.tz_localize(None)
+        
+        # Imputación conservadora a 0: no se elimina el post porque el resto
+        # de variables (caption, fecha, tipo_post) siguen siendo válidas
         base["likes"] = pd.to_numeric(base["likes"], errors="coerce").fillna(0)
         base["comentarios"] = pd.to_numeric(base["comentarios"], errors="coerce").fillna(0)
 
         n_fecha_nat = int(base["fecha_post"].isna().sum())
 
+        # Construcción de variables derivadas: fecha normalizada a mes, engagement total
         extra = pd.DataFrame({
             "marca": brand,
             "plataforma": "instagram",
@@ -546,6 +607,8 @@ def transform_apify_instagram_posts() -> pd.DataFrame:
 
     posts = pd.concat(dfs, ignore_index=True)
 
+    # Deduplicación por (marca, url_post): evita posts scrapeados en dos
+    # ejecuciones distintas de Apify que aparezcan duplicados en el dataset
     if "url_post" in posts.columns:
         n_before_dedup = len(posts)
         posts = posts.drop_duplicates(subset=["marca", "url_post"], keep="first")
@@ -581,6 +644,9 @@ def transform_apify_instagram_brand_monthly() -> pd.DataFrame:
     df["comentarios"] = pd.to_numeric(df["comentarios"], errors="coerce").fillna(0)
     df["engagement_total_post"] = pd.to_numeric(df["engagement_total_post"], errors="coerce").fillna(0)
 
+    # Agregación mensual por marca: consolida las métricas de todos los posts
+    # del mes en totales y medias para el análisis de tendencias a nivel marca.
+    # n_posts_metricas_imputadas permite contextualizar la fiabilidad del engagement.
     monthly = (
         df.groupby(["fecha", "anio", "mes_num", "marca", "plataforma"], dropna=False)
         .agg(
@@ -617,6 +683,8 @@ def build_transform_quality_summary() -> pd.DataFrame:
     _ensure_dirs()
     cal_dir = PROCESSED_CAPA2 / "calidad"
 
+    # Lee todos los CSV de calidad generados por las funciones anteriores
+    # y los consolida en una única tabla para revisión global del pipeline
     quality_files = list(cal_dir.glob("*_quality.csv"))
     if not quality_files:
         print("  [INFO] No hay archivos de calidad generados aún.")

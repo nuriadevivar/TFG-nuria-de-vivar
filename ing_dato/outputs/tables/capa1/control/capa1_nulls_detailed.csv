@@ -1,0 +1,5 @@
+dataset,variable,n_nulls,pct_nulls
+contexto_digitalizacion_documentado,pct_personas_compra_ropa_online,5,83.33
+contexto_digitalizacion_documentado,fuente_compra_ropa_online,5,83.33
+contexto_digitalizacion_extended,pct_personas_compra_ropa_online,5,83.33
+contexto_digitalizacion_extended,fuente_compra_ropa_online,5,83.33

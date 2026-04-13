@@ -15,6 +15,8 @@ warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
 # =========================
 
 def _ensure_dirs() -> None:
+    # Crea la estructura de subcarpetas necesaria bajo processed/capa1/
+    # si no existen previamente. Patrón común a todos los scripts de la capa.
     for sub in [
         "contexto_digitalizacion",
         "eurostat",
@@ -26,6 +28,8 @@ def _ensure_dirs() -> None:
 
 
 def _find_first_sheet(file_path: Path) -> str:
+    # Los ficheros Excel del INE no tienen un nombre de hoja estándar entre años.
+    # Se lee siempre la primera hoja disponible para garantizar compatibilidad.
     return pd.ExcelFile(file_path).sheet_names[0]
 
 
@@ -40,7 +44,9 @@ def clean_numeric(value) -> float:
     """
     if pd.isna(value):
         return np.nan
+    # Elimina espacios normales y no separables (\xa0), frecuentes en Excel del INE
     s = str(value).strip().replace("\xa0", "").replace(" ", "")
+     # Convierte formato europeo (punto=miles, coma=decimal) a formato Python
     s = s.replace(".", "").replace(",", ".")
     try:
         return float(s)
@@ -49,6 +55,8 @@ def clean_numeric(value) -> float:
 
 
 def _log_null_report(df: pd.DataFrame, dataset_name: str) -> pd.DataFrame:
+    # Genera un informe de nulos por variable para trazabilidad de calidad.
+    # Se exporta como CSV en la carpeta calidad/ junto a cada transformación.
     records = []
     for col in df.columns:
         n_nulls = int(df[col].isnull().sum())
@@ -67,6 +75,8 @@ def _log_null_report(df: pd.DataFrame, dataset_name: str) -> pd.DataFrame:
 def _save_antes_despues(
     before: list[dict], after: list[dict], label: str, out_dir: Path
 ) -> None:
+    # Exporta una tabla de comparación antes/después de la transformación.
+    # Permite auditar qué filas fueron excluidas o modificadas en cada paso ETL.
     df_b = pd.DataFrame(before)
     df_b.insert(0, "_fase", "ANTES")
     df_a = pd.DataFrame(after)
@@ -79,6 +89,9 @@ def _save_antes_despues(
 
 
 def _assert_unique(df: pd.DataFrame, subset: list[str], dataset_name: str) -> None:
+    # Validación de unicidad de clave. Lanza error si hay filas duplicadas
+    # para la combinación de columnas indicada. Garantiza integridad referencial
+    # antes de exportar cada dataset procesado.
     n_dups = int(df.duplicated(subset=subset, keep=False).sum())
     if n_dups > 0:
         raise ValueError(
@@ -89,6 +102,9 @@ def _assert_unique(df: pd.DataFrame, subset: list[str], dataset_name: str) -> No
 def _assert_expected_values(
     series: pd.Series, expected_values: set[str], field_name: str, dataset_name: str
 ) -> None:
+    # Validación de dominio: comprueba que los valores únicos de una columna
+    # coinciden exactamente con el conjunto esperado. Detecta cambios en la
+    # codificación de la fuente entre ediciones anuales.
     found = set(series.dropna().astype(str).unique())
     if found != expected_values:
         raise ValueError(
@@ -104,6 +120,9 @@ def _assert_year_range(
     expected_max: int,
     dataset_name: str,
 ) -> None:
+    # Validación de cobertura temporal. Lanza error si el rango de años
+    # del dataset no coincide con el esperado. Detecta ficheros incompletos
+    # o con años adicionales no previstos.
     years = pd.to_numeric(df[year_col], errors="coerce").dropna().astype(int)
     if years.empty:
         raise ValueError(f"[{dataset_name}] No se encontraron años válidos.")
@@ -121,6 +140,8 @@ def _assert_monthly_coverage(
     expected_end: str,
     dataset_name: str,
 ) -> None:
+    # Validación de cobertura mensual completa. Comprueba que la serie
+    # empieza y termina en los meses esperados y que no hay fechas duplicadas.
     fechas = pd.to_datetime(df[date_col], errors="coerce").dropna().sort_values()
     if fechas.empty:
         raise ValueError(f"[{dataset_name}] No se encontraron fechas válidas.")
@@ -143,6 +164,9 @@ def _print_dataset_summary(
     dataset_name: str,
     time_col: str | None = None,
 ) -> None:
+    # Imprime en consola un resumen compacto del dataset procesado:
+    # dimensiones, nulos totales y cobertura temporal. Útil para verificación
+    # rápida al ejecutar el pipeline completo.
     msg = f"  [{dataset_name}] filas={len(df)} | columnas={df.shape[1]} | nulos_totales={int(df.isnull().sum().sum())}"
     if time_col and time_col in df.columns:
         if "fecha" in time_col:
@@ -177,6 +201,7 @@ def transform_contexto() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     cal_dir = PROCESSED_CAPA1 / "calidad"
 
     df = pd.read_excel(RAW_CAPA1 / "contexto_digitalizacion" / "contexto_digitalizacion.xlsx")
+    # Normalización defensiva de nombres de columna: minúsculas y sin espacios
     df.columns = [str(c).strip().lower() for c in df.columns]
 
     rename_map = {
@@ -191,6 +216,7 @@ def transform_contexto() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     }
     df = df.rename(columns=rename_map)
 
+    # Validación de columnas obligatorias antes de continuar
     required_cols = {"anio", "pct_usuarios_rrss", "pct_personas_compra_online"}
     missing = required_cols - set(df.columns)
     if missing:
@@ -204,6 +230,8 @@ def transform_contexto() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     for col in numeric_cols:
         if col in df.columns:
             df[col] = pd.to_numeric(df[col], errors="coerce")
+            # Algunas fuentes entregan porcentajes en escala 0-1 en lugar de 0-100.
+            # Si el máximo es ≤1.0 se asume escala 0-1 y se convierte a 0-100.
             max_val = df[col].max(skipna=True)
             if pd.notna(max_val) and max_val <= 1.0:
                 df[col] = df[col] * 100
@@ -216,6 +244,7 @@ def transform_contexto() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
 
     analytic_cols = ["anio", "pct_usuarios_rrss", "pct_personas_compra_online"]
 
+    # Captura del estado ANTES de la imputación para la tabla antes/después
     before = []
     for _, row in df[analytic_cols].iterrows():
         r = row.to_dict()
@@ -225,6 +254,9 @@ def transform_contexto() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
         )
         before.append(r)
 
+    # Imputación por interpolación lineal del único nulo permitido (2025).
+    # La interpolación lineal es la estimación más conservadora sobre una serie
+    # monótonamente creciente. Se documenta con flag de trazabilidad.
     df["pct_personas_compra_online_imputado"] = False
     null_mask = df["pct_personas_compra_online"].isnull()
     n_antes = int(null_mask.sum())
@@ -257,6 +289,7 @@ def transform_contexto() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     if int(df["pct_personas_compra_online_imputado"].sum()) > 1:
         raise ValueError("[contexto_digitalizacion] Hay más de un valor imputado y no debería ocurrir.")
 
+    # Captura del estado DESPUÉS para la tabla de trazabilidad antes/después
     after = []
     for _, row in df[analytic_cols + ["pct_personas_compra_online_imputado"]].iterrows():
         r = row.to_dict()
@@ -270,6 +303,10 @@ def transform_contexto() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
         cal_dir / "contexto_null_report.csv", index=False
     )
 
+    # Exportación en tres niveles de detalle:
+    # _clean: solo variables analíticas + flag de imputación
+    # _documentado: añade variables de trazabilidad (fuentes, comentarios)
+    # _extended: dataset completo sin filtrar
     df_clean = df[analytic_cols + ["pct_personas_compra_online_imputado"]].copy()
     documented_cols = [
         c
@@ -317,6 +354,7 @@ def _extract_eurostat_monthly(
     """
     raw = pd.read_excel(file_path, header=None)
 
+    # Localiza la fila TIME que encabeza las fechas en el formato Eurostat
     time_row_idx = next(
         (i for i, row in raw.iterrows() if any(str(v).strip() == "TIME" for v in row)),
         None,
@@ -325,14 +363,19 @@ def _extract_eurostat_monthly(
         raise ValueError(f"No se encontró fila TIME en {file_path.name}")
 
     header_row = raw.iloc[time_row_idx]
+    # En el formato Eurostat, la fila de España está siempre 2 posiciones
+    # por debajo de la fila TIME (TIME → GEO → Spain)
     spain_row = raw.iloc[time_row_idx + 2]
 
+    # Extrae los índices de columna que contienen fechas en formato YYYY-MM
     date_idx = [
         i
         for i, v in enumerate(header_row)
         if isinstance(v, str) and re.match(r"^\d{4}-\d{2}$", str(v).strip())
     ]
 
+    # Construye el estado ANTES clasificando cada celda como definitiva,
+    # provisional ('p') o no disponible (':')
     before = []
     for i in date_idx:
         val_raw = spain_row.iloc[i]
@@ -356,6 +399,8 @@ def _extract_eurostat_monthly(
     n_no_disp = sum(1 for r in before if r["tipo"] == "no_disponible")
     n_prov = sum(1 for r in before if r["tipo"] == "provisional")
 
+    # Construye el estado DESPUÉS: excluye celdas no disponibles (':') y
+    # convierte valores a float con fecha parseada como primer día del mes
     after = []
     for r in before:
         val = r["valor_raw"]
@@ -376,6 +421,7 @@ def _extract_eurostat_monthly(
 
     df = pd.DataFrame(after).sort_values("fecha").reset_index(drop=True)
 
+    # Exporta las celdas no disponibles para trazabilidad de exclusiones
     no_disp = pd.DataFrame(
         [{"fecha": r["fecha"], "flag": r["flag"]} for r in before if r["tipo"] == "no_disponible"]
     )
@@ -407,6 +453,7 @@ def transform_eurostat_moda() -> pd.DataFrame:
     out_dir = PROCESSED_CAPA1 / "eurostat"
     cal_dir = PROCESSED_CAPA1 / "calidad"
 
+    # Delega la extracción al helper genérico de series mensuales Eurostat
     df = _extract_eurostat_monthly(
         file_path=RAW_CAPA1 / "eurostat" / "eurostat_moda_base2021.xlsx",
         indicator_name="retail_moda_volumen_ventas_indice_base2015",
@@ -415,6 +462,8 @@ def transform_eurostat_moda() -> pd.DataFrame:
         safe_label="eurostat_moda",
     )
 
+    # Validación de cobertura: la serie de moda cubre hasta 2023-12
+    # (Eurostat no publica datos más recientes para NACE G47.7 en España)
     _assert_monthly_coverage(df, "fecha", "2010-01", "2023-12", "eurostat_moda_mensual_clean")
 
     df.to_csv(out_dir / "eurostat_moda_mensual_clean.csv", index=False)
@@ -444,6 +493,8 @@ def transform_eurostat_retail() -> pd.DataFrame:
         safe_label="eurostat_retail_total",
     )
 
+    # La serie de retail total tiene mayor cobertura temporal que la de moda
+    # (llega hasta 2025-09) porque Eurostat publica NACE G47 con menor desfase
     _assert_monthly_coverage(
         df, "fecha", "2010-01", "2025-09", "eurostat_retail_total_mensual_clean"
     )
@@ -468,8 +519,11 @@ def transform_eurostat_online_empresas() -> pd.DataFrame:
     cal_dir = PROCESSED_CAPA1 / "calidad"
 
     file_path = RAW_CAPA1 / "eurostat" / "eurostat_participacion_ventas_online_empresas.xlsx"
+    # Este fichero tiene estructura diferente al de series mensuales:
+    # años en columnas, países en filas, sin flags de provisionalidad
     raw = pd.read_excel(file_path, sheet_name="Sheet 1", header=None)
 
+    # Localiza las filas TIME (cabecera de años) y Spain (datos de España)
     time_row_idx = spain_row_idx = None
     for i, row in raw.iterrows():
         vals = row.astype(str).str.strip().tolist()
@@ -484,12 +538,14 @@ def transform_eurostat_online_empresas() -> pd.DataFrame:
     header_row = raw.iloc[time_row_idx]
     spain_values = raw.iloc[spain_row_idx]
 
+    # Extrae pares (índice_columna, año) para todas las columnas con año válido
     years_raw = [
         (idx, int(float(str(val).strip())))
         for idx, val in enumerate(header_row)
         if re.match(r"^\d{4}(\.0+)?$", str(val).strip())
     ]
 
+    # Construye el estado ANTES documentando qué años se incluyen y cuáles no
     before = []
     for idx, year in years_raw:
         val_raw = spain_values.iloc[idx]
@@ -506,6 +562,9 @@ def transform_eurostat_online_empresas() -> pd.DataFrame:
             }
         )
 
+    # Construye el estado DESPUÉS: solo años >= 2015 con valor numérico válido.
+    # Los valores se dividen entre 100 para homogeneizar la escala (0-1)
+    # con el resto de variables de porcentaje de la capa.
     after = []
     for r in before:
         if not r["incluido"]:
@@ -561,6 +620,7 @@ def _transform_single_comercio_file(
     raw = pd.read_excel(file_path, sheet_name=sheet_name, header=None)
 
     # Leer bloque principal con la estructura esperada
+    # Las primeras 7 filas son cabecera del Excel del INE; los datos empiezan en fila 8
     df = raw.iloc[7:].copy()
     df = df.iloc[:, :5].copy()
     df.columns = ["indicador", "total", "de_10_a_49", "de_50_a_249", "de_250_y_mas"]
@@ -604,6 +664,8 @@ def _transform_single_comercio_file(
     )
     df_long["anio"] = year
 
+    # Conversión de porcentaje: los valores INE vienen en escala 0-100,
+    # se normalizan a 0-1 para homogeneidad con el resto de variables
     df_long["valor"] = df_long["valor"] / 100
 
     expected_sizes = {"total", "de_10_a_49", "de_50_a_249", "de_250_y_mas"}
@@ -616,6 +678,9 @@ def _transform_single_comercio_file(
     # -------------------------
     # DETECCIÓN DE CONFLICTOS
     # -------------------------
+    # Algunas ediciones del Excel INE contienen el mismo indicador repetido
+    # con valores distintos. Se documenta el conflicto y se conserva el
+    # primer valor no nulo como decisión metodológica explícita.
     dup_mask = df_long.duplicated(subset=key_cols, keep=False)
     duplicated_rows = df_long[dup_mask].copy()
 
@@ -657,6 +722,8 @@ def _transform_single_comercio_file(
 
     n_nulos_long = int(df_long["valor"].isnull().sum())
 
+    # Los nulos restantes tras la consolidación son ausencias estructurales del INE:
+    # indicadores no incluidos en esa edición del cuestionario. No se imputan.
     if n_nulos_long > 0:
         print(f"    [{year}] {n_nulos_long} nulos estructurales INE -> conservados como NaN")
 
@@ -781,6 +848,9 @@ def document_master_anual_nulls() -> pd.DataFrame:
     """
     _ensure_dirs()
 
+    # Tabla de decisiones metodológicas sobre nulos del master anual.
+    # Consolida en un único CSV las tres tipologías de nulos encontradas:
+    # cambio metodológico INE, fuera de cobertura temporal e imputación.
     decisions = pd.DataFrame(
         [
             {

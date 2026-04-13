@@ -1,0 +1,5 @@
+dataset,fuente,frecuencia,granularidad,rol_capa3
+processed/capa3/survey/encuesta_fastfashion_clean.csv,Encuesta propia,corte transversal,individuo,master individual de respuestas
+processed/capa3/survey/encuesta_rrss_long.csv,Encuesta propia,corte transversal,individuo-rrss,multirrespuesta de redes sociales
+processed/capa3/survey/encuesta_marcas_vistas_long.csv,Encuesta propia,corte transversal,individuo-marca,multirrespuesta de marcas vistas en rrss
+processed/capa3/survey/encuesta_marcas_influyen_long.csv,Encuesta propia,corte transversal,individuo-marca,multirrespuesta de marcas que influyen en compra

@@ -1,0 +1,2 @@
+bloque,variable,n_obs,q1,q3,iqr,lower_bound,upper_bound,n_outliers,pct_outliers,tipo_atipicidad,decision_metodologica
+terminos,valor_trends,1894,25.0,62.8,37.8,-31.7,119.5,0,0.0,extremo_estadistico_no_error,mantener_y_documentar

@@ -33,6 +33,9 @@ from src.common.config import (
 # =========================
 
 def _ensure_dirs() -> None:
+    # Crea la estructura de carpetas de salida si no existe.
+    # Se llama al inicio de cada función para garantizar que los paths
+    # de escritura están disponibles independientemente del orden de ejecución.
     for sub in ["comercio_electronico", "integrated"]:
         (PROCESSED_CAPA1 / sub).mkdir(parents=True, exist_ok=True)
     TABLES_CAPA1.mkdir(parents=True, exist_ok=True)
@@ -55,6 +58,9 @@ def build_variable_selection_matrix_capa1() -> pd.DataFrame:
     """
     _ensure_dirs()
 
+    # Cada registro documenta una variable con su rol analítico, nivel de nulos
+    # y la decisión metodológica adoptada. Esta tabla es la evidencia documental
+    # del proceso de selección de variables para el corrector y el tribunal.
     records = [
         # --- contexto_digitalizacion_clean ---
         {
@@ -361,6 +367,8 @@ def build_capa1_null_summary() -> pd.DataFrame:
     records = []
 
     # --- pct_personas_compra_online: imputado en 2025 ---
+    # Este nulo sí se imputa porque la serie es continua y el dato estaba pendiente
+    # de publicación. Se usa interpolación lineal como estimación conservadora.
     rows_con_nulo = master_full[master_full["pct_personas_compra_online"].isnull()]
     for _, row in rows_con_nulo.iterrows():
         records.append({
@@ -380,6 +388,9 @@ def build_capa1_null_summary() -> pd.DataFrame:
         })
 
     # --- pct_empresas_venden_web_apps: nulo en 2023, NO imputado ---
+    # Este nulo NO se imputa porque el cambio de codificación INE (K.1→I.1.1)
+    # hace que el valor de 2023 sea metodológicamente incomparable con años anteriores.
+    # Imputar introduciría un sesgo sistemático en el análisis de tendencia.
     if "pct_empresas_venden_web_apps" in master_full.columns:
         rows_web = master_full[master_full["pct_empresas_venden_web_apps"].isnull()]
         for _, row in rows_web.iterrows():
@@ -401,6 +412,10 @@ def build_capa1_null_summary() -> pd.DataFrame:
             })
 
     # --- Variables INE sin cobertura en 2024-2025 ---
+    # La Encuesta TIC-E se publica con ~1 año de desfase, por lo que los datos
+    # de 2024-2025 no estaban disponibles en la fecha de extracción.
+    # Estos nulos quedan en el master_full pero se excluyen del master_analysis
+    # restringiendo el periodo a 2020-2023 donde todas las variables son completas.
     ine_vars = [
         "pct_facturacion_empresas_online",
         "pct_empresas_venden_ecommerce",
@@ -448,6 +463,8 @@ def build_comercio_core() -> pd.DataFrame:
 
     df = pd.read_csv(PROCESSED_CAPA1 / "comercio_electronico" / "comercio_electronico_clean.csv")
 
+    # Normalización del campo indicador para facilitar la comparación de texto:
+    # minúsculas, eliminación de comas y espacios múltiples
     indicador_norm = (
         df["indicador"]
         .astype(str)
@@ -457,6 +474,9 @@ def build_comercio_core() -> pd.DataFrame:
         .str.strip()
     )
 
+    # Filtra solo los 4 indicadores analíticamente relevantes para el TFG.
+    # Se usan expresiones regulares para ser robustos frente a variaciones
+    # menores en el texto entre ediciones anuales del cuestionario INE.
     mask = (
         indicador_norm.str.contains(r"% de empresas que han realizado ventas por comercio electrónico", na=False)
         | indicador_norm.str.contains(r"% de empresas que han realizado ventas mediante páginas web", na=False)
@@ -487,6 +507,9 @@ def standardize_comercio_core() -> pd.DataFrame:
     df = pd.read_csv(PROCESSED_CAPA1 / "comercio_electronico" / "comercio_electronico_core.csv")
 
     def map_indicator(text: str) -> str | None:
+        # Mapea el texto original del indicador INE a un nombre estandarizado
+        # y estable entre ediciones anuales. Sin esta estandarización, el mismo
+        # indicador puede tener textos ligeramente distintos en 2018 y en 2022.
         if pd.isna(text):
             return None
 
@@ -510,6 +533,9 @@ def standardize_comercio_core() -> pd.DataFrame:
 
     df["indicador_std"] = df["indicador"].apply(map_indicator)
 
+    # Exporta los indicadores que no pudieron mapearse para revisión manual.
+    # Si este fichero tiene contenido, indica que hay indicadores nuevos en la
+    # fuente que no estaban contemplados en el mapa de estandarización.
     unmatched = df[df["indicador_std"].isna()].copy()
     if not unmatched.empty:
         unmatched.to_csv(
@@ -540,6 +566,9 @@ def build_capa1_inventory() -> pd.DataFrame:
     """
     _ensure_dirs()
 
+    # El inventario documenta cada dataset con su fuente, frecuencia, cobertura
+    # y rol analítico en la Capa 1. Es el punto de entrada para entender
+    # qué datos alimentan el master y por qué se incluyeron.
     records = [
         {
             "dataset": "processed/capa1/contexto_digitalizacion/contexto_digitalizacion_clean.csv",
@@ -631,7 +660,8 @@ def build_capa1_master_anual() -> tuple[pd.DataFrame, pd.DataFrame]:
         PROCESSED_CAPA1 / "comercio_electronico" / "comercio_electronico_core_std.csv"
     )
 
-    # Pivot del comercio al nivel 'total'
+    # Pivot del comercio al nivel 'total': una fila por año con cada indicador en columna.
+    # Se usa solo el agregado total (no por tamaño de empresa) para el master integrado.
     comercio_total = comercio[comercio["tamano_empresa"] == "total"].copy()
     comercio_pivot = comercio_total.pivot_table(
         index="anio",
@@ -640,7 +670,8 @@ def build_capa1_master_anual() -> tuple[pd.DataFrame, pd.DataFrame]:
         aggfunc="first",
     ).reset_index()
 
-    # Merge — conserva el flag de imputacion desde contexto
+    # Merge secuencial: contexto como base, se añaden las demás fuentes por año.
+    # El flag de imputación de contexto se propaga al master para trazabilidad.
     master = contexto.merge(
         online_empresas[["anio", "valor_pct"]],
         on="anio",
@@ -658,7 +689,8 @@ def build_capa1_master_anual() -> tuple[pd.DataFrame, pd.DataFrame]:
     out_full = PROCESSED_CAPA1 / "integrated" / "capa1_master_anual_full.csv"
     master.to_csv(out_full, index=False)
 
-    # Master analysis: solo 2020-2023 (cobertura completa en todas las variables INE)
+    # Master analysis: periodo 2020-2023, cobertura completa en todas las variables INE.
+    # Este es el dataset que alimenta el análisis del TFG.
     master_analysis = master[master["anio"].between(2020, 2023)].copy().reset_index(drop=True)
     out_analysis = PROCESSED_CAPA1 / "integrated" / "capa1_master_anual_analysis.csv"
     master_analysis.to_csv(out_analysis, index=False)
@@ -688,6 +720,10 @@ def build_capa1_master_anual() -> tuple[pd.DataFrame, pd.DataFrame]:
 def build_capa1_master_mensual() -> tuple[pd.DataFrame, pd.DataFrame]:
     _ensure_dirs()
 
+    # Las dos series mensuales de Eurostat tienen bases distintas (2015=100 y 2021=100)
+    # y coberturas temporales distintas (hasta 2023-12 y hasta 2025-09 respectivamente).
+    # El master mensual se construye por inner join sobre fecha, conservando solo
+    # el periodo con cobertura completa en ambas series (2010-2023).
     moda = pd.read_csv(PROCESSED_CAPA1 / "eurostat" / "eurostat_moda_mensual_clean.csv")
     retail = pd.read_csv(PROCESSED_CAPA1 / "eurostat" / "eurostat_retail_total_mensual_clean.csv")
 
@@ -697,6 +733,9 @@ def build_capa1_master_mensual() -> tuple[pd.DataFrame, pd.DataFrame]:
     moda = moda[["fecha", "valor_indice"]].rename(columns={"valor_indice": "indice_retail_moda"})
     retail = retail[["fecha", "valor_indice"]].rename(columns={"valor_indice": "indice_retail_total"})
 
+    # Variables derivadas para comparación relativa entre series con bases distintas.
+    # El ratio expresa el nivel relativo de moda respecto al retail total;
+    # la diferencia aporta la lectura en puntos absolutos de la brecha entre series.
     master_mensual = moda.merge(retail, on="fecha", how="inner")
     master_mensual["anio"] = master_mensual["fecha"].dt.year
     master_mensual["mes"] = master_mensual["fecha"].dt.month
@@ -711,7 +750,8 @@ def build_capa1_master_mensual() -> tuple[pd.DataFrame, pd.DataFrame]:
     out_full = PROCESSED_CAPA1 / "integrated" / "capa1_master_mensual_full.csv"
     master_mensual.to_csv(out_full, index=False)
 
-    # Analysis: 2015-2023 (ventana común de ambas series con datos completos de moda)
+    # Master analysis: 2015-2023 (108 obs), ventana analítica del TFG.
+    # Se excluyen 2010-2014 por ser anteriores al inicio de la serie de moda completa.
     master_analysis = master_mensual[
         master_mensual["anio"].between(2015, 2023)
     ].copy().reset_index(drop=True)
@@ -731,6 +771,9 @@ def build_capa1_master_mensual() -> tuple[pd.DataFrame, pd.DataFrame]:
 def build_capa1_variable_final_decisions() -> pd.DataFrame:
     _ensure_dirs()
 
+    # Tabla de decisiones finales sobre qué variables entran en el análisis principal
+    # y cuáles quedan solo como contexto o trazabilidad. Complementa la
+    # variable_selection_matrix con una vista más operativa orientada al análisis.
     records = [
         {"dataset": "contexto_digitalizacion_clean", "variable": "anio",
          "mantener_en_base": "si", "usar_en_analisis_principal": "si", "usar_solo_contexto": "no",
@@ -783,6 +826,8 @@ def build_capa1_variable_final_decisions() -> pd.DataFrame:
 
 def export_capa1_master_previews() -> None:
     _ensure_dirs()
+    # Exporta las primeras filas de cada master como vista rápida de verificación.
+    # Útil para confirmar estructura y contenido sin abrir el fichero completo.
     pd.read_csv(PROCESSED_CAPA1 / "integrated" / "capa1_inventory.csv").head(10).to_csv(
         TABLES_CAPA1_MASTERS / "capa1_inventory_head.csv", index=False)
     pd.read_csv(PROCESSED_CAPA1 / "integrated" / "capa1_master_anual_analysis.csv").to_csv(
@@ -799,6 +844,9 @@ def export_capa1_master_previews() -> None:
 def build_capa1_sqlite() -> None:
     _ensure_dirs()
 
+    # Carga todos los datasets procesados en una base de datos SQLite.
+    # Permite consultas exploratorias rápidas sin necesidad de cargar
+    # todos los CSV en memoria. Útil para verificación y análisis ad hoc.
     tables = {
         "contexto_digitalizacion_clean": PROCESSED_CAPA1 / "contexto_digitalizacion" / "contexto_digitalizacion_clean.csv",
         "contexto_digitalizacion_documentado": PROCESSED_CAPA1 / "contexto_digitalizacion" / "contexto_digitalizacion_documentado.csv",

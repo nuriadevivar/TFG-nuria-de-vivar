@@ -1,0 +1,2641 @@
+﻿fecha,interes_trends,marca,categoria_producto,termino_busqueda
+2015-01-01,30,H&M,pantalones,h&m pantalones
+2015-01-01,0,H&M,tops,h&m tops
+2015-01-01,26,H&M,vestidos,h&m vestidos
+2015-01-01,60,H&M,zapatos,h&m zapatos
+2015-01-01,23,Mango,pantalones,mango pantalones
+2015-01-01,0,Mango,tops,mango tops
+2015-01-01,27,Mango,vestidos,mango vestidos
+2015-01-01,49,Mango,zapatos,mango zapatos
+2015-01-01,24,Massimo Dutti,pantalones,massimo dutti pantalones
+2015-01-01,0,Massimo Dutti,tops,massimo dutti tops
+2015-01-01,21,Massimo Dutti,vestidos,massimo dutti vestidos
+2015-01-01,82,Massimo Dutti,zapatos,massimo dutti zapatos
+2015-01-01,0,Shein,pantalones,shein pantalones
+2015-01-01,0,Shein,tops,shein tops
+2015-01-01,0,Shein,vestidos,shein vestidos
+2015-01-01,0,Shein,zapatos,shein zapatos
+2015-01-01,24,Zara,pantalones,zara pantalones
+2015-01-01,7,Zara,tops,zara tops
+2015-01-01,27,Zara,vestidos,zara vestidos
+2015-01-01,60,Zara,zapatos,zara zapatos
+2015-02-01,20,H&M,pantalones,h&m pantalones
+2015-02-01,0,H&M,tops,h&m tops
+2015-02-01,37,H&M,vestidos,h&m vestidos
+2015-02-01,55,H&M,zapatos,h&m zapatos
+2015-02-01,18,Mango,pantalones,mango pantalones
+2015-02-01,0,Mango,tops,mango tops
+2015-02-01,36,Mango,vestidos,mango vestidos
+2015-02-01,48,Mango,zapatos,mango zapatos
+2015-02-01,11,Massimo Dutti,pantalones,massimo dutti pantalones
+2015-02-01,0,Massimo Dutti,tops,massimo dutti tops
+2015-02-01,28,Massimo Dutti,vestidos,massimo dutti vestidos
+2015-02-01,49,Massimo Dutti,zapatos,massimo dutti zapatos
+2015-02-01,0,Shein,pantalones,shein pantalones
+2015-02-01,0,Shein,tops,shein tops
+2015-02-01,0,Shein,vestidos,shein vestidos
+2015-02-01,0,Shein,zapatos,shein zapatos
+2015-02-01,18,Zara,pantalones,zara pantalones
+2015-02-01,0,Zara,tops,zara tops
+2015-02-01,34,Zara,vestidos,zara vestidos
+2015-02-01,55,Zara,zapatos,zara zapatos
+2015-03-01,37,H&M,pantalones,h&m pantalones
+2015-03-01,0,H&M,tops,h&m tops
+2015-03-01,50,H&M,vestidos,h&m vestidos
+2015-03-01,75,H&M,zapatos,h&m zapatos
+2015-03-01,26,Mango,pantalones,mango pantalones
+2015-03-01,14,Mango,tops,mango tops
+2015-03-01,51,Mango,vestidos,mango vestidos
+2015-03-01,62,Mango,zapatos,mango zapatos
+2015-03-01,23,Massimo Dutti,pantalones,massimo dutti pantalones
+2015-03-01,0,Massimo Dutti,tops,massimo dutti tops
+2015-03-01,41,Massimo Dutti,vestidos,massimo dutti vestidos
+2015-03-01,61,Massimo Dutti,zapatos,massimo dutti zapatos
+2015-03-01,0,Shein,pantalones,shein pantalones
+2015-03-01,0,Shein,tops,shein tops
+2015-03-01,0,Shein,vestidos,shein vestidos
+2015-03-01,0,Shein,zapatos,shein zapatos
+2015-03-01,24,Zara,pantalones,zara pantalones
+2015-03-01,11,Zara,tops,zara tops
+2015-03-01,52,Zara,vestidos,zara vestidos
+2015-03-01,75,Zara,zapatos,zara zapatos
+2015-04-01,37,H&M,pantalones,h&m pantalones
+2015-04-01,0,H&M,tops,h&m tops
+2015-04-01,57,H&M,vestidos,h&m vestidos
+2015-04-01,92,H&M,zapatos,h&m zapatos
+2015-04-01,29,Mango,pantalones,mango pantalones
+2015-04-01,24,Mango,tops,mango tops
+2015-04-01,56,Mango,vestidos,mango vestidos
+2015-04-01,81,Mango,zapatos,mango zapatos
+2015-04-01,27,Massimo Dutti,pantalones,massimo dutti pantalones
+2015-04-01,0,Massimo Dutti,tops,massimo dutti tops
+2015-04-01,40,Massimo Dutti,vestidos,massimo dutti vestidos
+2015-04-01,67,Massimo Dutti,zapatos,massimo dutti zapatos
+2015-04-01,0,Shein,pantalones,shein pantalones
+2015-04-01,0,Shein,tops,shein tops
+2015-04-01,0,Shein,vestidos,shein vestidos
+2015-04-01,0,Shein,zapatos,shein zapatos
+2015-04-01,29,Zara,pantalones,zara pantalones
+2015-04-01,13,Zara,tops,zara tops
+2015-04-01,51,Zara,vestidos,zara vestidos
+2015-04-01,89,Zara,zapatos,zara zapatos
+2015-05-01,36,H&M,pantalones,h&m pantalones
+2015-05-01,0,H&M,tops,h&m tops
+2015-05-01,56,H&M,vestidos,h&m vestidos
+2015-05-01,94,H&M,zapatos,h&m zapatos
+2015-05-01,38,Mango,pantalones,mango pantalones
+2015-05-01,22,Mango,tops,mango tops
+2015-05-01,50,Mango,vestidos,mango vestidos
+2015-05-01,71,Mango,zapatos,mango zapatos
+2015-05-01,26,Massimo Dutti,pantalones,massimo dutti pantalones
+2015-05-01,0,Massimo Dutti,tops,massimo dutti tops
+2015-05-01,35,Massimo Dutti,vestidos,massimo dutti vestidos
+2015-05-01,71,Massimo Dutti,zapatos,massimo dutti zapatos
+2015-05-01,0,Shein,pantalones,shein pantalones
+2015-05-01,0,Shein,tops,shein tops
+2015-05-01,0,Shein,vestidos,shein vestidos
+2015-05-01,0,Shein,zapatos,shein zapatos
+2015-05-01,34,Zara,pantalones,zara pantalones
+2015-05-01,19,Zara,tops,zara tops
+2015-05-01,45,Zara,vestidos,zara vestidos
+2015-05-01,74,Zara,zapatos,zara zapatos
+2015-06-01,37,H&M,pantalones,h&m pantalones
+2015-06-01,53,H&M,tops,h&m tops
+2015-06-01,51,H&M,vestidos,h&m vestidos
+2015-06-01,81,H&M,zapatos,h&m zapatos
+2015-06-01,31,Mango,pantalones,mango pantalones
+2015-06-01,19,Mango,tops,mango tops
+2015-06-01,48,Mango,vestidos,mango vestidos
+2015-06-01,53,Mango,zapatos,mango zapatos
+2015-06-01,23,Massimo Dutti,pantalones,massimo dutti pantalones
+2015-06-01,0,Massimo Dutti,tops,massimo dutti tops
+2015-06-01,30,Massimo Dutti,vestidos,massimo dutti vestidos
+2015-06-01,59,Massimo Dutti,zapatos,massimo dutti zapatos
+2015-06-01,0,Shein,pantalones,shein pantalones
+2015-06-01,0,Shein,tops,shein tops
+2015-06-01,0,Shein,vestidos,shein vestidos
+2015-06-01,0,Shein,zapatos,shein zapatos
+2015-06-01,31,Zara,pantalones,zara pantalones
+2015-06-01,19,Zara,tops,zara tops
+2015-06-01,42,Zara,vestidos,zara vestidos
+2015-06-01,64,Zara,zapatos,zara zapatos
+2015-07-01,31,H&M,pantalones,h&m pantalones
+2015-07-01,0,H&M,tops,h&m tops
+2015-07-01,37,H&M,vestidos,h&m vestidos
+2015-07-01,46,H&M,zapatos,h&m zapatos
+2015-07-01,24,Mango,pantalones,mango pantalones
+2015-07-01,23,Mango,tops,mango tops
+2015-07-01,43,Mango,vestidos,mango vestidos
+2015-07-01,50,Mango,zapatos,mango zapatos
+2015-07-01,20,Massimo Dutti,pantalones,massimo dutti pantalones
+2015-07-01,0,Massimo Dutti,tops,massimo dutti tops
+2015-07-01,34,Massimo Dutti,vestidos,massimo dutti vestidos
+2015-07-01,67,Massimo Dutti,zapatos,massimo dutti zapatos
+2015-07-01,0,Shein,pantalones,shein pantalones
+2015-07-01,0,Shein,tops,shein tops
+2015-07-01,0,Shein,vestidos,shein vestidos
+2015-07-01,0,Shein,zapatos,shein zapatos
+2015-07-01,28,Zara,pantalones,zara pantalones
+2015-07-01,19,Zara,tops,zara tops
+2015-07-01,44,Zara,vestidos,zara vestidos
+2015-07-01,58,Zara,zapatos,zara zapatos
+2015-08-01,22,H&M,pantalones,h&m pantalones
+2015-08-01,0,H&M,tops,h&m tops
+2015-08-01,31,H&M,vestidos,h&m vestidos
+2015-08-01,50,H&M,zapatos,h&m zapatos
+2015-08-01,18,Mango,pantalones,mango pantalones
+2015-08-01,16,Mango,tops,mango tops
+2015-08-01,33,Mango,vestidos,mango vestidos
+2015-08-01,48,Mango,zapatos,mango zapatos
+2015-08-01,15,Massimo Dutti,pantalones,massimo dutti pantalones
+2015-08-01,0,Massimo Dutti,tops,massimo dutti tops
+2015-08-01,22,Massimo Dutti,vestidos,massimo dutti vestidos
+2015-08-01,53,Massimo Dutti,zapatos,massimo dutti zapatos
+2015-08-01,0,Shein,pantalones,shein pantalones
+2015-08-01,0,Shein,tops,shein tops
+2015-08-01,0,Shein,vestidos,shein vestidos
+2015-08-01,0,Shein,zapatos,shein zapatos
+2015-08-01,20,Zara,pantalones,zara pantalones
+2015-08-01,14,Zara,tops,zara tops
+2015-08-01,34,Zara,vestidos,zara vestidos
+2015-08-01,57,Zara,zapatos,zara zapatos
+2015-09-01,37,H&M,pantalones,h&m pantalones
+2015-09-01,67,H&M,tops,h&m tops
+2015-09-01,38,H&M,vestidos,h&m vestidos
+2015-09-01,82,H&M,zapatos,h&m zapatos
+2015-09-01,23,Mango,pantalones,mango pantalones
+2015-09-01,12,Mango,tops,mango tops
+2015-09-01,31,Mango,vestidos,mango vestidos
+2015-09-01,65,Mango,zapatos,mango zapatos
+2015-09-01,21,Massimo Dutti,pantalones,massimo dutti pantalones
+2015-09-01,0,Massimo Dutti,tops,massimo dutti tops
+2015-09-01,25,Massimo Dutti,vestidos,massimo dutti vestidos
+2015-09-01,67,Massimo Dutti,zapatos,massimo dutti zapatos
+2015-09-01,0,Shein,pantalones,shein pantalones
+2015-09-01,0,Shein,tops,shein tops
+2015-09-01,0,Shein,vestidos,shein vestidos
+2015-09-01,0,Shein,zapatos,shein zapatos
+2015-09-01,30,Zara,pantalones,zara pantalones
+2015-09-01,14,Zara,tops,zara tops
+2015-09-01,36,Zara,vestidos,zara vestidos
+2015-09-01,79,Zara,zapatos,zara zapatos
+2015-10-01,44,H&M,pantalones,h&m pantalones
+2015-10-01,0,H&M,tops,h&m tops
+2015-10-01,37,H&M,vestidos,h&m vestidos
+2015-10-01,99,H&M,zapatos,h&m zapatos
+2015-10-01,30,Mango,pantalones,mango pantalones
+2015-10-01,15,Mango,tops,mango tops
+2015-10-01,26,Mango,vestidos,mango vestidos
+2015-10-01,72,Mango,zapatos,mango zapatos
+2015-10-01,26,Massimo Dutti,pantalones,massimo dutti pantalones
+2015-10-01,0,Massimo Dutti,tops,massimo dutti tops
+2015-10-01,19,Massimo Dutti,vestidos,massimo dutti vestidos
+2015-10-01,73,Massimo Dutti,zapatos,massimo dutti zapatos
+2015-10-01,0,Shein,pantalones,shein pantalones
+2015-10-01,0,Shein,tops,shein tops
+2015-10-01,0,Shein,vestidos,shein vestidos
+2015-10-01,0,Shein,zapatos,shein zapatos
+2015-10-01,32,Zara,pantalones,zara pantalones
+2015-10-01,12,Zara,tops,zara tops
+2015-10-01,31,Zara,vestidos,zara vestidos
+2015-10-01,84,Zara,zapatos,zara zapatos
+2015-11-01,40,H&M,pantalones,h&m pantalones
+2015-11-01,0,H&M,tops,h&m tops
+2015-11-01,51,H&M,vestidos,h&m vestidos
+2015-11-01,74,H&M,zapatos,h&m zapatos
+2015-11-01,35,Mango,pantalones,mango pantalones
+2015-11-01,17,Mango,tops,mango tops
+2015-11-01,32,Mango,vestidos,mango vestidos
+2015-11-01,69,Mango,zapatos,mango zapatos
+2015-11-01,32,Massimo Dutti,pantalones,massimo dutti pantalones
+2015-11-01,0,Massimo Dutti,tops,massimo dutti tops
+2015-11-01,23,Massimo Dutti,vestidos,massimo dutti vestidos
+2015-11-01,72,Massimo Dutti,zapatos,massimo dutti zapatos
+2015-11-01,0,Shein,pantalones,shein pantalones
+2015-11-01,0,Shein,tops,shein tops
+2015-11-01,2,Shein,vestidos,shein vestidos
+2015-11-01,0,Shein,zapatos,shein zapatos
+2015-11-01,34,Zara,pantalones,zara pantalones
+2015-11-01,17,Zara,tops,zara tops
+2015-11-01,40,Zara,vestidos,zara vestidos
+2015-11-01,75,Zara,zapatos,zara zapatos
+2015-12-01,39,H&M,pantalones,h&m pantalones
+2015-12-01,57,H&M,tops,h&m tops
+2015-12-01,86,H&M,vestidos,h&m vestidos
+2015-12-01,85,H&M,zapatos,h&m zapatos
+2015-12-01,30,Mango,pantalones,mango pantalones
+2015-12-01,38,Mango,tops,mango tops
+2015-12-01,43,Mango,vestidos,mango vestidos
+2015-12-01,58,Mango,zapatos,mango zapatos
+2015-12-01,30,Massimo Dutti,pantalones,massimo dutti pantalones
+2015-12-01,0,Massimo Dutti,tops,massimo dutti tops
+2015-12-01,21,Massimo Dutti,vestidos,massimo dutti vestidos
+2015-12-01,61,Massimo Dutti,zapatos,massimo dutti zapatos
+2015-12-01,0,Shein,pantalones,shein pantalones
+2015-12-01,0,Shein,tops,shein tops
+2015-12-01,2,Shein,vestidos,shein vestidos
+2015-12-01,0,Shein,zapatos,shein zapatos
+2015-12-01,41,Zara,pantalones,zara pantalones
+2015-12-01,26,Zara,tops,zara tops
+2015-12-01,52,Zara,vestidos,zara vestidos
+2015-12-01,75,Zara,zapatos,zara zapatos
+2016-01-01,33,H&M,pantalones,h&m pantalones
+2016-01-01,0,H&M,tops,h&m tops
+2016-01-01,26,H&M,vestidos,h&m vestidos
+2016-01-01,55,H&M,zapatos,h&m zapatos
+2016-01-01,28,Mango,pantalones,mango pantalones
+2016-01-01,17,Mango,tops,mango tops
+2016-01-01,27,Mango,vestidos,mango vestidos
+2016-01-01,59,Mango,zapatos,mango zapatos
+2016-01-01,31,Massimo Dutti,pantalones,massimo dutti pantalones
+2016-01-01,0,Massimo Dutti,tops,massimo dutti tops
+2016-01-01,18,Massimo Dutti,vestidos,massimo dutti vestidos
+2016-01-01,76,Massimo Dutti,zapatos,massimo dutti zapatos
+2016-01-01,0,Shein,pantalones,shein pantalones
+2016-01-01,0,Shein,tops,shein tops
+2016-01-01,2,Shein,vestidos,shein vestidos
+2016-01-01,0,Shein,zapatos,shein zapatos
+2016-01-01,31,Zara,pantalones,zara pantalones
+2016-01-01,9,Zara,tops,zara tops
+2016-01-01,29,Zara,vestidos,zara vestidos
+2016-01-01,62,Zara,zapatos,zara zapatos
+2016-02-01,24,H&M,pantalones,h&m pantalones
+2016-02-01,0,H&M,tops,h&m tops
+2016-02-01,33,H&M,vestidos,h&m vestidos
+2016-02-01,36,H&M,zapatos,h&m zapatos
+2016-02-01,22,Mango,pantalones,mango pantalones
+2016-02-01,0,Mango,tops,mango tops
+2016-02-01,34,Mango,vestidos,mango vestidos
+2016-02-01,52,Mango,zapatos,mango zapatos
+2016-02-01,16,Massimo Dutti,pantalones,massimo dutti pantalones
+2016-02-01,0,Massimo Dutti,tops,massimo dutti tops
+2016-02-01,23,Massimo Dutti,vestidos,massimo dutti vestidos
+2016-02-01,45,Massimo Dutti,zapatos,massimo dutti zapatos
+2016-02-01,0,Shein,pantalones,shein pantalones
+2016-02-01,0,Shein,tops,shein tops
+2016-02-01,2,Shein,vestidos,shein vestidos
+2016-02-01,0,Shein,zapatos,shein zapatos
+2016-02-01,26,Zara,pantalones,zara pantalones
+2016-02-01,12,Zara,tops,zara tops
+2016-02-01,34,Zara,vestidos,zara vestidos
+2016-02-01,53,Zara,zapatos,zara zapatos
+2016-03-01,42,H&M,pantalones,h&m pantalones
+2016-03-01,0,H&M,tops,h&m tops
+2016-03-01,53,H&M,vestidos,h&m vestidos
+2016-03-01,57,H&M,zapatos,h&m zapatos
+2016-03-01,31,Mango,pantalones,mango pantalones
+2016-03-01,25,Mango,tops,mango tops
+2016-03-01,48,Mango,vestidos,mango vestidos
+2016-03-01,71,Mango,zapatos,mango zapatos
+2016-03-01,23,Massimo Dutti,pantalones,massimo dutti pantalones
+2016-03-01,0,Massimo Dutti,tops,massimo dutti tops
+2016-03-01,33,Massimo Dutti,vestidos,massimo dutti vestidos
+2016-03-01,56,Massimo Dutti,zapatos,massimo dutti zapatos
+2016-03-01,0,Shein,pantalones,shein pantalones
+2016-03-01,0,Shein,tops,shein tops
+2016-03-01,3,Shein,vestidos,shein vestidos
+2016-03-01,0,Shein,zapatos,shein zapatos
+2016-03-01,32,Zara,pantalones,zara pantalones
+2016-03-01,17,Zara,tops,zara tops
+2016-03-01,48,Zara,vestidos,zara vestidos
+2016-03-01,81,Zara,zapatos,zara zapatos
+2016-04-01,33,H&M,pantalones,h&m pantalones
+2016-04-01,0,H&M,tops,h&m tops
+2016-04-01,63,H&M,vestidos,h&m vestidos
+2016-04-01,81,H&M,zapatos,h&m zapatos
+2016-04-01,43,Mango,pantalones,mango pantalones
+2016-04-01,17,Mango,tops,mango tops
+2016-04-01,56,Mango,vestidos,mango vestidos
+2016-04-01,95,Mango,zapatos,mango zapatos
+2016-04-01,32,Massimo Dutti,pantalones,massimo dutti pantalones
+2016-04-01,0,Massimo Dutti,tops,massimo dutti tops
+2016-04-01,36,Massimo Dutti,vestidos,massimo dutti vestidos
+2016-04-01,65,Massimo Dutti,zapatos,massimo dutti zapatos
+2016-04-01,0,Shein,pantalones,shein pantalones
+2016-04-01,0,Shein,tops,shein tops
+2016-04-01,6,Shein,vestidos,shein vestidos
+2016-04-01,0,Shein,zapatos,shein zapatos
+2016-04-01,41,Zara,pantalones,zara pantalones
+2016-04-01,27,Zara,tops,zara tops
+2016-04-01,52,Zara,vestidos,zara vestidos
+2016-04-01,91,Zara,zapatos,zara zapatos
+2016-05-01,50,H&M,pantalones,h&m pantalones
+2016-05-01,47,H&M,tops,h&m tops
+2016-05-01,61,H&M,vestidos,h&m vestidos
+2016-05-01,75,H&M,zapatos,h&m zapatos
+2016-05-01,39,Mango,pantalones,mango pantalones
+2016-05-01,42,Mango,tops,mango tops
+2016-05-01,49,Mango,vestidos,mango vestidos
+2016-05-01,100,Mango,zapatos,mango zapatos
+2016-05-01,32,Massimo Dutti,pantalones,massimo dutti pantalones
+2016-05-01,0,Massimo Dutti,tops,massimo dutti tops
+2016-05-01,34,Massimo Dutti,vestidos,massimo dutti vestidos
+2016-05-01,80,Massimo Dutti,zapatos,massimo dutti zapatos
+2016-05-01,0,Shein,pantalones,shein pantalones
+2016-05-01,0,Shein,tops,shein tops
+2016-05-01,3,Shein,vestidos,shein vestidos
+2016-05-01,3,Shein,zapatos,shein zapatos
+2016-05-01,45,Zara,pantalones,zara pantalones
+2016-05-01,38,Zara,tops,zara tops
+2016-05-01,50,Zara,vestidos,zara vestidos
+2016-05-01,95,Zara,zapatos,zara zapatos
+2016-06-01,49,H&M,pantalones,h&m pantalones
+2016-06-01,52,H&M,tops,h&m tops
+2016-06-01,56,H&M,vestidos,h&m vestidos
+2016-06-01,76,H&M,zapatos,h&m zapatos
+2016-06-01,44,Mango,pantalones,mango pantalones
+2016-06-01,45,Mango,tops,mango tops
+2016-06-01,44,Mango,vestidos,mango vestidos
+2016-06-01,75,Mango,zapatos,mango zapatos
+2016-06-01,28,Massimo Dutti,pantalones,massimo dutti pantalones
+2016-06-01,0,Massimo Dutti,tops,massimo dutti tops
+2016-06-01,31,Massimo Dutti,vestidos,massimo dutti vestidos
+2016-06-01,63,Massimo Dutti,zapatos,massimo dutti zapatos
+2016-06-01,0,Shein,pantalones,shein pantalones
+2016-06-01,0,Shein,tops,shein tops
+2016-06-01,2,Shein,vestidos,shein vestidos
+2016-06-01,0,Shein,zapatos,shein zapatos
+2016-06-01,39,Zara,pantalones,zara pantalones
+2016-06-01,29,Zara,tops,zara tops
+2016-06-01,45,Zara,vestidos,zara vestidos
+2016-06-01,80,Zara,zapatos,zara zapatos
+2016-07-01,37,H&M,pantalones,h&m pantalones
+2016-07-01,49,H&M,tops,h&m tops
+2016-07-01,49,H&M,vestidos,h&m vestidos
+2016-07-01,38,H&M,zapatos,h&m zapatos
+2016-07-01,28,Mango,pantalones,mango pantalones
+2016-07-01,42,Mango,tops,mango tops
+2016-07-01,41,Mango,vestidos,mango vestidos
+2016-07-01,61,Mango,zapatos,mango zapatos
+2016-07-01,16,Massimo Dutti,pantalones,massimo dutti pantalones
+2016-07-01,0,Massimo Dutti,tops,massimo dutti tops
+2016-07-01,32,Massimo Dutti,vestidos,massimo dutti vestidos
+2016-07-01,63,Massimo Dutti,zapatos,massimo dutti zapatos
+2016-07-01,0,Shein,pantalones,shein pantalones
+2016-07-01,0,Shein,tops,shein tops
+2016-07-01,2,Shein,vestidos,shein vestidos
+2016-07-01,0,Shein,zapatos,shein zapatos
+2016-07-01,31,Zara,pantalones,zara pantalones
+2016-07-01,30,Zara,tops,zara tops
+2016-07-01,44,Zara,vestidos,zara vestidos
+2016-07-01,60,Zara,zapatos,zara zapatos
+2016-08-01,29,H&M,pantalones,h&m pantalones
+2016-08-01,0,H&M,tops,h&m tops
+2016-08-01,33,H&M,vestidos,h&m vestidos
+2016-08-01,36,H&M,zapatos,h&m zapatos
+2016-08-01,21,Mango,pantalones,mango pantalones
+2016-08-01,23,Mango,tops,mango tops
+2016-08-01,28,Mango,vestidos,mango vestidos
+2016-08-01,47,Mango,zapatos,mango zapatos
+2016-08-01,17,Massimo Dutti,pantalones,massimo dutti pantalones
+2016-08-01,0,Massimo Dutti,tops,massimo dutti tops
+2016-08-01,20,Massimo Dutti,vestidos,massimo dutti vestidos
+2016-08-01,33,Massimo Dutti,zapatos,massimo dutti zapatos
+2016-08-01,0,Shein,pantalones,shein pantalones
+2016-08-01,0,Shein,tops,shein tops
+2016-08-01,3,Shein,vestidos,shein vestidos
+2016-08-01,0,Shein,zapatos,shein zapatos
+2016-08-01,22,Zara,pantalones,zara pantalones
+2016-08-01,27,Zara,tops,zara tops
+2016-08-01,31,Zara,vestidos,zara vestidos
+2016-08-01,48,Zara,zapatos,zara zapatos
+2016-09-01,33,H&M,pantalones,h&m pantalones
+2016-09-01,0,H&M,tops,h&m tops
+2016-09-01,32,H&M,vestidos,h&m vestidos
+2016-09-01,65,H&M,zapatos,h&m zapatos
+2016-09-01,32,Mango,pantalones,mango pantalones
+2016-09-01,18,Mango,tops,mango tops
+2016-09-01,32,Mango,vestidos,mango vestidos
+2016-09-01,66,Mango,zapatos,mango zapatos
+2016-09-01,24,Massimo Dutti,pantalones,massimo dutti pantalones
+2016-09-01,0,Massimo Dutti,tops,massimo dutti tops
+2016-09-01,22,Massimo Dutti,vestidos,massimo dutti vestidos
+2016-09-01,62,Massimo Dutti,zapatos,massimo dutti zapatos
+2016-09-01,0,Shein,pantalones,shein pantalones
+2016-09-01,0,Shein,tops,shein tops
+2016-09-01,3,Shein,vestidos,shein vestidos
+2016-09-01,3,Shein,zapatos,shein zapatos
+2016-09-01,31,Zara,pantalones,zara pantalones
+2016-09-01,21,Zara,tops,zara tops
+2016-09-01,35,Zara,vestidos,zara vestidos
+2016-09-01,75,Zara,zapatos,zara zapatos
+2016-10-01,49,H&M,pantalones,h&m pantalones
+2016-10-01,0,H&M,tops,h&m tops
+2016-10-01,35,H&M,vestidos,h&m vestidos
+2016-10-01,76,H&M,zapatos,h&m zapatos
+2016-10-01,40,Mango,pantalones,mango pantalones
+2016-10-01,18,Mango,tops,mango tops
+2016-10-01,27,Mango,vestidos,mango vestidos
+2016-10-01,80,Mango,zapatos,mango zapatos
+2016-10-01,39,Massimo Dutti,pantalones,massimo dutti pantalones
+2016-10-01,0,Massimo Dutti,tops,massimo dutti tops
+2016-10-01,23,Massimo Dutti,vestidos,massimo dutti vestidos
+2016-10-01,83,Massimo Dutti,zapatos,massimo dutti zapatos
+2016-10-01,5,Shein,pantalones,shein pantalones
+2016-10-01,0,Shein,tops,shein tops
+2016-10-01,5,Shein,vestidos,shein vestidos
+2016-10-01,4,Shein,zapatos,shein zapatos
+2016-10-01,43,Zara,pantalones,zara pantalones
+2016-10-01,20,Zara,tops,zara tops
+2016-10-01,36,Zara,vestidos,zara vestidos
+2016-10-01,100,Zara,zapatos,zara zapatos
+2016-11-01,43,H&M,pantalones,h&m pantalones
+2016-11-01,0,H&M,tops,h&m tops
+2016-11-01,46,H&M,vestidos,h&m vestidos
+2016-11-01,71,H&M,zapatos,h&m zapatos
+2016-11-01,44,Mango,pantalones,mango pantalones
+2016-11-01,34,Mango,tops,mango tops
+2016-11-01,37,Mango,vestidos,mango vestidos
+2016-11-01,74,Mango,zapatos,mango zapatos
+2016-11-01,41,Massimo Dutti,pantalones,massimo dutti pantalones
+2016-11-01,0,Massimo Dutti,tops,massimo dutti tops
+2016-11-01,27,Massimo Dutti,vestidos,massimo dutti vestidos
+2016-11-01,88,Massimo Dutti,zapatos,massimo dutti zapatos
+2016-11-01,0,Shein,pantalones,shein pantalones
+2016-11-01,0,Shein,tops,shein tops
+2016-11-01,4,Shein,vestidos,shein vestidos
+2016-11-01,3,Shein,zapatos,shein zapatos
+2016-11-01,43,Zara,pantalones,zara pantalones
+2016-11-01,28,Zara,tops,zara tops
+2016-11-01,45,Zara,vestidos,zara vestidos
+2016-11-01,79,Zara,zapatos,zara zapatos
+2016-12-01,43,H&M,pantalones,h&m pantalones
+2016-12-01,71,H&M,tops,h&m tops
+2016-12-01,64,H&M,vestidos,h&m vestidos
+2016-12-01,73,H&M,zapatos,h&m zapatos
+2016-12-01,41,Mango,pantalones,mango pantalones
+2016-12-01,50,Mango,tops,mango tops
+2016-12-01,46,Mango,vestidos,mango vestidos
+2016-12-01,61,Mango,zapatos,mango zapatos
+2016-12-01,38,Massimo Dutti,pantalones,massimo dutti pantalones
+2016-12-01,0,Massimo Dutti,tops,massimo dutti tops
+2016-12-01,29,Massimo Dutti,vestidos,massimo dutti vestidos
+2016-12-01,67,Massimo Dutti,zapatos,massimo dutti zapatos
+2016-12-01,0,Shein,pantalones,shein pantalones
+2016-12-01,0,Shein,tops,shein tops
+2016-12-01,4,Shein,vestidos,shein vestidos
+2016-12-01,3,Shein,zapatos,shein zapatos
+2016-12-01,45,Zara,pantalones,zara pantalones
+2016-12-01,41,Zara,tops,zara tops
+2016-12-01,53,Zara,vestidos,zara vestidos
+2016-12-01,73,Zara,zapatos,zara zapatos
+2017-01-01,28,H&M,pantalones,h&m pantalones
+2017-01-01,0,H&M,tops,h&m tops
+2017-01-01,23,H&M,vestidos,h&m vestidos
+2017-01-01,51,H&M,zapatos,h&m zapatos
+2017-01-01,36,Mango,pantalones,mango pantalones
+2017-01-01,15,Mango,tops,mango tops
+2017-01-01,29,Mango,vestidos,mango vestidos
+2017-01-01,55,Mango,zapatos,mango zapatos
+2017-01-01,40,Massimo Dutti,pantalones,massimo dutti pantalones
+2017-01-01,0,Massimo Dutti,tops,massimo dutti tops
+2017-01-01,27,Massimo Dutti,vestidos,massimo dutti vestidos
+2017-01-01,81,Massimo Dutti,zapatos,massimo dutti zapatos
+2017-01-01,0,Shein,pantalones,shein pantalones
+2017-01-01,0,Shein,tops,shein tops
+2017-01-01,3,Shein,vestidos,shein vestidos
+2017-01-01,2,Shein,zapatos,shein zapatos
+2017-01-01,37,Zara,pantalones,zara pantalones
+2017-01-01,14,Zara,tops,zara tops
+2017-01-01,31,Zara,vestidos,zara vestidos
+2017-01-01,67,Zara,zapatos,zara zapatos
+2017-02-01,24,H&M,pantalones,h&m pantalones
+2017-02-01,0,H&M,tops,h&m tops
+2017-02-01,28,H&M,vestidos,h&m vestidos
+2017-02-01,52,H&M,zapatos,h&m zapatos
+2017-02-01,29,Mango,pantalones,mango pantalones
+2017-02-01,14,Mango,tops,mango tops
+2017-02-01,37,Mango,vestidos,mango vestidos
+2017-02-01,55,Mango,zapatos,mango zapatos
+2017-02-01,26,Massimo Dutti,pantalones,massimo dutti pantalones
+2017-02-01,0,Massimo Dutti,tops,massimo dutti tops
+2017-02-01,32,Massimo Dutti,vestidos,massimo dutti vestidos
+2017-02-01,60,Massimo Dutti,zapatos,massimo dutti zapatos
+2017-02-01,0,Shein,pantalones,shein pantalones
+2017-02-01,0,Shein,tops,shein tops
+2017-02-01,6,Shein,vestidos,shein vestidos
+2017-02-01,0,Shein,zapatos,shein zapatos
+2017-02-01,34,Zara,pantalones,zara pantalones
+2017-02-01,15,Zara,tops,zara tops
+2017-02-01,41,Zara,vestidos,zara vestidos
+2017-02-01,65,Zara,zapatos,zara zapatos
+2017-03-01,35,H&M,pantalones,h&m pantalones
+2017-03-01,0,H&M,tops,h&m tops
+2017-03-01,48,H&M,vestidos,h&m vestidos
+2017-03-01,59,H&M,zapatos,h&m zapatos
+2017-03-01,39,Mango,pantalones,mango pantalones
+2017-03-01,36,Mango,tops,mango tops
+2017-03-01,51,Mango,vestidos,mango vestidos
+2017-03-01,74,Mango,zapatos,mango zapatos
+2017-03-01,25,Massimo Dutti,pantalones,massimo dutti pantalones
+2017-03-01,0,Massimo Dutti,tops,massimo dutti tops
+2017-03-01,42,Massimo Dutti,vestidos,massimo dutti vestidos
+2017-03-01,67,Massimo Dutti,zapatos,massimo dutti zapatos
+2017-03-01,0,Shein,pantalones,shein pantalones
+2017-03-01,0,Shein,tops,shein tops
+2017-03-01,10,Shein,vestidos,shein vestidos
+2017-03-01,9,Shein,zapatos,shein zapatos
+2017-03-01,43,Zara,pantalones,zara pantalones
+2017-03-01,32,Zara,tops,zara tops
+2017-03-01,57,Zara,vestidos,zara vestidos
+2017-03-01,83,Zara,zapatos,zara zapatos
+2017-04-01,44,H&M,pantalones,h&m pantalones
+2017-04-01,0,H&M,tops,h&m tops
+2017-04-01,57,H&M,vestidos,h&m vestidos
+2017-04-01,72,H&M,zapatos,h&m zapatos
+2017-04-01,51,Mango,pantalones,mango pantalones
+2017-04-01,49,Mango,tops,mango tops
+2017-04-01,57,Mango,vestidos,mango vestidos
+2017-04-01,87,Mango,zapatos,mango zapatos
+2017-04-01,47,Massimo Dutti,pantalones,massimo dutti pantalones
+2017-04-01,0,Massimo Dutti,tops,massimo dutti tops
+2017-04-01,48,Massimo Dutti,vestidos,massimo dutti vestidos
+2017-04-01,74,Massimo Dutti,zapatos,massimo dutti zapatos
+2017-04-01,4,Shein,pantalones,shein pantalones
+2017-04-01,0,Shein,tops,shein tops
+2017-04-01,6,Shein,vestidos,shein vestidos
+2017-04-01,7,Shein,zapatos,shein zapatos
+2017-04-01,57,Zara,pantalones,zara pantalones
+2017-04-01,39,Zara,tops,zara tops
+2017-04-01,63,Zara,vestidos,zara vestidos
+2017-04-01,90,Zara,zapatos,zara zapatos
+2017-05-01,56,H&M,pantalones,h&m pantalones
+2017-05-01,60,H&M,tops,h&m tops
+2017-05-01,69,H&M,vestidos,h&m vestidos
+2017-05-01,73,H&M,zapatos,h&m zapatos
+2017-05-01,59,Mango,pantalones,mango pantalones
+2017-05-01,60,Mango,tops,mango tops
+2017-05-01,77,Mango,vestidos,mango vestidos
+2017-05-01,95,Mango,zapatos,mango zapatos
+2017-05-01,57,Massimo Dutti,pantalones,massimo dutti pantalones
+2017-05-01,46,Massimo Dutti,tops,massimo dutti tops
+2017-05-01,63,Massimo Dutti,vestidos,massimo dutti vestidos
+2017-05-01,88,Massimo Dutti,zapatos,massimo dutti zapatos
+2017-05-01,5,Shein,pantalones,shein pantalones
+2017-05-01,11,Shein,tops,shein tops
+2017-05-01,5,Shein,vestidos,shein vestidos
+2017-05-01,6,Shein,zapatos,shein zapatos
+2017-05-01,60,Zara,pantalones,zara pantalones
+2017-05-01,46,Zara,tops,zara tops
+2017-05-01,75,Zara,vestidos,zara vestidos
+2017-05-01,95,Zara,zapatos,zara zapatos
+2017-06-01,49,H&M,pantalones,h&m pantalones
+2017-06-01,66,H&M,tops,h&m tops
+2017-06-01,71,H&M,vestidos,h&m vestidos
+2017-06-01,68,H&M,zapatos,h&m zapatos
+2017-06-01,53,Mango,pantalones,mango pantalones
+2017-06-01,62,Mango,tops,mango tops
+2017-06-01,71,Mango,vestidos,mango vestidos
+2017-06-01,76,Mango,zapatos,mango zapatos
+2017-06-01,46,Massimo Dutti,pantalones,massimo dutti pantalones
+2017-06-01,70,Massimo Dutti,tops,massimo dutti tops
+2017-06-01,100,Massimo Dutti,vestidos,massimo dutti vestidos
+2017-06-01,78,Massimo Dutti,zapatos,massimo dutti zapatos
+2017-06-01,0,Shein,pantalones,shein pantalones
+2017-06-01,0,Shein,tops,shein tops
+2017-06-01,7,Shein,vestidos,shein vestidos
+2017-06-01,7,Shein,zapatos,shein zapatos
+2017-06-01,56,Zara,pantalones,zara pantalones
+2017-06-01,49,Zara,tops,zara tops
+2017-06-01,67,Zara,vestidos,zara vestidos
+2017-06-01,74,Zara,zapatos,zara zapatos
+2017-07-01,38,H&M,pantalones,h&m pantalones
+2017-07-01,65,H&M,tops,h&m tops
+2017-07-01,51,H&M,vestidos,h&m vestidos
+2017-07-01,48,H&M,zapatos,h&m zapatos
+2017-07-01,41,Mango,pantalones,mango pantalones
+2017-07-01,52,Mango,tops,mango tops
+2017-07-01,48,Mango,vestidos,mango vestidos
+2017-07-01,59,Mango,zapatos,mango zapatos
+2017-07-01,26,Massimo Dutti,pantalones,massimo dutti pantalones
+2017-07-01,0,Massimo Dutti,tops,massimo dutti tops
+2017-07-01,50,Massimo Dutti,vestidos,massimo dutti vestidos
+2017-07-01,82,Massimo Dutti,zapatos,massimo dutti zapatos
+2017-07-01,4,Shein,pantalones,shein pantalones
+2017-07-01,0,Shein,tops,shein tops
+2017-07-01,13,Shein,vestidos,shein vestidos
+2017-07-01,6,Shein,zapatos,shein zapatos
+2017-07-01,45,Zara,pantalones,zara pantalones
+2017-07-01,37,Zara,tops,zara tops
+2017-07-01,55,Zara,vestidos,zara vestidos
+2017-07-01,67,Zara,zapatos,zara zapatos
+2017-08-01,37,H&M,pantalones,h&m pantalones
+2017-08-01,0,H&M,tops,h&m tops
+2017-08-01,33,H&M,vestidos,h&m vestidos
+2017-08-01,41,H&M,zapatos,h&m zapatos
+2017-08-01,29,Mango,pantalones,mango pantalones
+2017-08-01,31,Mango,tops,mango tops
+2017-08-01,42,Mango,vestidos,mango vestidos
+2017-08-01,50,Mango,zapatos,mango zapatos
+2017-08-01,25,Massimo Dutti,pantalones,massimo dutti pantalones
+2017-08-01,0,Massimo Dutti,tops,massimo dutti tops
+2017-08-01,35,Massimo Dutti,vestidos,massimo dutti vestidos
+2017-08-01,55,Massimo Dutti,zapatos,massimo dutti zapatos
+2017-08-01,4,Shein,pantalones,shein pantalones
+2017-08-01,0,Shein,tops,shein tops
+2017-08-01,14,Shein,vestidos,shein vestidos
+2017-08-01,8,Shein,zapatos,shein zapatos
+2017-08-01,35,Zara,pantalones,zara pantalones
+2017-08-01,31,Zara,tops,zara tops
+2017-08-01,51,Zara,vestidos,zara vestidos
+2017-08-01,60,Zara,zapatos,zara zapatos
+2017-09-01,44,H&M,pantalones,h&m pantalones
+2017-09-01,0,H&M,tops,h&m tops
+2017-09-01,35,H&M,vestidos,h&m vestidos
+2017-09-01,58,H&M,zapatos,h&m zapatos
+2017-09-01,39,Mango,pantalones,mango pantalones
+2017-09-01,28,Mango,tops,mango tops
+2017-09-01,42,Mango,vestidos,mango vestidos
+2017-09-01,71,Mango,zapatos,mango zapatos
+2017-09-01,37,Massimo Dutti,pantalones,massimo dutti pantalones
+2017-09-01,0,Massimo Dutti,tops,massimo dutti tops
+2017-09-01,37,Massimo Dutti,vestidos,massimo dutti vestidos
+2017-09-01,76,Massimo Dutti,zapatos,massimo dutti zapatos
+2017-09-01,5,Shein,pantalones,shein pantalones
+2017-09-01,0,Shein,tops,shein tops
+2017-09-01,5,Shein,vestidos,shein vestidos
+2017-09-01,9,Shein,zapatos,shein zapatos
+2017-09-01,48,Zara,pantalones,zara pantalones
+2017-09-01,24,Zara,tops,zara tops
+2017-09-01,57,Zara,vestidos,zara vestidos
+2017-09-01,81,Zara,zapatos,zara zapatos
+2017-10-01,39,H&M,pantalones,h&m pantalones
+2017-10-01,56,H&M,tops,h&m tops
+2017-10-01,33,H&M,vestidos,h&m vestidos
+2017-10-01,54,H&M,zapatos,h&m zapatos
+2017-10-01,48,Mango,pantalones,mango pantalones
+2017-10-01,27,Mango,tops,mango tops
+2017-10-01,36,Mango,vestidos,mango vestidos
+2017-10-01,69,Mango,zapatos,mango zapatos
+2017-10-01,39,Massimo Dutti,pantalones,massimo dutti pantalones
+2017-10-01,0,Massimo Dutti,tops,massimo dutti tops
+2017-10-01,31,Massimo Dutti,vestidos,massimo dutti vestidos
+2017-10-01,71,Massimo Dutti,zapatos,massimo dutti zapatos
+2017-10-01,8,Shein,pantalones,shein pantalones
+2017-10-01,0,Shein,tops,shein tops
+2017-10-01,5,Shein,vestidos,shein vestidos
+2017-10-01,8,Shein,zapatos,shein zapatos
+2017-10-01,54,Zara,pantalones,zara pantalones
+2017-10-01,27,Zara,tops,zara tops
+2017-10-01,49,Zara,vestidos,zara vestidos
+2017-10-01,75,Zara,zapatos,zara zapatos
+2017-11-01,59,H&M,pantalones,h&m pantalones
+2017-11-01,52,H&M,tops,h&m tops
+2017-11-01,56,H&M,vestidos,h&m vestidos
+2017-11-01,70,H&M,zapatos,h&m zapatos
+2017-11-01,63,Mango,pantalones,mango pantalones
+2017-11-01,44,Mango,tops,mango tops
+2017-11-01,49,Mango,vestidos,mango vestidos
+2017-11-01,82,Mango,zapatos,mango zapatos
+2017-11-01,61,Massimo Dutti,pantalones,massimo dutti pantalones
+2017-11-01,43,Massimo Dutti,tops,massimo dutti tops
+2017-11-01,36,Massimo Dutti,vestidos,massimo dutti vestidos
+2017-11-01,90,Massimo Dutti,zapatos,massimo dutti zapatos
+2017-11-01,5,Shein,pantalones,shein pantalones
+2017-11-01,0,Shein,tops,shein tops
+2017-11-01,13,Shein,vestidos,shein vestidos
+2017-11-01,12,Shein,zapatos,shein zapatos
+2017-11-01,72,Zara,pantalones,zara pantalones
+2017-11-01,28,Zara,tops,zara tops
+2017-11-01,68,Zara,vestidos,zara vestidos
+2017-11-01,82,Zara,zapatos,zara zapatos
+2017-12-01,60,H&M,pantalones,h&m pantalones
+2017-12-01,60,H&M,tops,h&m tops
+2017-12-01,66,H&M,vestidos,h&m vestidos
+2017-12-01,77,H&M,zapatos,h&m zapatos
+2017-12-01,57,Mango,pantalones,mango pantalones
+2017-12-01,65,Mango,tops,mango tops
+2017-12-01,51,Mango,vestidos,mango vestidos
+2017-12-01,57,Mango,zapatos,mango zapatos
+2017-12-01,51,Massimo Dutti,pantalones,massimo dutti pantalones
+2017-12-01,49,Massimo Dutti,tops,massimo dutti tops
+2017-12-01,27,Massimo Dutti,vestidos,massimo dutti vestidos
+2017-12-01,77,Massimo Dutti,zapatos,massimo dutti zapatos
+2017-12-01,4,Shein,pantalones,shein pantalones
+2017-12-01,0,Shein,tops,shein tops
+2017-12-01,13,Shein,vestidos,shein vestidos
+2017-12-01,9,Shein,zapatos,shein zapatos
+2017-12-01,68,Zara,pantalones,zara pantalones
+2017-12-01,44,Zara,tops,zara tops
+2017-12-01,67,Zara,vestidos,zara vestidos
+2017-12-01,71,Zara,zapatos,zara zapatos
+2018-01-01,52,H&M,pantalones,h&m pantalones
+2018-01-01,40,H&M,tops,h&m tops
+2018-01-01,28,H&M,vestidos,h&m vestidos
+2018-01-01,60,H&M,zapatos,h&m zapatos
+2018-01-01,54,Mango,pantalones,mango pantalones
+2018-01-01,13,Mango,tops,mango tops
+2018-01-01,32,Mango,vestidos,mango vestidos
+2018-01-01,55,Mango,zapatos,mango zapatos
+2018-01-01,62,Massimo Dutti,pantalones,massimo dutti pantalones
+2018-01-01,0,Massimo Dutti,tops,massimo dutti tops
+2018-01-01,32,Massimo Dutti,vestidos,massimo dutti vestidos
+2018-01-01,100,Massimo Dutti,zapatos,massimo dutti zapatos
+2018-01-01,6,Shein,pantalones,shein pantalones
+2018-01-01,0,Shein,tops,shein tops
+2018-01-01,7,Shein,vestidos,shein vestidos
+2018-01-01,8,Shein,zapatos,shein zapatos
+2018-01-01,60,Zara,pantalones,zara pantalones
+2018-01-01,18,Zara,tops,zara tops
+2018-01-01,46,Zara,vestidos,zara vestidos
+2018-01-01,68,Zara,zapatos,zara zapatos
+2018-02-01,36,H&M,pantalones,h&m pantalones
+2018-02-01,0,H&M,tops,h&m tops
+2018-02-01,29,H&M,vestidos,h&m vestidos
+2018-02-01,39,H&M,zapatos,h&m zapatos
+2018-02-01,37,Mango,pantalones,mango pantalones
+2018-02-01,14,Mango,tops,mango tops
+2018-02-01,37,Mango,vestidos,mango vestidos
+2018-02-01,53,Mango,zapatos,mango zapatos
+2018-02-01,37,Massimo Dutti,pantalones,massimo dutti pantalones
+2018-02-01,0,Massimo Dutti,tops,massimo dutti tops
+2018-02-01,38,Massimo Dutti,vestidos,massimo dutti vestidos
+2018-02-01,65,Massimo Dutti,zapatos,massimo dutti zapatos
+2018-02-01,6,Shein,pantalones,shein pantalones
+2018-02-01,16,Shein,tops,shein tops
+2018-02-01,7,Shein,vestidos,shein vestidos
+2018-02-01,10,Shein,zapatos,shein zapatos
+2018-02-01,47,Zara,pantalones,zara pantalones
+2018-02-01,13,Zara,tops,zara tops
+2018-02-01,44,Zara,vestidos,zara vestidos
+2018-02-01,58,Zara,zapatos,zara zapatos
+2018-03-01,51,H&M,pantalones,h&m pantalones
+2018-03-01,53,H&M,tops,h&m tops
+2018-03-01,55,H&M,vestidos,h&m vestidos
+2018-03-01,64,H&M,zapatos,h&m zapatos
+2018-03-01,46,Mango,pantalones,mango pantalones
+2018-03-01,32,Mango,tops,mango tops
+2018-03-01,56,Mango,vestidos,mango vestidos
+2018-03-01,66,Mango,zapatos,mango zapatos
+2018-03-01,39,Massimo Dutti,pantalones,massimo dutti pantalones
+2018-03-01,0,Massimo Dutti,tops,massimo dutti tops
+2018-03-01,54,Massimo Dutti,vestidos,massimo dutti vestidos
+2018-03-01,60,Massimo Dutti,zapatos,massimo dutti zapatos
+2018-03-01,6,Shein,pantalones,shein pantalones
+2018-03-01,11,Shein,tops,shein tops
+2018-03-01,9,Shein,vestidos,shein vestidos
+2018-03-01,10,Shein,zapatos,shein zapatos
+2018-03-01,58,Zara,pantalones,zara pantalones
+2018-03-01,26,Zara,tops,zara tops
+2018-03-01,56,Zara,vestidos,zara vestidos
+2018-03-01,70,Zara,zapatos,zara zapatos
+2018-04-01,58,H&M,pantalones,h&m pantalones
+2018-04-01,84,H&M,tops,h&m tops
+2018-04-01,72,H&M,vestidos,h&m vestidos
+2018-04-01,93,H&M,zapatos,h&m zapatos
+2018-04-01,66,Mango,pantalones,mango pantalones
+2018-04-01,63,Mango,tops,mango tops
+2018-04-01,75,Mango,vestidos,mango vestidos
+2018-04-01,92,Mango,zapatos,mango zapatos
+2018-04-01,48,Massimo Dutti,pantalones,massimo dutti pantalones
+2018-04-01,60,Massimo Dutti,tops,massimo dutti tops
+2018-04-01,61,Massimo Dutti,vestidos,massimo dutti vestidos
+2018-04-01,84,Massimo Dutti,zapatos,massimo dutti zapatos
+2018-04-01,10,Shein,pantalones,shein pantalones
+2018-04-01,21,Shein,tops,shein tops
+2018-04-01,19,Shein,vestidos,shein vestidos
+2018-04-01,12,Shein,zapatos,shein zapatos
+2018-04-01,74,Zara,pantalones,zara pantalones
+2018-04-01,45,Zara,tops,zara tops
+2018-04-01,75,Zara,vestidos,zara vestidos
+2018-04-01,86,Zara,zapatos,zara zapatos
+2018-05-01,78,H&M,pantalones,h&m pantalones
+2018-05-01,69,H&M,tops,h&m tops
+2018-05-01,66,H&M,vestidos,h&m vestidos
+2018-05-01,88,H&M,zapatos,h&m zapatos
+2018-05-01,70,Mango,pantalones,mango pantalones
+2018-05-01,74,Mango,tops,mango tops
+2018-05-01,68,Mango,vestidos,mango vestidos
+2018-05-01,83,Mango,zapatos,mango zapatos
+2018-05-01,47,Massimo Dutti,pantalones,massimo dutti pantalones
+2018-05-01,72,Massimo Dutti,tops,massimo dutti tops
+2018-05-01,54,Massimo Dutti,vestidos,massimo dutti vestidos
+2018-05-01,76,Massimo Dutti,zapatos,massimo dutti zapatos
+2018-05-01,12,Shein,pantalones,shein pantalones
+2018-05-01,20,Shein,tops,shein tops
+2018-05-01,14,Shein,vestidos,shein vestidos
+2018-05-01,12,Shein,zapatos,shein zapatos
+2018-05-01,76,Zara,pantalones,zara pantalones
+2018-05-01,56,Zara,tops,zara tops
+2018-05-01,69,Zara,vestidos,zara vestidos
+2018-05-01,74,Zara,zapatos,zara zapatos
+2018-06-01,76,H&M,pantalones,h&m pantalones
+2018-06-01,92,H&M,tops,h&m tops
+2018-06-01,65,H&M,vestidos,h&m vestidos
+2018-06-01,75,H&M,zapatos,h&m zapatos
+2018-06-01,52,Mango,pantalones,mango pantalones
+2018-06-01,62,Mango,tops,mango tops
+2018-06-01,69,Mango,vestidos,mango vestidos
+2018-06-01,66,Mango,zapatos,mango zapatos
+2018-06-01,40,Massimo Dutti,pantalones,massimo dutti pantalones
+2018-06-01,60,Massimo Dutti,tops,massimo dutti tops
+2018-06-01,51,Massimo Dutti,vestidos,massimo dutti vestidos
+2018-06-01,71,Massimo Dutti,zapatos,massimo dutti zapatos
+2018-06-01,11,Shein,pantalones,shein pantalones
+2018-06-01,18,Shein,tops,shein tops
+2018-06-01,11,Shein,vestidos,shein vestidos
+2018-06-01,8,Shein,zapatos,shein zapatos
+2018-06-01,65,Zara,pantalones,zara pantalones
+2018-06-01,55,Zara,tops,zara tops
+2018-06-01,75,Zara,vestidos,zara vestidos
+2018-06-01,66,Zara,zapatos,zara zapatos
+2018-07-01,51,H&M,pantalones,h&m pantalones
+2018-07-01,94,H&M,tops,h&m tops
+2018-07-01,59,H&M,vestidos,h&m vestidos
+2018-07-01,52,H&M,zapatos,h&m zapatos
+2018-07-01,41,Mango,pantalones,mango pantalones
+2018-07-01,42,Mango,tops,mango tops
+2018-07-01,56,Mango,vestidos,mango vestidos
+2018-07-01,49,Mango,zapatos,mango zapatos
+2018-07-01,41,Massimo Dutti,pantalones,massimo dutti pantalones
+2018-07-01,51,Massimo Dutti,tops,massimo dutti tops
+2018-07-01,61,Massimo Dutti,vestidos,massimo dutti vestidos
+2018-07-01,63,Massimo Dutti,zapatos,massimo dutti zapatos
+2018-07-01,9,Shein,pantalones,shein pantalones
+2018-07-01,18,Shein,tops,shein tops
+2018-07-01,11,Shein,vestidos,shein vestidos
+2018-07-01,9,Shein,zapatos,shein zapatos
+2018-07-01,47,Zara,pantalones,zara pantalones
+2018-07-01,40,Zara,tops,zara tops
+2018-07-01,64,Zara,vestidos,zara vestidos
+2018-07-01,57,Zara,zapatos,zara zapatos
+2018-08-01,40,H&M,pantalones,h&m pantalones
+2018-08-01,72,H&M,tops,h&m tops
+2018-08-01,44,H&M,vestidos,h&m vestidos
+2018-08-01,50,H&M,zapatos,h&m zapatos
+2018-08-01,28,Mango,pantalones,mango pantalones
+2018-08-01,39,Mango,tops,mango tops
+2018-08-01,51,Mango,vestidos,mango vestidos
+2018-08-01,44,Mango,zapatos,mango zapatos
+2018-08-01,31,Massimo Dutti,pantalones,massimo dutti pantalones
+2018-08-01,0,Massimo Dutti,tops,massimo dutti tops
+2018-08-01,40,Massimo Dutti,vestidos,massimo dutti vestidos
+2018-08-01,54,Massimo Dutti,zapatos,massimo dutti zapatos
+2018-08-01,6,Shein,pantalones,shein pantalones
+2018-08-01,15,Shein,tops,shein tops
+2018-08-01,16,Shein,vestidos,shein vestidos
+2018-08-01,7,Shein,zapatos,shein zapatos
+2018-08-01,38,Zara,pantalones,zara pantalones
+2018-08-01,34,Zara,tops,zara tops
+2018-08-01,46,Zara,vestidos,zara vestidos
+2018-08-01,46,Zara,zapatos,zara zapatos
+2018-09-01,62,H&M,pantalones,h&m pantalones
+2018-09-01,57,H&M,tops,h&m tops
+2018-09-01,46,H&M,vestidos,h&m vestidos
+2018-09-01,76,H&M,zapatos,h&m zapatos
+2018-09-01,44,Mango,pantalones,mango pantalones
+2018-09-01,37,Mango,tops,mango tops
+2018-09-01,48,Mango,vestidos,mango vestidos
+2018-09-01,56,Mango,zapatos,mango zapatos
+2018-09-01,40,Massimo Dutti,pantalones,massimo dutti pantalones
+2018-09-01,47,Massimo Dutti,tops,massimo dutti tops
+2018-09-01,44,Massimo Dutti,vestidos,massimo dutti vestidos
+2018-09-01,71,Massimo Dutti,zapatos,massimo dutti zapatos
+2018-09-01,11,Shein,pantalones,shein pantalones
+2018-09-01,0,Shein,tops,shein tops
+2018-09-01,10,Shein,vestidos,shein vestidos
+2018-09-01,11,Shein,zapatos,shein zapatos
+2018-09-01,56,Zara,pantalones,zara pantalones
+2018-09-01,33,Zara,tops,zara tops
+2018-09-01,49,Zara,vestidos,zara vestidos
+2018-09-01,65,Zara,zapatos,zara zapatos
+2018-10-01,82,H&M,pantalones,h&m pantalones
+2018-10-01,38,H&M,tops,h&m tops
+2018-10-01,47,H&M,vestidos,h&m vestidos
+2018-10-01,100,H&M,zapatos,h&m zapatos
+2018-10-01,64,Mango,pantalones,mango pantalones
+2018-10-01,26,Mango,tops,mango tops
+2018-10-01,40,Mango,vestidos,mango vestidos
+2018-10-01,71,Mango,zapatos,mango zapatos
+2018-10-01,67,Massimo Dutti,pantalones,massimo dutti pantalones
+2018-10-01,0,Massimo Dutti,tops,massimo dutti tops
+2018-10-01,35,Massimo Dutti,vestidos,massimo dutti vestidos
+2018-10-01,80,Massimo Dutti,zapatos,massimo dutti zapatos
+2018-10-01,11,Shein,pantalones,shein pantalones
+2018-10-01,9,Shein,tops,shein tops
+2018-10-01,7,Shein,vestidos,shein vestidos
+2018-10-01,13,Shein,zapatos,shein zapatos
+2018-10-01,78,Zara,pantalones,zara pantalones
+2018-10-01,24,Zara,tops,zara tops
+2018-10-01,45,Zara,vestidos,zara vestidos
+2018-10-01,74,Zara,zapatos,zara zapatos
+2018-11-01,75,H&M,pantalones,h&m pantalones
+2018-11-01,77,H&M,tops,h&m tops
+2018-11-01,59,H&M,vestidos,h&m vestidos
+2018-11-01,73,H&M,zapatos,h&m zapatos
+2018-11-01,74,Mango,pantalones,mango pantalones
+2018-11-01,50,Mango,tops,mango tops
+2018-11-01,49,Mango,vestidos,mango vestidos
+2018-11-01,66,Mango,zapatos,mango zapatos
+2018-11-01,79,Massimo Dutti,pantalones,massimo dutti pantalones
+2018-11-01,0,Massimo Dutti,tops,massimo dutti tops
+2018-11-01,39,Massimo Dutti,vestidos,massimo dutti vestidos
+2018-11-01,79,Massimo Dutti,zapatos,massimo dutti zapatos
+2018-11-01,14,Shein,pantalones,shein pantalones
+2018-11-01,19,Shein,tops,shein tops
+2018-11-01,12,Shein,vestidos,shein vestidos
+2018-11-01,16,Shein,zapatos,shein zapatos
+2018-11-01,78,Zara,pantalones,zara pantalones
+2018-11-01,35,Zara,tops,zara tops
+2018-11-01,55,Zara,vestidos,zara vestidos
+2018-11-01,67,Zara,zapatos,zara zapatos
+2018-12-01,75,H&M,pantalones,h&m pantalones
+2018-12-01,98,H&M,tops,h&m tops
+2018-12-01,91,H&M,vestidos,h&m vestidos
+2018-12-01,62,H&M,zapatos,h&m zapatos
+2018-12-01,67,Mango,pantalones,mango pantalones
+2018-12-01,71,Mango,tops,mango tops
+2018-12-01,59,Mango,vestidos,mango vestidos
+2018-12-01,52,Mango,zapatos,mango zapatos
+2018-12-01,66,Massimo Dutti,pantalones,massimo dutti pantalones
+2018-12-01,0,Massimo Dutti,tops,massimo dutti tops
+2018-12-01,37,Massimo Dutti,vestidos,massimo dutti vestidos
+2018-12-01,68,Massimo Dutti,zapatos,massimo dutti zapatos
+2018-12-01,13,Shein,pantalones,shein pantalones
+2018-12-01,16,Shein,tops,shein tops
+2018-12-01,12,Shein,vestidos,shein vestidos
+2018-12-01,9,Shein,zapatos,shein zapatos
+2018-12-01,87,Zara,pantalones,zara pantalones
+2018-12-01,53,Zara,tops,zara tops
+2018-12-01,72,Zara,vestidos,zara vestidos
+2018-12-01,59,Zara,zapatos,zara zapatos
+2019-01-01,43,H&M,pantalones,h&m pantalones
+2019-01-01,0,H&M,tops,h&m tops
+2019-01-01,24,H&M,vestidos,h&m vestidos
+2019-01-01,39,H&M,zapatos,h&m zapatos
+2019-01-01,59,Mango,pantalones,mango pantalones
+2019-01-01,16,Mango,tops,mango tops
+2019-01-01,29,Mango,vestidos,mango vestidos
+2019-01-01,49,Mango,zapatos,mango zapatos
+2019-01-01,77,Massimo Dutti,pantalones,massimo dutti pantalones
+2019-01-01,0,Massimo Dutti,tops,massimo dutti tops
+2019-01-01,39,Massimo Dutti,vestidos,massimo dutti vestidos
+2019-01-01,91,Massimo Dutti,zapatos,massimo dutti zapatos
+2019-01-01,13,Shein,pantalones,shein pantalones
+2019-01-01,10,Shein,tops,shein tops
+2019-01-01,8,Shein,vestidos,shein vestidos
+2019-01-01,8,Shein,zapatos,shein zapatos
+2019-01-01,73,Zara,pantalones,zara pantalones
+2019-01-01,13,Zara,tops,zara tops
+2019-01-01,39,Zara,vestidos,zara vestidos
+2019-01-01,55,Zara,zapatos,zara zapatos
+2019-02-01,48,H&M,pantalones,h&m pantalones
+2019-02-01,0,H&M,tops,h&m tops
+2019-02-01,35,H&M,vestidos,h&m vestidos
+2019-02-01,44,H&M,zapatos,h&m zapatos
+2019-02-01,51,Mango,pantalones,mango pantalones
+2019-02-01,28,Mango,tops,mango tops
+2019-02-01,43,Mango,vestidos,mango vestidos
+2019-02-01,47,Mango,zapatos,mango zapatos
+2019-02-01,50,Massimo Dutti,pantalones,massimo dutti pantalones
+2019-02-01,0,Massimo Dutti,tops,massimo dutti tops
+2019-02-01,38,Massimo Dutti,vestidos,massimo dutti vestidos
+2019-02-01,60,Massimo Dutti,zapatos,massimo dutti zapatos
+2019-02-01,14,Shein,pantalones,shein pantalones
+2019-02-01,17,Shein,tops,shein tops
+2019-02-01,10,Shein,vestidos,shein vestidos
+2019-02-01,8,Shein,zapatos,shein zapatos
+2019-02-01,52,Zara,pantalones,zara pantalones
+2019-02-01,20,Zara,tops,zara tops
+2019-02-01,44,Zara,vestidos,zara vestidos
+2019-02-01,47,Zara,zapatos,zara zapatos
+2019-03-01,59,H&M,pantalones,h&m pantalones
+2019-03-01,43,H&M,tops,h&m tops
+2019-03-01,50,H&M,vestidos,h&m vestidos
+2019-03-01,50,H&M,zapatos,h&m zapatos
+2019-03-01,51,Mango,pantalones,mango pantalones
+2019-03-01,51,Mango,tops,mango tops
+2019-03-01,58,Mango,vestidos,mango vestidos
+2019-03-01,61,Mango,zapatos,mango zapatos
+2019-03-01,56,Massimo Dutti,pantalones,massimo dutti pantalones
+2019-03-01,66,Massimo Dutti,tops,massimo dutti tops
+2019-03-01,49,Massimo Dutti,vestidos,massimo dutti vestidos
+2019-03-01,67,Massimo Dutti,zapatos,massimo dutti zapatos
+2019-03-01,13,Shein,pantalones,shein pantalones
+2019-03-01,20,Shein,tops,shein tops
+2019-03-01,14,Shein,vestidos,shein vestidos
+2019-03-01,10,Shein,zapatos,shein zapatos
+2019-03-01,64,Zara,pantalones,zara pantalones
+2019-03-01,35,Zara,tops,zara tops
+2019-03-01,60,Zara,vestidos,zara vestidos
+2019-03-01,59,Zara,zapatos,zara zapatos
+2019-04-01,66,H&M,pantalones,h&m pantalones
+2019-04-01,70,H&M,tops,h&m tops
+2019-04-01,77,H&M,vestidos,h&m vestidos
+2019-04-01,70,H&M,zapatos,h&m zapatos
+2019-04-01,57,Mango,pantalones,mango pantalones
+2019-04-01,53,Mango,tops,mango tops
+2019-04-01,60,Mango,vestidos,mango vestidos
+2019-04-01,67,Mango,zapatos,mango zapatos
+2019-04-01,56,Massimo Dutti,pantalones,massimo dutti pantalones
+2019-04-01,50,Massimo Dutti,tops,massimo dutti tops
+2019-04-01,59,Massimo Dutti,vestidos,massimo dutti vestidos
+2019-04-01,64,Massimo Dutti,zapatos,massimo dutti zapatos
+2019-04-01,11,Shein,pantalones,shein pantalones
+2019-04-01,12,Shein,tops,shein tops
+2019-04-01,16,Shein,vestidos,shein vestidos
+2019-04-01,15,Shein,zapatos,shein zapatos
+2019-04-01,69,Zara,pantalones,zara pantalones
+2019-04-01,44,Zara,tops,zara tops
+2019-04-01,66,Zara,vestidos,zara vestidos
+2019-04-01,71,Zara,zapatos,zara zapatos
+2019-05-01,87,H&M,pantalones,h&m pantalones
+2019-05-01,91,H&M,tops,h&m tops
+2019-05-01,89,H&M,vestidos,h&m vestidos
+2019-05-01,76,H&M,zapatos,h&m zapatos
+2019-05-01,73,Mango,pantalones,mango pantalones
+2019-05-01,72,Mango,tops,mango tops
+2019-05-01,71,Mango,vestidos,mango vestidos
+2019-05-01,77,Mango,zapatos,mango zapatos
+2019-05-01,70,Massimo Dutti,pantalones,massimo dutti pantalones
+2019-05-01,82,Massimo Dutti,tops,massimo dutti tops
+2019-05-01,56,Massimo Dutti,vestidos,massimo dutti vestidos
+2019-05-01,70,Massimo Dutti,zapatos,massimo dutti zapatos
+2019-05-01,16,Shein,pantalones,shein pantalones
+2019-05-01,18,Shein,tops,shein tops
+2019-05-01,16,Shein,vestidos,shein vestidos
+2019-05-01,15,Shein,zapatos,shein zapatos
+2019-05-01,87,Zara,pantalones,zara pantalones
+2019-05-01,63,Zara,tops,zara tops
+2019-05-01,85,Zara,vestidos,zara vestidos
+2019-05-01,70,Zara,zapatos,zara zapatos
+2019-06-01,99,H&M,pantalones,h&m pantalones
+2019-06-01,100,H&M,tops,h&m tops
+2019-06-01,96,H&M,vestidos,h&m vestidos
+2019-06-01,75,H&M,zapatos,h&m zapatos
+2019-06-01,68,Mango,pantalones,mango pantalones
+2019-06-01,69,Mango,tops,mango tops
+2019-06-01,75,Mango,vestidos,mango vestidos
+2019-06-01,60,Mango,zapatos,mango zapatos
+2019-06-01,61,Massimo Dutti,pantalones,massimo dutti pantalones
+2019-06-01,70,Massimo Dutti,tops,massimo dutti tops
+2019-06-01,73,Massimo Dutti,vestidos,massimo dutti vestidos
+2019-06-01,70,Massimo Dutti,zapatos,massimo dutti zapatos
+2019-06-01,16,Shein,pantalones,shein pantalones
+2019-06-01,26,Shein,tops,shein tops
+2019-06-01,18,Shein,vestidos,shein vestidos
+2019-06-01,14,Shein,zapatos,shein zapatos
+2019-06-01,75,Zara,pantalones,zara pantalones
+2019-06-01,64,Zara,tops,zara tops
+2019-06-01,90,Zara,vestidos,zara vestidos
+2019-06-01,60,Zara,zapatos,zara zapatos
+2019-07-01,69,H&M,pantalones,h&m pantalones
+2019-07-01,54,H&M,tops,h&m tops
+2019-07-01,81,H&M,vestidos,h&m vestidos
+2019-07-01,62,H&M,zapatos,h&m zapatos
+2019-07-01,39,Mango,pantalones,mango pantalones
+2019-07-01,43,Mango,tops,mango tops
+2019-07-01,68,Mango,vestidos,mango vestidos
+2019-07-01,47,Mango,zapatos,mango zapatos
+2019-07-01,41,Massimo Dutti,pantalones,massimo dutti pantalones
+2019-07-01,0,Massimo Dutti,tops,massimo dutti tops
+2019-07-01,58,Massimo Dutti,vestidos,massimo dutti vestidos
+2019-07-01,60,Massimo Dutti,zapatos,massimo dutti zapatos
+2019-07-01,13,Shein,pantalones,shein pantalones
+2019-07-01,15,Shein,tops,shein tops
+2019-07-01,21,Shein,vestidos,shein vestidos
+2019-07-01,12,Shein,zapatos,shein zapatos
+2019-07-01,51,Zara,pantalones,zara pantalones
+2019-07-01,51,Zara,tops,zara tops
+2019-07-01,79,Zara,vestidos,zara vestidos
+2019-07-01,52,Zara,zapatos,zara zapatos
+2019-08-01,49,H&M,pantalones,h&m pantalones
+2019-08-01,84,H&M,tops,h&m tops
+2019-08-01,47,H&M,vestidos,h&m vestidos
+2019-08-01,43,H&M,zapatos,h&m zapatos
+2019-08-01,33,Mango,pantalones,mango pantalones
+2019-08-01,31,Mango,tops,mango tops
+2019-08-01,51,Mango,vestidos,mango vestidos
+2019-08-01,38,Mango,zapatos,mango zapatos
+2019-08-01,33,Massimo Dutti,pantalones,massimo dutti pantalones
+2019-08-01,0,Massimo Dutti,tops,massimo dutti tops
+2019-08-01,43,Massimo Dutti,vestidos,massimo dutti vestidos
+2019-08-01,49,Massimo Dutti,zapatos,massimo dutti zapatos
+2019-08-01,10,Shein,pantalones,shein pantalones
+2019-08-01,15,Shein,tops,shein tops
+2019-08-01,13,Shein,vestidos,shein vestidos
+2019-08-01,12,Shein,zapatos,shein zapatos
+2019-08-01,43,Zara,pantalones,zara pantalones
+2019-08-01,41,Zara,tops,zara tops
+2019-08-01,53,Zara,vestidos,zara vestidos
+2019-08-01,41,Zara,zapatos,zara zapatos
+2019-09-01,77,H&M,pantalones,h&m pantalones
+2019-09-01,75,H&M,tops,h&m tops
+2019-09-01,54,H&M,vestidos,h&m vestidos
+2019-09-01,82,H&M,zapatos,h&m zapatos
+2019-09-01,52,Mango,pantalones,mango pantalones
+2019-09-01,34,Mango,tops,mango tops
+2019-09-01,53,Mango,vestidos,mango vestidos
+2019-09-01,63,Mango,zapatos,mango zapatos
+2019-09-01,44,Massimo Dutti,pantalones,massimo dutti pantalones
+2019-09-01,0,Massimo Dutti,tops,massimo dutti tops
+2019-09-01,38,Massimo Dutti,vestidos,massimo dutti vestidos
+2019-09-01,70,Massimo Dutti,zapatos,massimo dutti zapatos
+2019-09-01,18,Shein,pantalones,shein pantalones
+2019-09-01,21,Shein,tops,shein tops
+2019-09-01,12,Shein,vestidos,shein vestidos
+2019-09-01,12,Shein,zapatos,shein zapatos
+2019-09-01,65,Zara,pantalones,zara pantalones
+2019-09-01,45,Zara,tops,zara tops
+2019-09-01,57,Zara,vestidos,zara vestidos
+2019-09-01,62,Zara,zapatos,zara zapatos
+2019-10-01,79,H&M,pantalones,h&m pantalones
+2019-10-01,51,H&M,tops,h&m tops
+2019-10-01,52,H&M,vestidos,h&m vestidos
+2019-10-01,76,H&M,zapatos,h&m zapatos
+2019-10-01,65,Mango,pantalones,mango pantalones
+2019-10-01,29,Mango,tops,mango tops
+2019-10-01,50,Mango,vestidos,mango vestidos
+2019-10-01,69,Mango,zapatos,mango zapatos
+2019-10-01,62,Massimo Dutti,pantalones,massimo dutti pantalones
+2019-10-01,0,Massimo Dutti,tops,massimo dutti tops
+2019-10-01,41,Massimo Dutti,vestidos,massimo dutti vestidos
+2019-10-01,78,Massimo Dutti,zapatos,massimo dutti zapatos
+2019-10-01,15,Shein,pantalones,shein pantalones
+2019-10-01,15,Shein,tops,shein tops
+2019-10-01,14,Shein,vestidos,shein vestidos
+2019-10-01,16,Shein,zapatos,shein zapatos
+2019-10-01,80,Zara,pantalones,zara pantalones
+2019-10-01,32,Zara,tops,zara tops
+2019-10-01,60,Zara,vestidos,zara vestidos
+2019-10-01,73,Zara,zapatos,zara zapatos
+2019-11-01,78,H&M,pantalones,h&m pantalones
+2019-11-01,58,H&M,tops,h&m tops
+2019-11-01,71,H&M,vestidos,h&m vestidos
+2019-11-01,84,H&M,zapatos,h&m zapatos
+2019-11-01,83,Mango,pantalones,mango pantalones
+2019-11-01,51,Mango,tops,mango tops
+2019-11-01,61,Mango,vestidos,mango vestidos
+2019-11-01,81,Mango,zapatos,mango zapatos
+2019-11-01,100,Massimo Dutti,pantalones,massimo dutti pantalones
+2019-11-01,0,Massimo Dutti,tops,massimo dutti tops
+2019-11-01,46,Massimo Dutti,vestidos,massimo dutti vestidos
+2019-11-01,88,Massimo Dutti,zapatos,massimo dutti zapatos
+2019-11-01,17,Shein,pantalones,shein pantalones
+2019-11-01,28,Shein,tops,shein tops
+2019-11-01,20,Shein,vestidos,shein vestidos
+2019-11-01,20,Shein,zapatos,shein zapatos
+2019-11-01,100,Zara,pantalones,zara pantalones
+2019-11-01,44,Zara,tops,zara tops
+2019-11-01,74,Zara,vestidos,zara vestidos
+2019-11-01,68,Zara,zapatos,zara zapatos
+2019-12-01,79,H&M,pantalones,h&m pantalones
+2019-12-01,100,H&M,tops,h&m tops
+2019-12-01,88,H&M,vestidos,h&m vestidos
+2019-12-01,65,H&M,zapatos,h&m zapatos
+2019-12-01,79,Mango,pantalones,mango pantalones
+2019-12-01,92,Mango,tops,mango tops
+2019-12-01,65,Mango,vestidos,mango vestidos
+2019-12-01,61,Mango,zapatos,mango zapatos
+2019-12-01,74,Massimo Dutti,pantalones,massimo dutti pantalones
+2019-12-01,0,Massimo Dutti,tops,massimo dutti tops
+2019-12-01,37,Massimo Dutti,vestidos,massimo dutti vestidos
+2019-12-01,60,Massimo Dutti,zapatos,massimo dutti zapatos
+2019-12-01,17,Shein,pantalones,shein pantalones
+2019-12-01,26,Shein,tops,shein tops
+2019-12-01,20,Shein,vestidos,shein vestidos
+2019-12-01,16,Shein,zapatos,shein zapatos
+2019-12-01,94,Zara,pantalones,zara pantalones
+2019-12-01,75,Zara,tops,zara tops
+2019-12-01,81,Zara,vestidos,zara vestidos
+2019-12-01,60,Zara,zapatos,zara zapatos
+2020-01-01,57,H&M,pantalones,h&m pantalones
+2020-01-01,0,H&M,tops,h&m tops
+2020-01-01,35,H&M,vestidos,h&m vestidos
+2020-01-01,52,H&M,zapatos,h&m zapatos
+2020-01-01,65,Mango,pantalones,mango pantalones
+2020-01-01,20,Mango,tops,mango tops
+2020-01-01,42,Mango,vestidos,mango vestidos
+2020-01-01,56,Mango,zapatos,mango zapatos
+2020-01-01,85,Massimo Dutti,pantalones,massimo dutti pantalones
+2020-01-01,0,Massimo Dutti,tops,massimo dutti tops
+2020-01-01,41,Massimo Dutti,vestidos,massimo dutti vestidos
+2020-01-01,87,Massimo Dutti,zapatos,massimo dutti zapatos
+2020-01-01,17,Shein,pantalones,shein pantalones
+2020-01-01,16,Shein,tops,shein tops
+2020-01-01,12,Shein,vestidos,shein vestidos
+2020-01-01,10,Shein,zapatos,shein zapatos
+2020-01-01,79,Zara,pantalones,zara pantalones
+2020-01-01,26,Zara,tops,zara tops
+2020-01-01,48,Zara,vestidos,zara vestidos
+2020-01-01,52,Zara,zapatos,zara zapatos
+2020-02-01,53,H&M,pantalones,h&m pantalones
+2020-02-01,56,H&M,tops,h&m tops
+2020-02-01,47,H&M,vestidos,h&m vestidos
+2020-02-01,49,H&M,zapatos,h&m zapatos
+2020-02-01,51,Mango,pantalones,mango pantalones
+2020-02-01,37,Mango,tops,mango tops
+2020-02-01,52,Mango,vestidos,mango vestidos
+2020-02-01,53,Mango,zapatos,mango zapatos
+2020-02-01,51,Massimo Dutti,pantalones,massimo dutti pantalones
+2020-02-01,0,Massimo Dutti,tops,massimo dutti tops
+2020-02-01,46,Massimo Dutti,vestidos,massimo dutti vestidos
+2020-02-01,58,Massimo Dutti,zapatos,massimo dutti zapatos
+2020-02-01,18,Shein,pantalones,shein pantalones
+2020-02-01,30,Shein,tops,shein tops
+2020-02-01,17,Shein,vestidos,shein vestidos
+2020-02-01,15,Shein,zapatos,shein zapatos
+2020-02-01,65,Zara,pantalones,zara pantalones
+2020-02-01,38,Zara,tops,zara tops
+2020-02-01,59,Zara,vestidos,zara vestidos
+2020-02-01,48,Zara,zapatos,zara zapatos
+2020-03-01,31,H&M,pantalones,h&m pantalones
+2020-03-01,31,H&M,tops,h&m tops
+2020-03-01,30,H&M,vestidos,h&m vestidos
+2020-03-01,24,H&M,zapatos,h&m zapatos
+2020-03-01,30,Mango,pantalones,mango pantalones
+2020-03-01,22,Mango,tops,mango tops
+2020-03-01,31,Mango,vestidos,mango vestidos
+2020-03-01,32,Mango,zapatos,mango zapatos
+2020-03-01,25,Massimo Dutti,pantalones,massimo dutti pantalones
+2020-03-01,0,Massimo Dutti,tops,massimo dutti tops
+2020-03-01,25,Massimo Dutti,vestidos,massimo dutti vestidos
+2020-03-01,31,Massimo Dutti,zapatos,massimo dutti zapatos
+2020-03-01,14,Shein,pantalones,shein pantalones
+2020-03-01,24,Shein,tops,shein tops
+2020-03-01,12,Shein,vestidos,shein vestidos
+2020-03-01,9,Shein,zapatos,shein zapatos
+2020-03-01,34,Zara,pantalones,zara pantalones
+2020-03-01,25,Zara,tops,zara tops
+2020-03-01,29,Zara,vestidos,zara vestidos
+2020-03-01,27,Zara,zapatos,zara zapatos
+2020-04-01,34,H&M,pantalones,h&m pantalones
+2020-04-01,40,H&M,tops,h&m tops
+2020-04-01,22,H&M,vestidos,h&m vestidos
+2020-04-01,31,H&M,zapatos,h&m zapatos
+2020-04-01,21,Mango,pantalones,mango pantalones
+2020-04-01,18,Mango,tops,mango tops
+2020-04-01,21,Mango,vestidos,mango vestidos
+2020-04-01,24,Mango,zapatos,mango zapatos
+2020-04-01,18,Massimo Dutti,pantalones,massimo dutti pantalones
+2020-04-01,0,Massimo Dutti,tops,massimo dutti tops
+2020-04-01,19,Massimo Dutti,vestidos,massimo dutti vestidos
+2020-04-01,26,Massimo Dutti,zapatos,massimo dutti zapatos
+2020-04-01,21,Shein,pantalones,shein pantalones
+2020-04-01,50,Shein,tops,shein tops
+2020-04-01,8,Shein,vestidos,shein vestidos
+2020-04-01,9,Shein,zapatos,shein zapatos
+2020-04-01,30,Zara,pantalones,zara pantalones
+2020-04-01,24,Zara,tops,zara tops
+2020-04-01,27,Zara,vestidos,zara vestidos
+2020-04-01,25,Zara,zapatos,zara zapatos
+2020-05-01,100,H&M,pantalones,h&m pantalones
+2020-05-01,77,H&M,tops,h&m tops
+2020-05-01,65,H&M,vestidos,h&m vestidos
+2020-05-01,70,H&M,zapatos,h&m zapatos
+2020-05-01,63,Mango,pantalones,mango pantalones
+2020-05-01,42,Mango,tops,mango tops
+2020-05-01,47,Mango,vestidos,mango vestidos
+2020-05-01,50,Mango,zapatos,mango zapatos
+2020-05-01,49,Massimo Dutti,pantalones,massimo dutti pantalones
+2020-05-01,31,Massimo Dutti,tops,massimo dutti tops
+2020-05-01,36,Massimo Dutti,vestidos,massimo dutti vestidos
+2020-05-01,46,Massimo Dutti,zapatos,massimo dutti zapatos
+2020-05-01,38,Shein,pantalones,shein pantalones
+2020-05-01,59,Shein,tops,shein tops
+2020-05-01,16,Shein,vestidos,shein vestidos
+2020-05-01,19,Shein,zapatos,shein zapatos
+2020-05-01,73,Zara,pantalones,zara pantalones
+2020-05-01,68,Zara,tops,zara tops
+2020-05-01,62,Zara,vestidos,zara vestidos
+2020-05-01,51,Zara,zapatos,zara zapatos
+2020-06-01,92,H&M,pantalones,h&m pantalones
+2020-06-01,99,H&M,tops,h&m tops
+2020-06-01,100,H&M,vestidos,h&m vestidos
+2020-06-01,56,H&M,zapatos,h&m zapatos
+2020-06-01,77,Mango,pantalones,mango pantalones
+2020-06-01,58,Mango,tops,mango tops
+2020-06-01,76,Mango,vestidos,mango vestidos
+2020-06-01,49,Mango,zapatos,mango zapatos
+2020-06-01,58,Massimo Dutti,pantalones,massimo dutti pantalones
+2020-06-01,73,Massimo Dutti,tops,massimo dutti tops
+2020-06-01,62,Massimo Dutti,vestidos,massimo dutti vestidos
+2020-06-01,52,Massimo Dutti,zapatos,massimo dutti zapatos
+2020-06-01,38,Shein,pantalones,shein pantalones
+2020-06-01,51,Shein,tops,shein tops
+2020-06-01,25,Shein,vestidos,shein vestidos
+2020-06-01,18,Shein,zapatos,shein zapatos
+2020-06-01,76,Zara,pantalones,zara pantalones
+2020-06-01,68,Zara,tops,zara tops
+2020-06-01,86,Zara,vestidos,zara vestidos
+2020-06-01,50,Zara,zapatos,zara zapatos
+2020-07-01,68,H&M,pantalones,h&m pantalones
+2020-07-01,85,H&M,tops,h&m tops
+2020-07-01,82,H&M,vestidos,h&m vestidos
+2020-07-01,38,H&M,zapatos,h&m zapatos
+2020-07-01,51,Mango,pantalones,mango pantalones
+2020-07-01,44,Mango,tops,mango tops
+2020-07-01,68,Mango,vestidos,mango vestidos
+2020-07-01,38,Mango,zapatos,mango zapatos
+2020-07-01,48,Massimo Dutti,pantalones,massimo dutti pantalones
+2020-07-01,53,Massimo Dutti,tops,massimo dutti tops
+2020-07-01,61,Massimo Dutti,vestidos,massimo dutti vestidos
+2020-07-01,46,Massimo Dutti,zapatos,massimo dutti zapatos
+2020-07-01,30,Shein,pantalones,shein pantalones
+2020-07-01,42,Shein,tops,shein tops
+2020-07-01,25,Shein,vestidos,shein vestidos
+2020-07-01,18,Shein,zapatos,shein zapatos
+2020-07-01,52,Zara,pantalones,zara pantalones
+2020-07-01,66,Zara,tops,zara tops
+2020-07-01,77,Zara,vestidos,zara vestidos
+2020-07-01,39,Zara,zapatos,zara zapatos
+2020-08-01,45,H&M,pantalones,h&m pantalones
+2020-08-01,0,H&M,tops,h&m tops
+2020-08-01,44,H&M,vestidos,h&m vestidos
+2020-08-01,34,H&M,zapatos,h&m zapatos
+2020-08-01,35,Mango,pantalones,mango pantalones
+2020-08-01,28,Mango,tops,mango tops
+2020-08-01,50,Mango,vestidos,mango vestidos
+2020-08-01,33,Mango,zapatos,mango zapatos
+2020-08-01,32,Massimo Dutti,pantalones,massimo dutti pantalones
+2020-08-01,0,Massimo Dutti,tops,massimo dutti tops
+2020-08-01,39,Massimo Dutti,vestidos,massimo dutti vestidos
+2020-08-01,36,Massimo Dutti,zapatos,massimo dutti zapatos
+2020-08-01,32,Shein,pantalones,shein pantalones
+2020-08-01,25,Shein,tops,shein tops
+2020-08-01,19,Shein,vestidos,shein vestidos
+2020-08-01,19,Shein,zapatos,shein zapatos
+2020-08-01,45,Zara,pantalones,zara pantalones
+2020-08-01,44,Zara,tops,zara tops
+2020-08-01,51,Zara,vestidos,zara vestidos
+2020-08-01,32,Zara,zapatos,zara zapatos
+2020-09-01,69,H&M,pantalones,h&m pantalones
+2020-09-01,36,H&M,tops,h&m tops
+2020-09-01,36,H&M,vestidos,h&m vestidos
+2020-09-01,48,H&M,zapatos,h&m zapatos
+2020-09-01,58,Mango,pantalones,mango pantalones
+2020-09-01,17,Mango,tops,mango tops
+2020-09-01,37,Mango,vestidos,mango vestidos
+2020-09-01,50,Mango,zapatos,mango zapatos
+2020-09-01,52,Massimo Dutti,pantalones,massimo dutti pantalones
+2020-09-01,0,Massimo Dutti,tops,massimo dutti tops
+2020-09-01,32,Massimo Dutti,vestidos,massimo dutti vestidos
+2020-09-01,50,Massimo Dutti,zapatos,massimo dutti zapatos
+2020-09-01,32,Shein,pantalones,shein pantalones
+2020-09-01,13,Shein,tops,shein tops
+2020-09-01,12,Shein,vestidos,shein vestidos
+2020-09-01,18,Shein,zapatos,shein zapatos
+2020-09-01,74,Zara,pantalones,zara pantalones
+2020-09-01,28,Zara,tops,zara tops
+2020-09-01,38,Zara,vestidos,zara vestidos
+2020-09-01,45,Zara,zapatos,zara zapatos
+2020-10-01,67,H&M,pantalones,h&m pantalones
+2020-10-01,0,H&M,tops,h&m tops
+2020-10-01,33,H&M,vestidos,h&m vestidos
+2020-10-01,53,H&M,zapatos,h&m zapatos
+2020-10-01,69,Mango,pantalones,mango pantalones
+2020-10-01,17,Mango,tops,mango tops
+2020-10-01,28,Mango,vestidos,mango vestidos
+2020-10-01,53,Mango,zapatos,mango zapatos
+2020-10-01,57,Massimo Dutti,pantalones,massimo dutti pantalones
+2020-10-01,0,Massimo Dutti,tops,massimo dutti tops
+2020-10-01,22,Massimo Dutti,vestidos,massimo dutti vestidos
+2020-10-01,59,Massimo Dutti,zapatos,massimo dutti zapatos
+2020-10-01,33,Shein,pantalones,shein pantalones
+2020-10-01,16,Shein,tops,shein tops
+2020-10-01,11,Shein,vestidos,shein vestidos
+2020-10-01,16,Shein,zapatos,shein zapatos
+2020-10-01,83,Zara,pantalones,zara pantalones
+2020-10-01,17,Zara,tops,zara tops
+2020-10-01,35,Zara,vestidos,zara vestidos
+2020-10-01,46,Zara,zapatos,zara zapatos
+2020-11-01,65,H&M,pantalones,h&m pantalones
+2020-11-01,0,H&M,tops,h&m tops
+2020-11-01,31,H&M,vestidos,h&m vestidos
+2020-11-01,40,H&M,zapatos,h&m zapatos
+2020-11-01,68,Mango,pantalones,mango pantalones
+2020-11-01,13,Mango,tops,mango tops
+2020-11-01,23,Mango,vestidos,mango vestidos
+2020-11-01,39,Mango,zapatos,mango zapatos
+2020-11-01,79,Massimo Dutti,pantalones,massimo dutti pantalones
+2020-11-01,0,Massimo Dutti,tops,massimo dutti tops
+2020-11-01,20,Massimo Dutti,vestidos,massimo dutti vestidos
+2020-11-01,52,Massimo Dutti,zapatos,massimo dutti zapatos
+2020-11-01,34,Shein,pantalones,shein pantalones
+2020-11-01,18,Shein,tops,shein tops
+2020-11-01,10,Shein,vestidos,shein vestidos
+2020-11-01,21,Shein,zapatos,shein zapatos
+2020-11-01,80,Zara,pantalones,zara pantalones
+2020-11-01,19,Zara,tops,zara tops
+2020-11-01,32,Zara,vestidos,zara vestidos
+2020-11-01,37,Zara,zapatos,zara zapatos
+2020-12-01,62,H&M,pantalones,h&m pantalones
+2020-12-01,33,H&M,tops,h&m tops
+2020-12-01,41,H&M,vestidos,h&m vestidos
+2020-12-01,46,H&M,zapatos,h&m zapatos
+2020-12-01,63,Mango,pantalones,mango pantalones
+2020-12-01,20,Mango,tops,mango tops
+2020-12-01,25,Mango,vestidos,mango vestidos
+2020-12-01,34,Mango,zapatos,mango zapatos
+2020-12-01,60,Massimo Dutti,pantalones,massimo dutti pantalones
+2020-12-01,0,Massimo Dutti,tops,massimo dutti tops
+2020-12-01,17,Massimo Dutti,vestidos,massimo dutti vestidos
+2020-12-01,44,Massimo Dutti,zapatos,massimo dutti zapatos
+2020-12-01,28,Shein,pantalones,shein pantalones
+2020-12-01,19,Shein,tops,shein tops
+2020-12-01,9,Shein,vestidos,shein vestidos
+2020-12-01,11,Shein,zapatos,shein zapatos
+2020-12-01,75,Zara,pantalones,zara pantalones
+2020-12-01,23,Zara,tops,zara tops
+2020-12-01,36,Zara,vestidos,zara vestidos
+2020-12-01,33,Zara,zapatos,zara zapatos
+2021-01-01,56,H&M,pantalones,h&m pantalones
+2021-01-01,0,H&M,tops,h&m tops
+2021-01-01,19,H&M,vestidos,h&m vestidos
+2021-01-01,33,H&M,zapatos,h&m zapatos
+2021-01-01,58,Mango,pantalones,mango pantalones
+2021-01-01,15,Mango,tops,mango tops
+2021-01-01,17,Mango,vestidos,mango vestidos
+2021-01-01,33,Mango,zapatos,mango zapatos
+2021-01-01,90,Massimo Dutti,pantalones,massimo dutti pantalones
+2021-01-01,0,Massimo Dutti,tops,massimo dutti tops
+2021-01-01,22,Massimo Dutti,vestidos,massimo dutti vestidos
+2021-01-01,52,Massimo Dutti,zapatos,massimo dutti zapatos
+2021-01-01,34,Shein,pantalones,shein pantalones
+2021-01-01,18,Shein,tops,shein tops
+2021-01-01,9,Shein,vestidos,shein vestidos
+2021-01-01,13,Shein,zapatos,shein zapatos
+2021-01-01,74,Zara,pantalones,zara pantalones
+2021-01-01,14,Zara,tops,zara tops
+2021-01-01,24,Zara,vestidos,zara vestidos
+2021-01-01,30,Zara,zapatos,zara zapatos
+2021-02-01,41,H&M,pantalones,h&m pantalones
+2021-02-01,0,H&M,tops,h&m tops
+2021-02-01,24,H&M,vestidos,h&m vestidos
+2021-02-01,25,H&M,zapatos,h&m zapatos
+2021-02-01,47,Mango,pantalones,mango pantalones
+2021-02-01,15,Mango,tops,mango tops
+2021-02-01,22,Mango,vestidos,mango vestidos
+2021-02-01,27,Mango,zapatos,mango zapatos
+2021-02-01,48,Massimo Dutti,pantalones,massimo dutti pantalones
+2021-02-01,0,Massimo Dutti,tops,massimo dutti tops
+2021-02-01,21,Massimo Dutti,vestidos,massimo dutti vestidos
+2021-02-01,39,Massimo Dutti,zapatos,massimo dutti zapatos
+2021-02-01,41,Shein,pantalones,shein pantalones
+2021-02-01,31,Shein,tops,shein tops
+2021-02-01,14,Shein,vestidos,shein vestidos
+2021-02-01,18,Shein,zapatos,shein zapatos
+2021-02-01,54,Zara,pantalones,zara pantalones
+2021-02-01,20,Zara,tops,zara tops
+2021-02-01,30,Zara,vestidos,zara vestidos
+2021-02-01,27,Zara,zapatos,zara zapatos
+2021-03-01,49,H&M,pantalones,h&m pantalones
+2021-03-01,53,H&M,tops,h&m tops
+2021-03-01,35,H&M,vestidos,h&m vestidos
+2021-03-01,29,H&M,zapatos,h&m zapatos
+2021-03-01,63,Mango,pantalones,mango pantalones
+2021-03-01,27,Mango,tops,mango tops
+2021-03-01,34,Mango,vestidos,mango vestidos
+2021-03-01,37,Mango,zapatos,mango zapatos
+2021-03-01,53,Massimo Dutti,pantalones,massimo dutti pantalones
+2021-03-01,0,Massimo Dutti,tops,massimo dutti tops
+2021-03-01,31,Massimo Dutti,vestidos,massimo dutti vestidos
+2021-03-01,33,Massimo Dutti,zapatos,massimo dutti zapatos
+2021-03-01,37,Shein,pantalones,shein pantalones
+2021-03-01,36,Shein,tops,shein tops
+2021-03-01,21,Shein,vestidos,shein vestidos
+2021-03-01,20,Shein,zapatos,shein zapatos
+2021-03-01,64,Zara,pantalones,zara pantalones
+2021-03-01,30,Zara,tops,zara tops
+2021-03-01,38,Zara,vestidos,zara vestidos
+2021-03-01,31,Zara,zapatos,zara zapatos
+2021-04-01,56,H&M,pantalones,h&m pantalones
+2021-04-01,69,H&M,tops,h&m tops
+2021-04-01,45,H&M,vestidos,h&m vestidos
+2021-04-01,37,H&M,zapatos,h&m zapatos
+2021-04-01,55,Mango,pantalones,mango pantalones
+2021-04-01,31,Mango,tops,mango tops
+2021-04-01,45,Mango,vestidos,mango vestidos
+2021-04-01,43,Mango,zapatos,mango zapatos
+2021-04-01,44,Massimo Dutti,pantalones,massimo dutti pantalones
+2021-04-01,36,Massimo Dutti,tops,massimo dutti tops
+2021-04-01,36,Massimo Dutti,vestidos,massimo dutti vestidos
+2021-04-01,32,Massimo Dutti,zapatos,massimo dutti zapatos
+2021-04-01,38,Shein,pantalones,shein pantalones
+2021-04-01,43,Shein,tops,shein tops
+2021-04-01,30,Shein,vestidos,shein vestidos
+2021-04-01,26,Shein,zapatos,shein zapatos
+2021-04-01,64,Zara,pantalones,zara pantalones
+2021-04-01,42,Zara,tops,zara tops
+2021-04-01,47,Zara,vestidos,zara vestidos
+2021-04-01,35,Zara,zapatos,zara zapatos
+2021-05-01,62,H&M,pantalones,h&m pantalones
+2021-05-01,42,H&M,tops,h&m tops
+2021-05-01,57,H&M,vestidos,h&m vestidos
+2021-05-01,38,H&M,zapatos,h&m zapatos
+2021-05-01,73,Mango,pantalones,mango pantalones
+2021-05-01,82,Mango,tops,mango tops
+2021-05-01,68,Mango,vestidos,mango vestidos
+2021-05-01,42,Mango,zapatos,mango zapatos
+2021-05-01,52,Massimo Dutti,pantalones,massimo dutti pantalones
+2021-05-01,64,Massimo Dutti,tops,massimo dutti tops
+2021-05-01,43,Massimo Dutti,vestidos,massimo dutti vestidos
+2021-05-01,36,Massimo Dutti,zapatos,massimo dutti zapatos
+2021-05-01,49,Shein,pantalones,shein pantalones
+2021-05-01,68,Shein,tops,shein tops
+2021-05-01,45,Shein,vestidos,shein vestidos
+2021-05-01,30,Shein,zapatos,shein zapatos
+2021-05-01,76,Zara,pantalones,zara pantalones
+2021-05-01,67,Zara,tops,zara tops
+2021-05-01,74,Zara,vestidos,zara vestidos
+2021-05-01,42,Zara,zapatos,zara zapatos
+2021-06-01,61,H&M,pantalones,h&m pantalones
+2021-06-01,70,H&M,tops,h&m tops
+2021-06-01,60,H&M,vestidos,h&m vestidos
+2021-06-01,34,H&M,zapatos,h&m zapatos
+2021-06-01,64,Mango,pantalones,mango pantalones
+2021-06-01,68,Mango,tops,mango tops
+2021-06-01,84,Mango,vestidos,mango vestidos
+2021-06-01,43,Mango,zapatos,mango zapatos
+2021-06-01,54,Massimo Dutti,pantalones,massimo dutti pantalones
+2021-06-01,68,Massimo Dutti,tops,massimo dutti tops
+2021-06-01,53,Massimo Dutti,vestidos,massimo dutti vestidos
+2021-06-01,31,Massimo Dutti,zapatos,massimo dutti zapatos
+2021-06-01,49,Shein,pantalones,shein pantalones
+2021-06-01,61,Shein,tops,shein tops
+2021-06-01,59,Shein,vestidos,shein vestidos
+2021-06-01,35,Shein,zapatos,shein zapatos
+2021-06-01,72,Zara,pantalones,zara pantalones
+2021-06-01,73,Zara,tops,zara tops
+2021-06-01,85,Zara,vestidos,zara vestidos
+2021-06-01,38,Zara,zapatos,zara zapatos
+2021-07-01,45,H&M,pantalones,h&m pantalones
+2021-07-01,0,H&M,tops,h&m tops
+2021-07-01,45,H&M,vestidos,h&m vestidos
+2021-07-01,22,H&M,zapatos,h&m zapatos
+2021-07-01,45,Mango,pantalones,mango pantalones
+2021-07-01,41,Mango,tops,mango tops
+2021-07-01,61,Mango,vestidos,mango vestidos
+2021-07-01,29,Mango,zapatos,mango zapatos
+2021-07-01,36,Massimo Dutti,pantalones,massimo dutti pantalones
+2021-07-01,58,Massimo Dutti,tops,massimo dutti tops
+2021-07-01,46,Massimo Dutti,vestidos,massimo dutti vestidos
+2021-07-01,24,Massimo Dutti,zapatos,massimo dutti zapatos
+2021-07-01,32,Shein,pantalones,shein pantalones
+2021-07-01,50,Shein,tops,shein tops
+2021-07-01,53,Shein,vestidos,shein vestidos
+2021-07-01,29,Shein,zapatos,shein zapatos
+2021-07-01,43,Zara,pantalones,zara pantalones
+2021-07-01,42,Zara,tops,zara tops
+2021-07-01,60,Zara,vestidos,zara vestidos
+2021-07-01,28,Zara,zapatos,zara zapatos
+2021-08-01,31,H&M,pantalones,h&m pantalones
+2021-08-01,0,H&M,tops,h&m tops
+2021-08-01,35,H&M,vestidos,h&m vestidos
+2021-08-01,25,H&M,zapatos,h&m zapatos
+2021-08-01,34,Mango,pantalones,mango pantalones
+2021-08-01,29,Mango,tops,mango tops
+2021-08-01,47,Mango,vestidos,mango vestidos
+2021-08-01,27,Mango,zapatos,mango zapatos
+2021-08-01,27,Massimo Dutti,pantalones,massimo dutti pantalones
+2021-08-01,0,Massimo Dutti,tops,massimo dutti tops
+2021-08-01,37,Massimo Dutti,vestidos,massimo dutti vestidos
+2021-08-01,25,Massimo Dutti,zapatos,massimo dutti zapatos
+2021-08-01,33,Shein,pantalones,shein pantalones
+2021-08-01,31,Shein,tops,shein tops
+2021-08-01,43,Shein,vestidos,shein vestidos
+2021-08-01,28,Shein,zapatos,shein zapatos
+2021-08-01,40,Zara,pantalones,zara pantalones
+2021-08-01,42,Zara,tops,zara tops
+2021-08-01,45,Zara,vestidos,zara vestidos
+2021-08-01,31,Zara,zapatos,zara zapatos
+2021-09-01,54,H&M,pantalones,h&m pantalones
+2021-09-01,0,H&M,tops,h&m tops
+2021-09-01,34,H&M,vestidos,h&m vestidos
+2021-09-01,32,H&M,zapatos,h&m zapatos
+2021-09-01,53,Mango,pantalones,mango pantalones
+2021-09-01,28,Mango,tops,mango tops
+2021-09-01,53,Mango,vestidos,mango vestidos
+2021-09-01,44,Mango,zapatos,mango zapatos
+2021-09-01,47,Massimo Dutti,pantalones,massimo dutti pantalones
+2021-09-01,0,Massimo Dutti,tops,massimo dutti tops
+2021-09-01,41,Massimo Dutti,vestidos,massimo dutti vestidos
+2021-09-01,46,Massimo Dutti,zapatos,massimo dutti zapatos
+2021-09-01,44,Shein,pantalones,shein pantalones
+2021-09-01,26,Shein,tops,shein tops
+2021-09-01,35,Shein,vestidos,shein vestidos
+2021-09-01,32,Shein,zapatos,shein zapatos
+2021-09-01,63,Zara,pantalones,zara pantalones
+2021-09-01,35,Zara,tops,zara tops
+2021-09-01,47,Zara,vestidos,zara vestidos
+2021-09-01,44,Zara,zapatos,zara zapatos
+2021-10-01,65,H&M,pantalones,h&m pantalones
+2021-10-01,0,H&M,tops,h&m tops
+2021-10-01,29,H&M,vestidos,h&m vestidos
+2021-10-01,42,H&M,zapatos,h&m zapatos
+2021-10-01,77,Mango,pantalones,mango pantalones
+2021-10-01,29,Mango,tops,mango tops
+2021-10-01,47,Mango,vestidos,mango vestidos
+2021-10-01,54,Mango,zapatos,mango zapatos
+2021-10-01,55,Massimo Dutti,pantalones,massimo dutti pantalones
+2021-10-01,0,Massimo Dutti,tops,massimo dutti tops
+2021-10-01,35,Massimo Dutti,vestidos,massimo dutti vestidos
+2021-10-01,49,Massimo Dutti,zapatos,massimo dutti zapatos
+2021-10-01,40,Shein,pantalones,shein pantalones
+2021-10-01,34,Shein,tops,shein tops
+2021-10-01,36,Shein,vestidos,shein vestidos
+2021-10-01,35,Shein,zapatos,shein zapatos
+2021-10-01,88,Zara,pantalones,zara pantalones
+2021-10-01,41,Zara,tops,zara tops
+2021-10-01,50,Zara,vestidos,zara vestidos
+2021-10-01,47,Zara,zapatos,zara zapatos
+2021-11-01,68,H&M,pantalones,h&m pantalones
+2021-11-01,48,H&M,tops,h&m tops
+2021-11-01,46,H&M,vestidos,h&m vestidos
+2021-11-01,40,H&M,zapatos,h&m zapatos
+2021-11-01,79,Mango,pantalones,mango pantalones
+2021-11-01,45,Mango,tops,mango tops
+2021-11-01,51,Mango,vestidos,mango vestidos
+2021-11-01,48,Mango,zapatos,mango zapatos
+2021-11-01,72,Massimo Dutti,pantalones,massimo dutti pantalones
+2021-11-01,0,Massimo Dutti,tops,massimo dutti tops
+2021-11-01,32,Massimo Dutti,vestidos,massimo dutti vestidos
+2021-11-01,46,Massimo Dutti,zapatos,massimo dutti zapatos
+2021-11-01,39,Shein,pantalones,shein pantalones
+2021-11-01,35,Shein,tops,shein tops
+2021-11-01,36,Shein,vestidos,shein vestidos
+2021-11-01,36,Shein,zapatos,shein zapatos
+2021-11-01,87,Zara,pantalones,zara pantalones
+2021-11-01,41,Zara,tops,zara tops
+2021-11-01,53,Zara,vestidos,zara vestidos
+2021-11-01,43,Zara,zapatos,zara zapatos
+2021-12-01,54,H&M,pantalones,h&m pantalones
+2021-12-01,48,H&M,tops,h&m tops
+2021-12-01,43,H&M,vestidos,h&m vestidos
+2021-12-01,33,H&M,zapatos,h&m zapatos
+2021-12-01,69,Mango,pantalones,mango pantalones
+2021-12-01,63,Mango,tops,mango tops
+2021-12-01,44,Mango,vestidos,mango vestidos
+2021-12-01,41,Mango,zapatos,mango zapatos
+2021-12-01,60,Massimo Dutti,pantalones,massimo dutti pantalones
+2021-12-01,0,Massimo Dutti,tops,massimo dutti tops
+2021-12-01,23,Massimo Dutti,vestidos,massimo dutti vestidos
+2021-12-01,34,Massimo Dutti,zapatos,massimo dutti zapatos
+2021-12-01,38,Shein,pantalones,shein pantalones
+2021-12-01,28,Shein,tops,shein tops
+2021-12-01,26,Shein,vestidos,shein vestidos
+2021-12-01,26,Shein,zapatos,shein zapatos
+2021-12-01,81,Zara,pantalones,zara pantalones
+2021-12-01,54,Zara,tops,zara tops
+2021-12-01,50,Zara,vestidos,zara vestidos
+2021-12-01,36,Zara,zapatos,zara zapatos
+2022-01-01,50,H&M,pantalones,h&m pantalones
+2022-01-01,0,H&M,tops,h&m tops
+2022-01-01,20,H&M,vestidos,h&m vestidos
+2022-01-01,23,H&M,zapatos,h&m zapatos
+2022-01-01,74,Mango,pantalones,mango pantalones
+2022-01-01,18,Mango,tops,mango tops
+2022-01-01,29,Mango,vestidos,mango vestidos
+2022-01-01,41,Mango,zapatos,mango zapatos
+2022-01-01,71,Massimo Dutti,pantalones,massimo dutti pantalones
+2022-01-01,0,Massimo Dutti,tops,massimo dutti tops
+2022-01-01,31,Massimo Dutti,vestidos,massimo dutti vestidos
+2022-01-01,48,Massimo Dutti,zapatos,massimo dutti zapatos
+2022-01-01,44,Shein,pantalones,shein pantalones
+2022-01-01,33,Shein,tops,shein tops
+2022-01-01,24,Shein,vestidos,shein vestidos
+2022-01-01,35,Shein,zapatos,shein zapatos
+2022-01-01,79,Zara,pantalones,zara pantalones
+2022-01-01,26,Zara,tops,zara tops
+2022-01-01,35,Zara,vestidos,zara vestidos
+2022-01-01,32,Zara,zapatos,zara zapatos
+2022-02-01,44,H&M,pantalones,h&m pantalones
+2022-02-01,49,H&M,tops,h&m tops
+2022-02-01,29,H&M,vestidos,h&m vestidos
+2022-02-01,31,H&M,zapatos,h&m zapatos
+2022-02-01,61,Mango,pantalones,mango pantalones
+2022-02-01,45,Mango,tops,mango tops
+2022-02-01,46,Mango,vestidos,mango vestidos
+2022-02-01,46,Mango,zapatos,mango zapatos
+2022-02-01,42,Massimo Dutti,pantalones,massimo dutti pantalones
+2022-02-01,40,Massimo Dutti,tops,massimo dutti tops
+2022-02-01,36,Massimo Dutti,vestidos,massimo dutti vestidos
+2022-02-01,41,Massimo Dutti,zapatos,massimo dutti zapatos
+2022-02-01,46,Shein,pantalones,shein pantalones
+2022-02-01,54,Shein,tops,shein tops
+2022-02-01,41,Shein,vestidos,shein vestidos
+2022-02-01,51,Shein,zapatos,shein zapatos
+2022-02-01,67,Zara,pantalones,zara pantalones
+2022-02-01,45,Zara,tops,zara tops
+2022-02-01,46,Zara,vestidos,zara vestidos
+2022-02-01,39,Zara,zapatos,zara zapatos
+2022-03-01,49,H&M,pantalones,h&m pantalones
+2022-03-01,50,H&M,tops,h&m tops
+2022-03-01,37,H&M,vestidos,h&m vestidos
+2022-03-01,33,H&M,zapatos,h&m zapatos
+2022-03-01,64,Mango,pantalones,mango pantalones
+2022-03-01,59,Mango,tops,mango tops
+2022-03-01,55,Mango,vestidos,mango vestidos
+2022-03-01,55,Mango,zapatos,mango zapatos
+2022-03-01,40,Massimo Dutti,pantalones,massimo dutti pantalones
+2022-03-01,54,Massimo Dutti,tops,massimo dutti tops
+2022-03-01,48,Massimo Dutti,vestidos,massimo dutti vestidos
+2022-03-01,41,Massimo Dutti,zapatos,massimo dutti zapatos
+2022-03-01,50,Shein,pantalones,shein pantalones
+2022-03-01,62,Shein,tops,shein tops
+2022-03-01,46,Shein,vestidos,shein vestidos
+2022-03-01,56,Shein,zapatos,shein zapatos
+2022-03-01,66,Zara,pantalones,zara pantalones
+2022-03-01,56,Zara,tops,zara tops
+2022-03-01,60,Zara,vestidos,zara vestidos
+2022-03-01,49,Zara,zapatos,zara zapatos
+2022-04-01,62,H&M,pantalones,h&m pantalones
+2022-04-01,61,H&M,tops,h&m tops
+2022-04-01,54,H&M,vestidos,h&m vestidos
+2022-04-01,50,H&M,zapatos,h&m zapatos
+2022-04-01,81,Mango,pantalones,mango pantalones
+2022-04-01,80,Mango,tops,mango tops
+2022-04-01,64,Mango,vestidos,mango vestidos
+2022-04-01,76,Mango,zapatos,mango zapatos
+2022-04-01,57,Massimo Dutti,pantalones,massimo dutti pantalones
+2022-04-01,41,Massimo Dutti,tops,massimo dutti tops
+2022-04-01,57,Massimo Dutti,vestidos,massimo dutti vestidos
+2022-04-01,51,Massimo Dutti,zapatos,massimo dutti zapatos
+2022-04-01,63,Shein,pantalones,shein pantalones
+2022-04-01,75,Shein,tops,shein tops
+2022-04-01,61,Shein,vestidos,shein vestidos
+2022-04-01,72,Shein,zapatos,shein zapatos
+2022-04-01,83,Zara,pantalones,zara pantalones
+2022-04-01,72,Zara,tops,zara tops
+2022-04-01,76,Zara,vestidos,zara vestidos
+2022-04-01,61,Zara,zapatos,zara zapatos
+2022-05-01,71,H&M,pantalones,h&m pantalones
+2022-05-01,71,H&M,tops,h&m tops
+2022-05-01,61,H&M,vestidos,h&m vestidos
+2022-05-01,47,H&M,zapatos,h&m zapatos
+2022-05-01,97,Mango,pantalones,mango pantalones
+2022-05-01,100,Mango,tops,mango tops
+2022-05-01,100,Mango,vestidos,mango vestidos
+2022-05-01,72,Mango,zapatos,mango zapatos
+2022-05-01,63,Massimo Dutti,pantalones,massimo dutti pantalones
+2022-05-01,82,Massimo Dutti,tops,massimo dutti tops
+2022-05-01,82,Massimo Dutti,vestidos,massimo dutti vestidos
+2022-05-01,46,Massimo Dutti,zapatos,massimo dutti zapatos
+2022-05-01,92,Shein,pantalones,shein pantalones
+2022-05-01,100,Shein,tops,shein tops
+2022-05-01,100,Shein,vestidos,shein vestidos
+2022-05-01,84,Shein,zapatos,shein zapatos
+2022-05-01,95,Zara,pantalones,zara pantalones
+2022-05-01,100,Zara,tops,zara tops
+2022-05-01,100,Zara,vestidos,zara vestidos
+2022-05-01,57,Zara,zapatos,zara zapatos
+2022-06-01,59,H&M,pantalones,h&m pantalones
+2022-06-01,84,H&M,tops,h&m tops
+2022-06-01,59,H&M,vestidos,h&m vestidos
+2022-06-01,35,H&M,zapatos,h&m zapatos
+2022-06-01,71,Mango,pantalones,mango pantalones
+2022-06-01,84,Mango,tops,mango tops
+2022-06-01,89,Mango,vestidos,mango vestidos
+2022-06-01,55,Mango,zapatos,mango zapatos
+2022-06-01,50,Massimo Dutti,pantalones,massimo dutti pantalones
+2022-06-01,34,Massimo Dutti,tops,massimo dutti tops
+2022-06-01,76,Massimo Dutti,vestidos,massimo dutti vestidos
+2022-06-01,42,Massimo Dutti,zapatos,massimo dutti zapatos
+2022-06-01,84,Shein,pantalones,shein pantalones
+2022-06-01,92,Shein,tops,shein tops
+2022-06-01,95,Shein,vestidos,shein vestidos
+2022-06-01,76,Shein,zapatos,shein zapatos
+2022-06-01,78,Zara,pantalones,zara pantalones
+2022-06-01,85,Zara,tops,zara tops
+2022-06-01,95,Zara,vestidos,zara vestidos
+2022-06-01,45,Zara,zapatos,zara zapatos
+2022-07-01,46,H&M,pantalones,h&m pantalones
+2022-07-01,32,H&M,tops,h&m tops
+2022-07-01,46,H&M,vestidos,h&m vestidos
+2022-07-01,24,H&M,zapatos,h&m zapatos
+2022-07-01,57,Mango,pantalones,mango pantalones
+2022-07-01,60,Mango,tops,mango tops
+2022-07-01,65,Mango,vestidos,mango vestidos
+2022-07-01,37,Mango,zapatos,mango zapatos
+2022-07-01,41,Massimo Dutti,pantalones,massimo dutti pantalones
+2022-07-01,47,Massimo Dutti,tops,massimo dutti tops
+2022-07-01,60,Massimo Dutti,vestidos,massimo dutti vestidos
+2022-07-01,31,Massimo Dutti,zapatos,massimo dutti zapatos
+2022-07-01,68,Shein,pantalones,shein pantalones
+2022-07-01,68,Shein,tops,shein tops
+2022-07-01,74,Shein,vestidos,shein vestidos
+2022-07-01,57,Shein,zapatos,shein zapatos
+2022-07-01,60,Zara,pantalones,zara pantalones
+2022-07-01,70,Zara,tops,zara tops
+2022-07-01,73,Zara,vestidos,zara vestidos
+2022-07-01,34,Zara,zapatos,zara zapatos
+2022-08-01,31,H&M,pantalones,h&m pantalones
+2022-08-01,46,H&M,tops,h&m tops
+2022-08-01,31,H&M,vestidos,h&m vestidos
+2022-08-01,21,H&M,zapatos,h&m zapatos
+2022-08-01,43,Mango,pantalones,mango pantalones
+2022-08-01,45,Mango,tops,mango tops
+2022-08-01,51,Mango,vestidos,mango vestidos
+2022-08-01,33,Mango,zapatos,mango zapatos
+2022-08-01,23,Massimo Dutti,pantalones,massimo dutti pantalones
+2022-08-01,34,Massimo Dutti,tops,massimo dutti tops
+2022-08-01,45,Massimo Dutti,vestidos,massimo dutti vestidos
+2022-08-01,31,Massimo Dutti,zapatos,massimo dutti zapatos
+2022-08-01,57,Shein,pantalones,shein pantalones
+2022-08-01,66,Shein,tops,shein tops
+2022-08-01,58,Shein,vestidos,shein vestidos
+2022-08-01,50,Shein,zapatos,shein zapatos
+2022-08-01,51,Zara,pantalones,zara pantalones
+2022-08-01,55,Zara,tops,zara tops
+2022-08-01,68,Zara,vestidos,zara vestidos
+2022-08-01,30,Zara,zapatos,zara zapatos
+2022-09-01,56,H&M,pantalones,h&m pantalones
+2022-09-01,0,H&M,tops,h&m tops
+2022-09-01,30,H&M,vestidos,h&m vestidos
+2022-09-01,33,H&M,zapatos,h&m zapatos
+2022-09-01,61,Mango,pantalones,mango pantalones
+2022-09-01,39,Mango,tops,mango tops
+2022-09-01,50,Mango,vestidos,mango vestidos
+2022-09-01,55,Mango,zapatos,mango zapatos
+2022-09-01,40,Massimo Dutti,pantalones,massimo dutti pantalones
+2022-09-01,0,Massimo Dutti,tops,massimo dutti tops
+2022-09-01,43,Massimo Dutti,vestidos,massimo dutti vestidos
+2022-09-01,43,Massimo Dutti,zapatos,massimo dutti zapatos
+2022-09-01,70,Shein,pantalones,shein pantalones
+2022-09-01,34,Shein,tops,shein tops
+2022-09-01,44,Shein,vestidos,shein vestidos
+2022-09-01,58,Shein,zapatos,shein zapatos
+2022-09-01,75,Zara,pantalones,zara pantalones
+2022-09-01,40,Zara,tops,zara tops
+2022-09-01,50,Zara,vestidos,zara vestidos
+2022-09-01,43,Zara,zapatos,zara zapatos
+2022-10-01,46,H&M,pantalones,h&m pantalones
+2022-10-01,34,H&M,tops,h&m tops
+2022-10-01,27,H&M,vestidos,h&m vestidos
+2022-10-01,39,H&M,zapatos,h&m zapatos
+2022-10-01,74,Mango,pantalones,mango pantalones
+2022-10-01,34,Mango,tops,mango tops
+2022-10-01,44,Mango,vestidos,mango vestidos
+2022-10-01,54,Mango,zapatos,mango zapatos
+2022-10-01,51,Massimo Dutti,pantalones,massimo dutti pantalones
+2022-10-01,0,Massimo Dutti,tops,massimo dutti tops
+2022-10-01,30,Massimo Dutti,vestidos,massimo dutti vestidos
+2022-10-01,43,Massimo Dutti,zapatos,massimo dutti zapatos
+2022-10-01,66,Shein,pantalones,shein pantalones
+2022-10-01,40,Shein,tops,shein tops
+2022-10-01,35,Shein,vestidos,shein vestidos
+2022-10-01,58,Shein,zapatos,shein zapatos
+2022-10-01,77,Zara,pantalones,zara pantalones
+2022-10-01,45,Zara,tops,zara tops
+2022-10-01,42,Zara,vestidos,zara vestidos
+2022-10-01,43,Zara,zapatos,zara zapatos
+2022-11-01,51,H&M,pantalones,h&m pantalones
+2022-11-01,0,H&M,tops,h&m tops
+2022-11-01,36,H&M,vestidos,h&m vestidos
+2022-11-01,35,H&M,zapatos,h&m zapatos
+2022-11-01,88,Mango,pantalones,mango pantalones
+2022-11-01,43,Mango,tops,mango tops
+2022-11-01,44,Mango,vestidos,mango vestidos
+2022-11-01,50,Mango,zapatos,mango zapatos
+2022-11-01,59,Massimo Dutti,pantalones,massimo dutti pantalones
+2022-11-01,0,Massimo Dutti,tops,massimo dutti tops
+2022-11-01,29,Massimo Dutti,vestidos,massimo dutti vestidos
+2022-11-01,44,Massimo Dutti,zapatos,massimo dutti zapatos
+2022-11-01,70,Shein,pantalones,shein pantalones
+2022-11-01,38,Shein,tops,shein tops
+2022-11-01,39,Shein,vestidos,shein vestidos
+2022-11-01,59,Shein,zapatos,shein zapatos
+2022-11-01,91,Zara,pantalones,zara pantalones
+2022-11-01,41,Zara,tops,zara tops
+2022-11-01,49,Zara,vestidos,zara vestidos
+2022-11-01,41,Zara,zapatos,zara zapatos
+2022-12-01,60,H&M,pantalones,h&m pantalones
+2022-12-01,56,H&M,tops,h&m tops
+2022-12-01,49,H&M,vestidos,h&m vestidos
+2022-12-01,38,H&M,zapatos,h&m zapatos
+2022-12-01,88,Mango,pantalones,mango pantalones
+2022-12-01,76,Mango,tops,mango tops
+2022-12-01,44,Mango,vestidos,mango vestidos
+2022-12-01,50,Mango,zapatos,mango zapatos
+2022-12-01,55,Massimo Dutti,pantalones,massimo dutti pantalones
+2022-12-01,0,Massimo Dutti,tops,massimo dutti tops
+2022-12-01,25,Massimo Dutti,vestidos,massimo dutti vestidos
+2022-12-01,41,Massimo Dutti,zapatos,massimo dutti zapatos
+2022-12-01,56,Shein,pantalones,shein pantalones
+2022-12-01,35,Shein,tops,shein tops
+2022-12-01,34,Shein,vestidos,shein vestidos
+2022-12-01,46,Shein,zapatos,shein zapatos
+2022-12-01,99,Zara,pantalones,zara pantalones
+2022-12-01,60,Zara,tops,zara tops
+2022-12-01,57,Zara,vestidos,zara vestidos
+2022-12-01,40,Zara,zapatos,zara zapatos
+2023-01-01,44,H&M,pantalones,h&m pantalones
+2023-01-01,0,H&M,tops,h&m tops
+2023-01-01,19,H&M,vestidos,h&m vestidos
+2023-01-01,25,H&M,zapatos,h&m zapatos
+2023-01-01,67,Mango,pantalones,mango pantalones
+2023-01-01,30,Mango,tops,mango tops
+2023-01-01,29,Mango,vestidos,mango vestidos
+2023-01-01,37,Mango,zapatos,mango zapatos
+2023-01-01,55,Massimo Dutti,pantalones,massimo dutti pantalones
+2023-01-01,0,Massimo Dutti,tops,massimo dutti tops
+2023-01-01,27,Massimo Dutti,vestidos,massimo dutti vestidos
+2023-01-01,46,Massimo Dutti,zapatos,massimo dutti zapatos
+2023-01-01,60,Shein,pantalones,shein pantalones
+2023-01-01,37,Shein,tops,shein tops
+2023-01-01,31,Shein,vestidos,shein vestidos
+2023-01-01,44,Shein,zapatos,shein zapatos
+2023-01-01,82,Zara,pantalones,zara pantalones
+2023-01-01,24,Zara,tops,zara tops
+2023-01-01,33,Zara,vestidos,zara vestidos
+2023-01-01,32,Zara,zapatos,zara zapatos
+2023-02-01,43,H&M,pantalones,h&m pantalones
+2023-02-01,0,H&M,tops,h&m tops
+2023-02-01,18,H&M,vestidos,h&m vestidos
+2023-02-01,11,H&M,zapatos,h&m zapatos
+2023-02-01,56,Mango,pantalones,mango pantalones
+2023-02-01,34,Mango,tops,mango tops
+2023-02-01,37,Mango,vestidos,mango vestidos
+2023-02-01,35,Mango,zapatos,mango zapatos
+2023-02-01,35,Massimo Dutti,pantalones,massimo dutti pantalones
+2023-02-01,0,Massimo Dutti,tops,massimo dutti tops
+2023-02-01,32,Massimo Dutti,vestidos,massimo dutti vestidos
+2023-02-01,30,Massimo Dutti,zapatos,massimo dutti zapatos
+2023-02-01,54,Shein,pantalones,shein pantalones
+2023-02-01,48,Shein,tops,shein tops
+2023-02-01,37,Shein,vestidos,shein vestidos
+2023-02-01,53,Shein,zapatos,shein zapatos
+2023-02-01,59,Zara,pantalones,zara pantalones
+2023-02-01,29,Zara,tops,zara tops
+2023-02-01,36,Zara,vestidos,zara vestidos
+2023-02-01,28,Zara,zapatos,zara zapatos
+2023-03-01,44,H&M,pantalones,h&m pantalones
+2023-03-01,50,H&M,tops,h&m tops
+2023-03-01,30,H&M,vestidos,h&m vestidos
+2023-03-01,29,H&M,zapatos,h&m zapatos
+2023-03-01,77,Mango,pantalones,mango pantalones
+2023-03-01,63,Mango,tops,mango tops
+2023-03-01,58,Mango,vestidos,mango vestidos
+2023-03-01,54,Mango,zapatos,mango zapatos
+2023-03-01,45,Massimo Dutti,pantalones,massimo dutti pantalones
+2023-03-01,38,Massimo Dutti,tops,massimo dutti tops
+2023-03-01,43,Massimo Dutti,vestidos,massimo dutti vestidos
+2023-03-01,36,Massimo Dutti,zapatos,massimo dutti zapatos
+2023-03-01,81,Shein,pantalones,shein pantalones
+2023-03-01,66,Shein,tops,shein tops
+2023-03-01,57,Shein,vestidos,shein vestidos
+2023-03-01,77,Shein,zapatos,shein zapatos
+2023-03-01,73,Zara,pantalones,zara pantalones
+2023-03-01,53,Zara,tops,zara tops
+2023-03-01,61,Zara,vestidos,zara vestidos
+2023-03-01,43,Zara,zapatos,zara zapatos
+2023-04-01,53,H&M,pantalones,h&m pantalones
+2023-04-01,0,H&M,tops,h&m tops
+2023-04-01,44,H&M,vestidos,h&m vestidos
+2023-04-01,37,H&M,zapatos,h&m zapatos
+2023-04-01,88,Mango,pantalones,mango pantalones
+2023-04-01,85,Mango,tops,mango tops
+2023-04-01,73,Mango,vestidos,mango vestidos
+2023-04-01,62,Mango,zapatos,mango zapatos
+2023-04-01,45,Massimo Dutti,pantalones,massimo dutti pantalones
+2023-04-01,72,Massimo Dutti,tops,massimo dutti tops
+2023-04-01,49,Massimo Dutti,vestidos,massimo dutti vestidos
+2023-04-01,45,Massimo Dutti,zapatos,massimo dutti zapatos
+2023-04-01,100,Shein,pantalones,shein pantalones
+2023-04-01,84,Shein,tops,shein tops
+2023-04-01,67,Shein,vestidos,shein vestidos
+2023-04-01,100,Shein,zapatos,shein zapatos
+2023-04-01,83,Zara,pantalones,zara pantalones
+2023-04-01,77,Zara,tops,zara tops
+2023-04-01,70,Zara,vestidos,zara vestidos
+2023-04-01,59,Zara,zapatos,zara zapatos
+2023-05-01,50,H&M,pantalones,h&m pantalones
+2023-05-01,48,H&M,tops,h&m tops
+2023-05-01,37,H&M,vestidos,h&m vestidos
+2023-05-01,29,H&M,zapatos,h&m zapatos
+2023-05-01,79,Mango,pantalones,mango pantalones
+2023-05-01,81,Mango,tops,mango tops
+2023-05-01,65,Mango,vestidos,mango vestidos
+2023-05-01,53,Mango,zapatos,mango zapatos
+2023-05-01,43,Massimo Dutti,pantalones,massimo dutti pantalones
+2023-05-01,79,Massimo Dutti,tops,massimo dutti tops
+2023-05-01,45,Massimo Dutti,vestidos,massimo dutti vestidos
+2023-05-01,35,Massimo Dutti,zapatos,massimo dutti zapatos
+2023-05-01,90,Shein,pantalones,shein pantalones
+2023-05-01,83,Shein,tops,shein tops
+2023-05-01,67,Shein,vestidos,shein vestidos
+2023-05-01,92,Shein,zapatos,shein zapatos
+2023-05-01,81,Zara,pantalones,zara pantalones
+2023-05-01,71,Zara,tops,zara tops
+2023-05-01,74,Zara,vestidos,zara vestidos
+2023-05-01,42,Zara,zapatos,zara zapatos
+2023-06-01,54,H&M,pantalones,h&m pantalones
+2023-06-01,66,H&M,tops,h&m tops
+2023-06-01,37,H&M,vestidos,h&m vestidos
+2023-06-01,24,H&M,zapatos,h&m zapatos
+2023-06-01,67,Mango,pantalones,mango pantalones
+2023-06-01,88,Mango,tops,mango tops
+2023-06-01,63,Mango,vestidos,mango vestidos
+2023-06-01,39,Mango,zapatos,mango zapatos
+2023-06-01,42,Massimo Dutti,pantalones,massimo dutti pantalones
+2023-06-01,80,Massimo Dutti,tops,massimo dutti tops
+2023-06-01,51,Massimo Dutti,vestidos,massimo dutti vestidos
+2023-06-01,31,Massimo Dutti,zapatos,massimo dutti zapatos
+2023-06-01,93,Shein,pantalones,shein pantalones
+2023-06-01,83,Shein,tops,shein tops
+2023-06-01,69,Shein,vestidos,shein vestidos
+2023-06-01,76,Shein,zapatos,shein zapatos
+2023-06-01,86,Zara,pantalones,zara pantalones
+2023-06-01,75,Zara,tops,zara tops
+2023-06-01,74,Zara,vestidos,zara vestidos
+2023-06-01,35,Zara,zapatos,zara zapatos
+2023-07-01,32,H&M,pantalones,h&m pantalones
+2023-07-01,0,H&M,tops,h&m tops
+2023-07-01,32,H&M,vestidos,h&m vestidos
+2023-07-01,20,H&M,zapatos,h&m zapatos
+2023-07-01,49,Mango,pantalones,mango pantalones
+2023-07-01,53,Mango,tops,mango tops
+2023-07-01,53,Mango,vestidos,mango vestidos
+2023-07-01,28,Mango,zapatos,mango zapatos
+2023-07-01,33,Massimo Dutti,pantalones,massimo dutti pantalones
+2023-07-01,41,Massimo Dutti,tops,massimo dutti tops
+2023-07-01,46,Massimo Dutti,vestidos,massimo dutti vestidos
+2023-07-01,28,Massimo Dutti,zapatos,massimo dutti zapatos
+2023-07-01,81,Shein,pantalones,shein pantalones
+2023-07-01,61,Shein,tops,shein tops
+2023-07-01,68,Shein,vestidos,shein vestidos
+2023-07-01,58,Shein,zapatos,shein zapatos
+2023-07-01,60,Zara,pantalones,zara pantalones
+2023-07-01,49,Zara,tops,zara tops
+2023-07-01,61,Zara,vestidos,zara vestidos
+2023-07-01,27,Zara,zapatos,zara zapatos
+2023-08-01,26,H&M,pantalones,h&m pantalones
+2023-08-01,43,H&M,tops,h&m tops
+2023-08-01,19,H&M,vestidos,h&m vestidos
+2023-08-01,16,H&M,zapatos,h&m zapatos
+2023-08-01,40,Mango,pantalones,mango pantalones
+2023-08-01,37,Mango,tops,mango tops
+2023-08-01,41,Mango,vestidos,mango vestidos
+2023-08-01,27,Mango,zapatos,mango zapatos
+2023-08-01,19,Massimo Dutti,pantalones,massimo dutti pantalones
+2023-08-01,35,Massimo Dutti,tops,massimo dutti tops
+2023-08-01,31,Massimo Dutti,vestidos,massimo dutti vestidos
+2023-08-01,22,Massimo Dutti,zapatos,massimo dutti zapatos
+2023-08-01,54,Shein,pantalones,shein pantalones
+2023-08-01,45,Shein,tops,shein tops
+2023-08-01,55,Shein,vestidos,shein vestidos
+2023-08-01,54,Shein,zapatos,shein zapatos
+2023-08-01,46,Zara,pantalones,zara pantalones
+2023-08-01,39,Zara,tops,zara tops
+2023-08-01,41,Zara,vestidos,zara vestidos
+2023-08-01,23,Zara,zapatos,zara zapatos
+2023-09-01,36,H&M,pantalones,h&m pantalones
+2023-09-01,0,H&M,tops,h&m tops
+2023-09-01,17,H&M,vestidos,h&m vestidos
+2023-09-01,23,H&M,zapatos,h&m zapatos
+2023-09-01,58,Mango,pantalones,mango pantalones
+2023-09-01,35,Mango,tops,mango tops
+2023-09-01,34,Mango,vestidos,mango vestidos
+2023-09-01,43,Mango,zapatos,mango zapatos
+2023-09-01,31,Massimo Dutti,pantalones,massimo dutti pantalones
+2023-09-01,33,Massimo Dutti,tops,massimo dutti tops
+2023-09-01,31,Massimo Dutti,vestidos,massimo dutti vestidos
+2023-09-01,32,Massimo Dutti,zapatos,massimo dutti zapatos
+2023-09-01,63,Shein,pantalones,shein pantalones
+2023-09-01,33,Shein,tops,shein tops
+2023-09-01,31,Shein,vestidos,shein vestidos
+2023-09-01,55,Shein,zapatos,shein zapatos
+2023-09-01,63,Zara,pantalones,zara pantalones
+2023-09-01,34,Zara,tops,zara tops
+2023-09-01,38,Zara,vestidos,zara vestidos
+2023-09-01,34,Zara,zapatos,zara zapatos
+2023-10-01,39,H&M,pantalones,h&m pantalones
+2023-10-01,0,H&M,tops,h&m tops
+2023-10-01,18,H&M,vestidos,h&m vestidos
+2023-10-01,23,H&M,zapatos,h&m zapatos
+2023-10-01,66,Mango,pantalones,mango pantalones
+2023-10-01,33,Mango,tops,mango tops
+2023-10-01,29,Mango,vestidos,mango vestidos
+2023-10-01,47,Mango,zapatos,mango zapatos
+2023-10-01,35,Massimo Dutti,pantalones,massimo dutti pantalones
+2023-10-01,0,Massimo Dutti,tops,massimo dutti tops
+2023-10-01,21,Massimo Dutti,vestidos,massimo dutti vestidos
+2023-10-01,34,Massimo Dutti,zapatos,massimo dutti zapatos
+2023-10-01,66,Shein,pantalones,shein pantalones
+2023-10-01,34,Shein,tops,shein tops
+2023-10-01,29,Shein,vestidos,shein vestidos
+2023-10-01,58,Shein,zapatos,shein zapatos
+2023-10-01,73,Zara,pantalones,zara pantalones
+2023-10-01,31,Zara,tops,zara tops
+2023-10-01,33,Zara,vestidos,zara vestidos
+2023-10-01,34,Zara,zapatos,zara zapatos
+2023-11-01,47,H&M,pantalones,h&m pantalones
+2023-11-01,36,H&M,tops,h&m tops
+2023-11-01,23,H&M,vestidos,h&m vestidos
+2023-11-01,24,H&M,zapatos,h&m zapatos
+2023-11-01,97,Mango,pantalones,mango pantalones
+2023-11-01,37,Mango,tops,mango tops
+2023-11-01,34,Mango,vestidos,mango vestidos
+2023-11-01,50,Mango,zapatos,mango zapatos
+2023-11-01,49,Massimo Dutti,pantalones,massimo dutti pantalones
+2023-11-01,0,Massimo Dutti,tops,massimo dutti tops
+2023-11-01,20,Massimo Dutti,vestidos,massimo dutti vestidos
+2023-11-01,33,Massimo Dutti,zapatos,massimo dutti zapatos
+2023-11-01,71,Shein,pantalones,shein pantalones
+2023-11-01,26,Shein,tops,shein tops
+2023-11-01,28,Shein,vestidos,shein vestidos
+2023-11-01,51,Shein,zapatos,shein zapatos
+2023-11-01,87,Zara,pantalones,zara pantalones
+2023-11-01,32,Zara,tops,zara tops
+2023-11-01,35,Zara,vestidos,zara vestidos
+2023-11-01,33,Zara,zapatos,zara zapatos
+2023-12-01,39,H&M,pantalones,h&m pantalones
+2023-12-01,61,H&M,tops,h&m tops
+2023-12-01,28,H&M,vestidos,h&m vestidos
+2023-12-01,28,H&M,zapatos,h&m zapatos
+2023-12-01,86,Mango,pantalones,mango pantalones
+2023-12-01,53,Mango,tops,mango tops
+2023-12-01,33,Mango,vestidos,mango vestidos
+2023-12-01,37,Mango,zapatos,mango zapatos
+2023-12-01,52,Massimo Dutti,pantalones,massimo dutti pantalones
+2023-12-01,0,Massimo Dutti,tops,massimo dutti tops
+2023-12-01,15,Massimo Dutti,vestidos,massimo dutti vestidos
+2023-12-01,31,Massimo Dutti,zapatos,massimo dutti zapatos
+2023-12-01,51,Shein,pantalones,shein pantalones
+2023-12-01,21,Shein,tops,shein tops
+2023-12-01,20,Shein,vestidos,shein vestidos
+2023-12-01,39,Shein,zapatos,shein zapatos
+2023-12-01,92,Zara,pantalones,zara pantalones
+2023-12-01,45,Zara,tops,zara tops
+2023-12-01,37,Zara,vestidos,zara vestidos
+2023-12-01,32,Zara,zapatos,zara zapatos
+2024-01-01,34,H&M,pantalones,h&m pantalones
+2024-01-01,0,H&M,tops,h&m tops
+2024-01-01,10,H&M,vestidos,h&m vestidos
+2024-01-01,15,H&M,zapatos,h&m zapatos
+2024-01-01,78,Mango,pantalones,mango pantalones
+2024-01-01,25,Mango,tops,mango tops
+2024-01-01,23,Mango,vestidos,mango vestidos
+2024-01-01,28,Mango,zapatos,mango zapatos
+2024-01-01,43,Massimo Dutti,pantalones,massimo dutti pantalones
+2024-01-01,0,Massimo Dutti,tops,massimo dutti tops
+2024-01-01,20,Massimo Dutti,vestidos,massimo dutti vestidos
+2024-01-01,34,Massimo Dutti,zapatos,massimo dutti zapatos
+2024-01-01,55,Shein,pantalones,shein pantalones
+2024-01-01,31,Shein,tops,shein tops
+2024-01-01,20,Shein,vestidos,shein vestidos
+2024-01-01,36,Shein,zapatos,shein zapatos
+2024-01-01,73,Zara,pantalones,zara pantalones
+2024-01-01,19,Zara,tops,zara tops
+2024-01-01,25,Zara,vestidos,zara vestidos
+2024-01-01,25,Zara,zapatos,zara zapatos
+2024-02-01,19,H&M,pantalones,h&m pantalones
+2024-02-01,0,H&M,tops,h&m tops
+2024-02-01,11,H&M,vestidos,h&m vestidos
+2024-02-01,12,H&M,zapatos,h&m zapatos
+2024-02-01,55,Mango,pantalones,mango pantalones
+2024-02-01,24,Mango,tops,mango tops
+2024-02-01,25,Mango,vestidos,mango vestidos
+2024-02-01,31,Mango,zapatos,mango zapatos
+2024-02-01,26,Massimo Dutti,pantalones,massimo dutti pantalones
+2024-02-01,0,Massimo Dutti,tops,massimo dutti tops
+2024-02-01,18,Massimo Dutti,vestidos,massimo dutti vestidos
+2024-02-01,19,Massimo Dutti,zapatos,massimo dutti zapatos
+2024-02-01,44,Shein,pantalones,shein pantalones
+2024-02-01,29,Shein,tops,shein tops
+2024-02-01,21,Shein,vestidos,shein vestidos
+2024-02-01,41,Shein,zapatos,shein zapatos
+2024-02-01,54,Zara,pantalones,zara pantalones
+2024-02-01,27,Zara,tops,zara tops
+2024-02-01,26,Zara,vestidos,zara vestidos
+2024-02-01,20,Zara,zapatos,zara zapatos
+2024-03-01,30,H&M,pantalones,h&m pantalones
+2024-03-01,0,H&M,tops,h&m tops
+2024-03-01,16,H&M,vestidos,h&m vestidos
+2024-03-01,23,H&M,zapatos,h&m zapatos
+2024-03-01,60,Mango,pantalones,mango pantalones
+2024-03-01,40,Mango,tops,mango tops
+2024-03-01,35,Mango,vestidos,mango vestidos
+2024-03-01,40,Mango,zapatos,mango zapatos
+2024-03-01,32,Massimo Dutti,pantalones,massimo dutti pantalones
+2024-03-01,0,Massimo Dutti,tops,massimo dutti tops
+2024-03-01,21,Massimo Dutti,vestidos,massimo dutti vestidos
+2024-03-01,23,Massimo Dutti,zapatos,massimo dutti zapatos
+2024-03-01,53,Shein,pantalones,shein pantalones
+2024-03-01,47,Shein,tops,shein tops
+2024-03-01,26,Shein,vestidos,shein vestidos
+2024-03-01,42,Shein,zapatos,shein zapatos
+2024-03-01,64,Zara,pantalones,zara pantalones
+2024-03-01,38,Zara,tops,zara tops
+2024-03-01,36,Zara,vestidos,zara vestidos
+2024-03-01,30,Zara,zapatos,zara zapatos
+2024-04-01,26,H&M,pantalones,h&m pantalones
+2024-04-01,0,H&M,tops,h&m tops
+2024-04-01,18,H&M,vestidos,h&m vestidos
+2024-04-01,17,H&M,zapatos,h&m zapatos
+2024-04-01,62,Mango,pantalones,mango pantalones
+2024-04-01,69,Mango,tops,mango tops
+2024-04-01,45,Mango,vestidos,mango vestidos
+2024-04-01,45,Mango,zapatos,mango zapatos
+2024-04-01,34,Massimo Dutti,pantalones,massimo dutti pantalones
+2024-04-01,46,Massimo Dutti,tops,massimo dutti tops
+2024-04-01,29,Massimo Dutti,vestidos,massimo dutti vestidos
+2024-04-01,28,Massimo Dutti,zapatos,massimo dutti zapatos
+2024-04-01,64,Shein,pantalones,shein pantalones
+2024-04-01,46,Shein,tops,shein tops
+2024-04-01,32,Shein,vestidos,shein vestidos
+2024-04-01,54,Shein,zapatos,shein zapatos
+2024-04-01,68,Zara,pantalones,zara pantalones
+2024-04-01,47,Zara,tops,zara tops
+2024-04-01,41,Zara,vestidos,zara vestidos
+2024-04-01,33,Zara,zapatos,zara zapatos
+2024-05-01,32,H&M,pantalones,h&m pantalones
+2024-05-01,63,H&M,tops,h&m tops
+2024-05-01,17,H&M,vestidos,h&m vestidos
+2024-05-01,20,H&M,zapatos,h&m zapatos
+2024-05-01,65,Mango,pantalones,mango pantalones
+2024-05-01,72,Mango,tops,mango tops
+2024-05-01,41,Mango,vestidos,mango vestidos
+2024-05-01,42,Mango,zapatos,mango zapatos
+2024-05-01,30,Massimo Dutti,pantalones,massimo dutti pantalones
+2024-05-01,48,Massimo Dutti,tops,massimo dutti tops
+2024-05-01,27,Massimo Dutti,vestidos,massimo dutti vestidos
+2024-05-01,23,Massimo Dutti,zapatos,massimo dutti zapatos
+2024-05-01,69,Shein,pantalones,shein pantalones
+2024-05-01,40,Shein,tops,shein tops
+2024-05-01,32,Shein,vestidos,shein vestidos
+2024-05-01,56,Shein,zapatos,shein zapatos
+2024-05-01,68,Zara,pantalones,zara pantalones
+2024-05-01,52,Zara,tops,zara tops
+2024-05-01,42,Zara,vestidos,zara vestidos
+2024-05-01,32,Zara,zapatos,zara zapatos
+2024-06-01,31,H&M,pantalones,h&m pantalones
+2024-06-01,0,H&M,tops,h&m tops
+2024-06-01,16,H&M,vestidos,h&m vestidos
+2024-06-01,10,H&M,zapatos,h&m zapatos
+2024-06-01,58,Mango,pantalones,mango pantalones
+2024-06-01,72,Mango,tops,mango tops
+2024-06-01,37,Mango,vestidos,mango vestidos
+2024-06-01,32,Mango,zapatos,mango zapatos
+2024-06-01,33,Massimo Dutti,pantalones,massimo dutti pantalones
+2024-06-01,71,Massimo Dutti,tops,massimo dutti tops
+2024-06-01,25,Massimo Dutti,vestidos,massimo dutti vestidos
+2024-06-01,24,Massimo Dutti,zapatos,massimo dutti zapatos
+2024-06-01,59,Shein,pantalones,shein pantalones
+2024-06-01,43,Shein,tops,shein tops
+2024-06-01,30,Shein,vestidos,shein vestidos
+2024-06-01,53,Shein,zapatos,shein zapatos
+2024-06-01,61,Zara,pantalones,zara pantalones
+2024-06-01,51,Zara,tops,zara tops
+2024-06-01,42,Zara,vestidos,zara vestidos
+2024-06-01,27,Zara,zapatos,zara zapatos
+2024-07-01,29,H&M,pantalones,h&m pantalones
+2024-07-01,0,H&M,tops,h&m tops
+2024-07-01,15,H&M,vestidos,h&m vestidos
+2024-07-01,12,H&M,zapatos,h&m zapatos
+2024-07-01,47,Mango,pantalones,mango pantalones
+2024-07-01,55,Mango,tops,mango tops
+2024-07-01,31,Mango,vestidos,mango vestidos
+2024-07-01,27,Mango,zapatos,mango zapatos
+2024-07-01,33,Massimo Dutti,pantalones,massimo dutti pantalones
+2024-07-01,0,Massimo Dutti,tops,massimo dutti tops
+2024-07-01,24,Massimo Dutti,vestidos,massimo dutti vestidos
+2024-07-01,19,Massimo Dutti,zapatos,massimo dutti zapatos
+2024-07-01,49,Shein,pantalones,shein pantalones
+2024-07-01,33,Shein,tops,shein tops
+2024-07-01,29,Shein,vestidos,shein vestidos
+2024-07-01,37,Shein,zapatos,shein zapatos
+2024-07-01,51,Zara,pantalones,zara pantalones
+2024-07-01,33,Zara,tops,zara tops
+2024-07-01,35,Zara,vestidos,zara vestidos
+2024-07-01,18,Zara,zapatos,zara zapatos
+2024-08-01,19,H&M,pantalones,h&m pantalones
+2024-08-01,0,H&M,tops,h&m tops
+2024-08-01,13,H&M,vestidos,h&m vestidos
+2024-08-01,8,H&M,zapatos,h&m zapatos
+2024-08-01,39,Mango,pantalones,mango pantalones
+2024-08-01,31,Mango,tops,mango tops
+2024-08-01,25,Mango,vestidos,mango vestidos
+2024-08-01,26,Mango,zapatos,mango zapatos
+2024-08-01,24,Massimo Dutti,pantalones,massimo dutti pantalones
+2024-08-01,45,Massimo Dutti,tops,massimo dutti tops
+2024-08-01,19,Massimo Dutti,vestidos,massimo dutti vestidos
+2024-08-01,22,Massimo Dutti,zapatos,massimo dutti zapatos
+2024-08-01,42,Shein,pantalones,shein pantalones
+2024-08-01,24,Shein,tops,shein tops
+2024-08-01,24,Shein,vestidos,shein vestidos
+2024-08-01,41,Shein,zapatos,shein zapatos
+2024-08-01,42,Zara,pantalones,zara pantalones
+2024-08-01,35,Zara,tops,zara tops
+2024-08-01,31,Zara,vestidos,zara vestidos
+2024-08-01,20,Zara,zapatos,zara zapatos
+2024-09-01,33,H&M,pantalones,h&m pantalones
+2024-09-01,0,H&M,tops,h&m tops
+2024-09-01,11,H&M,vestidos,h&m vestidos
+2024-09-01,20,H&M,zapatos,h&m zapatos
+2024-09-01,64,Mango,pantalones,mango pantalones
+2024-09-01,26,Mango,tops,mango tops
+2024-09-01,25,Mango,vestidos,mango vestidos
+2024-09-01,42,Mango,zapatos,mango zapatos
+2024-09-01,41,Massimo Dutti,pantalones,massimo dutti pantalones
+2024-09-01,0,Massimo Dutti,tops,massimo dutti tops
+2024-09-01,21,Massimo Dutti,vestidos,massimo dutti vestidos
+2024-09-01,39,Massimo Dutti,zapatos,massimo dutti zapatos
+2024-09-01,56,Shein,pantalones,shein pantalones
+2024-09-01,17,Shein,tops,shein tops
+2024-09-01,17,Shein,vestidos,shein vestidos
+2024-09-01,53,Shein,zapatos,shein zapatos
+2024-09-01,73,Zara,pantalones,zara pantalones
+2024-09-01,28,Zara,tops,zara tops
+2024-09-01,30,Zara,vestidos,zara vestidos
+2024-09-01,35,Zara,zapatos,zara zapatos
+2024-10-01,32,H&M,pantalones,h&m pantalones
+2024-10-01,0,H&M,tops,h&m tops
+2024-10-01,10,H&M,vestidos,h&m vestidos
+2024-10-01,15,H&M,zapatos,h&m zapatos
+2024-10-01,75,Mango,pantalones,mango pantalones
+2024-10-01,41,Mango,tops,mango tops
+2024-10-01,21,Mango,vestidos,mango vestidos
+2024-10-01,45,Mango,zapatos,mango zapatos
+2024-10-01,47,Massimo Dutti,pantalones,massimo dutti pantalones
+2024-10-01,0,Massimo Dutti,tops,massimo dutti tops
+2024-10-01,17,Massimo Dutti,vestidos,massimo dutti vestidos
+2024-10-01,38,Massimo Dutti,zapatos,massimo dutti zapatos
+2024-10-01,60,Shein,pantalones,shein pantalones
+2024-10-01,20,Shein,tops,shein tops
+2024-10-01,15,Shein,vestidos,shein vestidos
+2024-10-01,51,Shein,zapatos,shein zapatos
+2024-10-01,76,Zara,pantalones,zara pantalones
+2024-10-01,25,Zara,tops,zara tops
+2024-10-01,26,Zara,vestidos,zara vestidos
+2024-10-01,31,Zara,zapatos,zara zapatos
+2024-11-01,28,H&M,pantalones,h&m pantalones
+2024-11-01,51,H&M,tops,h&m tops
+2024-11-01,13,H&M,vestidos,h&m vestidos
+2024-11-01,15,H&M,zapatos,h&m zapatos
+2024-11-01,77,Mango,pantalones,mango pantalones
+2024-11-01,38,Mango,tops,mango tops
+2024-11-01,21,Mango,vestidos,mango vestidos
+2024-11-01,43,Mango,zapatos,mango zapatos
+2024-11-01,46,Massimo Dutti,pantalones,massimo dutti pantalones
+2024-11-01,0,Massimo Dutti,tops,massimo dutti tops
+2024-11-01,13,Massimo Dutti,vestidos,massimo dutti vestidos
+2024-11-01,31,Massimo Dutti,zapatos,massimo dutti zapatos
+2024-11-01,59,Shein,pantalones,shein pantalones
+2024-11-01,25,Shein,tops,shein tops
+2024-11-01,16,Shein,vestidos,shein vestidos
+2024-11-01,41,Shein,zapatos,shein zapatos
+2024-11-01,81,Zara,pantalones,zara pantalones
+2024-11-01,25,Zara,tops,zara tops
+2024-11-01,27,Zara,vestidos,zara vestidos
+2024-11-01,30,Zara,zapatos,zara zapatos
+2024-12-01,38,H&M,pantalones,h&m pantalones
+2024-12-01,0,H&M,tops,h&m tops
+2024-12-01,18,H&M,vestidos,h&m vestidos
+2024-12-01,25,H&M,zapatos,h&m zapatos
+2024-12-01,94,Mango,pantalones,mango pantalones
+2024-12-01,56,Mango,tops,mango tops
+2024-12-01,21,Mango,vestidos,mango vestidos
+2024-12-01,39,Mango,zapatos,mango zapatos
+2024-12-01,41,Massimo Dutti,pantalones,massimo dutti pantalones
+2024-12-01,0,Massimo Dutti,tops,massimo dutti tops
+2024-12-01,10,Massimo Dutti,vestidos,massimo dutti vestidos
+2024-12-01,26,Massimo Dutti,zapatos,massimo dutti zapatos
+2024-12-01,49,Shein,pantalones,shein pantalones
+2024-12-01,19,Shein,tops,shein tops
+2024-12-01,12,Shein,vestidos,shein vestidos
+2024-12-01,37,Shein,zapatos,shein zapatos
+2024-12-01,96,Zara,pantalones,zara pantalones
+2024-12-01,42,Zara,tops,zara tops
+2024-12-01,26,Zara,vestidos,zara vestidos
+2024-12-01,30,Zara,zapatos,zara zapatos
+2025-01-01,26,H&M,pantalones,h&m pantalones
+2025-01-01,0,H&M,tops,h&m tops
+2025-01-01,5,H&M,vestidos,h&m vestidos
+2025-01-01,10,H&M,zapatos,h&m zapatos
+2025-01-01,67,Mango,pantalones,mango pantalones
+2025-01-01,21,Mango,tops,mango tops
+2025-01-01,17,Mango,vestidos,mango vestidos
+2025-01-01,30,Mango,zapatos,mango zapatos
+2025-01-01,44,Massimo Dutti,pantalones,massimo dutti pantalones
+2025-01-01,0,Massimo Dutti,tops,massimo dutti tops
+2025-01-01,12,Massimo Dutti,vestidos,massimo dutti vestidos
+2025-01-01,29,Massimo Dutti,zapatos,massimo dutti zapatos
+2025-01-01,48,Shein,pantalones,shein pantalones
+2025-01-01,11,Shein,tops,shein tops
+2025-01-01,12,Shein,vestidos,shein vestidos
+2025-01-01,34,Shein,zapatos,shein zapatos
+2025-01-01,70,Zara,pantalones,zara pantalones
+2025-01-01,22,Zara,tops,zara tops
+2025-01-01,17,Zara,vestidos,zara vestidos
+2025-01-01,21,Zara,zapatos,zara zapatos
+2025-02-01,25,H&M,pantalones,h&m pantalones
+2025-02-01,0,H&M,tops,h&m tops
+2025-02-01,7,H&M,vestidos,h&m vestidos
+2025-02-01,10,H&M,zapatos,h&m zapatos
+2025-02-01,54,Mango,pantalones,mango pantalones
+2025-02-01,37,Mango,tops,mango tops
+2025-02-01,20,Mango,vestidos,mango vestidos
+2025-02-01,27,Mango,zapatos,mango zapatos
+2025-02-01,26,Massimo Dutti,pantalones,massimo dutti pantalones
+2025-02-01,0,Massimo Dutti,tops,massimo dutti tops
+2025-02-01,15,Massimo Dutti,vestidos,massimo dutti vestidos
+2025-02-01,21,Massimo Dutti,zapatos,massimo dutti zapatos
+2025-02-01,43,Shein,pantalones,shein pantalones
+2025-02-01,28,Shein,tops,shein tops
+2025-02-01,16,Shein,vestidos,shein vestidos
+2025-02-01,43,Shein,zapatos,shein zapatos
+2025-02-01,50,Zara,pantalones,zara pantalones
+2025-02-01,27,Zara,tops,zara tops
+2025-02-01,21,Zara,vestidos,zara vestidos
+2025-02-01,20,Zara,zapatos,zara zapatos
+2025-03-01,16,H&M,pantalones,h&m pantalones
+2025-03-01,0,H&M,tops,h&m tops
+2025-03-01,12,H&M,vestidos,h&m vestidos
+2025-03-01,16,H&M,zapatos,h&m zapatos
+2025-03-01,52,Mango,pantalones,mango pantalones
+2025-03-01,58,Mango,tops,mango tops
+2025-03-01,30,Mango,vestidos,mango vestidos
+2025-03-01,36,Mango,zapatos,mango zapatos
+2025-03-01,25,Massimo Dutti,pantalones,massimo dutti pantalones
+2025-03-01,0,Massimo Dutti,tops,massimo dutti tops
+2025-03-01,21,Massimo Dutti,vestidos,massimo dutti vestidos
+2025-03-01,23,Massimo Dutti,zapatos,massimo dutti zapatos
+2025-03-01,50,Shein,pantalones,shein pantalones
+2025-03-01,38,Shein,tops,shein tops
+2025-03-01,19,Shein,vestidos,shein vestidos
+2025-03-01,44,Shein,zapatos,shein zapatos
+2025-03-01,55,Zara,pantalones,zara pantalones
+2025-03-01,36,Zara,tops,zara tops
+2025-03-01,29,Zara,vestidos,zara vestidos
+2025-03-01,24,Zara,zapatos,zara zapatos
+2025-04-01,23,H&M,pantalones,h&m pantalones
+2025-04-01,0,H&M,tops,h&m tops
+2025-04-01,13,H&M,vestidos,h&m vestidos
+2025-04-01,18,H&M,zapatos,h&m zapatos
+2025-04-01,65,Mango,pantalones,mango pantalones
+2025-04-01,45,Mango,tops,mango tops
+2025-04-01,34,Mango,vestidos,mango vestidos
+2025-04-01,39,Mango,zapatos,mango zapatos
+2025-04-01,43,Massimo Dutti,pantalones,massimo dutti pantalones
+2025-04-01,0,Massimo Dutti,tops,massimo dutti tops
+2025-04-01,19,Massimo Dutti,vestidos,massimo dutti vestidos
+2025-04-01,23,Massimo Dutti,zapatos,massimo dutti zapatos
+2025-04-01,51,Shein,pantalones,shein pantalones
+2025-04-01,25,Shein,tops,shein tops
+2025-04-01,20,Shein,vestidos,shein vestidos
+2025-04-01,46,Shein,zapatos,shein zapatos
+2025-04-01,62,Zara,pantalones,zara pantalones
+2025-04-01,42,Zara,tops,zara tops
+2025-04-01,34,Zara,vestidos,zara vestidos
+2025-04-01,28,Zara,zapatos,zara zapatos
+2025-05-01,32,H&M,pantalones,h&m pantalones
+2025-05-01,0,H&M,tops,h&m tops
+2025-05-01,16,H&M,vestidos,h&m vestidos
+2025-05-01,17,H&M,zapatos,h&m zapatos
+2025-05-01,65,Mango,pantalones,mango pantalones
+2025-05-01,80,Mango,tops,mango tops
+2025-05-01,38,Mango,vestidos,mango vestidos
+2025-05-01,43,Mango,zapatos,mango zapatos
+2025-05-01,39,Massimo Dutti,pantalones,massimo dutti pantalones
+2025-05-01,100,Massimo Dutti,tops,massimo dutti tops
+2025-05-01,23,Massimo Dutti,vestidos,massimo dutti vestidos
+2025-05-01,29,Massimo Dutti,zapatos,massimo dutti zapatos
+2025-05-01,58,Shein,pantalones,shein pantalones
+2025-05-01,35,Shein,tops,shein tops
+2025-05-01,23,Shein,vestidos,shein vestidos
+2025-05-01,44,Shein,zapatos,shein zapatos
+2025-05-01,61,Zara,pantalones,zara pantalones
+2025-05-01,61,Zara,tops,zara tops
+2025-05-01,39,Zara,vestidos,zara vestidos
+2025-05-01,30,Zara,zapatos,zara zapatos
+2025-06-01,38,H&M,pantalones,h&m pantalones
+2025-06-01,0,H&M,tops,h&m tops
+2025-06-01,20,H&M,vestidos,h&m vestidos
+2025-06-01,22,H&M,zapatos,h&m zapatos
+2025-06-01,64,Mango,pantalones,mango pantalones
+2025-06-01,79,Mango,tops,mango tops
+2025-06-01,39,Mango,vestidos,mango vestidos
+2025-06-01,30,Mango,zapatos,mango zapatos
+2025-06-01,43,Massimo Dutti,pantalones,massimo dutti pantalones
+2025-06-01,60,Massimo Dutti,tops,massimo dutti tops
+2025-06-01,29,Massimo Dutti,vestidos,massimo dutti vestidos
+2025-06-01,21,Massimo Dutti,zapatos,massimo dutti zapatos
+2025-06-01,59,Shein,pantalones,shein pantalones
+2025-06-01,42,Shein,tops,shein tops
+2025-06-01,25,Shein,vestidos,shein vestidos
+2025-06-01,37,Shein,zapatos,shein zapatos
+2025-06-01,63,Zara,pantalones,zara pantalones
+2025-06-01,52,Zara,tops,zara tops
+2025-06-01,42,Zara,vestidos,zara vestidos
+2025-06-01,24,Zara,zapatos,zara zapatos
+2025-07-01,60,H&M,pantalones,h&m pantalones
+2025-07-01,53,H&M,tops,h&m tops
+2025-07-01,26,H&M,vestidos,h&m vestidos
+2025-07-01,15,H&M,zapatos,h&m zapatos
+2025-07-01,46,Mango,pantalones,mango pantalones
+2025-07-01,57,Mango,tops,mango tops
+2025-07-01,29,Mango,vestidos,mango vestidos
+2025-07-01,24,Mango,zapatos,mango zapatos
+2025-07-01,36,Massimo Dutti,pantalones,massimo dutti pantalones
+2025-07-01,0,Massimo Dutti,tops,massimo dutti tops
+2025-07-01,24,Massimo Dutti,vestidos,massimo dutti vestidos
+2025-07-01,20,Massimo Dutti,zapatos,massimo dutti zapatos
+2025-07-01,40,Shein,pantalones,shein pantalones
+2025-07-01,30,Shein,tops,shein tops
+2025-07-01,21,Shein,vestidos,shein vestidos
+2025-07-01,36,Shein,zapatos,shein zapatos
+2025-07-01,50,Zara,pantalones,zara pantalones
+2025-07-01,40,Zara,tops,zara tops
+2025-07-01,33,Zara,vestidos,zara vestidos
+2025-07-01,17,Zara,zapatos,zara zapatos
+2025-08-01,57,H&M,pantalones,h&m pantalones
+2025-08-01,0,H&M,tops,h&m tops
+2025-08-01,25,H&M,vestidos,h&m vestidos
+2025-08-01,16,H&M,zapatos,h&m zapatos
+2025-08-01,46,Mango,pantalones,mango pantalones
+2025-08-01,39,Mango,tops,mango tops
+2025-08-01,23,Mango,vestidos,mango vestidos
+2025-08-01,24,Mango,zapatos,mango zapatos
+2025-08-01,26,Massimo Dutti,pantalones,massimo dutti pantalones
+2025-08-01,0,Massimo Dutti,tops,massimo dutti tops
+2025-08-01,20,Massimo Dutti,vestidos,massimo dutti vestidos
+2025-08-01,18,Massimo Dutti,zapatos,massimo dutti zapatos
+2025-08-01,40,Shein,pantalones,shein pantalones
+2025-08-01,16,Shein,tops,shein tops
+2025-08-01,17,Shein,vestidos,shein vestidos
+2025-08-01,33,Shein,zapatos,shein zapatos
+2025-08-01,44,Zara,pantalones,zara pantalones
+2025-08-01,34,Zara,tops,zara tops
+2025-08-01,27,Zara,vestidos,zara vestidos
+2025-08-01,20,Zara,zapatos,zara zapatos
+2025-09-01,57,H&M,pantalones,h&m pantalones
+2025-09-01,0,H&M,tops,h&m tops
+2025-09-01,22,H&M,vestidos,h&m vestidos
+2025-09-01,20,H&M,zapatos,h&m zapatos
+2025-09-01,66,Mango,pantalones,mango pantalones
+2025-09-01,40,Mango,tops,mango tops
+2025-09-01,22,Mango,vestidos,mango vestidos
+2025-09-01,36,Mango,zapatos,mango zapatos
+2025-09-01,30,Massimo Dutti,pantalones,massimo dutti pantalones
+2025-09-01,0,Massimo Dutti,tops,massimo dutti tops
+2025-09-01,17,Massimo Dutti,vestidos,massimo dutti vestidos
+2025-09-01,27,Massimo Dutti,zapatos,massimo dutti zapatos
+2025-09-01,42,Shein,pantalones,shein pantalones
+2025-09-01,21,Shein,tops,shein tops
+2025-09-01,13,Shein,vestidos,shein vestidos
+2025-09-01,32,Shein,zapatos,shein zapatos
+2025-09-01,64,Zara,pantalones,zara pantalones
+2025-09-01,32,Zara,tops,zara tops
+2025-09-01,23,Zara,vestidos,zara vestidos
+2025-09-01,27,Zara,zapatos,zara zapatos
+2025-10-01,58,H&M,pantalones,h&m pantalones
+2025-10-01,0,H&M,tops,h&m tops
+2025-10-01,20,H&M,vestidos,h&m vestidos
+2025-10-01,20,H&M,zapatos,h&m zapatos
+2025-10-01,80,Mango,pantalones,mango pantalones
+2025-10-01,28,Mango,tops,mango tops
+2025-10-01,17,Mango,vestidos,mango vestidos
+2025-10-01,38,Mango,zapatos,mango zapatos
+2025-10-01,36,Massimo Dutti,pantalones,massimo dutti pantalones
+2025-10-01,0,Massimo Dutti,tops,massimo dutti tops
+2025-10-01,12,Massimo Dutti,vestidos,massimo dutti vestidos
+2025-10-01,29,Massimo Dutti,zapatos,massimo dutti zapatos
+2025-10-01,42,Shein,pantalones,shein pantalones
+2025-10-01,12,Shein,tops,shein tops
+2025-10-01,11,Shein,vestidos,shein vestidos
+2025-10-01,36,Shein,zapatos,shein zapatos
+2025-10-01,73,Zara,pantalones,zara pantalones
+2025-10-01,28,Zara,tops,zara tops
+2025-10-01,18,Zara,vestidos,zara vestidos
+2025-10-01,27,Zara,zapatos,zara zapatos
+2025-11-01,64,H&M,pantalones,h&m pantalones
+2025-11-01,57,H&M,tops,h&m tops
+2025-11-01,21,H&M,vestidos,h&m vestidos
+2025-11-01,21,H&M,zapatos,h&m zapatos
+2025-11-01,100,Mango,pantalones,mango pantalones
+2025-11-01,44,Mango,tops,mango tops
+2025-11-01,16,Mango,vestidos,mango vestidos
+2025-11-01,37,Mango,zapatos,mango zapatos
+2025-11-01,46,Massimo Dutti,pantalones,massimo dutti pantalones
+2025-11-01,0,Massimo Dutti,tops,massimo dutti tops
+2025-11-01,10,Massimo Dutti,vestidos,massimo dutti vestidos
+2025-11-01,28,Massimo Dutti,zapatos,massimo dutti zapatos
+2025-11-01,48,Shein,pantalones,shein pantalones
+2025-11-01,16,Shein,tops,shein tops
+2025-11-01,9,Shein,vestidos,shein vestidos
+2025-11-01,34,Shein,zapatos,shein zapatos
+2025-11-01,81,Zara,pantalones,zara pantalones
+2025-11-01,30,Zara,tops,zara tops
+2025-11-01,20,Zara,vestidos,zara vestidos
+2025-11-01,26,Zara,zapatos,zara zapatos
+2025-12-01,64,H&M,pantalones,h&m pantalones
+2025-12-01,85,H&M,tops,h&m tops
+2025-12-01,26,H&M,vestidos,h&m vestidos
+2025-12-01,27,H&M,zapatos,h&m zapatos
+2025-12-01,91,Mango,pantalones,mango pantalones
+2025-12-01,55,Mango,tops,mango tops
+2025-12-01,17,Mango,vestidos,mango vestidos
+2025-12-01,28,Mango,zapatos,mango zapatos
+2025-12-01,43,Massimo Dutti,pantalones,massimo dutti pantalones
+2025-12-01,49,Massimo Dutti,tops,massimo dutti tops
+2025-12-01,8,Massimo Dutti,vestidos,massimo dutti vestidos
+2025-12-01,21,Massimo Dutti,zapatos,massimo dutti zapatos
+2025-12-01,37,Shein,pantalones,shein pantalones
+2025-12-01,26,Shein,tops,shein tops
+2025-12-01,7,Shein,vestidos,shein vestidos
+2025-12-01,20,Shein,zapatos,shein zapatos
+2025-12-01,86,Zara,pantalones,zara pantalones
+2025-12-01,43,Zara,tops,zara tops
+2025-12-01,19,Zara,vestidos,zara vestidos
+2025-12-01,24,Zara,zapatos,zara zapatos

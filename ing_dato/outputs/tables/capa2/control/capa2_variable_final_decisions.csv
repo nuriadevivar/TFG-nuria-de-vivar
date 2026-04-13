@@ -1,0 +1,19 @@
+dataset,variable,usar_en_modelos,usar_en_eda,usar_solo_contexto,comentario
+capa2_master_terminos_mensual,fecha,si,si,no,Eje temporal principal de la capa 2.
+capa2_master_terminos_mensual,termino,si,si,no,Unidad semántica principal del análisis de tendencias.
+capa2_master_terminos_mensual,grupo,si,si,no,"Permite segmentar marcas, estéticas y comportamiento."
+capa2_master_terminos_mensual,subgrupo,si,si,no,Aporta una capa semántica adicional útil.
+capa2_master_terminos_mensual,tipo_termino,si,si,no,Facilita lectura analítica por naturaleza del término.
+capa2_master_terminos_mensual,familia_analitica,si,si,no,Muy útil para síntesis e interpretación.
+capa2_master_terminos_mensual,valor_trends,si,si,no,Variable principal de intensidad de búsqueda.
+capa2_term_coverage,quality_flag,no,si,no,Control de calidad para priorizar términos.
+capa2_term_analysis_priority,prioridad_analitica,no,si,no,Permite justificar inclusión o exclusión de términos.
+capa2_master_productos_mensual,fecha,si,si,no,Eje temporal del bloque de productos.
+capa2_master_productos_mensual,marca,si,si,no,Clave de segmentación por marca.
+capa2_master_productos_mensual,categoria_producto,si,si,no,Clave de segmentación por tipo de producto.
+capa2_master_productos_mensual,valor_trends,si,si,no,Variable central del bloque de productos.
+capa2_master_productos_mensual,termino_busqueda,no,no,si,Se mantiene solo por trazabilidad.
+capa2_master_eventos,bloque_eventos,no,si,si,"Dataset contextual para interpretar cambios, no núcleo predictivo."
+capa2_master_eventos_mensual,n_eventos_total / n_plataformas / n_tipos_evento,no,si,si,"Resumen contextual mensual; útil para lectura, no necesariamente para modelización principal."
+capa2_master_social,n_posts / likes_totales / comentarios_totales / engagement_total / likes_medios_post / comentarios_medios_post / engagement_medio_post,si,si,no,Bloque social principal derivado de Apify.
+capa2_master_brand_digital,valor_trends + bloque_social + bloque_eventos,si,si,no,Tabla integrada final para análisis conjunto por marca-mes.

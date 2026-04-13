@@ -1,0 +1,7 @@
+bloque,variable,n_obs,q1,q3,iqr,lower_bound,upper_bound,n_outliers,pct_outliers,tipo_atipicidad,decision_metodologica
+brand_digital_common_window,valor_trends,649,40.0,62.0,22.0,7.0,95.0,14,2.16,extremo_estadistico_no_error,mantener_y_documentar_en_ventana_comun
+brand_digital_common_window,n_posts,660,0.0,0.0,0.0,0.0,0.0,47,7.12,extremo_estadistico_no_error,mantener_y_documentar_en_ventana_comun
+brand_digital_common_window,likes_totales,660,0.0,0.0,0.0,0.0,0.0,47,7.12,extremo_estadistico_no_error,mantener_y_documentar_en_ventana_comun
+brand_digital_common_window,comentarios_totales,660,0.0,0.0,0.0,0.0,0.0,47,7.12,extremo_estadistico_no_error,mantener_y_documentar_en_ventana_comun
+brand_digital_common_window,engagement_total,660,0.0,0.0,0.0,0.0,0.0,47,7.12,extremo_estadistico_no_error,mantener_y_documentar_en_ventana_comun
+brand_digital_common_window,engagement_medio_post,660,0.0,0.0,0.0,0.0,0.0,47,7.12,extremo_estadistico_no_error,mantener_y_documentar_en_ventana_comun

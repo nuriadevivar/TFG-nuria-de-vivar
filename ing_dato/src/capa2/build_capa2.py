@@ -39,6 +39,11 @@ def _normalize_month_start(df: pd.DataFrame, fecha_col: str = "fecha") -> pd.Dat
 # TAXONOMÍA DE TÉRMINOS
 # =========================
 
+# Mapa de clasificación semántica de términos de Google Trends.
+# Asigna a cada término su subgrupo, tipo y familia analítica.
+# Permite segmentar el análisis por naturaleza del término
+# (marca, estética o comportamiento de consumo) sin depender
+# del grupo de extracción original de pytrends.
 TERM_MAP = {
     "zara": {"subgrupo": "marca_fast_fashion", "tipo_termino": "marca", "familia_analitica": "marca"},
     "mango": {"subgrupo": "marca_mainstream", "tipo_termino": "marca", "familia_analitica": "marca"},
@@ -65,6 +70,9 @@ TERM_MAP = {
 
 
 def classify_term(termino: str, grupo: str) -> tuple[str, str, str]:
+    # Clasifica un término usando TERM_MAP como primera opción.
+    # Si no está en el mapa, aplica reglas de fallback por grupo
+    # para garantizar que todos los términos tengan clasificación.
     termino_norm = str(termino).strip().lower()
     grupo_norm = str(grupo).strip().lower()
 
@@ -75,6 +83,7 @@ def classify_term(termino: str, grupo: str) -> tuple[str, str, str]:
             TERM_MAP[termino_norm]["familia_analitica"],
         )
 
+    # Fallback por grupo cuando el término no está en el mapa explícito
     if grupo_norm == "marcas":
         return "marca_otra", "marca", "marca"
     if grupo_norm in ["sofisticado", "urbano"]:
@@ -90,6 +99,9 @@ def classify_term(termino: str, grupo: str) -> tuple[str, str, str]:
 # =========================
 
 def normalize_platform(value: str) -> str:
+    # Normaliza el nombre de plataforma a un identificador canónico.
+    # El campo plataforma en eventos_moda puede tener variantes de texto libre
+    # ("Instagram", "IG", "instagram") que se unifican para facilitar agrupaciones.
     text = str(value).strip().lower()
     if "instagram" in text:
         return "instagram"
@@ -103,6 +115,10 @@ def normalize_platform(value: str) -> str:
 
 
 def classify_event_category(row: pd.Series) -> str:
+    # Clasifica un evento en una categoría analítica a partir de palabras clave
+    # en el texto combinado de marca, tipo y descripción del evento.
+    # El orden de evaluación importa: las categorías más específicas
+    # (lanzamiento, estética) se evalúan antes que las más genéricas.
     text = " ".join(
         [
             str(row.get("marca_o_tendencia", "")),
@@ -136,6 +152,10 @@ def classify_event_category(row: pd.Series) -> str:
 def build_variable_selection_matrix_capa2() -> pd.DataFrame:
     _ensure_dirs()
 
+    # Documenta la decisión de incluir o excluir cada variable de cada dataset
+    # en el master analítico. Cubre todas las fuentes de la Capa 2: Google Trends,
+    # eventos, Instagram y masters integrados. Es la evidencia documental de
+    # la selección de variables para el corrector y el tribunal.
     records = [
         {
             "dataset": "capa2_master_terminos_mensual",
@@ -401,6 +421,9 @@ def build_variable_selection_matrix_capa2() -> pd.DataFrame:
 def build_capa2_inventory() -> pd.DataFrame:
     _ensure_dirs()
 
+    # Inventario de todos los datasets procesados de la Capa 2.
+    # Documenta fuente, frecuencia, cobertura temporal y rol analítico
+    # de cada dataset. Punto de entrada para entender qué alimenta el master.
     inventory = pd.DataFrame(
         [
             {
@@ -519,6 +542,8 @@ def build_capa2_master_terminos() -> pd.DataFrame:
 
     df["fecha"] = pd.to_datetime(df["fecha"], errors="coerce")
     df = _normalize_month_start(df, "fecha")
+    # Restricción temporal: solo se incluyen datos desde 2015,
+    # ventana analítica del TFG que garantiza comparabilidad con la Capa 1
     df = df[df["fecha"].dt.year.between(2015, 2025)].copy().reset_index(drop=True)
 
     df["termino"] = df["termino"].astype(str).str.strip().str.lower()
@@ -528,11 +553,15 @@ def build_capa2_master_terminos() -> pd.DataFrame:
     df["anio"] = df["fecha"].dt.year
     df["mes_num"] = df["fecha"].dt.month
 
+    # Enriquecimiento semántico: clasifica cada término con subgrupo,
+    # tipo y familia analítica usando el TERM_MAP definido en este script
     df[["subgrupo", "tipo_termino", "familia_analitica"]] = df.apply(
         lambda row: pd.Series(classify_term(row["termino"], row["grupo"])),
         axis=1,
     )
 
+    # Cálculo de cobertura por término: métricas de calidad que determinan
+    # si el término tiene suficiente señal para el análisis principal
     coverage = (
         df.groupby(["grupo", "termino"], dropna=False)
         .agg(
@@ -545,6 +574,8 @@ def build_capa2_master_terminos() -> pd.DataFrame:
     coverage["pct_non_null"] = (coverage["n_non_null"] / coverage["n_obs"] * 100).round(2)
 
     def quality_flag(pct: float) -> str:
+        # Clasifica la calidad de cobertura temporal de cada término:
+        # alta (≥90% de meses con dato), media (60-90%), baja (<60%)
         if pct >= 90:
             return "alta"
         if pct >= 60:
@@ -583,6 +614,9 @@ def build_term_analysis_priority() -> pd.DataFrame:
     coverage["grupo"] = coverage["grupo"].astype(str).str.strip().str.lower()
     coverage["termino"] = coverage["termino"].astype(str).str.strip().str.lower()
 
+    # Términos de prioridad principal: incluidos en el análisis central del TFG.
+    # Son las marcas principales y los términos estéticos y de comportamiento
+    # con mayor relevancia para las preguntas de investigación.
     principal_terms = {
         "ropa vintage",
         "comprar ropa online",
@@ -598,12 +632,16 @@ def build_term_analysis_priority() -> pd.DataFrame:
         "old money",
     }
 
+    # Términos secundarios: relevantes pero con menor continuidad temporal
+    # o señal más débil. Se incluyen con cautela.
     secondary_terms = {
         "slow fashion",
         "pija",
         "cayetana",
     }
 
+    # Términos exploratorios: señal muy débil o cobertura insuficiente.
+    # Se mantienen en el dataset base por trazabilidad pero no en el análisis principal.
     exploratory_terms = {
         "y2k outfit",
         "trap style",
@@ -612,6 +650,8 @@ def build_term_analysis_priority() -> pd.DataFrame:
     }
 
     def assign_priority(row: pd.Series) -> str:
+        # Asigna prioridad analítica combinando la lista explícita de términos
+        # con criterios de quality_flag y avg_trends para términos no listados
         termino = row["termino"]
         avg_trends = row.get("avg_trends", np.nan)
         quality_flag = row.get("quality_flag", "")
@@ -623,6 +663,7 @@ def build_term_analysis_priority() -> pd.DataFrame:
         if termino in exploratory_terms:
             return "exploratorio"
 
+        # Criterios automáticos para términos no explícitamente clasificados
         if quality_flag == "alta" and pd.notna(avg_trends) and avg_trends >= 20:
             return "principal"
         if quality_flag in ["alta", "media"] and pd.notna(avg_trends) and avg_trends >= 8:
@@ -632,6 +673,7 @@ def build_term_analysis_priority() -> pd.DataFrame:
     coverage["prioridad_analitica"] = coverage.apply(assign_priority, axis=1)
 
     def assign_decision(priority: str) -> str:
+        # Traduce la prioridad analítica a una decisión de uso operativa
         if priority == "principal":
             return "usar_en_analisis_principal"
         if priority == "secundario":
@@ -641,6 +683,8 @@ def build_term_analysis_priority() -> pd.DataFrame:
     coverage["decision_uso"] = coverage["prioridad_analitica"].apply(assign_decision)
 
     def assign_comment(row: pd.Series) -> str:
+        # Genera un comentario metodológico específico para términos con
+        # particularidades relevantes para el corrector o el analista
         termino = row["termino"]
         quality_flag = row["quality_flag"]
         avg_trends = row["avg_trends"]
@@ -697,6 +741,8 @@ def build_term_quality_decisions() -> pd.DataFrame:
     priority_path = PROCESSED_CAPA2 / "integrated" / "capa2_term_analysis_priority.csv"
     df = pd.read_csv(priority_path)
 
+    # Selecciona las columnas relevantes de la tabla de prioridad
+    # y añade columnas operativas de uso para cada término
     decisions = df[
         [
             "grupo",
@@ -712,6 +758,8 @@ def build_term_quality_decisions() -> pd.DataFrame:
         ]
     ].copy()
 
+    # Todos los términos se mantienen en el dataset base independientemente de su prioridad.
+    # La columna usar_en_analisis_principal filtra los que entran en el análisis central.
     decisions["mantener_en_base"] = "si"
     decisions["usar_en_analisis_principal"] = decisions["prioridad_analitica"].apply(
         lambda x: "si" if x == "principal" else "no"
@@ -750,12 +798,15 @@ def build_capa2_master_terminos_main() -> pd.DataFrame:
     terms["termino"] = terms["termino"].astype(str).str.strip().str.lower()
     priority["termino"] = priority["termino"].astype(str).str.strip().str.lower()
 
+    # Subset de términos de prioridad principal y secundaria para el análisis central.
+    # Los términos exploratorios se excluyen aquí pero permanecen en el master completo.
     keep_terms = priority[
         priority["prioridad_analitica"].isin(["principal", "secundario"])
     ]["termino"].unique()
 
     main_df = terms[terms["termino"].isin(keep_terms)].copy()
 
+    # Enriquece el subset con la prioridad y decisión de uso de cada término
     main_df = main_df.merge(
         priority[["termino", "prioridad_analitica", "decision_uso"]],
         on="termino",
@@ -794,6 +845,8 @@ def build_capa2_master_productos() -> pd.DataFrame:
     df["anio"] = df["fecha"].dt.year
     df["mes_num"] = df["fecha"].dt.month
 
+     # Se excluye termino_busqueda del master analítico por redundancia con
+    # categoria_producto; se mantiene en el dataset transformado por trazabilidad
     df = df[
         [
             "fecha",
@@ -836,6 +889,8 @@ def build_capa2_master_eventos() -> pd.DataFrame:
     for col in text_cols:
         df[col] = df[col].astype(str).str.strip()
 
+    # Enriquecimiento: normaliza la plataforma a identificador canónico
+    # y clasifica cada evento en una categoría analítica usando palabras clave
     df["plataforma_std"] = df["plataforma"].apply(normalize_platform)
     df["categoria_evento"] = df.apply(classify_event_category, axis=1)
 
@@ -861,6 +916,9 @@ def build_capa2_master_eventos_mensual() -> pd.DataFrame:
     df = pd.read_csv(input_path)
     df["fecha"] = pd.to_datetime(df["fecha"], errors="coerce")
 
+    # Agrega los eventos a nivel mensual: cuenta el total de eventos,
+    # el número de plataformas distintas y los tipos de evento por mes.
+    # Estas métricas se usan como señal contextual en el master integrado.
     monthly = (
         df.groupby("fecha")
         .agg(
@@ -901,8 +959,13 @@ def build_capa2_master_integrated() -> pd.DataFrame:
     terms["fecha"] = pd.to_datetime(terms["fecha"], errors="coerce")
     eventos["fecha"] = pd.to_datetime(eventos["fecha"], errors="coerce")
 
+    # Left join: todos los términos se conservan aunque no haya eventos ese mes.
+    # Los meses sin eventos reciben 0 en las columnas de contexto (no NaN),
+    # lo que facilita el análisis sin necesidad de gestionar nulos adicionales.
     master = terms.merge(eventos, on=["fecha", "anio", "mes_num"], how="left")
 
+    # Rellena con 0 los meses sin eventos: la ausencia de eventos es información
+    # válida (mes sin hitos documentados), no un dato faltante
     context_cols = ["n_eventos_total", "n_plataformas", "n_tipos_evento"]
     for col in context_cols:
         master[col] = master[col].fillna(0)
@@ -934,6 +997,8 @@ def build_capa2_master_social() -> pd.DataFrame:
     df["marca"] = df["marca"].astype(str).str.strip().str.lower()
     df["plataforma"] = df["plataforma"].astype(str).str.strip().str.lower()
 
+    # Conversión explícita a numérico para garantizar tipos correctos
+    # antes de exportar al master social
     numeric_cols = [
         "n_posts",
         "likes_totales",
@@ -979,6 +1044,7 @@ def build_capa2_master_brand_digital() -> pd.DataFrame:
     trends["termino"] = trends["termino"].astype(str).str.strip().str.lower()
     social["marca"] = social["marca"].astype(str).str.strip().str.lower()
 
+    # Renombra 'termino' a 'marca' en trends para poder hacer el join con social
     trends_brand = trends.rename(columns={"termino": "marca"}).copy()
     trends_brand = trends_brand[["fecha", "anio", "mes_num", "marca", "valor_trends"]].copy()
 
@@ -999,18 +1065,25 @@ def build_capa2_master_brand_digital() -> pd.DataFrame:
         ]
     ].copy()
 
+    # Join 1: Google Trends (histórico largo) + Instagram (ventana reciente).
+    # Left join desde trends: la cobertura temporal de Google Trends es mayor,
+    # por lo que los meses anteriores a la ventana de Instagram tendrán NaN en social.
     master = trends_brand.merge(
         social,
         on=["fecha", "anio", "mes_num", "marca"],
         how="left",
     )
 
+    # Join 2: añade contexto mensual de eventos
     master = master.merge(
         eventos[["fecha", "n_eventos_total", "n_plataformas", "n_tipos_evento"]],
         on="fecha",
         how="left",
     )
 
+    # Los meses fuera de la ventana de Instagram o sin eventos reciben 0.
+    # Esto es metodológicamente correcto: los meses previos al scraping
+    # no tienen actividad social registrada (no es un dato faltante).
     fill_zero_cols = [
         "n_posts",
         "likes_totales",
@@ -1050,6 +1123,9 @@ def build_capa2_master_brand_digital() -> pd.DataFrame:
 def build_variable_final_decisions_capa2() -> pd.DataFrame:
     _ensure_dirs()
 
+    # Tabla operativa de decisiones finales: qué variables se usan en modelos,
+    # en EDA y cuáles son solo de contexto. Complementa la variable_selection_matrix
+    # con una vista más directamente orientada a la ejecución del análisis.
     records = [
         {
             "dataset": "capa2_master_terminos_mensual",
@@ -1213,6 +1289,8 @@ def build_variable_final_decisions_capa2() -> pd.DataFrame:
 def build_capa2_master_previews() -> None:
     _ensure_dirs()
 
+    # Exporta las primeras 15 filas de cada master como vista rápida de verificación.
+    # Permite confirmar estructura y contenido sin abrir los ficheros completos.
     preview_map = {
         "capa2_inventory_head.csv": PROCESSED_CAPA2 / "integrated" / "capa2_inventory.csv",
         "capa2_master_terminos_head.csv": PROCESSED_CAPA2 / "integrated" / "capa2_master_terminos_mensual.csv",
@@ -1309,6 +1387,10 @@ def build_capa2_null_summary() -> pd.DataFrame:
     """
     _ensure_dirs()
  
+    # Cada registro documenta un tipo de valor especial con su naturaleza,
+    # la decisión adoptada y el impacto de alternativas no elegidas.
+    # Esta tabla es la evidencia documental para el corrector del tratamiento
+    # de todos los casos no triviales de la Capa 2.
     records = [
         {
             "dataset": "trends_grupos_unificados_clean / trends_marcas_clean",
@@ -1401,6 +1483,9 @@ def build_capa2_vsm_flags() -> pd.DataFrame:
     """
     _ensure_dirs()
 
+    # Documenta específicamente los flags de calidad que no son variables
+    # analíticas en sí mismas sino indicadores del proceso de limpieza.
+    # Se añaden a la VSM existente sin sobrescribir las entradas anteriores.
     records = [
         {
             "dataset": "trends_grupos_unificados_clean / trends_marcas_clean",
@@ -1437,6 +1522,8 @@ def build_capa2_vsm_flags() -> pd.DataFrame:
 
     vsm_path = TABLES_CAPA2_CONTROL / "capa2_variable_selection_matrix.csv"
 
+    # Si la VSM ya existe, añade las nuevas entradas evitando duplicados.
+    # Si no existe, crea una nueva VSM solo con los flags.
     if vsm_path.exists():
         vsm_existing = pd.read_csv(vsm_path)
         vsm_combined = pd.concat([vsm_existing, df], ignore_index=True)
